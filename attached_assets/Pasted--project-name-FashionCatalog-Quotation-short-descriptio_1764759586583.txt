@@ -1,0 +1,176 @@
+{
+  "project_name": "FashionCatalog-Quotation",
+  "short_description": "Single-page React e-commerce catalog with Add-to-Cart, product pages, and a Cart page implemented as a quotation form (no user login). Cart persisted in localStorage. 'Send Quotation' submits chosen products + customer info to a serverless endpoint.",
+  "target_environment": {
+    "platform": "Replit (Node + React)",
+    "tooling": "Vite + React (or Create React App if preferred), TailwindCSS for styling (optional), TypeScript optional but recommended",
+    "run_commands": {
+      "install": "npm install",
+      "dev": "npm run dev",
+      "build": "npm run build"
+    }
+  },
+  "non_functional_requirements": {
+    "no_login": true,
+    "cart_persistence": "localStorage (clear on checkout optional)",
+    "responsive": "desktop / tablet / mobile",
+    "accessibility": "basic a11y: form labels, keyboard focus, alt text for images",
+    "performance": "images lazy-load, minimal dependencies"
+  },
+  "data_model": {
+    "product": {
+      "id": "string (SKU)",
+      "title": "string",
+      "description": "string",
+      "images": ["string (relative path or URL)"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 592.14 },
+        { "minQty": 6, "maxQty": 35, "price": 537.98 },
+        { "minQty": 36, "maxQty": null, "price": 503.68 }
+      ],
+      "attributes": {
+        "color": "string",
+        "sizes": ["S", "M", "L"],
+        "measurements": { "skirtLengthCm": 123, "bustCm": 72, "waistCm": 64, "hipsCm": 82 }
+      },
+      "minOrder": 1,
+      "sku": "string"
+    },
+    "cartItem": {
+      "productId": "string",
+      "variant": { "size": "S|M|L", "color": "string" },
+      "unitPrice": "number (price selected depending on quantity)",
+      "quantity": "integer"
+    },
+    "quotationRequest": {
+      "customer": { "name": "string", "phone": "string", "email": "string" },
+      "cart": ["cartItem"],
+      "notes": "string (optional)",
+      "createdAt": "ISO timestamp"
+    }
+  },
+  "pages_and_routes": [
+    { "path": "/", "name": "Home / Catalog", "description": "grid of product cards. filters optional (size, color, price). each card shows promo badge, thumbnail, and displayed price range." },
+    { "path": "/product/:id", "name": "Product Detail", "description": "large image gallery, price tier panel (1-5, 6-35, >=36), size selector, quantity selector, Add to Cart button." },
+    { "path": "/cart", "name": "Cart / Quotation Form", "description": "list cart items with editable quantities and remove buttons; below or beside cart list provide form fields: Name, Phone, Email, and one extra generated field 'Products Summary' auto-populated from cart (read-only) so 'Send Quotation' makes sense. Send Quotation triggers POST to /api/quote." },
+    { "path": "/thanks", "name": "Thank You / Confirmation", "description": "simple confirmation page after successful quote submission." }
+  ],
+  "component_list": [
+    { "name": "ProductCard", "props": ["product"], "behavior": "shows thumbnail, short title, promo badge, and price range; clicking navigates to product detail" },
+    { "name": "ProductGallery", "props": ["images"], "behavior": "click thumbnails to change hero view; show index/total" },
+    { "name": "PriceTiers", "props": ["priceTiers"], "behavior": "visually highlight the tier based on quantity selected" },
+    { "name": "AddToCartButton", "props": ["product", "selectedSize", "selectedQty"], "behavior": "adds an item to cart stored in localStorage; update cart count UI" },
+    { "name": "CartList", "props": ["cartItems"], "behavior": "edit quantity, remove item, recalc unitPrice based on price tier" },
+    { "name": "QuotationForm", "props": ["cartItems"], "behavior": "fields: name (required), phone (required), email (required, validate), productsSummary (read-only auto-generated string/textarea from cartItems), notes (optional), submit button" }
+  ],
+  "ui_behavior_rules": {
+    "price_selection_logic": "When quantity for a specific cart item is X, compute unitPrice by finding the priceTier where minQty <= X <= maxQty (if maxQty is null treat as >=). Show recalculated totals live on cart page.",
+    "cart_storage": "Save full cart JSON to localStorage under key 'fashion_cart_v1'; load cart on app init.",
+    "no_auth": "No login screens or sessions. Cart is anonymous.",
+    "send_quotation_flow": {
+      "client_action": "POST /api/quote with quotationRequest JSON; disable submit button while sending and show loading spinner",
+      "server_response": "200 OK + { success: true, quoteId: 'string' } or error { success: false, message }",
+      "post_submit": "on success, clear cart (optional) and navigate to /thanks"
+    }
+  },
+  "serverless_api_spec": {
+    "endpoint": "/api/quote",
+    "method": "POST",
+    "request_json_example": {
+      "customer": { "name": "Trishank Example", "phone": "+911234567890", "email": "trishank@example.com" },
+      "cart": [
+        { "productId": "T1025120261", "variant": { "size": "M", "color": "Rose" }, "unitPrice": 592.14, "quantity": 2 }
+      ],
+      "notes": "Please include packing and shipping best price."
+    },
+    "server_behavior": "Validate fields, persist to a local JSON file or in-memory store (for replit proof-of-concept) and return a quoteId. Optionally integrate EmailJS or SendGrid (optional) to email a copy; if not available just return success and log the payload.",
+    "security": "No auth required. Rate-limit and basic input validation recommended."
+  },
+  "example_product_data": [
+    {
+      "id": "T1025120261",
+      "title": "Wholesale Women Spring And Summer Fashion Floral Print Strapless Bodycon Maxi Dress",
+      "description": "Floral strapless maxi dress. Material: Polyester/Spandex. Sleeve: sleeveless. Length: long dress.",
+      "images": ["/assets/product1-1.jpg","/assets/product1-2.jpg","/assets/product1-3.jpg"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 592.14 },
+        { "minQty": 6, "maxQty": 35, "price": 537.98 },
+        { "minQty": 36, "maxQty": null, "price": 503.68 }
+      ],
+      "attributes": { "color": "Rose", "sizes": ["S", "M", "L"], "measurements": { "S": { "skirtLength": 123, "bust": 72, "waist": 64, "hips": 82 }, "M": { "skirtLength":125, "bust":76, "waist":68, "hips":86 }, "L": { "skirtLength":127, "bust":80, "waist":72, "hips":90 } } },
+      "minOrder": 1,
+      "sku": "T1025120261"
+    },
+    {
+      "id": "P2",
+      "title": "Floral Short Dress",
+      "description": "Short floral dress, multiple colors",
+      "images": ["/assets/product2-1.jpg"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 1065.12 },
+        { "minQty": 6, "maxQty": 35, "price": 970.00 },
+        { "minQty": 36, "maxQty": null, "price": 850.00 }
+      ],
+      "attributes": { "color": "Multi", "sizes": ["S","M","L"] },
+      "minOrder": 1,
+      "sku": "P2"
+    }
+  ],
+  "ux_acceptance_criteria": [
+    "Landing catalog loads with at least 6 product cards and displays price ranges.",
+    "Clicking a product opens product detail; can select size and quantity and add to cart.",
+    "Cart page shows all items, recalculates unit price when quantity changes according to tiers, and shows grand total.",
+    "Quotation form requires Name, Phone, Email (simple validation). 'Products Summary' contains the list of products, sizes, qty and computed unit prices.",
+    "Submitting the form sends a POST to /api/quote, shows success, and shows a quoteId on the Thanks page.",
+    "No login screens appear anywhere."
+  ],
+  "ui_notes_and_visual_guidelines": {
+    "use_images_uploaded": "Use the images you posted as product images. Place them in /public/assets/ and reference relatively.",
+    "cart_button_style": "simple floating cart icon with item count in header",
+    "product_card_badge": "small pink badge for 'Buy 10 Get 1 Free' when applicable",
+    "price_display": "show price tiers horizontally on product page with the price text emphasized"
+  },
+  "dev_tasks_and_file_structure": {
+    "src": [
+      "src/main.jsx (or main.tsx) - app bootstrapping and Router",
+      "src/App.jsx - layout",
+      "src/pages/Catalog.jsx",
+      "src/pages/Product.jsx",
+      "src/pages/Cart.jsx",
+      "src/pages/Thanks.jsx",
+      "src/components/ProductCard.jsx",
+      "src/components/ProductGallery.jsx",
+      "src/components/PriceTiers.jsx",
+      "src/components/CartList.jsx",
+      "src/components/QuotationForm.jsx",
+      "src/lib/cartStore.js - localStorage helpers",
+      "src/api/quote.js - client wrapper to POST /api/quote",
+      "server/api/quote.js (Replit serverless) - simple endpoint to log and return quoteId"
+    ],
+    "assets": ["/public/assets/product1-1.jpg", "product1-2.jpg", "product1-3.jpg", "product2-1.jpg"]
+  },
+  "testing_checklist": [
+    "Add item with qty 2 -> unitPrice should use 1-5 tier.",
+    "Change qty to 7 -> unitPrice should switch to 6-35 tier, totals update.",
+    "Remove item -> cart updates and persistence updates.",
+    "Try submit quotation with empty name/phone/email -> show validation errors.",
+    "Successful submission navigates to /thanks and returns quoteId."
+  ],
+  "deliverables": {
+    "development": "Complete React app on Replit with instructions to run",
+    "documentation": "README with run commands, API spec, and how to change product data (JSON file)",
+    "optional": "serverless email integration sample commented as optional"
+  },
+  "priority_constraints": {
+    "must_have": [
+      "No login or user accounts",
+      "Add-to-cart + clear cart behavior",
+      "Cart page is a customer quotation form containing Name, Phone, Email, and a read-only products summary field",
+      "Send Quotation posts to /api/quote and returns quoteId"
+    ],
+    "nice_to_have": [
+      "image gallery zoom, product filters on catalog, ability to download product images"
+    ]
+  },
+  "final_message_to_agent": "Build a minimal but production-oriented prototype that runs in Replit. Prefer simple, well-structured React code, localStorage cart, and a serverless /api/quote endpoint that returns a quoteId. Keep styling clean and responsive. Ship with sample product JSON and the images provided."
+}
