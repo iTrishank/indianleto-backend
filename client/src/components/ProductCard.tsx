@@ -3,7 +3,6 @@ import { useLocation } from "wouter";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { ITEM_SIZE } from "@/lib/constants";
 
 interface ProductCardProps {
@@ -80,24 +79,22 @@ export function ProductCard({ product }: ProductCardProps) {
 
             {hasMultipleImages && (
               <>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="absolute left-1 top-1/2 -translate-y-1/2 h-6 w-6 bg-background/80 hover:bg-background shadow-sm"
+                <button
+                  className="absolute left-1 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-background/90 hover:bg-background shadow-md flex items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
                   onClick={scrollPrev}
+                  aria-label="Previous image"
                   data-testid={`btn-prev-image-${product.id}`}
                 >
-                  <ChevronLeft className="h-3 w-3" />
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="absolute right-1 top-1/2 -translate-y-1/2 h-6 w-6 bg-background/80 hover:bg-background shadow-sm"
+                  <ChevronLeft className="h-3.5 w-3.5 text-foreground" />
+                </button>
+                <button
+                  className="absolute right-1 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-background/90 hover:bg-background shadow-md flex items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
                   onClick={scrollNext}
+                  aria-label="Next image"
                   data-testid={`btn-next-image-${product.id}`}
                 >
-                  <ChevronRight className="h-3 w-3" />
-                </Button>
+                  <ChevronRight className="h-3.5 w-3.5 text-foreground" />
+                </button>
 
                 <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
                   {product.images.map((_, index) => (

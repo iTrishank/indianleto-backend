@@ -41,10 +41,10 @@ export function PriceTiers({ priceTiers, currentQuantity }: PriceTiersProps) {
         return (
           <Card
             key={index}
-            className={`flex-1 p-4 text-center transition-all ${
+            className={`flex-1 p-4 text-center pointer-events-none select-none ${
               isActive
                 ? "ring-2 ring-primary border-primary bg-primary/5"
-                : "border-muted hover-elevate"
+                : "border-muted bg-muted/20"
             }`}
             data-testid={`price-tier-${index}`}
           >

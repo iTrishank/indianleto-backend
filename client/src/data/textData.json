@@ -103,28 +103,6 @@
         "contact": "Contact",
         "forInquiries": "For inquiries and support",
         "copyright": "IndianLeto. All rights reserved. B2B Wholesale Only."
-      },
-      "products": {
-        "P1": {
-          "title": "Elegant Floral Maxi Dress Summer Collection",
-          "description": "Beautiful floral print maxi dress perfect for summer occasions. Made with premium polyester blend fabric. Features a flattering A-line silhouette with adjustable straps."
-        },
-        "P2": {
-          "title": "Bohemian Paisley Print Midi Dress",
-          "description": "Stunning bohemian style midi dress with intricate paisley patterns. Lightweight rayon fabric ideal for warm weather. Features elegant flutter sleeves and a tie waist."
-        },
-        "P3": {
-          "title": "Classic Striped Wrap Dress Business Casual",
-          "description": "Sophisticated striped wrap dress perfect for business casual settings. Premium cotton-polyester blend ensures comfort all day. True wrap design with adjustable fit."
-        },
-        "P4": {
-          "title": "Tropical Print Off-Shoulder Party Dress",
-          "description": "Vibrant tropical print party dress with off-shoulder design. Stretchy spandex blend for comfortable fit. Perfect for beach parties and summer celebrations."
-        },
-        "P5": {
-          "title": "Vintage Rose Print Tea Length Dress",
-          "description": "Elegant vintage-inspired dress featuring delicate rose prints. Tea length hem creates a timeless silhouette. Made with soft viscose fabric for all-day comfort."
-        }
       }
     },
     "es": {
@@ -230,28 +208,6 @@
         "contact": "Contacto",
         "forInquiries": "Para consultas y soporte",
         "copyright": "IndianLeto. Todos los derechos reservados. Solo Mayoristas B2B."
-      },
-      "products": {
-        "P1": {
-          "title": "Elegante Vestido Maxi Floral Colección Verano",
-          "description": "Hermoso vestido maxi con estampado floral perfecto para ocasiones de verano. Hecho con tela de mezcla de poliéster premium. Presenta una silueta favorecedora en línea A con tirantes ajustables."
-        },
-        "P2": {
-          "title": "Vestido Midi Bohemio con Estampado Paisley",
-          "description": "Impresionante vestido midi de estilo bohemio con intrincados patrones paisley. Tela de rayón liviana ideal para clima cálido. Presenta elegantes mangas con volantes y cintura con lazo."
-        },
-        "P3": {
-          "title": "Vestido Cruzado Clásico de Rayas Business Casual",
-          "description": "Sofisticado vestido cruzado a rayas perfecto para entornos de negocios casuales. Mezcla premium de algodón-poliéster garantiza comodidad todo el día. Diseño cruzado verdadero con ajuste regulable."
-        },
-        "P4": {
-          "title": "Vestido de Fiesta Tropical con Hombros Descubiertos",
-          "description": "Vibrante vestido de fiesta con estampado tropical y diseño de hombros descubiertos. Mezcla de spandex elástico para un ajuste cómodo. Perfecto para fiestas en la playa y celebraciones de verano."
-        },
-        "P5": {
-          "title": "Vestido Vintage con Estampado de Rosas Largo Té",
-          "description": "Elegante vestido de inspiración vintage con delicados estampados de rosas. El dobladillo largo té crea una silueta atemporal. Hecho con tela de viscosa suave para comodidad todo el día."
-        }
       }
     },
     "hi": {
@@ -357,28 +313,6 @@
         "contact": "संपर्क",
         "forInquiries": "पूछताछ और सहायता के लिए",
         "copyright": "IndianLeto। सर्वाधिकार सुरक्षित। केवल B2B थोक।"
-      },
-      "products": {
-        "P1": {
-          "title": "एलिगेंट फ्लोरल मैक्सी ड्रेस समर कलेक्शन",
-          "description": "गर्मियों के अवसरों के लिए सुंदर फ्लोरल प्रिंट मैक्सी ड्रेस। प्रीमियम पॉलिएस्टर ब्लेंड फैब्रिक से बना। एडजस्टेबल स्ट्रैप्स के साथ फ्लैटरिंग ए-लाइन सिल्हूट।"
-        },
-        "P2": {
-          "title": "बोहेमियन पेस्ले प्रिंट मिडी ड्रेस",
-          "description": "जटिल पेस्ले पैटर्न के साथ शानदार बोहेमियन स्टाइल मिडी ड्रेस। गर्म मौसम के लिए आदर्श हल्के रेयॉन फैब्रिक। एलिगेंट फ्लटर स्लीव्स और टाई वेस्ट।"
-        },
-        "P3": {
-          "title": "क्लासिक स्ट्राइप्ड रैप ड्रेस बिजनेस कैजुअल",
-          "description": "बिजनेस कैजुअल सेटिंग्स के लिए परिष्कृत स्ट्राइप्ड रैप ड्रेस। प्रीमियम कॉटन-पॉलिएस्टर ब्लेंड पूरे दिन आराम सुनिश्चित करता है। एडजस्टेबल फिट के साथ ट्रू रैप डिज़ाइन।"
-        },
-        "P4": {
-          "title": "ट्रॉपिकल प्रिंट ऑफ-शोल्डर पार्टी ड्रेस",
-          "description": "ऑफ-शोल्डर डिज़ाइन के साथ जीवंत ट्रॉपिकल प्रिंट पार्टी ड्रेस। आरामदायक फिट के लिए स्ट्रेची स्पैन्डेक्स ब्लेंड। बीच पार्टियों और समर सेलिब्रेशन के लिए परफेक्ट।"
-        },
-        "P5": {
-          "title": "विंटेज रोज़ प्रिंट टी लेंथ ड्रेस",
-          "description": "नाजुक रोज़ प्रिंट्स के साथ एलिगेंट विंटेज-इंस्पायर्ड ड्रेस। टी लेंथ हेम टाइमलेस सिल्हूट बनाता है। पूरे दिन आराम के लिए सॉफ्ट विस्कोस फैब्रिक से बना।"
-        }
       }
     },
     "ru": {
@@ -484,28 +418,181 @@
         "contact": "Контакт",
         "forInquiries": "Для запросов и поддержки",
         "copyright": "IndianLeto. Все права защищены. Только B2B Оптовая торговля."
+      }
+    }
+  },
+  "products": {
+    "P1": {
+      "title": {
+        "en": "Elegant Floral Maxi Dress Summer Collection",
+        "es": "Elegante Vestido Maxi Floral Colección Verano",
+        "hi": "एलिगेंट फ्लोरल मैक्सी ड्रेस समर कलेक्शन",
+        "ru": "Элегантное Цветочное Макси Платье Летняя Коллекция"
       },
-      "products": {
-        "P1": {
-          "title": "Элегантное Цветочное Макси Платье Летняя Коллекция",
-          "description": "Красивое макси платье с цветочным принтом, идеально подходящее для летних мероприятий. Изготовлено из премиальной смеси полиэстера. Отличается лестным силуэтом А-линии с регулируемыми бретелями."
-        },
-        "P2": {
-          "title": "Богемное Миди Платье с Принтом Пейсли",
-          "description": "Потрясающее миди платье в богемном стиле с замысловатыми узорами пейсли. Лёгкая вискозная ткань идеально подходит для тёплой погоды. Элегантные рукава-флаттер и поясок на талии."
-        },
-        "P3": {
-          "title": "Классическое Полосатое Платье с Запахом Бизнес Кэжуал",
-          "description": "Изысканное полосатое платье с запахом, идеально подходящее для делового кэжуала. Премиальная смесь хлопка и полиэстера обеспечивает комфорт весь день. Настоящий дизайн с запахом и регулируемой посадкой."
-        },
-        "P4": {
-          "title": "Тропическое Платье для Вечеринок с Открытыми Плечами",
-          "description": "Яркое платье для вечеринок с тропическим принтом и дизайном с открытыми плечами. Эластичная смесь спандекса для комфортной посадки. Идеально для пляжных вечеринок и летних торжеств."
-        },
-        "P5": {
-          "title": "Винтажное Платье с Принтом Роз Длиной до Чая",
-          "description": "Элегантное платье в винтажном стиле с нежными принтами роз. Длина до чая создаёт вневременной силуэт. Изготовлено из мягкой вискозной ткани для комфорта весь день."
-        }
+      "description": {
+        "en": "Beautiful floral print maxi dress perfect for summer occasions. Made with premium polyester blend fabric. Features a flattering A-line silhouette with adjustable straps.",
+        "es": "Hermoso vestido maxi con estampado floral perfecto para ocasiones de verano. Hecho con tela de mezcla de poliéster premium. Presenta una silueta favorecedora en línea A con tirantes ajustables.",
+        "hi": "गर्मियों के अवसरों के लिए सुंदर फ्लोरल प्रिंट मैक्सी ड्रेस। प्रीमियम पॉलिएस्टर ब्लेंड फैब्रिक से बना। एडजस्टेबल स्ट्रैप्स के साथ फ्लैटरिंग ए-लाइन सिल्हूट।",
+        "ru": "Красивое макси платье с цветочным принтом, идеально подходящее для летних мероприятий. Изготовлено из премиальной смеси полиэстера. Отличается лестным силуэтом А-линии с регулируемыми бретелями."
+      },
+      "color": {
+        "en": "Rose Floral",
+        "es": "Floral Rosa",
+        "hi": "गुलाबी फूल",
+        "ru": "Розовый Цветочный"
+      },
+      "sku": "IL-P1-2024",
+      "minOrder": 1,
+      "imagePaths": ["P1-1.jpg", "P1-2.jpg", "P1-3.jpg", "P1-4.jpg"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 1250 },
+        { "minQty": 6, "maxQty": 25, "price": 1100 },
+        { "minQty": 26, "maxQty": null, "price": 950 }
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "sizeMeasurements": {
+        "S": { "skirtLength": 125, "bust": 84, "waist": 66, "hips": 90 },
+        "M": { "skirtLength": 127, "bust": 88, "waist": 70, "hips": 94 },
+        "L": { "skirtLength": 129, "bust": 92, "waist": 74, "hips": 98 },
+        "XL": { "skirtLength": 131, "bust": 96, "waist": 78, "hips": 102 }
+      }
+    },
+    "P2": {
+      "title": {
+        "en": "Bohemian Paisley Print Midi Dress",
+        "es": "Vestido Midi Bohemio con Estampado Paisley",
+        "hi": "बोहेमियन पेस्ले प्रिंट मिडी ड्रेस",
+        "ru": "Богемное Миди Платье с Принтом Пейсли"
+      },
+      "description": {
+        "en": "Stunning bohemian style midi dress with intricate paisley patterns. Lightweight rayon fabric ideal for warm weather. Features elegant flutter sleeves and a tie waist.",
+        "es": "Impresionante vestido midi de estilo bohemio con intrincados patrones paisley. Tela de rayón liviana ideal para clima cálido. Presenta elegantes mangas con volantes y cintura con lazo.",
+        "hi": "जटिल पेस्ले पैटर्न के साथ शानदार बोहेमियन स्टाइल मिडी ड्रेस। गर्म मौसम के लिए आदर्श हल्के रेयॉन फैब्रिक। एलिगेंट फ्लटर स्लीव्स और टाई वेस्ट।",
+        "ru": "Потрясающее миди платье в богемном стиле с замысловатыми узорами пейсли. Лёгкая вискозная ткань идеально подходит для тёплой погоды. Элегантные рукава-флаттер и поясок на талии."
+      },
+      "color": {
+        "en": "Blue Paisley",
+        "es": "Paisley Azul",
+        "hi": "नीला पेस्ले",
+        "ru": "Синий Пейсли"
+      },
+      "sku": "IL-P2-2024",
+      "minOrder": 1,
+      "imagePaths": ["P2-1.jpg", "P2-2.jpg", "P2-3.jpg", "P2-4.jpg"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 1450 },
+        { "minQty": 6, "maxQty": 25, "price": 1280 },
+        { "minQty": 26, "maxQty": null, "price": 1100 }
+      ],
+      "sizes": ["S", "M", "L"],
+      "sizeMeasurements": {
+        "S": { "skirtLength": 100, "bust": 82, "waist": 64, "hips": 88 },
+        "M": { "skirtLength": 102, "bust": 86, "waist": 68, "hips": 92 },
+        "L": { "skirtLength": 104, "bust": 90, "waist": 72, "hips": 96 }
+      }
+    },
+    "P3": {
+      "title": {
+        "en": "Classic Striped Wrap Dress Business Casual",
+        "es": "Vestido Cruzado Clásico de Rayas Business Casual",
+        "hi": "क्लासिक स्ट्राइप्ड रैप ड्रेस बिजनेस कैजुअल",
+        "ru": "Классическое Полосатое Платье с Запахом Бизнес Кэжуал"
+      },
+      "description": {
+        "en": "Sophisticated striped wrap dress perfect for business casual settings. Premium cotton-polyester blend ensures comfort all day. True wrap design with adjustable fit.",
+        "es": "Sofisticado vestido cruzado a rayas perfecto para entornos de negocios casuales. Mezcla premium de algodón-poliéster garantiza comodidad todo el día. Diseño cruzado verdadero con ajuste regulable.",
+        "hi": "बिजनेस कैजुअल सेटिंग्स के लिए परिष्कृत स्ट्राइप्ड रैप ड्रेस। प्रीमियम कॉटन-पॉलिएस्टर ब्लेंड पूरे दिन आराम सुनिश्चित करता है। एडजस्टेबल फिट के साथ ट्रू रैप डिज़ाइन।",
+        "ru": "Изысканное полосатое платье с запахом, идеально подходящее для делового кэжуала. Премиальная смесь хлопка и полиэстера обеспечивает комфорт весь день. Настоящий дизайн с запахом и регулируемой посадкой."
+      },
+      "color": {
+        "en": "Navy Stripe",
+        "es": "Rayas Azul Marino",
+        "hi": "नेवी स्ट्राइप",
+        "ru": "Тёмно-Синяя Полоса"
+      },
+      "sku": "IL-P3-2024",
+      "minOrder": 1,
+      "imagePaths": ["P3-1.jpg", "P3-2.jpg", "P3-3.jpg", "P3-4.jpg"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 1680 },
+        { "minQty": 6, "maxQty": 25, "price": 1480 },
+        { "minQty": 26, "maxQty": null, "price": 1280 }
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "sizeMeasurements": {
+        "S": { "skirtLength": 95, "bust": 84, "waist": 66, "hips": 90 },
+        "M": { "skirtLength": 97, "bust": 88, "waist": 70, "hips": 94 },
+        "L": { "skirtLength": 99, "bust": 92, "waist": 74, "hips": 98 },
+        "XL": { "skirtLength": 101, "bust": 96, "waist": 78, "hips": 102 }
+      }
+    },
+    "P4": {
+      "title": {
+        "en": "Tropical Print Off-Shoulder Party Dress",
+        "es": "Vestido de Fiesta Tropical con Hombros Descubiertos",
+        "hi": "ट्रॉपिकल प्रिंट ऑफ-शोल्डर पार्टी ड्रेस",
+        "ru": "Тропическое Платье для Вечеринок с Открытыми Плечами"
+      },
+      "description": {
+        "en": "Vibrant tropical print party dress with off-shoulder design. Stretchy spandex blend for comfortable fit. Perfect for beach parties and summer celebrations.",
+        "es": "Vibrante vestido de fiesta con estampado tropical y diseño de hombros descubiertos. Mezcla de spandex elástico para un ajuste cómodo. Perfecto para fiestas en la playa y celebraciones de verano.",
+        "hi": "ऑफ-शोल्डर डिज़ाइन के साथ जीवंत ट्रॉपिकल प्रिंट पार्टी ड्रेस। आरामदायक फिट के लिए स्ट्रेची स्पैन्डेक्स ब्लेंड। बीच पार्टियों और समर सेलिब्रेशन के लिए परफेक्ट।",
+        "ru": "Яркое платье для вечеринок с тропическим принтом и дизайном с открытыми плечами. Эластичная смесь спандекса для комфортной посадки. Идеально для пляжных вечеринок и летних торжеств."
+      },
+      "color": {
+        "en": "Tropical Green",
+        "es": "Verde Tropical",
+        "hi": "ट्रॉपिकल ग्रीन",
+        "ru": "Тропический Зелёный"
+      },
+      "sku": "IL-P4-2024",
+      "minOrder": 1,
+      "imagePaths": ["P4-1.jpg", "P4-2.jpg", "P4-3.jpg", "P4-4.jpg"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 1350 },
+        { "minQty": 6, "maxQty": 25, "price": 1190 },
+        { "minQty": 26, "maxQty": null, "price": 1020 }
+      ],
+      "sizes": ["S", "M", "L"],
+      "sizeMeasurements": {
+        "S": { "skirtLength": 88, "bust": 80, "waist": 62, "hips": 86 },
+        "M": { "skirtLength": 90, "bust": 84, "waist": 66, "hips": 90 },
+        "L": { "skirtLength": 92, "bust": 88, "waist": 70, "hips": 94 }
+      }
+    },
+    "P5": {
+      "title": {
+        "en": "Vintage Rose Print Tea Length Dress",
+        "es": "Vestido Vintage con Estampado de Rosas Largo Té",
+        "hi": "विंटेज रोज़ प्रिंट टी लेंथ ड्रेस",
+        "ru": "Винтажное Платье с Принтом Роз Длиной до Чая"
+      },
+      "description": {
+        "en": "Elegant vintage-inspired dress featuring delicate rose prints. Tea length hem creates a timeless silhouette. Made with soft viscose fabric for all-day comfort.",
+        "es": "Elegante vestido de inspiración vintage con delicados estampados de rosas. El dobladillo largo té crea una silueta atemporal. Hecho con tela de viscosa suave para comodidad todo el día.",
+        "hi": "नाजुक रोज़ प्रिंट्स के साथ एलिगेंट विंटेज-इंस्पायर्ड ड्रेस। टी लेंथ हेम टाइमलेस सिल्हूट बनाता है। पूरे दिन आराम के लिए सॉफ्ट विस्कोस फैब्रिक से बना।",
+        "ru": "Элегантное платье в винтажном стиле с нежными принтами роз. Длина до чая создаёт вневременной силуэт. Изготовлено из мягкой вискозной ткани для комфорта весь день."
+      },
+      "color": {
+        "en": "Vintage Rose",
+        "es": "Rosa Vintage",
+        "hi": "विंटेज रोज़",
+        "ru": "Винтажная Роза"
+      },
+      "sku": "IL-P5-2024",
+      "minOrder": 1,
+      "imagePaths": ["P5-1.jpg", "P5-2.jpg", "P5-3.jpg", "P5-4.jpg"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 1550 },
+        { "minQty": 6, "maxQty": 25, "price": 1365 },
+        { "minQty": 26, "maxQty": null, "price": 1180 }
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "sizeMeasurements": {
+        "S": { "skirtLength": 108, "bust": 82, "waist": 64, "hips": 88 },
+        "M": { "skirtLength": 110, "bust": 86, "waist": 68, "hips": 92 },
+        "L": { "skirtLength": 112, "bust": 90, "waist": 72, "hips": 96 },
+        "XL": { "skirtLength": 114, "bust": 94, "waist": 76, "hips": 100 }
       }
     }
   },
@@ -561,146 +648,6 @@
     { "code": "es", "name": "Español" },
     { "code": "hi", "name": "हिंदी" },
     { "code": "ru", "name": "Русский" }
-  ],
-  "colors": {
-    "en": {
-      "Rose Floral": "Rose Floral",
-      "Blue Paisley": "Blue Paisley",
-      "Navy Stripe": "Navy Stripe",
-      "Tropical Green": "Tropical Green",
-      "Vintage Rose": "Vintage Rose"
-    },
-    "es": {
-      "Rose Floral": "Floral Rosa",
-      "Blue Paisley": "Paisley Azul",
-      "Navy Stripe": "Rayas Azul Marino",
-      "Tropical Green": "Verde Tropical",
-      "Vintage Rose": "Rosa Vintage"
-    },
-    "hi": {
-      "Rose Floral": "गुलाबी फूल",
-      "Blue Paisley": "नीला पेस्ले",
-      "Navy Stripe": "नेवी स्ट्राइप",
-      "Tropical Green": "ट्रॉपिकल ग्रीन",
-      "Vintage Rose": "विंटेज रोज़"
-    },
-    "ru": {
-      "Rose Floral": "Розовый Цветочный",
-      "Blue Paisley": "Синий Пейсли",
-      "Navy Stripe": "Тёмно-Синяя Полоса",
-      "Tropical Green": "Тропический Зелёный",
-      "Vintage Rose": "Винтажная Роза"
-    }
-  },
-  "products": [
-    {
-      "id": "P1",
-      "translationKey": "P1",
-      "images": ["detail_1.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1250 },
-        { "minQty": 6, "maxQty": 25, "price": 1100 },
-        { "minQty": 26, "maxQty": null, "price": 950 }
-      ],
-      "attributes": {
-        "colorKey": "Rose Floral",
-        "sizes": ["S", "M", "L", "XL"],
-        "measurements": {
-          "S": { "skirtLength": 125, "bust": 84, "waist": 66, "hips": 90 },
-          "M": { "skirtLength": 127, "bust": 88, "waist": 70, "hips": 94 },
-          "L": { "skirtLength": 129, "bust": 92, "waist": 74, "hips": 98 },
-          "XL": { "skirtLength": 131, "bust": 96, "waist": 78, "hips": 102 }
-        }
-      },
-      "minOrder": 1,
-      "sku": "IL-P1-2024"
-    },
-    {
-      "id": "P2",
-      "translationKey": "P2",
-      "images": ["detail_2.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1450 },
-        { "minQty": 6, "maxQty": 25, "price": 1280 },
-        { "minQty": 26, "maxQty": null, "price": 1100 }
-      ],
-      "attributes": {
-        "colorKey": "Blue Paisley",
-        "sizes": ["S", "M", "L"],
-        "measurements": {
-          "S": { "skirtLength": 100, "bust": 82, "waist": 64, "hips": 88 },
-          "M": { "skirtLength": 102, "bust": 86, "waist": 68, "hips": 92 },
-          "L": { "skirtLength": 104, "bust": 90, "waist": 72, "hips": 96 }
-        }
-      },
-      "minOrder": 1,
-      "sku": "IL-P2-2024"
-    },
-    {
-      "id": "P3",
-      "translationKey": "P3",
-      "images": ["detail_3.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1680 },
-        { "minQty": 6, "maxQty": 25, "price": 1480 },
-        { "minQty": 26, "maxQty": null, "price": 1280 }
-      ],
-      "attributes": {
-        "colorKey": "Navy Stripe",
-        "sizes": ["S", "M", "L", "XL"],
-        "measurements": {
-          "S": { "skirtLength": 95, "bust": 84, "waist": 66, "hips": 90 },
-          "M": { "skirtLength": 97, "bust": 88, "waist": 70, "hips": 94 },
-          "L": { "skirtLength": 99, "bust": 92, "waist": 74, "hips": 98 },
-          "XL": { "skirtLength": 101, "bust": 96, "waist": 78, "hips": 102 }
-        }
-      },
-      "minOrder": 1,
-      "sku": "IL-P3-2024"
-    },
-    {
-      "id": "P4",
-      "translationKey": "P4",
-      "images": ["detail_4.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1350 },
-        { "minQty": 6, "maxQty": 25, "price": 1190 },
-        { "minQty": 26, "maxQty": null, "price": 1020 }
-      ],
-      "attributes": {
-        "colorKey": "Tropical Green",
-        "sizes": ["S", "M", "L"],
-        "measurements": {
-          "S": { "skirtLength": 88, "bust": 80, "waist": 62, "hips": 86 },
-          "M": { "skirtLength": 90, "bust": 84, "waist": 66, "hips": 90 },
-          "L": { "skirtLength": 92, "bust": 88, "waist": 70, "hips": 94 }
-        }
-      },
-      "minOrder": 1,
-      "sku": "IL-P4-2024"
-    },
-    {
-      "id": "P5",
-      "translationKey": "P5",
-      "images": ["detail_5.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1550 },
-        { "minQty": 6, "maxQty": 25, "price": 1365 },
-        { "minQty": 26, "maxQty": null, "price": 1180 }
-      ],
-      "attributes": {
-        "colorKey": "Vintage Rose",
-        "sizes": ["S", "M", "L", "XL"],
-        "measurements": {
-          "S": { "skirtLength": 108, "bust": 82, "waist": 64, "hips": 88 },
-          "M": { "skirtLength": 110, "bust": 86, "waist": 68, "hips": 92 },
-          "L": { "skirtLength": 112, "bust": 90, "waist": 72, "hips": 96 },
-          "XL": { "skirtLength": 114, "bust": 94, "waist": 76, "hips": 100 }
-        }
-      },
-      "minOrder": 1,
-      "sku": "IL-P5-2024"
-    }
   ],
   "ui": {
     "flagCdnBase": "https://flagcdn.com/24x18",

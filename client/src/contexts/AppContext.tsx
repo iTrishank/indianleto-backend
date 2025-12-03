@@ -12,6 +12,18 @@ interface Currency {
   rate: number;
 }
 
+interface ProductData {
+  title: Record<Language, string>;
+  description: Record<Language, string>;
+  color: Record<Language, string>;
+  sku: string;
+  minOrder: number;
+  imagePaths: string[];
+  priceTiers: { minQty: number; maxQty: number | null; price: number }[];
+  sizes: string[];
+  sizeMeasurements: Record<string, { skirtLength: number; bust: number; waist: number; hips: number }>;
+}
+
 interface TranslatedProduct extends Omit<Product, 'images' | 'hasPromo'> {
   images: string[];
   hasPromo?: boolean;
@@ -28,7 +40,7 @@ interface AppContextType {
   languages: typeof textData.languages;
   products: TranslatedProduct[];
   ui: typeof textData.ui;
-  getColor: (colorKey: string) => string;
+  getColor: (productId: string) => string;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -70,9 +82,12 @@ export function AppProvider({ children }: { children: ReactNode }) {
     return typeof value === "string" ? value : key;
   }, [language]);
 
-  const getColor = useCallback((colorKey: string): string => {
-    const colors = textData.colors[language as keyof typeof textData.colors];
-    return colors?.[colorKey as keyof typeof colors] || colorKey;
+  const getColor = useCallback((productId: string): string => {
+    const productData = textData.products[productId as keyof typeof textData.products] as ProductData | undefined;
+    if (productData?.color) {
+      return productData.color[language] || productData.color.en;
+    }
+    return productId;
   }, [language]);
 
   const formatPrice = useCallback((priceInINR: number): string => {
@@ -82,29 +97,28 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, [currency]);
 
   const products = useMemo((): TranslatedProduct[] => {
-    const translations = textData.translations[language]?.products || {};
+    const productIds = Object.keys(textData.products) as Array<keyof typeof textData.products>;
     
-    return textData.products.map((rawProduct) => {
-      const productTranslation = translations[rawProduct.translationKey as keyof typeof translations] as { title: string; description: string } | undefined;
-      const translatedColor = getColor(rawProduct.attributes.colorKey);
+    return productIds.map((productId) => {
+      const productData = textData.products[productId] as ProductData;
       
       return {
-        id: rawProduct.id,
-        title: productTranslation?.title || rawProduct.translationKey,
-        description: productTranslation?.description || "",
-        images: rawProduct.images.map(img => getProductImage(img)),
-        priceTiers: rawProduct.priceTiers,
+        id: productId,
+        title: productData.title[language] || productData.title.en,
+        description: productData.description[language] || productData.description.en,
+        images: productData.imagePaths.map(img => getProductImage(img)),
+        priceTiers: productData.priceTiers,
         attributes: {
-          color: translatedColor,
-          sizes: rawProduct.attributes.sizes,
-          measurements: rawProduct.attributes.measurements
+          color: productData.color[language] || productData.color.en,
+          sizes: productData.sizes,
+          measurements: productData.sizeMeasurements
         },
-        minOrder: rawProduct.minOrder,
-        sku: rawProduct.sku,
+        minOrder: productData.minOrder,
+        sku: productData.sku,
         hasPromo: true
       };
     });
-  }, [language, getColor]);
+  }, [language]);
 
   const value = useMemo(() => ({
     language,

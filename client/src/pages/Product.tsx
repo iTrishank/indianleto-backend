@@ -64,6 +64,8 @@ export default function Product() {
       description: `${product.title} (${t("product.size")}: ${selectedSize}) x ${quantity} ${t("product.addedToCartDesc")}.`,
     });
 
+    setQuantity(product.minOrder);
+
     setTimeout(() => setJustAdded(false), 2000);
   };
 
