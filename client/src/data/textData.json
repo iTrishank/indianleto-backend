@@ -48,7 +48,8 @@
         "addedToCartDesc": "added to your cart",
         "size": "Size",
         "pieces": "pieces",
-        "orMore": "or more"
+        "orMore": "or more",
+        "total": "Total"
       },
       "cart": {
         "continueShoppingBtn": "Continue Shopping",
@@ -93,6 +94,37 @@
         "waist": "Waist",
         "hips": "Hips",
         "cm": "cm"
+      },
+      "footer": {
+        "description": "Your trusted B2B wholesale partner for fashion and apparel. Quality products at competitive wholesale prices.",
+        "quickLinks": "Quick Links",
+        "browseCatalog": "Browse Catalog",
+        "viewCart": "View Cart",
+        "contact": "Contact",
+        "forInquiries": "For inquiries and support",
+        "copyright": "IndianLeto. All rights reserved. B2B Wholesale Only."
+      },
+      "products": {
+        "P1": {
+          "title": "Elegant Floral Maxi Dress Summer Collection",
+          "description": "Beautiful floral print maxi dress perfect for summer occasions. Made with premium polyester blend fabric. Features a flattering A-line silhouette with adjustable straps."
+        },
+        "P2": {
+          "title": "Bohemian Paisley Print Midi Dress",
+          "description": "Stunning bohemian style midi dress with intricate paisley patterns. Lightweight rayon fabric ideal for warm weather. Features elegant flutter sleeves and a tie waist."
+        },
+        "P3": {
+          "title": "Classic Striped Wrap Dress Business Casual",
+          "description": "Sophisticated striped wrap dress perfect for business casual settings. Premium cotton-polyester blend ensures comfort all day. True wrap design with adjustable fit."
+        },
+        "P4": {
+          "title": "Tropical Print Off-Shoulder Party Dress",
+          "description": "Vibrant tropical print party dress with off-shoulder design. Stretchy spandex blend for comfortable fit. Perfect for beach parties and summer celebrations."
+        },
+        "P5": {
+          "title": "Vintage Rose Print Tea Length Dress",
+          "description": "Elegant vintage-inspired dress featuring delicate rose prints. Tea length hem creates a timeless silhouette. Made with soft viscose fabric for all-day comfort."
+        }
       }
     },
     "es": {
@@ -143,7 +175,8 @@
         "addedToCartDesc": "agregado a tu carrito",
         "size": "Talla",
         "pieces": "piezas",
-        "orMore": "o más"
+        "orMore": "o más",
+        "total": "Total"
       },
       "cart": {
         "continueShoppingBtn": "Continuar Comprando",
@@ -188,6 +221,37 @@
         "waist": "Cintura",
         "hips": "Caderas",
         "cm": "cm"
+      },
+      "footer": {
+        "description": "Tu socio mayorista B2B de confianza para moda y ropa. Productos de calidad a precios mayoristas competitivos.",
+        "quickLinks": "Enlaces Rápidos",
+        "browseCatalog": "Explorar Catálogo",
+        "viewCart": "Ver Carrito",
+        "contact": "Contacto",
+        "forInquiries": "Para consultas y soporte",
+        "copyright": "IndianLeto. Todos los derechos reservados. Solo Mayoristas B2B."
+      },
+      "products": {
+        "P1": {
+          "title": "Elegante Vestido Maxi Floral Colección Verano",
+          "description": "Hermoso vestido maxi con estampado floral perfecto para ocasiones de verano. Hecho con tela de mezcla de poliéster premium. Presenta una silueta favorecedora en línea A con tirantes ajustables."
+        },
+        "P2": {
+          "title": "Vestido Midi Bohemio con Estampado Paisley",
+          "description": "Impresionante vestido midi de estilo bohemio con intrincados patrones paisley. Tela de rayón liviana ideal para clima cálido. Presenta elegantes mangas con volantes y cintura con lazo."
+        },
+        "P3": {
+          "title": "Vestido Cruzado Clásico de Rayas Business Casual",
+          "description": "Sofisticado vestido cruzado a rayas perfecto para entornos de negocios casuales. Mezcla premium de algodón-poliéster garantiza comodidad todo el día. Diseño cruzado verdadero con ajuste regulable."
+        },
+        "P4": {
+          "title": "Vestido de Fiesta Tropical con Hombros Descubiertos",
+          "description": "Vibrante vestido de fiesta con estampado tropical y diseño de hombros descubiertos. Mezcla de spandex elástico para un ajuste cómodo. Perfecto para fiestas en la playa y celebraciones de verano."
+        },
+        "P5": {
+          "title": "Vestido Vintage con Estampado de Rosas Largo Té",
+          "description": "Elegante vestido de inspiración vintage con delicados estampados de rosas. El dobladillo largo té crea una silueta atemporal. Hecho con tela de viscosa suave para comodidad todo el día."
+        }
       }
     },
     "hi": {
@@ -238,7 +302,8 @@
         "addedToCartDesc": "आपके कार्ट में जोड़ा गया",
         "size": "आकार",
         "pieces": "पीस",
-        "orMore": "या अधिक"
+        "orMore": "या अधिक",
+        "total": "कुल"
       },
       "cart": {
         "continueShoppingBtn": "खरीदारी जारी रखें",
@@ -283,6 +348,37 @@
         "waist": "कमर",
         "hips": "हिप्स",
         "cm": "सेमी"
+      },
+      "footer": {
+        "description": "फैशन और परिधान के लिए आपका विश्वसनीय B2B थोक भागीदार। प्रतिस्पर्धी थोक मूल्यों पर गुणवत्ता वाले उत्पाद।",
+        "quickLinks": "त्वरित लिंक",
+        "browseCatalog": "कैटलॉग ब्राउज़ करें",
+        "viewCart": "कार्ट देखें",
+        "contact": "संपर्क",
+        "forInquiries": "पूछताछ और सहायता के लिए",
+        "copyright": "IndianLeto। सर्वाधिकार सुरक्षित। केवल B2B थोक।"
+      },
+      "products": {
+        "P1": {
+          "title": "एलिगेंट फ्लोरल मैक्सी ड्रेस समर कलेक्शन",
+          "description": "गर्मियों के अवसरों के लिए सुंदर फ्लोरल प्रिंट मैक्सी ड्रेस। प्रीमियम पॉलिएस्टर ब्लेंड फैब्रिक से बना। एडजस्टेबल स्ट्रैप्स के साथ फ्लैटरिंग ए-लाइन सिल्हूट।"
+        },
+        "P2": {
+          "title": "बोहेमियन पेस्ले प्रिंट मिडी ड्रेस",
+          "description": "जटिल पेस्ले पैटर्न के साथ शानदार बोहेमियन स्टाइल मिडी ड्रेस। गर्म मौसम के लिए आदर्श हल्के रेयॉन फैब्रिक। एलिगेंट फ्लटर स्लीव्स और टाई वेस्ट।"
+        },
+        "P3": {
+          "title": "क्लासिक स्ट्राइप्ड रैप ड्रेस बिजनेस कैजुअल",
+          "description": "बिजनेस कैजुअल सेटिंग्स के लिए परिष्कृत स्ट्राइप्ड रैप ड्रेस। प्रीमियम कॉटन-पॉलिएस्टर ब्लेंड पूरे दिन आराम सुनिश्चित करता है। एडजस्टेबल फिट के साथ ट्रू रैप डिज़ाइन।"
+        },
+        "P4": {
+          "title": "ट्रॉपिकल प्रिंट ऑफ-शोल्डर पार्टी ड्रेस",
+          "description": "ऑफ-शोल्डर डिज़ाइन के साथ जीवंत ट्रॉपिकल प्रिंट पार्टी ड्रेस। आरामदायक फिट के लिए स्ट्रेची स्पैन्डेक्स ब्लेंड। बीच पार्टियों और समर सेलिब्रेशन के लिए परफेक्ट।"
+        },
+        "P5": {
+          "title": "विंटेज रोज़ प्रिंट टी लेंथ ड्रेस",
+          "description": "नाजुक रोज़ प्रिंट्स के साथ एलिगेंट विंटेज-इंस्पायर्ड ड्रेस। टी लेंथ हेम टाइमलेस सिल्हूट बनाता है। पूरे दिन आराम के लिए सॉफ्ट विस्कोस फैब्रिक से बना।"
+        }
       }
     },
     "ru": {
@@ -333,7 +429,8 @@
         "addedToCartDesc": "добавлен в вашу корзину",
         "size": "Размер",
         "pieces": "штук",
-        "orMore": "или более"
+        "orMore": "или более",
+        "total": "Итого"
       },
       "cart": {
         "continueShoppingBtn": "Продолжить Покупки",
@@ -378,6 +475,37 @@
         "waist": "Талия",
         "hips": "Бёдра",
         "cm": "см"
+      },
+      "footer": {
+        "description": "Ваш надёжный B2B оптовый партнёр в сфере моды и одежды. Качественные товары по конкурентным оптовым ценам.",
+        "quickLinks": "Быстрые Ссылки",
+        "browseCatalog": "Просмотр Каталога",
+        "viewCart": "Просмотр Корзины",
+        "contact": "Контакт",
+        "forInquiries": "Для запросов и поддержки",
+        "copyright": "IndianLeto. Все права защищены. Только B2B Оптовая торговля."
+      },
+      "products": {
+        "P1": {
+          "title": "Элегантное Цветочное Макси Платье Летняя Коллекция",
+          "description": "Красивое макси платье с цветочным принтом, идеально подходящее для летних мероприятий. Изготовлено из премиальной смеси полиэстера. Отличается лестным силуэтом А-линии с регулируемыми бретелями."
+        },
+        "P2": {
+          "title": "Богемное Миди Платье с Принтом Пейсли",
+          "description": "Потрясающее миди платье в богемном стиле с замысловатыми узорами пейсли. Лёгкая вискозная ткань идеально подходит для тёплой погоды. Элегантные рукава-флаттер и поясок на талии."
+        },
+        "P3": {
+          "title": "Классическое Полосатое Платье с Запахом Бизнес Кэжуал",
+          "description": "Изысканное полосатое платье с запахом, идеально подходящее для делового кэжуала. Премиальная смесь хлопка и полиэстера обеспечивает комфорт весь день. Настоящий дизайн с запахом и регулируемой посадкой."
+        },
+        "P4": {
+          "title": "Тропическое Платье для Вечеринок с Открытыми Плечами",
+          "description": "Яркое платье для вечеринок с тропическим принтом и дизайном с открытыми плечами. Эластичная смесь спандекса для комфортной посадки. Идеально для пляжных вечеринок и летних торжеств."
+        },
+        "P5": {
+          "title": "Винтажное Платье с Принтом Роз Длиной до Чая",
+          "description": "Элегантное платье в винтажном стиле с нежными принтами роз. Длина до чая создаёт вневременной силуэт. Изготовлено из мягкой вискозной ткани для комфорта весь день."
+        }
       }
     }
   },
@@ -430,193 +558,151 @@
   },
   "languages": [
     { "code": "en", "name": "English" },
-    { "code": "es", "name": "Espanish" },
-    { "code": "hi", "name": "Hindi" },
-    { "code": "ru", "name": "Russian" }
+    { "code": "es", "name": "Español" },
+    { "code": "hi", "name": "हिंदी" },
+    { "code": "ru", "name": "Русский" }
   ],
+  "colors": {
+    "en": {
+      "Rose Floral": "Rose Floral",
+      "Blue Paisley": "Blue Paisley",
+      "Navy Stripe": "Navy Stripe",
+      "Tropical Green": "Tropical Green",
+      "Vintage Rose": "Vintage Rose"
+    },
+    "es": {
+      "Rose Floral": "Floral Rosa",
+      "Blue Paisley": "Paisley Azul",
+      "Navy Stripe": "Rayas Azul Marino",
+      "Tropical Green": "Verde Tropical",
+      "Vintage Rose": "Rosa Vintage"
+    },
+    "hi": {
+      "Rose Floral": "गुलाबी फूल",
+      "Blue Paisley": "नीला पेस्ले",
+      "Navy Stripe": "नेवी स्ट्राइप",
+      "Tropical Green": "ट्रॉपिकल ग्रीन",
+      "Vintage Rose": "विंटेज रोज़"
+    },
+    "ru": {
+      "Rose Floral": "Розовый Цветочный",
+      "Blue Paisley": "Синий Пейсли",
+      "Navy Stripe": "Тёмно-Синяя Полоса",
+      "Tropical Green": "Тропический Зелёный",
+      "Vintage Rose": "Винтажная Роза"
+    }
+  },
   "products": [
     {
-      "id": "T1025120261",
-      "title": "Wholesale Women Spring And Summer Fashion Floral Print Strapless Bodycon Maxi Dress",
-      "description": "Floral strapless maxi dress. Material: Polyester/Spandex. Sleeve: sleeveless. Length: long dress. Type: Strapless. Style: Sexy Wind. Pattern: Floral.",
-      "images": ["/assets/image_1764759622590.png", "/assets/image_1764759632220.png"],
+      "id": "P1",
+      "translationKey": "P1",
+      "images": ["detail_1.jpg"],
       "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 592.14 },
-        { "minQty": 6, "maxQty": 35, "price": 537.98 },
-        { "minQty": 36, "maxQty": null, "price": 503.68 }
+        { "minQty": 1, "maxQty": 5, "price": 1250 },
+        { "minQty": 6, "maxQty": 25, "price": 1100 },
+        { "minQty": 26, "maxQty": null, "price": 950 }
       ],
       "attributes": {
-        "color": "Rose",
-        "sizes": ["S", "M", "L"],
+        "colorKey": "Rose Floral",
+        "sizes": ["S", "M", "L", "XL"],
         "measurements": {
-          "S": { "skirtLength": 123, "bust": 72, "waist": 64, "hips": 82 },
-          "M": { "skirtLength": 125, "bust": 76, "waist": 68, "hips": 86 },
-          "L": { "skirtLength": 127, "bust": 80, "waist": 72, "hips": 90 }
+          "S": { "skirtLength": 125, "bust": 84, "waist": 66, "hips": 90 },
+          "M": { "skirtLength": 127, "bust": 88, "waist": 70, "hips": 94 },
+          "L": { "skirtLength": 129, "bust": 92, "waist": 74, "hips": 98 },
+          "XL": { "skirtLength": 131, "bust": 96, "waist": 78, "hips": 102 }
         }
       },
       "minOrder": 1,
-      "sku": "T1025120261"
+      "sku": "IL-P1-2024"
     },
     {
       "id": "P2",
-      "title": "Floral Short Summer Dress Wholesale Women Fashion Multi-Color Print",
-      "description": "Short floral dress, multiple colors. Material: Polyester. Sleeve: Short. Length: Mini. Style: Casual Chic.",
-      "images": ["/assets/image_1764759608053.png"],
+      "translationKey": "P2",
+      "images": ["detail_2.jpg"],
       "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1065.12 },
-        { "minQty": 6, "maxQty": 35, "price": 970.00 },
-        { "minQty": 36, "maxQty": null, "price": 850.00 }
+        { "minQty": 1, "maxQty": 5, "price": 1450 },
+        { "minQty": 6, "maxQty": 25, "price": 1280 },
+        { "minQty": 26, "maxQty": null, "price": 1100 }
       ],
       "attributes": {
-        "color": "Multi",
+        "colorKey": "Blue Paisley",
         "sizes": ["S", "M", "L"],
         "measurements": {
-          "S": { "skirtLength": 85, "bust": 70, "waist": 62, "hips": 80 },
-          "M": { "skirtLength": 87, "bust": 74, "waist": 66, "hips": 84 },
-          "L": { "skirtLength": 89, "bust": 78, "waist": 70, "hips": 88 }
+          "S": { "skirtLength": 100, "bust": 82, "waist": 64, "hips": 88 },
+          "M": { "skirtLength": 102, "bust": 86, "waist": 68, "hips": 92 },
+          "L": { "skirtLength": 104, "bust": 90, "waist": 72, "hips": 96 }
         }
       },
       "minOrder": 1,
-      "sku": "P2"
+      "sku": "IL-P2-2024"
     },
     {
       "id": "P3",
-      "title": "Wholesale Summer Beach Floral Print Spaghetti Strap Midi Dress",
-      "description": "Beach-ready floral midi dress with delicate spaghetti straps. Material: Viscose blend. Perfect for resort wear.",
-      "images": ["/assets/image_1764759608053.png"],
+      "translationKey": "P3",
+      "images": ["detail_3.jpg"],
       "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 429.66 },
-        { "minQty": 6, "maxQty": 35, "price": 389.50 },
-        { "minQty": 36, "maxQty": null, "price": 349.00 }
+        { "minQty": 1, "maxQty": 5, "price": 1680 },
+        { "minQty": 6, "maxQty": 25, "price": 1480 },
+        { "minQty": 26, "maxQty": null, "price": 1280 }
       ],
       "attributes": {
-        "color": "Yellow Floral",
+        "colorKey": "Navy Stripe",
         "sizes": ["S", "M", "L", "XL"],
         "measurements": {
-          "S": { "skirtLength": 110, "bust": 74, "waist": 66, "hips": 84 },
-          "M": { "skirtLength": 112, "bust": 78, "waist": 70, "hips": 88 },
-          "L": { "skirtLength": 114, "bust": 82, "waist": 74, "hips": 92 },
-          "XL": { "skirtLength": 116, "bust": 86, "waist": 78, "hips": 96 }
+          "S": { "skirtLength": 95, "bust": 84, "waist": 66, "hips": 90 },
+          "M": { "skirtLength": 97, "bust": 88, "waist": 70, "hips": 94 },
+          "L": { "skirtLength": 99, "bust": 92, "waist": 74, "hips": 98 },
+          "XL": { "skirtLength": 101, "bust": 96, "waist": 78, "hips": 102 }
         }
       },
       "minOrder": 1,
-      "sku": "P3"
+      "sku": "IL-P3-2024"
     },
     {
       "id": "P4",
-      "title": "Wholesale Women Elegant Floral Print Off-Shoulder Party Dress",
-      "description": "Elegant off-shoulder party dress with vibrant floral print. Material: Polyester/Cotton blend. Style: Party/Evening.",
-      "images": ["/assets/image_1764759622590.png"],
+      "translationKey": "P4",
+      "images": ["detail_4.jpg"],
       "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 698.65 },
-        { "minQty": 6, "maxQty": 35, "price": 635.50 },
-        { "minQty": 36, "maxQty": null, "price": 580.00 }
+        { "minQty": 1, "maxQty": 5, "price": 1350 },
+        { "minQty": 6, "maxQty": 25, "price": 1190 },
+        { "minQty": 26, "maxQty": null, "price": 1020 }
       ],
       "attributes": {
-        "color": "Pink Floral",
+        "colorKey": "Tropical Green",
         "sizes": ["S", "M", "L"],
         "measurements": {
-          "S": { "skirtLength": 95, "bust": 72, "waist": 64, "hips": 82 },
-          "M": { "skirtLength": 97, "bust": 76, "waist": 68, "hips": 86 },
-          "L": { "skirtLength": 99, "bust": 80, "waist": 72, "hips": 90 }
+          "S": { "skirtLength": 88, "bust": 80, "waist": 62, "hips": 86 },
+          "M": { "skirtLength": 90, "bust": 84, "waist": 66, "hips": 90 },
+          "L": { "skirtLength": 92, "bust": 88, "waist": 70, "hips": 94 }
         }
       },
       "minOrder": 1,
-      "sku": "P4"
+      "sku": "IL-P4-2024"
     },
     {
       "id": "P5",
-      "title": "Wholesale Women Casual Boho Floral Wrap Dress Summer Collection",
-      "description": "Bohemian style wrap dress with beautiful floral patterns. Material: Rayon. Comfortable and flowy design.",
-      "images": ["/assets/image_1764759608053.png"],
+      "translationKey": "P5",
+      "images": ["detail_5.jpg"],
       "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 519.93 },
-        { "minQty": 6, "maxQty": 35, "price": 472.80 },
-        { "minQty": 36, "maxQty": null, "price": 425.00 }
+        { "minQty": 1, "maxQty": 5, "price": 1550 },
+        { "minQty": 6, "maxQty": 25, "price": 1365 },
+        { "minQty": 26, "maxQty": null, "price": 1180 }
       ],
       "attributes": {
-        "color": "Red Floral",
+        "colorKey": "Vintage Rose",
         "sizes": ["S", "M", "L", "XL"],
         "measurements": {
-          "S": { "skirtLength": 105, "bust": 74, "waist": 66, "hips": 84 },
-          "M": { "skirtLength": 107, "bust": 78, "waist": 70, "hips": 88 },
-          "L": { "skirtLength": 109, "bust": 82, "waist": 74, "hips": 92 },
-          "XL": { "skirtLength": 111, "bust": 86, "waist": 78, "hips": 96 }
+          "S": { "skirtLength": 108, "bust": 82, "waist": 64, "hips": 88 },
+          "M": { "skirtLength": 110, "bust": 86, "waist": 68, "hips": 92 },
+          "L": { "skirtLength": 112, "bust": 90, "waist": 72, "hips": 96 },
+          "XL": { "skirtLength": 114, "bust": 94, "waist": 76, "hips": 100 }
         }
       },
       "minOrder": 1,
-      "sku": "P5"
-    },
-    {
-      "id": "P6",
-      "title": "Wholesale Women Spring Floral Print A-Line Vintage Dress",
-      "description": "Vintage-inspired A-line dress with classic floral print. Material: Cotton blend. Timeless elegance.",
-      "images": ["/assets/image_1764759622590.png"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 853.00 },
-        { "minQty": 6, "maxQty": 35, "price": 775.45 },
-        { "minQty": 36, "maxQty": null, "price": 698.00 }
-      ],
-      "attributes": {
-        "color": "White Floral",
-        "sizes": ["S", "M", "L"],
-        "measurements": {
-          "S": { "skirtLength": 100, "bust": 72, "waist": 64, "hips": 82 },
-          "M": { "skirtLength": 102, "bust": 76, "waist": 68, "hips": 86 },
-          "L": { "skirtLength": 104, "bust": 80, "waist": 72, "hips": 90 }
-        }
-      },
-      "minOrder": 1,
-      "sku": "P6"
-    },
-    {
-      "id": "P7",
-      "title": "Wholesale Women Tropical Print Ruffle Hem Summer Dress",
-      "description": "Tropical print dress with playful ruffle hem. Material: Polyester. Perfect for summer collections.",
-      "images": ["/assets/image_1764759608053.png"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 465.00 },
-        { "minQty": 6, "maxQty": 35, "price": 422.75 },
-        { "minQty": 36, "maxQty": null, "price": 380.00 }
-      ],
-      "attributes": {
-        "color": "Tropical",
-        "sizes": ["S", "M", "L"],
-        "measurements": {
-          "S": { "skirtLength": 88, "bust": 70, "waist": 62, "hips": 80 },
-          "M": { "skirtLength": 90, "bust": 74, "waist": 66, "hips": 84 },
-          "L": { "skirtLength": 92, "bust": 78, "waist": 70, "hips": 88 }
-        }
-      },
-      "minOrder": 1,
-      "sku": "P7"
-    },
-    {
-      "id": "P8",
-      "title": "Wholesale Women Rose Print Sleeveless Bodycon Evening Dress",
-      "description": "Sophisticated rose print bodycon dress for evening wear. Material: Spandex blend. Elegant silhouette.",
-      "images": ["/assets/image_1764759632220.png"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 789.50 },
-        { "minQty": 6, "maxQty": 35, "price": 718.15 },
-        { "minQty": 36, "maxQty": null, "price": 645.00 }
-      ],
-      "attributes": {
-        "color": "Rose Print",
-        "sizes": ["S", "M", "L"],
-        "measurements": {
-          "S": { "skirtLength": 118, "bust": 72, "waist": 64, "hips": 82 },
-          "M": { "skirtLength": 120, "bust": 76, "waist": 68, "hips": 86 },
-          "L": { "skirtLength": 122, "bust": 80, "waist": 72, "hips": 90 }
-        }
-      },
-      "minOrder": 1,
-      "sku": "P8"
+      "sku": "IL-P5-2024"
     }
   ],
   "ui": {
-    "flagCdnBase": "https://flagcdn.com/16x12",
-    "contactEmail": "info@indianleto.com",
-    "contactPhone": "+91 98765 43210"
+    "flagCdnBase": "https://flagcdn.com/24x18"
   }
 }

@@ -1,5 +1,7 @@
 import { createContext, useContext, useState, useCallback, useMemo, type ReactNode } from "react";
 import textData from "@/data/textData.json";
+import { getProductImage } from "@/lib/products";
+import type { Product } from "@shared/schema";
 
 type Language = "en" | "es" | "hi" | "ru";
 
@@ -8,6 +10,11 @@ interface Currency {
   symbol: string;
   flag: string;
   rate: number;
+}
+
+interface TranslatedProduct extends Omit<Product, 'images' | 'hasPromo'> {
+  images: string[];
+  hasPromo?: boolean;
 }
 
 interface AppContextType {
@@ -19,8 +26,9 @@ interface AppContextType {
   formatPrice: (priceInINR: number) => string;
   currencies: Currency[];
   languages: typeof textData.languages;
-  products: typeof textData.products;
+  products: TranslatedProduct[];
   ui: typeof textData.ui;
+  getColor: (colorKey: string) => string;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -62,11 +70,41 @@ export function AppProvider({ children }: { children: ReactNode }) {
     return typeof value === "string" ? value : key;
   }, [language]);
 
+  const getColor = useCallback((colorKey: string): string => {
+    const colors = textData.colors[language as keyof typeof textData.colors];
+    return colors?.[colorKey as keyof typeof colors] || colorKey;
+  }, [language]);
+
   const formatPrice = useCallback((priceInINR: number): string => {
     const convertedPrice = priceInINR * currency.rate;
     const formatted = convertedPrice.toFixed(2);
     return `${currency.symbol}${formatted}`;
   }, [currency]);
+
+  const products = useMemo((): TranslatedProduct[] => {
+    const translations = textData.translations[language]?.products || {};
+    
+    return textData.products.map((rawProduct) => {
+      const productTranslation = translations[rawProduct.translationKey as keyof typeof translations] as { title: string; description: string } | undefined;
+      const translatedColor = getColor(rawProduct.attributes.colorKey);
+      
+      return {
+        id: rawProduct.id,
+        title: productTranslation?.title || rawProduct.translationKey,
+        description: productTranslation?.description || "",
+        images: rawProduct.images.map(img => getProductImage(img)),
+        priceTiers: rawProduct.priceTiers,
+        attributes: {
+          color: translatedColor,
+          sizes: rawProduct.attributes.sizes,
+          measurements: rawProduct.attributes.measurements
+        },
+        minOrder: rawProduct.minOrder,
+        sku: rawProduct.sku,
+        hasPromo: true
+      };
+    });
+  }, [language, getColor]);
 
   const value = useMemo(() => ({
     language,
@@ -77,9 +115,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
     formatPrice,
     currencies,
     languages: textData.languages,
-    products: textData.products,
+    products,
     ui: textData.ui,
-  }), [language, setLanguage, currency, setCurrency, t, formatPrice, currencies]);
+    getColor,
+  }), [language, setLanguage, currency, setCurrency, t, formatPrice, currencies, products, getColor]);
 
   return (
     <AppContext.Provider value={value}>
