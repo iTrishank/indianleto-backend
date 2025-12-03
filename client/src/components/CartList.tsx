@@ -133,7 +133,7 @@ export function CartList({
                     className="text-xs text-muted-foreground"
                     data-testid={`text-cart-subtotal-${index}`}
                   >
-                    Total: {formatPrice(item.unitPrice * item.quantity)}
+                    {t("product.total")}: {formatPrice(item.unitPrice * item.quantity)}
                   </div>
                 </div>
 
