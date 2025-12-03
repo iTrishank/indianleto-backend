@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useLocation } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2, Send } from "lucide-react";
 import { z } from "zod";
+import { useApp } from "@/contexts/AppContext";
 import { useCart } from "@/contexts/CartContext";
+import { generateProductsSummary } from "@/lib/cartStore";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -30,10 +32,17 @@ const quotationFormSchema = z.object({
 type QuotationFormData = z.infer<typeof quotationFormSchema>;
 
 export function QuotationForm() {
+  const { t, formatPrice } = useApp();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { items, productsSummary, clearCart, total } = useCart();
+  const { items, clearCart, total } = useCart();
   const [, setLocation] = useLocation();
   const { toast } = useToast();
+  
+  const emptyCartMessage = t("cart.emptyCart");
+  const productsSummary = useMemo(() => 
+    generateProductsSummary(items, formatPrice, emptyCartMessage), 
+    [items, formatPrice, emptyCartMessage]
+  );
 
   const form = useForm<QuotationFormData>({
     resolver: zodResolver(quotationFormSchema),
@@ -48,8 +57,8 @@ export function QuotationForm() {
   const onSubmit = async (data: QuotationFormData) => {
     if (items.length === 0) {
       toast({
-        title: "Cart is empty",
-        description: "Please add items to your cart before submitting a quotation.",
+        title: t("cart.emptyCart"),
+        description: t("cart.reviewItems"),
         variant: "destructive",
       });
       return;
@@ -74,15 +83,15 @@ export function QuotationForm() {
         setLocation(`/thanks?quoteId=${response.quoteId}`);
       } else {
         toast({
-          title: "Error",
-          description: response.message || "Failed to submit quotation. Please try again.",
+          title: t("cart.quotationError"),
+          description: response.message || t("cart.quotationErrorDesc"),
           variant: "destructive",
         });
       }
     } catch (error) {
       toast({
-        title: "Error",
-        description: "Failed to submit quotation. Please try again.",
+        title: t("cart.quotationError"),
+        description: t("cart.quotationErrorDesc"),
         variant: "destructive",
       });
     } finally {
@@ -93,7 +102,7 @@ export function QuotationForm() {
   return (
     <Card className="sticky top-24" data-testid="quotation-form">
       <CardHeader>
-        <CardTitle className="text-xl">Request Quotation</CardTitle>
+        <CardTitle className="text-xl">{t("cart.requestQuotation")}</CardTitle>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -104,11 +113,11 @@ export function QuotationForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-sm font-semibold uppercase tracking-wide">
-                    Full Name *
+                    {t("cart.yourName")} *
                   </FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="Enter your name"
+                      placeholder={t("cart.enterName")}
                       {...field}
                       data-testid="input-name"
                     />
@@ -124,7 +133,7 @@ export function QuotationForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-sm font-semibold uppercase tracking-wide">
-                    Phone Number *
+                    {t("cart.phoneNumber")} *
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -145,12 +154,12 @@ export function QuotationForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-sm font-semibold uppercase tracking-wide">
-                    Email Address *
+                    {t("cart.emailAddress")} *
                   </FormLabel>
                   <FormControl>
                     <Input
                       type="email"
-                      placeholder="your@email.com"
+                      placeholder={t("cart.enterEmail")}
                       {...field}
                       data-testid="input-email"
                     />
@@ -162,7 +171,7 @@ export function QuotationForm() {
 
             <div className="space-y-2">
               <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-                Products Summary
+                {t("cart.orderSummary")}
               </label>
               <Textarea
                 value={productsSummary}
@@ -179,11 +188,11 @@ export function QuotationForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-sm font-semibold uppercase tracking-wide">
-                    Additional Notes (Optional)
+                    {t("cart.additionalNotes")}
                   </FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Any special requirements, packaging preferences, etc."
+                      placeholder={t("cart.notesPlaceholder")}
                       rows={3}
                       {...field}
                       data-testid="textarea-notes"
@@ -196,15 +205,15 @@ export function QuotationForm() {
 
             <div className="border-t pt-4 mt-4 space-y-3">
               <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">Items:</span>
+                <span className="text-muted-foreground">{t("cart.totalItems")}:</span>
                 <span className="font-medium" data-testid="text-item-count">
-                  {items.length} product(s)
+                  {items.length}
                 </span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="font-bold text-lg">Estimated Total:</span>
+                <span className="font-bold text-lg">{t("cart.estimatedTotal")}:</span>
                 <span className="font-bold text-xl text-primary" data-testid="text-total">
-                  INR{total.toFixed(2)}
+                  {formatPrice(total)}
                 </span>
               </div>
             </div>
@@ -219,12 +228,12 @@ export function QuotationForm() {
               {isSubmitting ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Sending...
+                  {t("cart.submitting")}
                 </>
               ) : (
                 <>
                   <Send className="mr-2 h-4 w-4" />
-                  Send Quotation Request
+                  {t("cart.submitQuotation")}
                 </>
               )}
             </Button>

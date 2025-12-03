@@ -1,16 +1,17 @@
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
+import { useApp } from "@/contexts/AppContext";
 import { useCart } from "@/contexts/CartContext";
-import { getProductById } from "@/lib/products";
 import { CartList } from "@/components/CartList";
 import { QuotationForm } from "@/components/QuotationForm";
 import { Button } from "@/components/ui/button";
 
 export default function Cart() {
+  const { t, products } = useApp();
   const { items, updateQuantity, removeItem } = useCart();
 
   const getProductPriceTiers = (productId: string) => {
-    const product = getProductById(productId);
+    const product = products.find((p) => p.id === productId);
     return product?.priceTiers || [];
   };
 
@@ -20,17 +21,17 @@ export default function Cart() {
         <Link href="/" data-testid="link-continue-shopping">
           <Button variant="ghost" size="sm" className="gap-2">
             <ArrowLeft className="h-4 w-4" />
-            Continue Shopping
+            {t("cart.continueShoppingBtn")}
           </Button>
         </Link>
       </nav>
 
       <div className="mb-8">
         <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
-          Your Cart
+          {t("cart.yourCart")}
         </h1>
         <p className="text-muted-foreground mt-2">
-          Review your items and submit a quotation request
+          {t("cart.reviewItems")}
         </p>
       </div>
 

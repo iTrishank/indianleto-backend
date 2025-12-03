@@ -1,0 +1,622 @@
+{
+  "translations": {
+    "en": {
+      "header": {
+        "logo": "IndianLeto",
+        "catalog": "Catalog",
+        "cart": "Cart"
+      },
+      "catalog": {
+        "title": "Wholesale Print Dresses",
+        "subtitle": "Premium quality fashion at competitive wholesale prices. Minimum order from 1 piece.",
+        "showing": "Showing",
+        "of": "of",
+        "products": "products",
+        "page": "Page",
+        "color": "Color",
+        "price": "Price",
+        "allColors": "All Colors",
+        "default": "Default",
+        "priceLowHigh": "Price: Low to High",
+        "priceHighLow": "Price: High to Low",
+        "clearFilters": "Clear Filters",
+        "filters": "Filters",
+        "active": "Active",
+        "filterProducts": "Filter Products",
+        "noProducts": "No products found",
+        "tryAdjustingFilters": "Try adjusting your filters to see more results"
+      },
+      "product": {
+        "productNotFound": "Product Not Found",
+        "productNotFoundDesc": "The product you're looking for doesn't exist.",
+        "backToCatalog": "Back to Catalog",
+        "sku": "SKU",
+        "minOrder": "Min. Order",
+        "wholesalePricing": "Wholesale Pricing",
+        "color": "Color",
+        "selectSize": "Select Size",
+        "sizeMeasurements": "Size Measurements",
+        "quantity": "Quantity",
+        "unitPrice": "Unit Price",
+        "subtotal": "Subtotal",
+        "pcs": "pcs",
+        "addToCart": "Add to Cart",
+        "addedToCart": "Added to Cart!",
+        "pleaseSelectSize": "Please select a size",
+        "chooseSizeBeforeAdding": "Choose a size before adding to cart.",
+        "addedToCartTitle": "Added to cart",
+        "addedToCartDesc": "added to your cart",
+        "size": "Size",
+        "pieces": "pieces",
+        "orMore": "or more"
+      },
+      "cart": {
+        "continueShoppingBtn": "Continue Shopping",
+        "yourCart": "Your Cart",
+        "reviewItems": "Review your items and submit a quotation request",
+        "emptyCart": "Your cart is empty",
+        "startShopping": "Start Shopping",
+        "itemsIn": "items in",
+        "remove": "Remove",
+        "requestQuotation": "Request Quotation",
+        "orderSummary": "Order Summary",
+        "totalItems": "Total Items",
+        "estimatedTotal": "Estimated Total",
+        "customerInfo": "Customer Information",
+        "yourName": "Your Name",
+        "enterName": "Enter your full name",
+        "phoneNumber": "Phone Number",
+        "enterPhone": "Enter your phone number with country code",
+        "emailAddress": "Email Address",
+        "enterEmail": "Enter your email address",
+        "additionalNotes": "Additional Notes",
+        "notesPlaceholder": "Any special requirements, questions, or comments about your order...",
+        "submitQuotation": "Submit Quotation Request",
+        "submitting": "Submitting...",
+        "quotationSubmitted": "Quotation Submitted!",
+        "quotationSubmittedDesc": "Your quote ID is",
+        "quotationError": "Error",
+        "quotationErrorDesc": "Failed to submit quotation. Please try again."
+      },
+      "thanks": {
+        "thankYou": "Thank You!",
+        "quotationSubmitted": "Your quotation request has been submitted successfully.",
+        "yourQuoteId": "Your Quote ID",
+        "responseTime": "We have received your quotation request and will get back to you within 24-48 hours with pricing details and availability.",
+        "saveQuoteId": "Please save your Quote ID for future reference.",
+        "needAssistance": "Need Immediate Assistance?",
+        "continueShopping": "Continue Shopping"
+      },
+      "measurements": {
+        "skirtLength": "Skirt Length",
+        "bust": "Bust",
+        "waist": "Waist",
+        "hips": "Hips",
+        "cm": "cm"
+      }
+    },
+    "es": {
+      "header": {
+        "logo": "IndianLeto",
+        "catalog": "Catálogo",
+        "cart": "Carrito"
+      },
+      "catalog": {
+        "title": "Vestidos Estampados al por Mayor",
+        "subtitle": "Moda de calidad premium a precios mayoristas competitivos. Pedido mínimo desde 1 pieza.",
+        "showing": "Mostrando",
+        "of": "de",
+        "products": "productos",
+        "page": "Página",
+        "color": "Color",
+        "price": "Precio",
+        "allColors": "Todos los Colores",
+        "default": "Predeterminado",
+        "priceLowHigh": "Precio: Menor a Mayor",
+        "priceHighLow": "Precio: Mayor a Menor",
+        "clearFilters": "Limpiar Filtros",
+        "filters": "Filtros",
+        "active": "Activo",
+        "filterProducts": "Filtrar Productos",
+        "noProducts": "No se encontraron productos",
+        "tryAdjustingFilters": "Intenta ajustar tus filtros para ver más resultados"
+      },
+      "product": {
+        "productNotFound": "Producto No Encontrado",
+        "productNotFoundDesc": "El producto que buscas no existe.",
+        "backToCatalog": "Volver al Catálogo",
+        "sku": "SKU",
+        "minOrder": "Pedido Mín.",
+        "wholesalePricing": "Precios Mayoristas",
+        "color": "Color",
+        "selectSize": "Seleccionar Talla",
+        "sizeMeasurements": "Medidas de Talla",
+        "quantity": "Cantidad",
+        "unitPrice": "Precio Unitario",
+        "subtotal": "Subtotal",
+        "pcs": "pzs",
+        "addToCart": "Agregar al Carrito",
+        "addedToCart": "¡Agregado al Carrito!",
+        "pleaseSelectSize": "Por favor selecciona una talla",
+        "chooseSizeBeforeAdding": "Elige una talla antes de agregar al carrito.",
+        "addedToCartTitle": "Agregado al carrito",
+        "addedToCartDesc": "agregado a tu carrito",
+        "size": "Talla",
+        "pieces": "piezas",
+        "orMore": "o más"
+      },
+      "cart": {
+        "continueShoppingBtn": "Continuar Comprando",
+        "yourCart": "Tu Carrito",
+        "reviewItems": "Revisa tus artículos y envía una solicitud de cotización",
+        "emptyCart": "Tu carrito está vacío",
+        "startShopping": "Comenzar a Comprar",
+        "itemsIn": "artículos en",
+        "remove": "Eliminar",
+        "requestQuotation": "Solicitar Cotización",
+        "orderSummary": "Resumen del Pedido",
+        "totalItems": "Total de Artículos",
+        "estimatedTotal": "Total Estimado",
+        "customerInfo": "Información del Cliente",
+        "yourName": "Tu Nombre",
+        "enterName": "Ingresa tu nombre completo",
+        "phoneNumber": "Número de Teléfono",
+        "enterPhone": "Ingresa tu número de teléfono con código de país",
+        "emailAddress": "Correo Electrónico",
+        "enterEmail": "Ingresa tu correo electrónico",
+        "additionalNotes": "Notas Adicionales",
+        "notesPlaceholder": "Cualquier requisito especial, preguntas o comentarios sobre tu pedido...",
+        "submitQuotation": "Enviar Solicitud de Cotización",
+        "submitting": "Enviando...",
+        "quotationSubmitted": "¡Cotización Enviada!",
+        "quotationSubmittedDesc": "Tu ID de cotización es",
+        "quotationError": "Error",
+        "quotationErrorDesc": "Error al enviar la cotización. Por favor intenta de nuevo."
+      },
+      "thanks": {
+        "thankYou": "¡Gracias!",
+        "quotationSubmitted": "Tu solicitud de cotización ha sido enviada exitosamente.",
+        "yourQuoteId": "Tu ID de Cotización",
+        "responseTime": "Hemos recibido tu solicitud de cotización y te responderemos dentro de 24-48 horas con detalles de precios y disponibilidad.",
+        "saveQuoteId": "Por favor guarda tu ID de Cotización para referencia futura.",
+        "needAssistance": "¿Necesitas Asistencia Inmediata?",
+        "continueShopping": "Continuar Comprando"
+      },
+      "measurements": {
+        "skirtLength": "Largo de Falda",
+        "bust": "Busto",
+        "waist": "Cintura",
+        "hips": "Caderas",
+        "cm": "cm"
+      }
+    },
+    "hi": {
+      "header": {
+        "logo": "IndianLeto",
+        "catalog": "कैटलॉग",
+        "cart": "कार्ट"
+      },
+      "catalog": {
+        "title": "थोक प्रिंट ड्रेसेज",
+        "subtitle": "प्रतिस्पर्धी थोक मूल्यों पर प्रीमियम गुणवत्ता वाली फैशन। न्यूनतम ऑर्डर 1 पीस से।",
+        "showing": "दिखा रहा है",
+        "of": "में से",
+        "products": "उत्पाद",
+        "page": "पेज",
+        "color": "रंग",
+        "price": "मूल्य",
+        "allColors": "सभी रंग",
+        "default": "डिफ़ॉल्ट",
+        "priceLowHigh": "मूल्य: कम से अधिक",
+        "priceHighLow": "मूल्य: अधिक से कम",
+        "clearFilters": "फ़िल्टर साफ़ करें",
+        "filters": "फ़िल्टर",
+        "active": "सक्रिय",
+        "filterProducts": "उत्पाद फ़िल्टर करें",
+        "noProducts": "कोई उत्पाद नहीं मिला",
+        "tryAdjustingFilters": "अधिक परिणाम देखने के लिए अपने फ़िल्टर समायोजित करें"
+      },
+      "product": {
+        "productNotFound": "उत्पाद नहीं मिला",
+        "productNotFoundDesc": "आप जो उत्पाद खोज रहे हैं वह मौजूद नहीं है।",
+        "backToCatalog": "कैटलॉग पर वापस",
+        "sku": "SKU",
+        "minOrder": "न्यूनतम ऑर्डर",
+        "wholesalePricing": "थोक मूल्य निर्धारण",
+        "color": "रंग",
+        "selectSize": "आकार चुनें",
+        "sizeMeasurements": "आकार माप",
+        "quantity": "मात्रा",
+        "unitPrice": "इकाई मूल्य",
+        "subtotal": "उपकुल",
+        "pcs": "पीस",
+        "addToCart": "कार्ट में जोड़ें",
+        "addedToCart": "कार्ट में जोड़ा गया!",
+        "pleaseSelectSize": "कृपया एक आकार चुनें",
+        "chooseSizeBeforeAdding": "कार्ट में जोड़ने से पहले एक आकार चुनें।",
+        "addedToCartTitle": "कार्ट में जोड़ा गया",
+        "addedToCartDesc": "आपके कार्ट में जोड़ा गया",
+        "size": "आकार",
+        "pieces": "पीस",
+        "orMore": "या अधिक"
+      },
+      "cart": {
+        "continueShoppingBtn": "खरीदारी जारी रखें",
+        "yourCart": "आपका कार्ट",
+        "reviewItems": "अपने आइटम की समीक्षा करें और कोटेशन अनुरोध सबमिट करें",
+        "emptyCart": "आपका कार्ट खाली है",
+        "startShopping": "खरीदारी शुरू करें",
+        "itemsIn": "आइटम में",
+        "remove": "हटाएं",
+        "requestQuotation": "कोटेशन अनुरोध",
+        "orderSummary": "ऑर्डर सारांश",
+        "totalItems": "कुल आइटम",
+        "estimatedTotal": "अनुमानित कुल",
+        "customerInfo": "ग्राहक जानकारी",
+        "yourName": "आपका नाम",
+        "enterName": "अपना पूरा नाम दर्ज करें",
+        "phoneNumber": "फ़ोन नंबर",
+        "enterPhone": "देश कोड के साथ अपना फ़ोन नंबर दर्ज करें",
+        "emailAddress": "ईमेल पता",
+        "enterEmail": "अपना ईमेल पता दर्ज करें",
+        "additionalNotes": "अतिरिक्त नोट्स",
+        "notesPlaceholder": "आपके ऑर्डर के बारे में कोई विशेष आवश्यकता, प्रश्न या टिप्पणी...",
+        "submitQuotation": "कोटेशन अनुरोध सबमिट करें",
+        "submitting": "सबमिट हो रहा है...",
+        "quotationSubmitted": "कोटेशन सबमिट हो गया!",
+        "quotationSubmittedDesc": "आपका कोट आईडी है",
+        "quotationError": "त्रुटि",
+        "quotationErrorDesc": "कोटेशन सबमिट करने में विफल। कृपया पुनः प्रयास करें।"
+      },
+      "thanks": {
+        "thankYou": "धन्यवाद!",
+        "quotationSubmitted": "आपका कोटेशन अनुरोध सफलतापूर्वक सबमिट हो गया है।",
+        "yourQuoteId": "आपका कोट आईडी",
+        "responseTime": "हमने आपका कोटेशन अनुरोध प्राप्त कर लिया है और मूल्य निर्धारण विवरण और उपलब्धता के साथ 24-48 घंटों के भीतर आपसे संपर्क करेंगे।",
+        "saveQuoteId": "कृपया भविष्य के संदर्भ के लिए अपना कोट आईडी सहेजें।",
+        "needAssistance": "तत्काल सहायता चाहिए?",
+        "continueShopping": "खरीदारी जारी रखें"
+      },
+      "measurements": {
+        "skirtLength": "स्कर्ट की लंबाई",
+        "bust": "बस्ट",
+        "waist": "कमर",
+        "hips": "हिप्स",
+        "cm": "सेमी"
+      }
+    },
+    "ru": {
+      "header": {
+        "logo": "IndianLeto",
+        "catalog": "Каталог",
+        "cart": "Корзина"
+      },
+      "catalog": {
+        "title": "Оптовые Платья с Принтом",
+        "subtitle": "Модная одежда премиум-качества по конкурентным оптовым ценам. Минимальный заказ от 1 штуки.",
+        "showing": "Показано",
+        "of": "из",
+        "products": "товаров",
+        "page": "Страница",
+        "color": "Цвет",
+        "price": "Цена",
+        "allColors": "Все Цвета",
+        "default": "По умолчанию",
+        "priceLowHigh": "Цена: по возрастанию",
+        "priceHighLow": "Цена: по убыванию",
+        "clearFilters": "Сбросить Фильтры",
+        "filters": "Фильтры",
+        "active": "Активно",
+        "filterProducts": "Фильтр Товаров",
+        "noProducts": "Товары не найдены",
+        "tryAdjustingFilters": "Попробуйте изменить фильтры для просмотра результатов"
+      },
+      "product": {
+        "productNotFound": "Товар Не Найден",
+        "productNotFoundDesc": "Товар, который вы ищете, не существует.",
+        "backToCatalog": "Назад в Каталог",
+        "sku": "Артикул",
+        "minOrder": "Мин. Заказ",
+        "wholesalePricing": "Оптовые Цены",
+        "color": "Цвет",
+        "selectSize": "Выберите Размер",
+        "sizeMeasurements": "Размерные Мерки",
+        "quantity": "Количество",
+        "unitPrice": "Цена за Единицу",
+        "subtotal": "Подитог",
+        "pcs": "шт",
+        "addToCart": "Добавить в Корзину",
+        "addedToCart": "Добавлено в Корзину!",
+        "pleaseSelectSize": "Пожалуйста, выберите размер",
+        "chooseSizeBeforeAdding": "Выберите размер перед добавлением в корзину.",
+        "addedToCartTitle": "Добавлено в корзину",
+        "addedToCartDesc": "добавлен в вашу корзину",
+        "size": "Размер",
+        "pieces": "штук",
+        "orMore": "или более"
+      },
+      "cart": {
+        "continueShoppingBtn": "Продолжить Покупки",
+        "yourCart": "Ваша Корзина",
+        "reviewItems": "Проверьте ваши товары и отправьте запрос на расценку",
+        "emptyCart": "Ваша корзина пуста",
+        "startShopping": "Начать Покупки",
+        "itemsIn": "товаров в",
+        "remove": "Удалить",
+        "requestQuotation": "Запросить Расценку",
+        "orderSummary": "Сводка Заказа",
+        "totalItems": "Всего Товаров",
+        "estimatedTotal": "Ориентировочная Сумма",
+        "customerInfo": "Информация о Клиенте",
+        "yourName": "Ваше Имя",
+        "enterName": "Введите ваше полное имя",
+        "phoneNumber": "Номер Телефона",
+        "enterPhone": "Введите номер телефона с кодом страны",
+        "emailAddress": "Электронная Почта",
+        "enterEmail": "Введите адрес электронной почты",
+        "additionalNotes": "Дополнительные Заметки",
+        "notesPlaceholder": "Особые требования, вопросы или комментарии к заказу...",
+        "submitQuotation": "Отправить Запрос на Расценку",
+        "submitting": "Отправка...",
+        "quotationSubmitted": "Расценка Отправлена!",
+        "quotationSubmittedDesc": "Ваш ID расценки",
+        "quotationError": "Ошибка",
+        "quotationErrorDesc": "Не удалось отправить расценку. Пожалуйста, попробуйте снова."
+      },
+      "thanks": {
+        "thankYou": "Спасибо!",
+        "quotationSubmitted": "Ваш запрос на расценку успешно отправлен.",
+        "yourQuoteId": "Ваш ID Расценки",
+        "responseTime": "Мы получили ваш запрос на расценку и свяжемся с вами в течение 24-48 часов с информацией о ценах и наличии.",
+        "saveQuoteId": "Пожалуйста, сохраните ваш ID Расценки для дальнейшего использования.",
+        "needAssistance": "Нужна Срочная Помощь?",
+        "continueShopping": "Продолжить Покупки"
+      },
+      "measurements": {
+        "skirtLength": "Длина Юбки",
+        "bust": "Бюст",
+        "waist": "Талия",
+        "hips": "Бёдра",
+        "cm": "см"
+      }
+    }
+  },
+  "currencies": {
+    "AED": { "code": "AED", "symbol": "AED", "flag": "ae", "rate": 4.08 },
+    "AUD": { "code": "AUD", "symbol": "A$", "flag": "au", "rate": 0.018 },
+    "BGN": { "code": "BGN", "symbol": "BGN", "flag": "bg", "rate": 0.022 },
+    "BHD": { "code": "BHD", "symbol": "BHD", "flag": "bh", "rate": 0.0045 },
+    "BRL": { "code": "BRL", "symbol": "R$", "flag": "br", "rate": 0.068 },
+    "BSD": { "code": "BSD", "symbol": "BSD", "flag": "bs", "rate": 0.012 },
+    "CAD": { "code": "CAD", "symbol": "CA$", "flag": "ca", "rate": 0.016 },
+    "CHF": { "code": "CHF", "symbol": "CHF", "flag": "ch", "rate": 0.0105 },
+    "CLP": { "code": "CLP", "symbol": "CLP", "flag": "cl", "rate": 10.5 },
+    "CNY": { "code": "CNY", "symbol": "CN¥", "flag": "cn", "rate": 0.086 },
+    "COP": { "code": "COP", "symbol": "COP", "flag": "co", "rate": 48.5 },
+    "CRC": { "code": "CRC", "symbol": "CRC", "flag": "cr", "rate": 6.05 },
+    "CZK": { "code": "CZK", "symbol": "CZK", "flag": "cz", "rate": 0.28 },
+    "DKK": { "code": "DKK", "symbol": "DKK", "flag": "dk", "rate": 0.082 },
+    "EUR": { "code": "EUR", "symbol": "€", "flag": "eu", "rate": 0.011 },
+    "GBP": { "code": "GBP", "symbol": "£", "flag": "gb", "rate": 0.0094 },
+    "GHS": { "code": "GHS", "symbol": "GHS", "flag": "gh", "rate": 0.18 },
+    "HKD": { "code": "HKD", "symbol": "HK$", "flag": "hk", "rate": 0.093 },
+    "ILS": { "code": "ILS", "symbol": "₪", "flag": "il", "rate": 0.044 },
+    "INR": { "code": "INR", "symbol": "₹", "flag": "in", "rate": 1 },
+    "ISK": { "code": "ISK", "symbol": "ISK", "flag": "is", "rate": 1.65 },
+    "JPY": { "code": "JPY", "symbol": "¥", "flag": "jp", "rate": 1.78 },
+    "KRW": { "code": "KRW", "symbol": "₩", "flag": "kr", "rate": 15.8 },
+    "KWD": { "code": "KWD", "symbol": "KWD", "flag": "kw", "rate": 0.0037 },
+    "LKR": { "code": "LKR", "symbol": "LKR", "flag": "lk", "rate": 3.5 },
+    "MAD": { "code": "MAD", "symbol": "MAD", "flag": "ma", "rate": 0.12 },
+    "MKD": { "code": "MKD", "symbol": "MKD", "flag": "mk", "rate": 0.68 },
+    "MVR": { "code": "MVR", "symbol": "MVR", "flag": "mv", "rate": 0.18 },
+    "MXN": { "code": "MXN", "symbol": "MX$", "flag": "mx", "rate": 0.21 },
+    "NGN": { "code": "NGN", "symbol": "NGN", "flag": "ng", "rate": 18.5 },
+    "NOK": { "code": "NOK", "symbol": "NOK", "flag": "no", "rate": 0.13 },
+    "NZD": { "code": "NZD", "symbol": "NZ$", "flag": "nz", "rate": 0.02 },
+    "PHP": { "code": "PHP", "symbol": "₱", "flag": "ph", "rate": 0.66 },
+    "PLN": { "code": "PLN", "symbol": "PLN", "flag": "pl", "rate": 0.048 },
+    "RON": { "code": "RON", "symbol": "RON", "flag": "ro", "rate": 0.055 },
+    "RUB": { "code": "RUB", "symbol": "₽", "flag": "ru", "rate": 1.18 },
+    "SAR": { "code": "SAR", "symbol": "SAR", "flag": "sa", "rate": 0.045 },
+    "SCR": { "code": "SCR", "symbol": "SCR", "flag": "sc", "rate": 0.16 },
+    "SEK": { "code": "SEK", "symbol": "SEK", "flag": "se", "rate": 0.13 },
+    "SGD": { "code": "SGD", "symbol": "SGD", "flag": "sg", "rate": 0.016 },
+    "THB": { "code": "THB", "symbol": "THB", "flag": "th", "rate": 0.41 },
+    "TTD": { "code": "TTD", "symbol": "TTD", "flag": "tt", "rate": 0.081 },
+    "USD": { "code": "USD", "symbol": "$", "flag": "us", "rate": 0.012 },
+    "XCD": { "code": "XCD", "symbol": "EC$", "flag": "ag", "rate": 0.032 },
+    "ZAR": { "code": "ZAR", "symbol": "ZAR", "flag": "za", "rate": 0.22 }
+  },
+  "languages": [
+    { "code": "en", "name": "English" },
+    { "code": "es", "name": "Espanish" },
+    { "code": "hi", "name": "Hindi" },
+    { "code": "ru", "name": "Russian" }
+  ],
+  "products": [
+    {
+      "id": "T1025120261",
+      "title": "Wholesale Women Spring And Summer Fashion Floral Print Strapless Bodycon Maxi Dress",
+      "description": "Floral strapless maxi dress. Material: Polyester/Spandex. Sleeve: sleeveless. Length: long dress. Type: Strapless. Style: Sexy Wind. Pattern: Floral.",
+      "images": ["/assets/image_1764759622590.png", "/assets/image_1764759632220.png"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 592.14 },
+        { "minQty": 6, "maxQty": 35, "price": 537.98 },
+        { "minQty": 36, "maxQty": null, "price": 503.68 }
+      ],
+      "attributes": {
+        "color": "Rose",
+        "sizes": ["S", "M", "L"],
+        "measurements": {
+          "S": { "skirtLength": 123, "bust": 72, "waist": 64, "hips": 82 },
+          "M": { "skirtLength": 125, "bust": 76, "waist": 68, "hips": 86 },
+          "L": { "skirtLength": 127, "bust": 80, "waist": 72, "hips": 90 }
+        }
+      },
+      "minOrder": 1,
+      "sku": "T1025120261"
+    },
+    {
+      "id": "P2",
+      "title": "Floral Short Summer Dress Wholesale Women Fashion Multi-Color Print",
+      "description": "Short floral dress, multiple colors. Material: Polyester. Sleeve: Short. Length: Mini. Style: Casual Chic.",
+      "images": ["/assets/image_1764759608053.png"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 1065.12 },
+        { "minQty": 6, "maxQty": 35, "price": 970.00 },
+        { "minQty": 36, "maxQty": null, "price": 850.00 }
+      ],
+      "attributes": {
+        "color": "Multi",
+        "sizes": ["S", "M", "L"],
+        "measurements": {
+          "S": { "skirtLength": 85, "bust": 70, "waist": 62, "hips": 80 },
+          "M": { "skirtLength": 87, "bust": 74, "waist": 66, "hips": 84 },
+          "L": { "skirtLength": 89, "bust": 78, "waist": 70, "hips": 88 }
+        }
+      },
+      "minOrder": 1,
+      "sku": "P2"
+    },
+    {
+      "id": "P3",
+      "title": "Wholesale Summer Beach Floral Print Spaghetti Strap Midi Dress",
+      "description": "Beach-ready floral midi dress with delicate spaghetti straps. Material: Viscose blend. Perfect for resort wear.",
+      "images": ["/assets/image_1764759608053.png"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 429.66 },
+        { "minQty": 6, "maxQty": 35, "price": 389.50 },
+        { "minQty": 36, "maxQty": null, "price": 349.00 }
+      ],
+      "attributes": {
+        "color": "Yellow Floral",
+        "sizes": ["S", "M", "L", "XL"],
+        "measurements": {
+          "S": { "skirtLength": 110, "bust": 74, "waist": 66, "hips": 84 },
+          "M": { "skirtLength": 112, "bust": 78, "waist": 70, "hips": 88 },
+          "L": { "skirtLength": 114, "bust": 82, "waist": 74, "hips": 92 },
+          "XL": { "skirtLength": 116, "bust": 86, "waist": 78, "hips": 96 }
+        }
+      },
+      "minOrder": 1,
+      "sku": "P3"
+    },
+    {
+      "id": "P4",
+      "title": "Wholesale Women Elegant Floral Print Off-Shoulder Party Dress",
+      "description": "Elegant off-shoulder party dress with vibrant floral print. Material: Polyester/Cotton blend. Style: Party/Evening.",
+      "images": ["/assets/image_1764759622590.png"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 698.65 },
+        { "minQty": 6, "maxQty": 35, "price": 635.50 },
+        { "minQty": 36, "maxQty": null, "price": 580.00 }
+      ],
+      "attributes": {
+        "color": "Pink Floral",
+        "sizes": ["S", "M", "L"],
+        "measurements": {
+          "S": { "skirtLength": 95, "bust": 72, "waist": 64, "hips": 82 },
+          "M": { "skirtLength": 97, "bust": 76, "waist": 68, "hips": 86 },
+          "L": { "skirtLength": 99, "bust": 80, "waist": 72, "hips": 90 }
+        }
+      },
+      "minOrder": 1,
+      "sku": "P4"
+    },
+    {
+      "id": "P5",
+      "title": "Wholesale Women Casual Boho Floral Wrap Dress Summer Collection",
+      "description": "Bohemian style wrap dress with beautiful floral patterns. Material: Rayon. Comfortable and flowy design.",
+      "images": ["/assets/image_1764759608053.png"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 519.93 },
+        { "minQty": 6, "maxQty": 35, "price": 472.80 },
+        { "minQty": 36, "maxQty": null, "price": 425.00 }
+      ],
+      "attributes": {
+        "color": "Red Floral",
+        "sizes": ["S", "M", "L", "XL"],
+        "measurements": {
+          "S": { "skirtLength": 105, "bust": 74, "waist": 66, "hips": 84 },
+          "M": { "skirtLength": 107, "bust": 78, "waist": 70, "hips": 88 },
+          "L": { "skirtLength": 109, "bust": 82, "waist": 74, "hips": 92 },
+          "XL": { "skirtLength": 111, "bust": 86, "waist": 78, "hips": 96 }
+        }
+      },
+      "minOrder": 1,
+      "sku": "P5"
+    },
+    {
+      "id": "P6",
+      "title": "Wholesale Women Spring Floral Print A-Line Vintage Dress",
+      "description": "Vintage-inspired A-line dress with classic floral print. Material: Cotton blend. Timeless elegance.",
+      "images": ["/assets/image_1764759622590.png"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 853.00 },
+        { "minQty": 6, "maxQty": 35, "price": 775.45 },
+        { "minQty": 36, "maxQty": null, "price": 698.00 }
+      ],
+      "attributes": {
+        "color": "White Floral",
+        "sizes": ["S", "M", "L"],
+        "measurements": {
+          "S": { "skirtLength": 100, "bust": 72, "waist": 64, "hips": 82 },
+          "M": { "skirtLength": 102, "bust": 76, "waist": 68, "hips": 86 },
+          "L": { "skirtLength": 104, "bust": 80, "waist": 72, "hips": 90 }
+        }
+      },
+      "minOrder": 1,
+      "sku": "P6"
+    },
+    {
+      "id": "P7",
+      "title": "Wholesale Women Tropical Print Ruffle Hem Summer Dress",
+      "description": "Tropical print dress with playful ruffle hem. Material: Polyester. Perfect for summer collections.",
+      "images": ["/assets/image_1764759608053.png"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 465.00 },
+        { "minQty": 6, "maxQty": 35, "price": 422.75 },
+        { "minQty": 36, "maxQty": null, "price": 380.00 }
+      ],
+      "attributes": {
+        "color": "Tropical",
+        "sizes": ["S", "M", "L"],
+        "measurements": {
+          "S": { "skirtLength": 88, "bust": 70, "waist": 62, "hips": 80 },
+          "M": { "skirtLength": 90, "bust": 74, "waist": 66, "hips": 84 },
+          "L": { "skirtLength": 92, "bust": 78, "waist": 70, "hips": 88 }
+        }
+      },
+      "minOrder": 1,
+      "sku": "P7"
+    },
+    {
+      "id": "P8",
+      "title": "Wholesale Women Rose Print Sleeveless Bodycon Evening Dress",
+      "description": "Sophisticated rose print bodycon dress for evening wear. Material: Spandex blend. Elegant silhouette.",
+      "images": ["/assets/image_1764759632220.png"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 789.50 },
+        { "minQty": 6, "maxQty": 35, "price": 718.15 },
+        { "minQty": 36, "maxQty": null, "price": 645.00 }
+      ],
+      "attributes": {
+        "color": "Rose Print",
+        "sizes": ["S", "M", "L"],
+        "measurements": {
+          "S": { "skirtLength": 118, "bust": 72, "waist": 64, "hips": 82 },
+          "M": { "skirtLength": 120, "bust": 76, "waist": 68, "hips": 86 },
+          "L": { "skirtLength": 122, "bust": 80, "waist": 72, "hips": 90 }
+        }
+      },
+      "minOrder": 1,
+      "sku": "P8"
+    }
+  ],
+  "ui": {
+    "flagCdnBase": "https://flagcdn.com/16x12",
+    "contactEmail": "info@indianleto.com",
+    "contactPhone": "+91 98765 43210"
+  }
+}

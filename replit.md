@@ -39,10 +39,17 @@ Preferred communication style: Simple, everyday language.
 
 **UI Features**:
 - **Product Grid**: 5 items per row with 200px × 200px product boxes and pagination (25 items per page)
-- **Swipable Images**: Product cards use Embla Carousel for touch/drag swipe support on images
-- **Language Dropdown**: English, Espanish, Hindi, Russian (sorted alphabetically)
-- **Currency Dropdown**: 44+ currencies with flag icons from flagcdn.com
+- **Image Navigation**: Product cards use arrow buttons (left/right) for image navigation (replaced swipe functionality)
+- **Language Dropdown**: English, Spanish, Hindi, Russian (sorted alphabetically)
+- **Currency Dropdown**: 45+ currencies with flag icons from flagcdn.com and real-time exchange rates
 - **Filters**: Color and Price sorting (Size filter removed)
+
+**Internationalization**:
+- All UI text stored in `client/src/data/textData.json` with translations for 4 languages
+- AppContext provides `t(key)` function for retrieving translated text
+- AppContext provides `formatPrice(price)` for currency conversion
+- Base prices stored in INR, converted dynamically using exchange rates in textData.json
+- Currency-aware product summaries in quotation form via `generateProductsSummary(items, formatPrice, emptyCartMessage)`
 
 **Key Architectural Decisions**:
 - **No authentication system**: Designed for anonymous B2B browsing and quotation submission

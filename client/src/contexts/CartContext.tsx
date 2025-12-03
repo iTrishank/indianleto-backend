@@ -7,8 +7,7 @@ import {
   updateCartQuantity,
   clearCart as clearCartStorage,
   getCartItemCount,
-  getCartTotal,
-  generateProductsSummary
+  getCartTotal
 } from "@/lib/cartStore";
 
 interface CartContextType {
@@ -19,7 +18,6 @@ interface CartContextType {
   clearCart: () => void;
   itemCount: number;
   total: number;
-  productsSummary: string;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -54,8 +52,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     updateQuantity,
     clearCart,
     itemCount: getCartItemCount(items),
-    total: getCartTotal(items),
-    productsSummary: generateProductsSummary(items)
+    total: getCartTotal(items)
   };
 
   return (

@@ -1,4 +1,5 @@
 import { Minus, Plus } from "lucide-react";
+import { useApp } from "@/contexts/AppContext";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -15,6 +16,8 @@ export function QuantityInput({
   maxQuantity = 999,
   onQuantityChange 
 }: QuantityInputProps) {
+  const { t } = useApp();
+  
   const handleDecrement = () => {
     if (quantity > minQuantity) {
       onQuantityChange(quantity - 1);
@@ -38,7 +41,7 @@ export function QuantityInput({
   return (
     <div className="space-y-2">
       <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-        Quantity
+        {t("product.quantity")}
       </label>
       <div className="flex items-center gap-1" data-testid="quantity-input">
         <Button
@@ -50,7 +53,6 @@ export function QuantityInput({
           data-testid="button-quantity-decrease"
         >
           <Minus className="h-4 w-4" />
-          <span className="sr-only">Decrease quantity</span>
         </Button>
         <Input
           type="number"
@@ -70,7 +72,6 @@ export function QuantityInput({
           data-testid="button-quantity-increase"
         >
           <Plus className="h-4 w-4" />
-          <span className="sr-only">Increase quantity</span>
         </Button>
       </div>
     </div>

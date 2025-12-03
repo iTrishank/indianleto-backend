@@ -1,7 +1,7 @@
-import { useState } from "react";
 import { Link } from "wouter";
 import { ShoppingCart, Globe, ChevronDown } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
+import { useApp } from "@/contexts/AppContext";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,15 +10,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { languages, currencies } from "@/lib/constants";
 
 export function Header() {
   const { itemCount } = useCart();
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
-  const [selectedCurrency, setSelectedCurrency] = useState("INR");
+  const { language, setLanguage, currency, setCurrency, t, languages, currencies, ui } = useApp();
 
-  const currentLanguage = languages.find((l) => l.code === selectedLanguage);
-  const currentCurrency = currencies.find((c) => c.code === selectedCurrency);
+  const currentLanguage = languages.find((l) => l.code === language);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -26,14 +23,14 @@ export function Header() {
         <div className="flex h-16 md:h-20 items-center justify-between gap-2 md:gap-4">
           <Link href="/" data-testid="link-home">
             <span className="text-xl md:text-2xl font-bold tracking-tight text-primary cursor-pointer">
-              IndianLeto
+              {t("header.logo")}
             </span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/" data-testid="link-catalog">
               <span className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-                Catalog
+                {t("header.catalog")}
               </span>
             </Link>
           </nav>
@@ -58,11 +55,11 @@ export function Header() {
                 {languages.map((lang) => (
                   <DropdownMenuItem
                     key={lang.code}
-                    onClick={() => setSelectedLanguage(lang.code)}
+                    onClick={() => setLanguage(lang.code as "en" | "es" | "hi" | "ru")}
                     className="cursor-pointer"
                     data-testid={`language-${lang.code}`}
                   >
-                    <span className={selectedLanguage === lang.code ? "font-semibold" : ""}>
+                    <span className={language === lang.code ? "font-semibold" : ""}>
                       {lang.name}
                     </span>
                   </DropdownMenuItem>
@@ -78,33 +75,31 @@ export function Header() {
                   className="gap-1 px-2 md:px-3"
                   data-testid="dropdown-currency"
                 >
-                  {currentCurrency && (
-                    <img
-                      src={`https://flagcdn.com/16x12/${currentCurrency.flag}.png`}
-                      alt={currentCurrency.code}
-                      className="h-3 w-4 object-cover rounded-sm"
-                    />
-                  )}
+                  <img
+                    src={`${ui.flagCdnBase}/${currency.flag}.png`}
+                    alt={currency.code}
+                    className="h-3 w-4 object-cover rounded-sm"
+                  />
                   <span className="text-sm">
-                    {currentCurrency?.code || "INR"}
+                    {currency.code}
                   </span>
                   <ChevronDown className="h-3 w-3" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48 max-h-80 overflow-y-auto">
-                {currencies.map((currency) => (
+                {currencies.map((curr) => (
                   <DropdownMenuItem
-                    key={currency.code}
-                    onClick={() => setSelectedCurrency(currency.code)}
+                    key={curr.code}
+                    onClick={() => setCurrency(curr.code)}
                     className="cursor-pointer flex items-center justify-between gap-2"
-                    data-testid={`currency-${currency.code}`}
+                    data-testid={`currency-${curr.code}`}
                   >
-                    <span className={selectedCurrency === currency.code ? "font-semibold" : ""}>
-                      {currency.code} {currency.symbol}
+                    <span className={currency.code === curr.code ? "font-semibold" : ""}>
+                      {curr.code} {curr.symbol}
                     </span>
                     <img
-                      src={`https://flagcdn.com/16x12/${currency.flag}.png`}
-                      alt={currency.code}
+                      src={`${ui.flagCdnBase}/${curr.flag}.png`}
+                      alt={curr.code}
                       className="h-3 w-4 object-cover rounded-sm"
                     />
                   </DropdownMenuItem>
@@ -123,7 +118,7 @@ export function Header() {
                     {itemCount}
                   </Badge>
                 )}
-                <span className="sr-only">Shopping cart</span>
+                <span className="sr-only">{t("header.cart")}</span>
               </Button>
             </Link>
           </div>

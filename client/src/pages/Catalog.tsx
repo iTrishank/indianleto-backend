@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { Filter, ChevronLeft, ChevronRight } from "lucide-react";
-import { products } from "@/lib/products";
+import { useApp } from "@/contexts/AppContext";
 import { ProductCard } from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
 import {
@@ -20,6 +20,7 @@ import {
 import { ITEMS_PER_PAGE, ITEM_SIZE } from "@/lib/constants";
 
 export default function Catalog() {
+  const { t, products } = useApp();
   const [colorFilter, setColorFilter] = useState<string>("all");
   const [priceSort, setPriceSort] = useState<string>("default");
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -28,7 +29,7 @@ export default function Catalog() {
     const colors = new Set<string>();
     products.forEach((p) => colors.add(p.attributes.color));
     return Array.from(colors).sort();
-  }, []);
+  }, [products]);
 
   const filteredProducts = useMemo(() => {
     let result = [...products];
@@ -39,20 +40,20 @@ export default function Catalog() {
 
     if (priceSort === "low-high") {
       result.sort((a, b) => {
-        const aMin = Math.min(...a.priceTiers.map((t) => t.price));
-        const bMin = Math.min(...b.priceTiers.map((t) => t.price));
+        const aMin = Math.min(...a.priceTiers.map((tier) => tier.price));
+        const bMin = Math.min(...b.priceTiers.map((tier) => tier.price));
         return aMin - bMin;
       });
     } else if (priceSort === "high-low") {
       result.sort((a, b) => {
-        const aMax = Math.max(...a.priceTiers.map((t) => t.price));
-        const bMax = Math.max(...b.priceTiers.map((t) => t.price));
+        const aMax = Math.max(...a.priceTiers.map((tier) => tier.price));
+        const bMax = Math.max(...b.priceTiers.map((tier) => tier.price));
         return bMax - aMax;
       });
     }
 
     return result;
-  }, [colorFilter, priceSort]);
+  }, [products, colorFilter, priceSort]);
 
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -78,14 +79,14 @@ export default function Catalog() {
     <div className="space-y-4">
       <div className="space-y-2">
         <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-          Color
+          {t("catalog.color")}
         </label>
         <Select value={colorFilter} onValueChange={(v) => { setColorFilter(v); setCurrentPage(1); }}>
           <SelectTrigger data-testid="select-color-filter">
-            <SelectValue placeholder="All Colors" />
+            <SelectValue placeholder={t("catalog.allColors")} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Colors</SelectItem>
+            <SelectItem value="all">{t("catalog.allColors")}</SelectItem>
             {allColors.map((color) => (
               <SelectItem key={color} value={color}>
                 {color}
@@ -97,16 +98,16 @@ export default function Catalog() {
 
       <div className="space-y-2">
         <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-          Price
+          {t("catalog.price")}
         </label>
         <Select value={priceSort} onValueChange={(v) => { setPriceSort(v); setCurrentPage(1); }}>
           <SelectTrigger data-testid="select-price-sort">
-            <SelectValue placeholder="Sort by Price" />
+            <SelectValue placeholder={t("catalog.default")} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="default">Default</SelectItem>
-            <SelectItem value="low-high">Price: Low to High</SelectItem>
-            <SelectItem value="high-low">Price: High to Low</SelectItem>
+            <SelectItem value="default">{t("catalog.default")}</SelectItem>
+            <SelectItem value="low-high">{t("catalog.priceLowHigh")}</SelectItem>
+            <SelectItem value="high-low">{t("catalog.priceHighLow")}</SelectItem>
           </SelectContent>
         </Select>
       </div>
@@ -118,7 +119,7 @@ export default function Catalog() {
           onClick={clearFilters}
           data-testid="button-clear-filters"
         >
-          Clear Filters
+          {t("catalog.clearFilters")}
         </Button>
       )}
     </div>
@@ -193,11 +194,10 @@ export default function Catalog() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center space-y-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-              Wholesale Print Dresses
+              {t("catalog.title")}
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Premium quality fashion at competitive wholesale prices.
-              Minimum order from 1 piece.
+              {t("catalog.subtitle")}
             </p>
           </div>
         </div>
@@ -206,17 +206,17 @@ export default function Catalog() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
           <p className="text-muted-foreground" data-testid="text-product-count">
-            Showing {paginatedProducts.length} of {filteredProducts.length} products
-            {totalPages > 1 && ` (Page ${currentPage} of ${totalPages})`}
+            {t("catalog.showing")} {paginatedProducts.length} {t("catalog.of")} {filteredProducts.length} {t("catalog.products")}
+            {totalPages > 1 && ` (${t("catalog.page")} ${currentPage} ${t("catalog.of")} ${totalPages})`}
           </p>
 
           <div className="hidden md:flex items-center gap-4 flex-wrap">
             <Select value={colorFilter} onValueChange={(v) => { setColorFilter(v); setCurrentPage(1); }}>
               <SelectTrigger className="w-[140px]" data-testid="desktop-color-filter">
-                <SelectValue placeholder="Color" />
+                <SelectValue placeholder={t("catalog.color")} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">All Colors</SelectItem>
+                <SelectItem value="all">{t("catalog.allColors")}</SelectItem>
                 {allColors.map((color) => (
                   <SelectItem key={color} value={color}>
                     {color}
@@ -227,12 +227,12 @@ export default function Catalog() {
 
             <Select value={priceSort} onValueChange={(v) => { setPriceSort(v); setCurrentPage(1); }}>
               <SelectTrigger className="w-[160px]" data-testid="desktop-price-sort">
-                <SelectValue placeholder="Sort by Price" />
+                <SelectValue placeholder={t("catalog.price")} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="default">Default</SelectItem>
-                <SelectItem value="low-high">Price: Low to High</SelectItem>
-                <SelectItem value="high-low">Price: High to Low</SelectItem>
+                <SelectItem value="default">{t("catalog.default")}</SelectItem>
+                <SelectItem value="low-high">{t("catalog.priceLowHigh")}</SelectItem>
+                <SelectItem value="high-low">{t("catalog.priceHighLow")}</SelectItem>
               </SelectContent>
             </Select>
 
@@ -243,7 +243,7 @@ export default function Catalog() {
                 onClick={clearFilters}
                 data-testid="desktop-clear-filters"
               >
-                Clear Filters
+                {t("catalog.clearFilters")}
               </Button>
             )}
           </div>
@@ -252,17 +252,17 @@ export default function Catalog() {
             <SheetTrigger asChild>
               <Button variant="outline" className="md:hidden" data-testid="button-mobile-filters">
                 <Filter className="h-4 w-4 mr-2" />
-                Filters
+                {t("catalog.filters")}
                 {hasActiveFilters && (
                   <span className="ml-2 bg-primary text-primary-foreground text-xs rounded-full px-2">
-                    Active
+                    {t("catalog.active")}
                   </span>
                 )}
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
               <SheetHeader>
-                <SheetTitle>Filter Products</SheetTitle>
+                <SheetTitle>{t("catalog.filterProducts")}</SheetTitle>
               </SheetHeader>
               <div className="mt-6">
                 <FilterControls />
@@ -292,13 +292,13 @@ export default function Catalog() {
           <div className="min-h-[400px] flex items-center justify-center">
             <div className="text-center space-y-4">
               <h3 className="text-lg font-semibold text-muted-foreground">
-                No products found
+                {t("catalog.noProducts")}
               </h3>
               <p className="text-sm text-muted-foreground">
-                Try adjusting your filters to see more results
+                {t("catalog.tryAdjustingFilters")}
               </p>
               <Button variant="outline" onClick={clearFilters}>
-                Clear Filters
+                {t("catalog.clearFilters")}
               </Button>
             </div>
           </div>

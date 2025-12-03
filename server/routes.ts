@@ -1,5 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
+import express from "express";
+import path from "path";
 import { storage } from "./storage";
 import { quotationRequestSchema } from "@shared/schema";
 import { z } from "zod";
@@ -8,6 +10,7 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
+  app.use('/assets', express.static(path.join(process.cwd(), 'assets')));
   app.post("/api/quote", async (req, res) => {
     try {
       const validatedData = quotationRequestSchema.parse(req.body);

@@ -1,3 +1,4 @@
+import { useApp } from "@/contexts/AppContext";
 import { Button } from "@/components/ui/button";
 
 interface SizeSelectorProps {
@@ -7,10 +8,12 @@ interface SizeSelectorProps {
 }
 
 export function SizeSelector({ sizes, selectedSize, onSelectSize }: SizeSelectorProps) {
+  const { t } = useApp();
+  
   return (
     <div className="space-y-2">
       <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-        Size
+        {t("product.selectSize")}
       </label>
       <div className="flex flex-wrap gap-2" data-testid="size-selector">
         {sizes.map((size) => {

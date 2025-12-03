@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams, Link } from "wouter";
 import { ArrowLeft, ShoppingCart, Check } from "lucide-react";
-import { getProductById } from "@/lib/products";
+import { useApp } from "@/contexts/AppContext";
 import { getPriceForQuantity } from "@shared/schema";
 import { useCart } from "@/contexts/CartContext";
 import { ProductGallery } from "@/components/ProductGallery";
@@ -14,7 +14,8 @@ import { useToast } from "@/hooks/use-toast";
 
 export default function Product() {
   const { id } = useParams<{ id: string }>();
-  const product = getProductById(id || "");
+  const { t, products, formatPrice } = useApp();
+  const product = products.find((p) => p.id === id);
   const { addItem } = useCart();
   const { toast } = useToast();
 
@@ -28,14 +29,14 @@ export default function Product() {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
         <div className="text-center space-y-4">
-          <h1 className="text-2xl font-bold">Product Not Found</h1>
+          <h1 className="text-2xl font-bold">{t("product.productNotFound")}</h1>
           <p className="text-muted-foreground">
-            The product you're looking for doesn't exist.
+            {t("product.productNotFoundDesc")}
           </p>
           <Link href="/">
             <Button data-testid="button-back-to-catalog">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Catalog
+              {t("product.backToCatalog")}
             </Button>
           </Link>
         </div>
@@ -49,18 +50,18 @@ export default function Product() {
   const handleAddToCart = () => {
     if (!selectedSize) {
       toast({
-        title: "Please select a size",
-        description: "Choose a size before adding to cart.",
+        title: t("product.pleaseSelectSize"),
+        description: t("product.chooseSizeBeforeAdding"),
         variant: "destructive",
       });
       return;
     }
 
-    addItem(product, selectedSize, quantity);
+    addItem(product as any, selectedSize, quantity);
     setJustAdded(true);
     toast({
-      title: "Added to cart",
-      description: `${product.title} (Size: ${selectedSize}) x ${quantity} added to your cart.`,
+      title: t("product.addedToCartTitle"),
+      description: `${product.title} (${t("product.size")}: ${selectedSize}) x ${quantity} ${t("product.addedToCartDesc")}.`,
     });
 
     setTimeout(() => setJustAdded(false), 2000);
@@ -72,7 +73,7 @@ export default function Product() {
         <Link href="/" data-testid="link-breadcrumb-catalog">
           <Button variant="ghost" size="sm" className="gap-2">
             <ArrowLeft className="h-4 w-4" />
-            Back to Catalog
+            {t("product.backToCatalog")}
           </Button>
         </Link>
       </nav>
@@ -91,8 +92,8 @@ export default function Product() {
               {product.title}
             </h1>
             <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
-              <span data-testid="text-product-sku">SKU: {product.sku}</span>
-              <span>Min. Order: {product.minOrder}</span>
+              <span data-testid="text-product-sku">{t("product.sku")}: {product.sku}</span>
+              <span>{t("product.minOrder")}: {product.minOrder}</span>
             </div>
           </div>
 
@@ -105,13 +106,13 @@ export default function Product() {
 
           <div className="space-y-3">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-              Wholesale Pricing
+              {t("product.wholesalePricing")}
             </h3>
             <PriceTiers priceTiers={product.priceTiers} currentQuantity={quantity} />
           </div>
 
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span>Color:</span>
+            <span>{t("product.color")}:</span>
             <span className="font-medium text-foreground" data-testid="text-product-color">
               {product.attributes.color}
             </span>
@@ -125,7 +126,7 @@ export default function Product() {
 
           {product.attributes.measurements && (
             <MeasurementsTable
-              measurements={product.attributes.measurements}
+              measurements={product.attributes.measurements as Record<string, { skirtLength?: number; bust?: number; waist?: number; hips?: number }>}
               selectedSize={selectedSize}
             />
           )}
@@ -138,18 +139,18 @@ export default function Product() {
 
           <div className="border-t pt-6 space-y-4">
             <div className="flex justify-between items-center">
-              <span className="text-muted-foreground">Unit Price:</span>
+              <span className="text-muted-foreground">{t("product.unitPrice")}:</span>
               <span
                 className="text-xl font-bold text-primary"
                 data-testid="text-unit-price"
               >
-                INR{currentPrice.toFixed(2)}
+                {formatPrice(currentPrice)}
               </span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-muted-foreground">Subtotal ({quantity} pcs):</span>
+              <span className="text-muted-foreground">{t("product.subtotal")} ({quantity} {t("product.pcs")}):</span>
               <span className="text-lg font-semibold" data-testid="text-subtotal">
-                INR{subtotal.toFixed(2)}
+                {formatPrice(subtotal)}
               </span>
             </div>
 
@@ -163,12 +164,12 @@ export default function Product() {
               {justAdded ? (
                 <>
                   <Check className="mr-2 h-5 w-5" />
-                  Added to Cart!
+                  {t("product.addedToCart")}
                 </>
               ) : (
                 <>
                   <ShoppingCart className="mr-2 h-5 w-5" />
-                  Add to Cart
+                  {t("product.addToCart")}
                 </>
               )}
             </Button>

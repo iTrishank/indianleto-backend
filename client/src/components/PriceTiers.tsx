@@ -1,5 +1,11 @@
-import type { PriceTier } from "@shared/schema";
+import { useApp } from "@/contexts/AppContext";
 import { Card } from "@/components/ui/card";
+
+interface PriceTier {
+  minQty: number;
+  maxQty: number | null;
+  price: number;
+}
 
 interface PriceTiersProps {
   priceTiers: PriceTier[];
@@ -7,6 +13,8 @@ interface PriceTiersProps {
 }
 
 export function PriceTiers({ priceTiers, currentQuantity }: PriceTiersProps) {
+  const { t, formatPrice } = useApp();
+  
   const getActiveTierIndex = () => {
     for (let i = 0; i < priceTiers.length; i++) {
       const tier = priceTiers[i];
@@ -21,9 +29,9 @@ export function PriceTiers({ priceTiers, currentQuantity }: PriceTiersProps) {
 
   const formatTierRange = (tier: PriceTier) => {
     if (tier.maxQty === null) {
-      return `${tier.minQty}+ pieces`;
+      return `${tier.minQty}+ ${t("product.pieces")}`;
     }
-    return `${tier.minQty}-${tier.maxQty} pieces`;
+    return `${tier.minQty}-${tier.maxQty} ${t("product.pieces")}`;
   };
 
   return (
@@ -41,7 +49,7 @@ export function PriceTiers({ priceTiers, currentQuantity }: PriceTiersProps) {
             data-testid={`price-tier-${index}`}
           >
             <div className={`text-xl md:text-2xl font-bold ${isActive ? "text-primary" : "text-foreground"}`}>
-              INR{tier.price.toFixed(2)}
+              {formatPrice(tier.price)}
             </div>
             <div className="text-sm text-muted-foreground mt-1">
               {formatTierRange(tier)}

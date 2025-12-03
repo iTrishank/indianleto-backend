@@ -1,4 +1,5 @@
-import { Trash2, Minus, Plus } from "lucide-react";
+import { Trash2, Minus, Plus, ShoppingCart } from "lucide-react";
+import { useApp } from "@/contexts/AppContext";
 import type { CartItem, PriceTier } from "@shared/schema";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -17,18 +18,20 @@ export function CartList({
   onRemoveItem,
   getProductPriceTiers 
 }: CartListProps) {
+  const { t, formatPrice } = useApp();
+  
   if (items.length === 0) {
     return (
       <Card className="min-h-[300px] flex items-center justify-center">
         <div className="text-center space-y-3">
           <div className="text-5xl text-muted-foreground/30">
-            <span role="img" aria-label="empty cart">🛒</span>
+            <ShoppingCart className="h-12 w-12 mx-auto" />
           </div>
           <h3 className="text-lg font-semibold text-muted-foreground">
-            Your cart is empty
+            {t("cart.emptyCart")}
           </h3>
           <p className="text-sm text-muted-foreground">
-            Browse our catalog and add items to request a quotation
+            {t("cart.reviewItems")}
           </p>
         </div>
       </Card>
@@ -81,8 +84,8 @@ export function CartList({
                   {item.productTitle}
                 </h3>
                 <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
-                  <span data-testid={`text-cart-size-${index}`}>Size: {item.variant.size}</span>
-                  <span data-testid={`text-cart-color-${index}`}>Color: {item.variant.color}</span>
+                  <span data-testid={`text-cart-size-${index}`}>{t("product.size")}: {item.variant.size}</span>
+                  <span data-testid={`text-cart-color-${index}`}>{t("product.color")}: {item.variant.color}</span>
                 </div>
               </div>
 
@@ -124,13 +127,13 @@ export function CartList({
                     className="font-bold text-foreground"
                     data-testid={`text-cart-unit-price-${index}`}
                   >
-                    INR{item.unitPrice.toFixed(2)}
+                    {formatPrice(item.unitPrice)}
                   </div>
                   <div 
                     className="text-xs text-muted-foreground"
                     data-testid={`text-cart-subtotal-${index}`}
                   >
-                    Total: INR{(item.unitPrice * item.quantity).toFixed(2)}
+                    Total: {formatPrice(item.unitPrice * item.quantity)}
                   </div>
                 </div>
 
@@ -143,7 +146,7 @@ export function CartList({
                   data-testid={`button-cart-remove-${index}`}
                 >
                   <Trash2 className="h-4 w-4" />
-                  <span className="sr-only">Remove item</span>
+                  <span className="sr-only">{t("cart.remove")}</span>
                 </Button>
               </div>
             </div>

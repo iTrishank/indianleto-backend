@@ -1,9 +1,11 @@
 import { Link, useSearch } from "wouter";
 import { CheckCircle, ArrowLeft, Mail, Phone } from "lucide-react";
+import { useApp } from "@/contexts/AppContext";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function Thanks() {
+  const { t, ui } = useApp();
   const search = useSearch();
   const params = new URLSearchParams(search);
   const quoteId = params.get("quoteId") || "N/A";
@@ -20,15 +22,15 @@ export default function Thanks() {
 
           <div className="space-y-2">
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
-              Thank You!
+              {t("thanks.thankYou")}
             </h1>
             <p className="text-muted-foreground">
-              Your quotation request has been submitted successfully.
+              {t("thanks.quotationSubmitted")}
             </p>
           </div>
 
           <div className="bg-muted/50 rounded-lg p-4 space-y-2">
-            <p className="text-sm text-muted-foreground">Your Quote ID</p>
+            <p className="text-sm text-muted-foreground">{t("thanks.yourQuoteId")}</p>
             <p
               className="text-xl font-mono font-bold text-primary"
               data-testid="text-quote-id"
@@ -39,26 +41,25 @@ export default function Thanks() {
 
           <div className="space-y-3 text-sm text-muted-foreground">
             <p>
-              We have received your quotation request and will get back to you
-              within 24-48 hours with pricing details and availability.
+              {t("thanks.responseTime")}
             </p>
             <p className="font-medium text-foreground">
-              Please save your Quote ID for future reference.
+              {t("thanks.saveQuoteId")}
             </p>
           </div>
 
           <div className="border-t pt-6 space-y-4">
             <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-              Need Immediate Assistance?
+              {t("thanks.needAssistance")}
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 text-sm">
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>info@indianleto.com</span>
+                <span>{ui.contactEmail}</span>
               </div>
               <div className="flex items-center justify-center gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+91 98765 43210</span>
+                <span>{ui.contactPhone}</span>
               </div>
             </div>
           </div>
@@ -66,7 +67,7 @@ export default function Thanks() {
           <Link href="/" data-testid="link-back-to-catalog">
             <Button size="lg" className="w-full sm:w-auto">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Continue Shopping
+              {t("thanks.continueShopping")}
             </Button>
           </Link>
         </CardContent>

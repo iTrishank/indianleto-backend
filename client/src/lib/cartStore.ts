@@ -138,10 +138,16 @@ export function getCartTotal(items: CartItem[]): number {
 }
 
 // Generate products summary for quotation form
-export function generateProductsSummary(items: CartItem[]): string {
-  if (items.length === 0) return "No items in cart";
+export function generateProductsSummary(
+  items: CartItem[], 
+  formatPrice?: (price: number) => string,
+  emptyCartMessage?: string
+): string {
+  if (items.length === 0) return emptyCartMessage || "No items in cart";
+  
+  const priceFormatter = formatPrice || ((price: number) => `₹${price.toFixed(2)}`);
   
   return items.map(item => 
-    `${item.productTitle} | Size: ${item.variant.size} | Color: ${item.variant.color} | Qty: ${item.quantity} | INR${item.unitPrice.toFixed(2)}/pc`
+    `${item.productTitle} | Size: ${item.variant.size} | Color: ${item.variant.color} | Qty: ${item.quantity} | ${priceFormatter(item.unitPrice)}/pc`
   ).join("\n");
 }
