@@ -221,21 +221,23 @@ export function QuotationForm() {
             <Button
               type="submit"
               size="lg"
-              className="w-full"
+              className="w-full min-h-[48px]"
               disabled={isSubmitting || items.length === 0}
               data-testid="button-send-quotation"
             >
-              {isSubmitting ? (
-                <>
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  {t("cart.submitting")}
-                </>
-              ) : (
-                <>
-                  <Send className="mr-2 h-4 w-4" />
-                  {t("cart.submitQuotation")}
-                </>
-              )}
+              <span className="flex items-center justify-center min-w-[200px]">
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin flex-shrink-0" />
+                    <span>{t("cart.submitting")}</span>
+                  </>
+                ) : (
+                  <>
+                    <Send className="mr-2 h-4 w-4 flex-shrink-0" />
+                    <span>{t("cart.submitQuotation")}</span>
+                  </>
+                )}
+              </span>
             </Button>
           </form>
         </Form>

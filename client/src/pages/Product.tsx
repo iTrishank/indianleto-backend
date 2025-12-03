@@ -156,22 +156,24 @@ export default function Product() {
 
             <Button
               size="lg"
-              className="w-full"
+              className="w-full min-h-[48px]"
               onClick={handleAddToCart}
               disabled={!selectedSize}
               data-testid="button-add-to-cart"
             >
-              {justAdded ? (
-                <>
-                  <Check className="mr-2 h-5 w-5" />
-                  {t("product.addedToCart")}
-                </>
-              ) : (
-                <>
-                  <ShoppingCart className="mr-2 h-5 w-5" />
-                  {t("product.addToCart")}
-                </>
-              )}
+              <span className="flex items-center justify-center min-w-[180px]">
+                {justAdded ? (
+                  <>
+                    <Check className="mr-2 h-5 w-5 flex-shrink-0" />
+                    <span>{t("product.addedToCart")}</span>
+                  </>
+                ) : (
+                  <>
+                    <ShoppingCart className="mr-2 h-5 w-5 flex-shrink-0" />
+                    <span>{t("product.addToCart")}</span>
+                  </>
+                )}
+              </span>
             </Button>
           </div>
         </div>

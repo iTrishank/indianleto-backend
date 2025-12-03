@@ -41,14 +41,14 @@ export function Header() {
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="gap-1 px-2 md:px-3"
+                  className="gap-1 px-2 md:px-3 sm:min-w-[100px]"
                   data-testid="dropdown-language"
                 >
-                  <Globe className="h-4 w-4" />
-                  <span className="hidden sm:inline text-sm">
+                  <Globe className="h-4 w-4 flex-shrink-0" />
+                  <span className="hidden sm:inline text-sm min-w-[60px] text-left">
                     {currentLanguage?.name || "English"}
                   </span>
-                  <ChevronDown className="h-3 w-3" />
+                  <ChevronDown className="h-3 w-3 flex-shrink-0" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-40">
