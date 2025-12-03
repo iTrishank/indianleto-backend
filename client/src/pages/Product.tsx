@@ -10,7 +10,6 @@ import { SizeSelector } from "@/components/SizeSelector";
 import { QuantityInput } from "@/components/QuantityInput";
 import { MeasurementsTable } from "@/components/MeasurementsTable";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 
 export default function Product() {
@@ -80,14 +79,6 @@ export default function Product() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
         <div className="relative">
-          {product.hasPromo && (
-            <Badge
-              className="absolute top-3 left-3 z-10 bg-primary text-primary-foreground text-sm font-semibold px-4 py-1.5"
-              data-testid="badge-product-promo"
-            >
-              Buy 10 Get 1 Free
-            </Badge>
-          )}
           <ProductGallery images={product.images} productTitle={product.title} />
         </div>
 

@@ -37,6 +37,13 @@ Preferred communication style: Simple, everyday language.
 - Main routes: Catalog (`/`), Product (`/product/:id`), Cart (`/cart`), Thanks (`/thanks`)
 - No authentication guards required
 
+**UI Features**:
+- **Product Grid**: 5 items per row with 200px × 200px product boxes and pagination (25 items per page)
+- **Swipable Images**: Product cards use Embla Carousel for touch/drag swipe support on images
+- **Language Dropdown**: English, Espanish, Hindi, Russian (sorted alphabetically)
+- **Currency Dropdown**: 44+ currencies with flag icons from flagcdn.com
+- **Filters**: Color and Price sorting (Size filter removed)
+
 **Key Architectural Decisions**:
 - **No authentication system**: Designed for anonymous B2B browsing and quotation submission
 - **LocalStorage cart**: Cart data stored client-side to avoid server session complexity
