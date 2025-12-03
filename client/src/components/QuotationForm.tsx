@@ -57,7 +57,7 @@ export function QuotationForm() {
 
     setIsSubmitting(true);
     try {
-      const response = await apiRequest("POST", "/api/quote", {
+      const res = await apiRequest("POST", "/api/quote", {
         customer: {
           name: data.name,
           phone: data.phone,
@@ -66,6 +66,8 @@ export function QuotationForm() {
         cart: items,
         notes: data.notes || "",
       });
+
+      const response = await res.json();
 
       if (response.success) {
         clearCart();
