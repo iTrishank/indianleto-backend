@@ -45,11 +45,17 @@ Preferred communication style: Simple, everyday language.
 - **Filters**: Color and Price sorting (Size filter removed)
 
 **Internationalization**:
-- All UI text stored in `client/src/data/textData.json` with translations for 4 languages
-- AppContext provides `t(key)` function for retrieving translated text
-- AppContext provides `formatPrice(price)` for currency conversion
+- All UI text stored in `client/src/data/textData.json` with translations for 4 languages (English, Spanish, Hindi, Russian)
+- Complete translation coverage: header, footer, catalog, product details, cart, quotation form, thanks page
+- Product translations: titles, descriptions, and color names for all 5 products
+- AppContext provides:
+  - `t(key)` function for retrieving translated text by key path (e.g., `t("header.catalog")`)
+  - `getColor(colorKey)` function for translating color names
+  - `products` array with dynamically translated content based on current language
+  - `formatPrice(price)` for currency conversion with 45+ currencies
 - Base prices stored in INR, converted dynamically using exchange rates in textData.json
 - Currency-aware product summaries in quotation form via `generateProductsSummary(items, formatPrice, emptyCartMessage)`
+- Layout stability: Fixed min-widths on language dropdown and state-changing buttons to prevent pixel shifts during language switching
 
 **Key Architectural Decisions**:
 - **No authentication system**: Designed for anonymous B2B browsing and quotation submission
