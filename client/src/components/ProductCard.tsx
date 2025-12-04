@@ -95,20 +95,6 @@ export function ProductCard({ product }: ProductCardProps) {
                 >
                   <ChevronRight className="h-3.5 w-3.5 text-foreground" />
                 </button>
-
-                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
-                  {product.images.map((_, index) => (
-                    <div
-                      key={index}
-                      className={`h-1.5 rounded-full transition-all ${
-                        index === currentImageIndex
-                          ? "w-4 bg-primary"
-                          : "w-1.5 bg-background/60"
-                      }`}
-                      data-testid={`dot-image-${product.id}-${index}`}
-                    />
-                  ))}
-                </div>
               </>
             )}
           </div>
