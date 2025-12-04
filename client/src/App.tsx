@@ -5,8 +5,10 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { CartProvider } from "@/contexts/CartContext";
 import { AppProvider } from "@/contexts/AppContext";
+import { CartNotificationProvider } from "@/contexts/CartNotificationContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { GlobalLoadingOverlay } from "@/components/GlobalLoadingOverlay";
 import Catalog from "@/pages/Catalog";
 import Product from "@/pages/Product";
 import Cart from "@/pages/Cart";
@@ -31,14 +33,17 @@ function App() {
       <TooltipProvider>
         <AppProvider>
           <CartProvider>
-            <div className="min-h-screen flex flex-col bg-background">
-              <Header />
-              <main className="flex-1">
-                <Router />
-              </main>
-              <Footer />
-            </div>
-            <Toaster />
+            <CartNotificationProvider>
+              <GlobalLoadingOverlay />
+              <div className="min-h-screen flex flex-col bg-background">
+                <Header />
+                <main className="flex-1">
+                  <Router />
+                </main>
+                <Footer />
+              </div>
+              <Toaster />
+            </CartNotificationProvider>
           </CartProvider>
         </AppProvider>
       </TooltipProvider>

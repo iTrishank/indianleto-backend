@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
 import { ShoppingCart, Globe, ChevronDown } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
@@ -16,18 +15,6 @@ import {
 export function Header() {
   const { itemCount } = useCart();
   const { language, setLanguage, currency, setCurrency, t, languages, currencies, ui } = useApp();
-  const [isAnimating, setIsAnimating] = useState(false);
-  const prevItemCountRef = useRef(itemCount);
-
-  useEffect(() => {
-    if (itemCount > prevItemCountRef.current) {
-      setIsAnimating(true);
-      const timer = setTimeout(() => setIsAnimating(false), 300);
-      prevItemCountRef.current = itemCount;
-      return () => clearTimeout(timer);
-    }
-    prevItemCountRef.current = itemCount;
-  }, [itemCount]);
 
   const currentLanguage = languages.find((l) => l.code === language);
 
@@ -126,9 +113,7 @@ export function Header() {
                 <ShoppingCart className="h-5 w-5" />
                 {itemCount > 0 && (
                   <Badge 
-                    className={`absolute -top-0.5 -right-0.5 h-4 min-w-[16px] px-1 flex items-center justify-center text-[10px] font-medium transition-transform duration-200 ease-out ${
-                      isAnimating ? "scale-125" : "scale-100"
-                    }`}
+                    className="absolute -top-0.5 -right-0.5 h-4 min-w-[16px] px-1 flex items-center justify-center text-[10px] font-medium"
                     data-testid="badge-cart-count"
                   >
                     {itemCount}

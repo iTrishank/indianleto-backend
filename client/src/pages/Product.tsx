@@ -4,6 +4,7 @@ import { ArrowLeft, ShoppingCart, Check } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
 import { getPriceForQuantity } from "@shared/schema";
 import { useCart } from "@/contexts/CartContext";
+import { useCartNotification } from "@/contexts/CartNotificationContext";
 import { Container } from "@/components/Container";
 import { ProductGallery } from "@/components/ProductGallery";
 import { PriceTiers } from "@/components/PriceTiers";
@@ -18,6 +19,7 @@ export default function Product() {
   const { t, products, formatPrice } = useApp();
   const product = products.find((p) => p.id === id);
   const { addItem } = useCart();
+  const { notifyAddedToCart } = useCartNotification();
   const { toast } = useToast();
 
   const getMinOrderForSize = (size: string): number => {
@@ -76,6 +78,7 @@ export default function Product() {
     }
 
     addItem(product as any, selectedSize, quantity);
+    notifyAddedToCart(product.id, quantity);
     setJustAdded(true);
     toast({
       title: t("product.addedToCartTitle"),

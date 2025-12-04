@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useRef } from "react";
-import { Filter, ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
+import { ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
 import { ProductCard } from "@/components/ProductCard";
 import { Container } from "@/components/Container";
@@ -11,14 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import { ITEMS_PER_PAGE, ITEM_SIZE } from "@/lib/constants";
+import { ITEMS_PER_PAGE } from "@/lib/constants";
 
 export default function Catalog() {
   const { t, products } = useApp();
@@ -113,55 +106,6 @@ export default function Catalog() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const FilterControls = () => (
-    <div className="space-y-4">
-      <div className="space-y-2">
-        <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-          {t("catalog.color")}
-        </label>
-        <Select value={colorFilter} onValueChange={handleColorChange}>
-          <SelectTrigger data-testid="select-color-filter">
-            <SelectValue placeholder={t("catalog.allColors")} />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="all">{t("catalog.allColors")}</SelectItem>
-            {allColors.map((color) => (
-              <SelectItem key={color} value={color}>
-                {color}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-      </div>
-
-      <div className="space-y-2">
-        <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-          {t("catalog.price")}
-        </label>
-        <Select value={priceSort} onValueChange={handlePriceSortChange}>
-          <SelectTrigger data-testid="select-price-sort">
-            <SelectValue placeholder={t("catalog.default")} />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="default">{t("catalog.default")}</SelectItem>
-            <SelectItem value="low-high">{t("catalog.priceLowHigh")}</SelectItem>
-            <SelectItem value="high-low">{t("catalog.priceHighLow")}</SelectItem>
-          </SelectContent>
-        </Select>
-      </div>
-
-      <Button
-        variant="outline"
-        className="w-full"
-        onClick={clearFilters}
-        disabled={!hasActiveFilters}
-        data-testid="button-clear-filters"
-      >
-        {t("catalog.clearFilters")}
-      </Button>
-    </div>
-  );
-
   const Pagination = () => {
     if (totalPages <= 1) return null;
 
@@ -250,65 +194,41 @@ export default function Catalog() {
       </section>
 
       <Container className="py-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 mb-4">
-          <div className="hidden md:flex items-center gap-3 flex-wrap">
-            <Select value={colorFilter} onValueChange={handleColorChange}>
-              <SelectTrigger className="w-[140px]" data-testid="desktop-color-filter">
-                <SelectValue placeholder={t("catalog.color")} />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">{t("catalog.allColors")}</SelectItem>
-                {allColors.map((color) => (
-                  <SelectItem key={color} value={color}>
-                    {color}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
+          <Select value={colorFilter} onValueChange={handleColorChange}>
+            <SelectTrigger className="w-[120px] sm:w-[140px]" data-testid="select-color-filter">
+              <SelectValue placeholder={t("catalog.color")} />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">{t("catalog.allColors")}</SelectItem>
+              {allColors.map((color) => (
+                <SelectItem key={color} value={color}>
+                  {color}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
 
-            <Select value={priceSort} onValueChange={handlePriceSortChange}>
-              <SelectTrigger className="w-[160px]" data-testid="desktop-price-sort">
-                <SelectValue placeholder={t("catalog.price")} />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="default">{t("catalog.default")}</SelectItem>
-                <SelectItem value="low-high">{t("catalog.priceLowHigh")}</SelectItem>
-                <SelectItem value="high-low">{t("catalog.priceHighLow")}</SelectItem>
-              </SelectContent>
-            </Select>
+          <Select value={priceSort} onValueChange={handlePriceSortChange}>
+            <SelectTrigger className="w-[130px] sm:w-[160px]" data-testid="select-price-sort">
+              <SelectValue placeholder={t("catalog.price")} />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="default">{t("catalog.default")}</SelectItem>
+              <SelectItem value="low-high">{t("catalog.priceLowHigh")}</SelectItem>
+              <SelectItem value="high-low">{t("catalog.priceHighLow")}</SelectItem>
+            </SelectContent>
+          </Select>
 
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={clearFilters}
-              disabled={!hasActiveFilters}
-              data-testid="desktop-clear-filters"
-            >
-              {t("catalog.clearFilters")}
-            </Button>
-          </div>
-
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="outline" className="md:hidden" data-testid="button-mobile-filters">
-                <Filter className="h-4 w-4 mr-2" />
-                {t("catalog.filters")}
-                {hasActiveFilters && (
-                  <span className="ml-2 bg-primary text-primary-foreground text-xs rounded-full px-2">
-                    {t("catalog.active")}
-                  </span>
-                )}
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left">
-              <SheetHeader>
-                <SheetTitle>{t("catalog.filterProducts")}</SheetTitle>
-              </SheetHeader>
-              <div className="mt-6">
-                <FilterControls />
-              </div>
-            </SheetContent>
-          </Sheet>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={clearFilters}
+            disabled={!hasActiveFilters}
+            data-testid="button-clear-filters"
+          >
+            {t("catalog.clearFilters")}
+          </Button>
         </div>
 
         <p className="text-sm text-muted-foreground mb-4" data-testid="text-product-count">
@@ -322,10 +242,7 @@ export default function Catalog() {
           {paginatedProducts.length > 0 ? (
             <>
               <div
-                className="grid gap-3 sm:gap-4 lg:gap-5"
-                style={{
-                  gridTemplateColumns: `repeat(auto-fill, minmax(min(${ITEM_SIZE}px, calc(50% - 0.75rem)), 1fr))`,
-                }}
+                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4"
                 data-testid="product-grid"
               >
                 {paginatedProducts.map((product) => (

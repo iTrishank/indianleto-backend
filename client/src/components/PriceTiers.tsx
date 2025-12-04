@@ -22,17 +22,17 @@ export function PriceTiers({ priceTiers }: PriceTiersProps) {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row gap-3" data-testid="price-tiers">
+    <div className="flex flex-row flex-wrap gap-2 sm:gap-3" data-testid="price-tiers">
       {priceTiers.map((tier, index) => (
         <div
           key={index}
-          className="flex-1 p-4 text-center border border-border bg-muted/30 rounded-lg pointer-events-none select-none"
+          className="flex-1 min-w-[100px] p-2 sm:p-4 text-center border border-border bg-muted/30 rounded-lg pointer-events-none select-none"
           data-testid={`price-tier-${index}`}
         >
-          <div className="text-xl md:text-2xl font-bold text-foreground">
+          <div className="text-base sm:text-xl md:text-2xl font-bold text-foreground">
             {formatPrice(tier.price)}
           </div>
-          <div className="text-sm text-muted-foreground mt-1">
+          <div className="text-[10px] sm:text-sm text-muted-foreground mt-0.5 sm:mt-1">
             {formatTierRange(tier)}
           </div>
         </div>

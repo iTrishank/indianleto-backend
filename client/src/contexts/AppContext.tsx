@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback, useMemo, type ReactNode } from "react";
+import { createContext, useContext, useState, useCallback, useMemo, useRef, type ReactNode } from "react";
 import textData from "@/data/textData.json";
 import { getProductImage } from "@/lib/products";
 import type { Product } from "@shared/schema";
@@ -43,6 +43,7 @@ interface AppContextType {
   products: TranslatedProduct[];
   ui: typeof textData.ui;
   getColor: (productId: string) => string;
+  isLoading: boolean;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -50,6 +51,8 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 export function AppProvider({ children }: { children: ReactNode }) {
   const [language, setLanguageState] = useState<Language>("en");
   const [currencyCode, setCurrencyCode] = useState<string>("INR");
+  const [isLoading, setIsLoading] = useState(false);
+  const loadingTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const currencies = useMemo(() => {
     return Object.values(textData.currencies).sort((a, b) => 
@@ -62,11 +65,25 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, [currencyCode]);
 
   const setLanguage = useCallback((lang: Language) => {
+    setIsLoading(true);
+    if (loadingTimeoutRef.current) {
+      clearTimeout(loadingTimeoutRef.current);
+    }
     setLanguageState(lang);
+    loadingTimeoutRef.current = setTimeout(() => {
+      setIsLoading(false);
+    }, 300);
   }, []);
 
   const setCurrency = useCallback((code: string) => {
+    setIsLoading(true);
+    if (loadingTimeoutRef.current) {
+      clearTimeout(loadingTimeoutRef.current);
+    }
     setCurrencyCode(code);
+    loadingTimeoutRef.current = setTimeout(() => {
+      setIsLoading(false);
+    }, 300);
   }, []);
 
   const t = useCallback((key: string): string => {
@@ -135,7 +152,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
     products,
     ui: textData.ui,
     getColor,
-  }), [language, setLanguage, currency, setCurrency, t, formatPrice, currencies, products, getColor]);
+    isLoading,
+  }), [language, setLanguage, currency, setCurrency, t, formatPrice, currencies, products, getColor, isLoading]);
 
   return (
     <AppContext.Provider value={value}>

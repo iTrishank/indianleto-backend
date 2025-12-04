@@ -1,9 +1,9 @@
 import { useState, useCallback } from "react";
 import { useLocation } from "wouter";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Check } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
+import { useCartNotification } from "@/contexts/CartNotificationContext";
 import { Card, CardContent } from "@/components/ui/card";
-import { ITEM_SIZE } from "@/lib/constants";
 
 interface ProductCardProps {
   product: {
@@ -21,6 +21,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   const { formatPrice, t } = useApp();
+  const { getNotificationQuantity } = useCartNotification();
   const [, setLocation] = useLocation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const hasMultipleImages = product.images.length > 1;
@@ -33,6 +34,8 @@ export function ProductCard({ product }: ProductCardProps) {
 
   const firstSize = product.attributes?.sizes?.[0] || "S";
   const minOrderForSmallSize = product.sizeMinOrders?.[firstSize] || product.minOrder || 1;
+  
+  const notificationQuantity = getNotificationQuantity(product.id);
 
   const scrollPrev = useCallback(
     (e: React.MouseEvent) => {
@@ -67,7 +70,6 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <div
       className="flex flex-col cursor-pointer w-full"
-      style={{ maxWidth: `${ITEM_SIZE}px` }}
       data-testid={`card-product-${product.id}`}
       onClick={handleCardClick}
     >
@@ -89,10 +91,20 @@ export function ProductCard({ product }: ProductCardProps) {
               Min: {minOrderForSmallSize}
             </span>
 
+            {notificationQuantity !== null && (
+              <div 
+                className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1 px-2 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full shadow-lg animate-in fade-in slide-in-from-bottom-2 duration-300 pointer-events-none"
+                data-testid={`notification-added-${product.id}`}
+              >
+                <Check className="h-3 w-3" />
+                <span>+{notificationQuantity}</span>
+              </div>
+            )}
+
             {hasMultipleImages && (
               <>
                 <button
-                  className="absolute left-1.5 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full bg-background/90 hover:bg-background shadow-md flex items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="hidden sm:flex absolute left-1.5 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full bg-background/90 hover:bg-background shadow-md items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
                   onClick={scrollPrev}
                   aria-label="Previous image"
                   data-testid={`btn-prev-image-${product.id}`}
@@ -100,7 +112,7 @@ export function ProductCard({ product }: ProductCardProps) {
                   <ChevronLeft className="h-4 w-4 text-foreground" />
                 </button>
                 <button
-                  className="absolute right-1.5 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full bg-background/90 hover:bg-background shadow-md flex items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="hidden sm:flex absolute right-1.5 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full bg-background/90 hover:bg-background shadow-md items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
                   onClick={scrollNext}
                   aria-label="Next image"
                   data-testid={`btn-next-image-${product.id}`}
@@ -111,15 +123,15 @@ export function ProductCard({ product }: ProductCardProps) {
             )}
           </div>
 
-          <div className="p-2.5 space-y-1" data-testid={`link-product-${product.id}`}>
+          <div className="p-2 sm:p-2.5 space-y-1" data-testid={`link-product-${product.id}`}>
             <h3
-              className="text-sm font-medium leading-tight line-clamp-2 text-foreground hover:text-primary transition-colors"
+              className="text-xs sm:text-sm font-medium leading-tight line-clamp-2 text-foreground hover:text-primary transition-colors"
               data-testid={`text-title-${product.id}`}
             >
               {product.title}
             </h3>
             <p
-              className="text-base font-bold text-foreground"
+              className="text-sm sm:text-base font-bold text-foreground"
               data-testid={`text-price-${product.id}`}
             >
               {priceRange}
