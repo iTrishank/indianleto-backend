@@ -10,10 +10,12 @@ interface QuantityInputProps {
   onQuantityChange: (quantity: number) => void;
 }
 
+const QUICK_ADD_AMOUNTS = [10, 50, 100, 500, 1000];
+
 export function QuantityInput({ 
   quantity, 
   minQuantity = 1, 
-  maxQuantity = 999,
+  maxQuantity = 9999,
   onQuantityChange 
 }: QuantityInputProps) {
   const { t } = useApp();
@@ -38,12 +40,17 @@ export function QuantityInput({
     }
   };
 
+  const handleQuickAdd = (amount: number) => {
+    const newQuantity = Math.min(quantity + amount, maxQuantity);
+    onQuantityChange(newQuantity);
+  };
+
   return (
     <div className="space-y-2">
       <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
         {t("product.quantity")}
       </label>
-      <div className="flex items-center gap-1" data-testid="quantity-input">
+      <div className="flex flex-wrap items-center gap-1" data-testid="quantity-input">
         <Button
           type="button"
           variant="outline"
@@ -73,6 +80,23 @@ export function QuantityInput({
         >
           <Plus className="h-4 w-4" />
         </Button>
+        
+        <div className="flex items-center gap-1 ml-2">
+          {QUICK_ADD_AMOUNTS.map((amount) => (
+            <Button
+              key={amount}
+              type="button"
+              variant="secondary"
+              size="sm"
+              className="h-8 px-2 text-xs font-medium"
+              onClick={() => handleQuickAdd(amount)}
+              disabled={quantity >= maxQuantity}
+              data-testid={`button-quick-add-${amount}`}
+            >
+              +{amount}
+            </Button>
+          ))}
+        </div>
       </div>
     </div>
   );

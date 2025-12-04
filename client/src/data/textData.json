@@ -4,7 +4,9 @@
       "header": {
         "logo": "IndianLeto",
         "catalog": "Catalog",
-        "cart": "Cart"
+        "cart": "Cart",
+        "color": "Color",
+        "themeColor": "Theme Color"
       },
       "catalog": {
         "title": "Wholesale Print Dresses",
@@ -109,7 +111,9 @@
       "header": {
         "logo": "IndianLeto",
         "catalog": "Catálogo",
-        "cart": "Carrito"
+        "cart": "Carrito",
+        "color": "Color",
+        "themeColor": "Color del Tema"
       },
       "catalog": {
         "title": "Vestidos Estampados al por Mayor",
@@ -214,7 +218,9 @@
       "header": {
         "logo": "IndianLeto",
         "catalog": "कैटलॉग",
-        "cart": "कार्ट"
+        "cart": "कार्ट",
+        "color": "रंग",
+        "themeColor": "थीम रंग"
       },
       "catalog": {
         "title": "थोक प्रिंट ड्रेसेज",
@@ -319,7 +325,9 @@
       "header": {
         "logo": "IndianLeto",
         "catalog": "Каталог",
-        "cart": "Корзина"
+        "cart": "Корзина",
+        "color": "Цвет",
+        "themeColor": "Цвет Темы"
       },
       "catalog": {
         "title": "Оптовые Платья с Принтом",

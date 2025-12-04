@@ -45,7 +45,7 @@ export function ProductGallery({ images, productTitle }: ProductGalleryProps) {
             <Button
               variant="secondary"
               size="icon"
-              className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full opacity-80 hover:opacity-100"
+              className="hidden sm:flex absolute left-3 top-1/2 -translate-y-1/2 rounded-full opacity-80 hover:opacity-100"
               onClick={goToPrevious}
               data-testid="button-gallery-prev"
             >
@@ -55,7 +55,7 @@ export function ProductGallery({ images, productTitle }: ProductGalleryProps) {
             <Button
               variant="secondary"
               size="icon"
-              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full opacity-80 hover:opacity-100"
+              className="hidden sm:flex absolute right-3 top-1/2 -translate-y-1/2 rounded-full opacity-80 hover:opacity-100"
               onClick={goToNext}
               data-testid="button-gallery-next"
             >

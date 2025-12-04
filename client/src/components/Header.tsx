@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { ShoppingCart, Globe, ChevronDown } from "lucide-react";
+import { ShoppingCart, Globe, ChevronDown, Palette } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import { useApp } from "@/contexts/AppContext";
 import { Container } from "@/components/Container";
@@ -11,10 +11,15 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 export function Header() {
   const { itemCount } = useCart();
-  const { language, setLanguage, currency, setCurrency, t, languages, currencies, ui } = useApp();
+  const { language, setLanguage, currency, setCurrency, t, languages, currencies, ui, primaryColor, setPrimaryColor } = useApp();
 
   const currentLanguage = languages.find((l) => l.code === language);
 
@@ -107,6 +112,36 @@ export function Header() {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="gap-1 px-2 md:px-3"
+                  data-testid="dropdown-color"
+                >
+                  <Palette className="h-4 w-4 flex-shrink-0" />
+                  <span className="hidden sm:inline text-sm">{t("header.color")}</span>
+                  <div 
+                    className="h-4 w-4 rounded-full border border-border"
+                    style={{ backgroundColor: primaryColor }}
+                  />
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent align="end" className="w-48 p-3">
+                <div className="space-y-3">
+                  <label className="text-sm font-medium">{t("header.themeColor")}</label>
+                  <input
+                    type="color"
+                    value={primaryColor}
+                    onChange={(e) => setPrimaryColor(e.target.value)}
+                    className="h-10 w-full cursor-pointer rounded border border-input"
+                    data-testid="input-color-picker"
+                  />
+                </div>
+              </PopoverContent>
+            </Popover>
 
             <Link href="/cart" data-testid="link-cart">
               <Button variant="ghost" size="icon" className="relative">
