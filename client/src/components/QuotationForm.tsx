@@ -89,9 +89,10 @@ export function QuotationForm() {
         });
       }
     } catch (error) {
+      const isNetworkError = error instanceof TypeError && error.message.includes('fetch');
       toast({
-        title: t("cart.quotationError"),
-        description: t("cart.quotationErrorDesc"),
+        title: isNetworkError ? t("cart.networkError") : t("cart.quotationError"),
+        description: isNetworkError ? t("cart.networkErrorDesc") : t("cart.quotationErrorDesc"),
         variant: "destructive",
       });
     } finally {
