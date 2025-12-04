@@ -18,7 +18,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { ITEMS_PER_PAGE } from "@/lib/constants";
+import { ITEMS_PER_PAGE, ITEM_SIZE } from "@/lib/constants";
 
 export default function Catalog() {
   const { t, products } = useApp();
@@ -322,7 +322,10 @@ export default function Catalog() {
           {paginatedProducts.length > 0 ? (
             <>
               <div
-                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-5"
+                className="grid gap-3 sm:gap-4 lg:gap-5 justify-center"
+                style={{
+                  gridTemplateColumns: `repeat(auto-fill, minmax(min(${ITEM_SIZE}px, calc(50% - 0.75rem)), ${ITEM_SIZE}px))`,
+                }}
                 data-testid="product-grid"
               >
                 {paginatedProducts.map((product) => (

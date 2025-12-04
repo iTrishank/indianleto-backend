@@ -3,6 +3,7 @@ import { useLocation } from "wouter";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
 import { Card, CardContent } from "@/components/ui/card";
+import { ITEM_SIZE } from "@/lib/constants";
 
 interface ProductCardProps {
   product: {
@@ -58,6 +59,7 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <div
       className="flex flex-col cursor-pointer w-full"
+      style={{ maxWidth: `${ITEM_SIZE}px` }}
       data-testid={`card-product-${product.id}`}
       onClick={handleCardClick}
     >
