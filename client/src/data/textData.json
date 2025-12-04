@@ -126,8 +126,8 @@
         "themeColor": "Color del Tema"
       },
       "catalog": {
-        "title": "Vestidos Estampados al por Mayor",
-        "subtitle": "Moda de calidad premium a precios mayoristas competitivos. Pedido mínimo desde 1 pieza.",
+        "title": "Vestidos Estampados al Por Mayor",
+        "subtitle": "Moda de primera calidad a precios mayoristas competitivos. Pedido mínimo desde 1 pieza.",
         "showing": "Mostrando",
         "of": "de",
         "products": "productos",
@@ -159,7 +159,7 @@
         "quantity": "Cantidad",
         "unitPrice": "Precio Unitario",
         "subtotal": "Subtotal",
-        "pcs": "pzs",
+        "pcs": "piezas",
         "addToCart": "Agregar a Cotización",
         "addedToCart": "¡Agregado a Cotización!",
         "pleaseSelectSize": "Por favor selecciona una talla",
@@ -185,7 +185,7 @@
         "orderDetails": "Detalles del Pedido",
         "sizes": "tallas",
         "skus": "SKUs",
-        "pcs": "pzs",
+        "pcs": "piezas",
         "estimatedTotal": "Total Estimado",
         "customerInfo": "Información del Cliente",
         "yourName": "Tu Nombre",
@@ -195,15 +195,15 @@
         "emailAddress": "Correo Electrónico",
         "enterEmail": "Ingresa tu correo electrónico",
         "additionalNotes": "Notas Adicionales",
-        "notesPlaceholder": "Cualquier requisito especial, preguntas o comentarios sobre tu pedido...",
+        "notesPlaceholder": "Requisitos especiales, preguntas o comentarios sobre tu pedido...",
         "submitQuotation": "Enviar Solicitud de Cotización",
         "submitting": "Enviando...",
         "quotationSubmitted": "¡Cotización Enviada!",
         "quotationSubmittedDesc": "Tu ID de cotización es",
         "quotationError": "Error",
-        "quotationErrorDesc": "Error al enviar la cotización. Por favor intenta de nuevo.",
+        "quotationErrorDesc": "Error al enviar la cotización. Por favor, inténtalo de nuevo.",
         "networkError": "Error de Conexión",
-        "networkErrorDesc": "No se puede conectar. Por favor revisa tu conexión a internet e intenta de nuevo.",
+        "networkErrorDesc": "No se puede conectar. Por favor, verifica tu conexión a internet e inténtalo de nuevo.",
         "nameRequired": "El nombre es requerido",
         "phoneRequired": "Se requiere un número de teléfono válido",
         "emailRequired": "Se requiere una dirección de correo válida"
@@ -212,7 +212,7 @@
         "thankYou": "¡Gracias!",
         "quotationSubmitted": "Tu solicitud de cotización ha sido enviada exitosamente.",
         "yourQuoteId": "Tu ID de Cotización",
-        "responseTime": "Hemos recibido tu solicitud de cotización y te responderemos dentro de 24-48 horas con detalles de precios y disponibilidad.",
+        "responseTime": "Hemos recibido tu solicitud de cotización y te responderemos en 24-48 horas con detalles de precios y disponibilidad.",
         "saveQuoteId": "Por favor guarda tu ID de Cotización para referencia futura.",
         "needAssistance": "¿Necesitas Asistencia Inmediata?",
         "continueShopping": "Continuar Comprando"
@@ -227,11 +227,11 @@
       "footer": {
         "description": "Tu socio mayorista B2B de confianza para moda y ropa. Productos de calidad a precios mayoristas competitivos.",
         "quickLinks": "Enlaces Rápidos",
-        "browseCatalog": "Explorar Catálogo",
+        "browseCatalog": "Ver Catálogo",
         "viewCart": "Ver Carrito",
         "contact": "Contacto",
         "forInquiries": "Para consultas y soporte",
-        "copyright": "IndianLeto. Todos los derechos reservados. Solo Mayoristas B2B."
+        "copyright": "IndianLeto. Todos los derechos reservados. Solo Venta Mayorista B2B."
       }
     },
     "hi": {
@@ -243,8 +243,8 @@
         "themeColor": "थीम रंग"
       },
       "catalog": {
-        "title": "थोक प्रिंट ड्रेसेज",
-        "subtitle": "प्रतिस्पर्धी थोक मूल्यों पर प्रीमियम गुणवत्ता वाली फैशन। न्यूनतम ऑर्डर 1 पीस से।",
+        "title": "होलसेल प्रिंट ड्रेसेस",
+        "subtitle": "प्रतिस्पर्धी होलसेल मूल्यों पर प्रीमियम गुणवत्ता वाला फैशन। न्यूनतम ऑर्डर 1 पीस से।",
         "showing": "दिखा रहा है",
         "of": "में से",
         "products": "उत्पाद",
@@ -253,14 +253,14 @@
         "price": "मूल्य",
         "allColors": "सभी रंग",
         "default": "डिफ़ॉल्ट",
-        "priceLowHigh": "मूल्य: कम से अधिक",
-        "priceHighLow": "मूल्य: अधिक से कम",
+        "priceLowHigh": "मूल्य: कम से ज्यादा",
+        "priceHighLow": "मूल्य: ज्यादा से कम",
         "clearFilters": "फ़िल्टर साफ़ करें",
         "filters": "फ़िल्टर",
         "active": "सक्रिय",
         "filterProducts": "उत्पाद फ़िल्टर करें",
         "noProducts": "कोई उत्पाद नहीं मिला",
-        "tryAdjustingFilters": "अधिक परिणाम देखने के लिए अपने फ़िल्टर समायोजित करें"
+        "tryAdjustingFilters": "अधिक परिणाम देखने के लिए अपने फ़िल्टर समायोजित करने का प्रयास करें"
       },
       "product": {
         "productNotFound": "उत्पाद नहीं मिला",
@@ -268,55 +268,55 @@
         "backToCatalog": "कैटलॉग पर वापस",
         "sku": "SKU",
         "minOrder": "न्यूनतम ऑर्डर",
-        "wholesalePricing": "थोक मूल्य निर्धारण",
+        "wholesalePricing": "होलसेल मूल्य",
         "color": "रंग",
-        "selectSize": "आकार चुनें",
-        "selectSizeQuantity": "आकार और मात्रा चुनें",
-        "sizeMeasurements": "आकार माप",
+        "selectSize": "साइज़ चुनें",
+        "selectSizeQuantity": "साइज़ और मात्रा चुनें",
+        "sizeMeasurements": "साइज़ माप",
         "quantity": "मात्रा",
-        "unitPrice": "इकाई मूल्य",
-        "subtotal": "उपकुल",
+        "unitPrice": "यूनिट मूल्य",
+        "subtotal": "उप-योग",
         "pcs": "पीस",
         "addToCart": "कोटेशन में जोड़ें",
         "addedToCart": "कोटेशन में जोड़ा गया!",
-        "pleaseSelectSize": "कृपया एक आकार चुनें",
-        "chooseSizeBeforeAdding": "कार्ट में जोड़ने से पहले एक आकार चुनें।",
+        "pleaseSelectSize": "कृपया एक साइज़ चुनें",
+        "chooseSizeBeforeAdding": "कार्ट में जोड़ने से पहले साइज़ चुनें।",
         "addedToCartTitle": "कार्ट में जोड़ा गया",
         "addedToCartDesc": "आपके कार्ट में जोड़ा गया",
-        "size": "आकार",
+        "size": "साइज़",
         "pieces": "पीस",
         "orMore": "या अधिक",
         "total": "कुल"
       },
       "cart": {
-        "continueShoppingBtn": "कैटलॉग पर वापस जाएं",
+        "continueShoppingBtn": "कैटलॉग पर वापस",
         "yourCart": "आपका कोटेशन",
-        "reviewItems": "अपने आइटम की समीक्षा करें और कोटेशन अनुरोध सबमिट करें",
+        "reviewItems": "अपने आइटम देखें और कोटेशन अनुरोध सबमिट करें",
         "emptyCart": "आपका कार्ट खाली है",
         "startShopping": "खरीदारी शुरू करें",
         "itemsIn": "आइटम में",
         "remove": "हटाएं",
-        "requestQuotation": "कोटेशन अनुरोध",
+        "requestQuotation": "कोटेशन अनुरोध करें",
         "orderSummary": "ऑर्डर सारांश",
         "totalItems": "कुल आइटम",
         "orderDetails": "ऑर्डर विवरण",
-        "sizes": "आकार",
+        "sizes": "साइज़",
         "skus": "SKUs",
         "pcs": "पीस",
         "estimatedTotal": "अनुमानित कुल",
         "customerInfo": "ग्राहक जानकारी",
         "yourName": "आपका नाम",
         "enterName": "अपना पूरा नाम दर्ज करें",
-        "phoneNumber": "फ़ोन नंबर",
-        "enterPhone": "देश कोड के साथ अपना फ़ोन नंबर दर्ज करें",
+        "phoneNumber": "फोन नंबर",
+        "enterPhone": "देश कोड के साथ अपना फोन नंबर दर्ज करें",
         "emailAddress": "ईमेल पता",
         "enterEmail": "अपना ईमेल पता दर्ज करें",
         "additionalNotes": "अतिरिक्त नोट्स",
-        "notesPlaceholder": "आपके ऑर्डर के बारे में कोई विशेष आवश्यकता, प्रश्न या टिप्पणी...",
+        "notesPlaceholder": "आपके ऑर्डर के बारे में कोई विशेष आवश्यकताएं, प्रश्न या टिप्पणियां...",
         "submitQuotation": "कोटेशन अनुरोध सबमिट करें",
         "submitting": "सबमिट हो रहा है...",
         "quotationSubmitted": "कोटेशन सबमिट हो गया!",
-        "quotationSubmittedDesc": "आपका कोट आईडी है",
+        "quotationSubmittedDesc": "आपका कोट ID है",
         "quotationError": "त्रुटि",
         "quotationErrorDesc": "कोटेशन सबमिट करने में विफल। कृपया पुनः प्रयास करें।",
         "networkError": "कनेक्शन त्रुटि",
@@ -328,9 +328,9 @@
       "thanks": {
         "thankYou": "धन्यवाद!",
         "quotationSubmitted": "आपका कोटेशन अनुरोध सफलतापूर्वक सबमिट हो गया है।",
-        "yourQuoteId": "आपका कोट आईडी",
-        "responseTime": "हमने आपका कोटेशन अनुरोध प्राप्त कर लिया है और मूल्य निर्धारण विवरण और उपलब्धता के साथ 24-48 घंटों के भीतर आपसे संपर्क करेंगे।",
-        "saveQuoteId": "कृपया भविष्य के संदर्भ के लिए अपना कोट आईडी सहेजें।",
+        "yourQuoteId": "आपका कोट ID",
+        "responseTime": "हमें आपका कोटेशन अनुरोध प्राप्त हो गया है और हम 24-48 घंटों में मूल्य विवरण और उपलब्धता के साथ आपसे संपर्क करेंगे।",
+        "saveQuoteId": "कृपया भविष्य के संदर्भ के लिए अपना कोट ID सहेजें।",
         "needAssistance": "तत्काल सहायता चाहिए?",
         "continueShopping": "खरीदारी जारी रखें"
       },
@@ -338,17 +338,17 @@
         "skirtLength": "स्कर्ट की लंबाई",
         "bust": "बस्ट",
         "waist": "कमर",
-        "hips": "हिप्स",
+        "hips": "कूल्हे",
         "cm": "सेमी"
       },
       "footer": {
-        "description": "फैशन और परिधान के लिए आपका विश्वसनीय B2B थोक भागीदार। प्रतिस्पर्धी थोक मूल्यों पर गुणवत्ता वाले उत्पाद।",
+        "description": "फैशन और परिधान के लिए आपका विश्वसनीय B2B होलसेल पार्टनर। प्रतिस्पर्धी होलसेल मूल्यों पर गुणवत्ता उत्पाद।",
         "quickLinks": "त्वरित लिंक",
-        "browseCatalog": "कैटलॉग ब्राउज़ करें",
+        "browseCatalog": "कैटलॉग देखें",
         "viewCart": "कार्ट देखें",
         "contact": "संपर्क",
         "forInquiries": "पूछताछ और सहायता के लिए",
-        "copyright": "IndianLeto। सर्वाधिकार सुरक्षित। केवल B2B थोक।"
+        "copyright": "IndianLeto. सर्वाधिकार सुरक्षित। केवल B2B होलसेल।"
       }
     },
     "ru": {
@@ -360,8 +360,8 @@
         "themeColor": "Цвет Темы"
       },
       "catalog": {
-        "title": "Оптовые Платья с Принтом",
-        "subtitle": "Модная одежда премиум-качества по конкурентным оптовым ценам. Минимальный заказ от 1 штуки.",
+        "title": "Оптовые Принтованные Платья",
+        "subtitle": "Модная одежда премиум качества по конкурентным оптовым ценам. Минимальный заказ от 1 единицы.",
         "showing": "Показано",
         "of": "из",
         "products": "товаров",
@@ -370,44 +370,44 @@
         "price": "Цена",
         "allColors": "Все Цвета",
         "default": "По умолчанию",
-        "priceLowHigh": "Цена: по возрастанию",
-        "priceHighLow": "Цена: по убыванию",
+        "priceLowHigh": "Цена: от низкой к высокой",
+        "priceHighLow": "Цена: от высокой к низкой",
         "clearFilters": "Сбросить Фильтры",
         "filters": "Фильтры",
-        "active": "Активно",
-        "filterProducts": "Фильтр Товаров",
+        "active": "Активные",
+        "filterProducts": "Фильтровать Товары",
         "noProducts": "Товары не найдены",
-        "tryAdjustingFilters": "Попробуйте изменить фильтры для просмотра результатов"
+        "tryAdjustingFilters": "Попробуйте изменить фильтры, чтобы увидеть больше результатов"
       },
       "product": {
         "productNotFound": "Товар Не Найден",
         "productNotFoundDesc": "Товар, который вы ищете, не существует.",
-        "backToCatalog": "Назад в Каталог",
+        "backToCatalog": "Вернуться в Каталог",
         "sku": "Артикул",
         "minOrder": "Мин. Заказ",
         "wholesalePricing": "Оптовые Цены",
         "color": "Цвет",
         "selectSize": "Выберите Размер",
         "selectSizeQuantity": "Выберите Размер и Количество",
-        "sizeMeasurements": "Размерные Мерки",
+        "sizeMeasurements": "Размерные Измерения",
         "quantity": "Количество",
         "unitPrice": "Цена за Единицу",
-        "subtotal": "Подитог",
-        "pcs": "шт",
-        "addToCart": "Добавить в Заявку",
-        "addedToCart": "Добавлено в Заявку!",
+        "subtotal": "Подытог",
+        "pcs": "шт.",
+        "addToCart": "Добавить в Расценку",
+        "addedToCart": "Добавлено в Расценку!",
         "pleaseSelectSize": "Пожалуйста, выберите размер",
         "chooseSizeBeforeAdding": "Выберите размер перед добавлением в корзину.",
         "addedToCartTitle": "Добавлено в корзину",
-        "addedToCartDesc": "добавлен в вашу корзину",
+        "addedToCartDesc": "добавлено в вашу корзину",
         "size": "Размер",
         "pieces": "штук",
-        "orMore": "или более",
+        "orMore": "или больше",
         "total": "Итого"
       },
       "cart": {
-        "continueShoppingBtn": "Назад в Каталог",
-        "yourCart": "Ваша Заявка",
+        "continueShoppingBtn": "Вернуться в Каталог",
+        "yourCart": "Ваша Расценка",
         "reviewItems": "Проверьте ваши товары и отправьте запрос на расценку",
         "emptyCart": "Ваша корзина пуста",
         "startShopping": "Начать Покупки",
@@ -418,9 +418,9 @@
         "totalItems": "Всего Товаров",
         "orderDetails": "Детали Заказа",
         "sizes": "размеров",
-        "skus": "артикулов",
-        "pcs": "шт",
-        "estimatedTotal": "Ориентировочная Сумма",
+        "skus": "SKUs",
+        "pcs": "шт.",
+        "estimatedTotal": "Ориентировочный Итог",
         "customerInfo": "Информация о Клиенте",
         "yourName": "Ваше Имя",
         "enterName": "Введите ваше полное имя",
@@ -468,277 +468,6 @@
         "copyright": "IndianLeto. Все права защищены. Только B2B Оптовая торговля."
       }
     }
-  },
-  "products": {
-    "P1": {
-      "title": {
-        "en": "Elegant Floral Maxi Dress Summer Collection",
-        "es": "Elegante Vestido Maxi Floral Colección Verano",
-        "hi": "एलिगेंट फ्लोरल मैक्सी ड्रेस समर कलेक्शन",
-        "ru": "Элегантное Цветочное Макси Платье Летняя Коллекция"
-      },
-      "description": {
-        "en": "Beautiful floral print maxi dress perfect for summer occasions. Made with premium polyester blend fabric. Features a flattering A-line silhouette with adjustable straps.",
-        "es": "Hermoso vestido maxi con estampado floral perfecto para ocasiones de verano. Hecho con tela de mezcla de poliéster premium. Presenta una silueta favorecedora en línea A con tirantes ajustables.",
-        "hi": "गर्मियों के अवसरों के लिए सुंदर फ्लोरल प्रिंट मैक्सी ड्रेस। प्रीमियम पॉलिएस्टर ब्लेंड फैब्रिक से बना। एडजस्टेबल स्ट्रैप्स के साथ फ्लैटरिंग ए-लाइन सिल्हूट।",
-        "ru": "Красивое макси платье с цветочным принтом, идеально подходящее для летних мероприятий. Изготовлено из премиальной смеси полиэстера. Отличается лестным силуэтом А-линии с регулируемыми бретелями."
-      },
-      "color": {
-        "en": "Rose Floral",
-        "es": "Floral Rosa",
-        "hi": "गुलाबी फूल",
-        "ru": "Розовый Цветочный"
-      },
-      "sku": "IL-P1-2024",
-      "minOrder": 1,
-      "sizeMinOrders": { "S": 2, "M": 3, "L": 2, "XL": 2 },
-      "imagePaths": [
-        "P1-1.jpg",
-        "P1-2.jpg",
-        "P1-3.jpg",
-        "P1-4.jpg",
-        "P1-1.jpg",
-        "P1-1.jpg",
-        "P1-1.jpg"
-      ],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1250 },
-        { "minQty": 6, "maxQty": 25, "price": 1100 },
-        { "minQty": 26, "maxQty": null, "price": 950 }
-      ],
-      "sizes": ["S", "M", "L", "XL"],
-      "sizeMeasurements": {
-        "S": { "skirtLength": 125, "bust": 84, "waist": 66, "hips": 90 },
-        "M": { "skirtLength": 127, "bust": 88, "waist": 70, "hips": 94 },
-        "L": { "skirtLength": 129, "bust": 92, "waist": 74, "hips": 98 },
-        "XL": { "skirtLength": 131, "bust": 96, "waist": 78, "hips": 102 }
-      }
-    },
-    "P2": {
-      "title": {
-        "en": "Bohemian Paisley Print Midi Dress",
-        "es": "Vestido Midi Bohemio con Estampado Paisley",
-        "hi": "बोहेमियन पेस्ले प्रिंट मिडी ड्रेस",
-        "ru": "Богемное Миди Платье с Принтом Пейсли"
-      },
-      "description": {
-        "en": "Stunning bohemian style midi dress with intricate paisley patterns. Lightweight rayon fabric ideal for warm weather. Features elegant flutter sleeves and a tie waist.",
-        "es": "Impresionante vestido midi de estilo bohemio con intrincados patrones paisley. Tela de rayón liviana ideal para clima cálido. Presenta elegantes mangas con volantes y cintura con lazo.",
-        "hi": "जटिल पेस्ले पैटर्न के साथ शानदार बोहेमियन स्टाइल मिडी ड्रेस। गर्म मौसम के लिए आदर्श हल्के रेयॉन फैब्रिक। एलिगेंट फ्लटर स्लीव्स और टाई वेस्ट।",
-        "ru": "Потрясающее миди платье в богемном стиле с замысловатыми узорами пейсли. Лёгкая вискозная ткань идеально подходит для тёплой погоды. Элегантные рукава-флаттер и поясок на талии."
-      },
-      "color": {
-        "en": "Blue Paisley",
-        "es": "Paisley Azul",
-        "hi": "नीला पेस्ले",
-        "ru": "Синий Пейсли"
-      },
-      "sku": "IL-P2-2024",
-      "minOrder": 1,
-      "sizeMinOrders": { "S": 3, "M": 2, "L": 2 },
-      "imagePaths": ["P2-1.jpg", "P2-2.jpg", "P2-3.jpg", "P2-4.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1450 },
-        { "minQty": 6, "maxQty": 25, "price": 1280 },
-        { "minQty": 26, "maxQty": null, "price": 1100 }
-      ],
-      "sizes": ["S", "M", "L"],
-      "sizeMeasurements": {
-        "S": { "skirtLength": 100, "bust": 82, "waist": 64, "hips": 88 },
-        "M": { "skirtLength": 102, "bust": 86, "waist": 68, "hips": 92 },
-        "L": { "skirtLength": 104, "bust": 90, "waist": 72, "hips": 96 }
-      }
-    },
-    "P3": {
-      "title": {
-        "en": "Classic Striped Wrap Dress Business Casual",
-        "es": "Vestido Cruzado Clásico de Rayas Business Casual",
-        "hi": "क्लासिक स्ट्राइप्ड रैप ड्रेस बिजनेस कैजुअल",
-        "ru": "Классическое Полосатое Платье с Запахом Бизнес Кэжуал"
-      },
-      "description": {
-        "en": "Sophisticated striped wrap dress perfect for business casual settings. Premium cotton-polyester blend ensures comfort all day. True wrap design with adjustable fit.",
-        "es": "Sofisticado vestido cruzado a rayas perfecto para entornos de negocios casuales. Mezcla premium de algodón-poliéster garantiza comodidad todo el día. Diseño cruzado verdadero con ajuste regulable.",
-        "hi": "बिजनेस कैजुअल सेटिंग्स के लिए परिष्कृत स्ट्राइप्ड रैप ड्रेस। प्रीमियम कॉटन-पॉलिएस्टर ब्लेंड पूरे दिन आराम सुनिश्चित करता है। एडजस्टेबल फिट के साथ ट्रू रैप डिज़ाइन।",
-        "ru": "Изысканное полосатое платье с запахом, идеально подходящее для делового кэжуала. Премиальная смесь хлопка и полиэстера обеспечивает комфорт весь день. Настоящий дизайн с запахом и регулируемой посадкой."
-      },
-      "color": {
-        "en": "Navy Stripe",
-        "es": "Rayas Azul Marino",
-        "hi": "नेवी स्ट्राइप",
-        "ru": "Тёмно-Синяя Полоса"
-      },
-      "sku": "IL-P3-2024",
-      "minOrder": 1,
-      "sizeMinOrders": { "S": 2, "M": 3, "L": 2, "XL": 2 },
-      "imagePaths": ["P3-1.jpg", "P3-2.jpg", "P3-3.jpg", "P3-4.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1680 },
-        { "minQty": 6, "maxQty": 25, "price": 1480 },
-        { "minQty": 26, "maxQty": null, "price": 1280 }
-      ],
-      "sizes": ["S", "M", "L", "XL"],
-      "sizeMeasurements": {
-        "S": { "skirtLength": 95, "bust": 84, "waist": 66, "hips": 90 },
-        "M": { "skirtLength": 97, "bust": 88, "waist": 70, "hips": 94 },
-        "L": { "skirtLength": 99, "bust": 92, "waist": 74, "hips": 98 },
-        "XL": { "skirtLength": 101, "bust": 96, "waist": 78, "hips": 102 }
-      }
-    },
-    "P4": {
-      "title": {
-        "en": "Tropical Print Off-Shoulder Party Dress",
-        "es": "Vestido de Fiesta Tropical con Hombros Descubiertos",
-        "hi": "ट्रॉपिकल प्रिंट ऑफ-शोल्डर पार्टी ड्रेस",
-        "ru": "Тропическое Платье для Вечеринок с Открытыми Плечами"
-      },
-      "description": {
-        "en": "Vibrant tropical print party dress with off-shoulder design. Stretchy spandex blend for comfortable fit. Perfect for beach parties and summer celebrations.",
-        "es": "Vibrante vestido de fiesta con estampado tropical y diseño de hombros descubiertos. Mezcla de spandex elástico para un ajuste cómodo. Perfecto para fiestas en la playa y celebraciones de verano.",
-        "hi": "ऑफ-शोल्डर डिज़ाइन के साथ जीवंत ट्रॉपिकल प्रिंट पार्टी ड्रेस। आरामदायक फिट के लिए स्ट्रेची स्पैन्डेक्स ब्लेंड। बीच पार्टियों और समर सेलिब्रेशन के लिए परफेक्ट।",
-        "ru": "Яркое платье для вечеринок с тропическим принтом и дизайном с открытыми плечами. Эластичная смесь спандекса для комфортной посадки. Идеально для пляжных вечеринок и летних торжеств."
-      },
-      "color": {
-        "en": "Tropical Green",
-        "es": "Verde Tropical",
-        "hi": "ट्रॉपिकल ग्रीन",
-        "ru": "Тропический Зелёный"
-      },
-      "sku": "IL-P4-2024",
-      "minOrder": 1,
-      "sizeMinOrders": { "S": 3, "M": 2, "L": 3 },
-      "imagePaths": ["P4-1.jpg", "P4-2.jpg", "P4-3.jpg", "P4-4.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1350 },
-        { "minQty": 6, "maxQty": 25, "price": 1190 },
-        { "minQty": 26, "maxQty": null, "price": 1020 }
-      ],
-      "sizes": ["S", "M", "L"],
-      "sizeMeasurements": {
-        "S": { "skirtLength": 88, "bust": 80, "waist": 62, "hips": 86 },
-        "M": { "skirtLength": 90, "bust": 84, "waist": 66, "hips": 90 },
-        "L": { "skirtLength": 92, "bust": 88, "waist": 70, "hips": 94 }
-      }
-    },
-    "P5": {
-      "title": {
-        "en": "Vintage Rose Print Tea Length Dress",
-        "es": "Vestido Vintage con Estampado de Rosas Largo Té",
-        "hi": "विंटेज रोज़ प्रिंट टी लेंथ ड्रेस",
-        "ru": "Винтажное Платье с Принтом Роз Длиной до Чая"
-      },
-      "description": {
-        "en": "Elegant vintage-inspired dress featuring delicate rose prints. Tea length hem creates a timeless silhouette. Made with soft viscose fabric for all-day comfort.",
-        "es": "Elegante vestido de inspiración vintage con delicados estampados de rosas. El dobladillo largo té crea una silueta atemporal. Hecho con tela de viscosa suave para comodidad todo el día.",
-        "hi": "नाजुक रोज़ प्रिंट्स के साथ एलिगेंट विंटेज-इंस्पायर्ड ड्रेस। टी लेंथ हेम टाइमलेस सिल्हूट बनाता है। पूरे दिन आराम के लिए सॉफ्ट विस्कोस फैब्रिक से बना।",
-        "ru": "Элегантное платье в винтажном стиле с нежными принтами роз. Длина до чая создаёт вневременной силуэт. Изготовлено из мягкой вискозной ткани для комфорта весь день."
-      },
-      "color": {
-        "en": "Vintage Rose",
-        "es": "Rosa Vintage",
-        "hi": "विंटेज रोज़",
-        "ru": "Винтажная Роза"
-      },
-      "sku": "IL-P5-2024",
-      "minOrder": 1,
-      "sizeMinOrders": { "S": 2, "M": 2, "L": 3, "XL": 2 },
-      "imagePaths": ["P5-1.jpg", "P5-2.jpg", "P5-3.jpg", "P5-4.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1550 },
-        { "minQty": 6, "maxQty": 25, "price": 1365 },
-        { "minQty": 26, "maxQty": null, "price": 1180 }
-      ],
-      "sizes": ["S", "M", "L", "XL"],
-      "sizeMeasurements": {
-        "S": { "skirtLength": 108, "bust": 82, "waist": 64, "hips": 88 },
-        "M": { "skirtLength": 110, "bust": 86, "waist": 68, "hips": 92 },
-        "L": { "skirtLength": 112, "bust": 90, "waist": 72, "hips": 96 },
-        "XL": { "skirtLength": 114, "bust": 94, "waist": 76, "hips": 100 }
-      }
-    },
-    "P6": {
-      "title": {
-        "en": "Vintage Rose Print Tea Length Dress",
-        "es": "Vestido Vintage con Estampado de Rosas Largo Té",
-        "hi": "विंटेज रोज़ प्रिंट टी लेंथ ड्रेस",
-        "ru": "Винтажное Платье с Принтом Роз Длиной до Чая"
-      },
-      "description": {
-        "en": "Elegant vintage-inspired dress featuring delicate rose prints. Tea length hem creates a timeless silhouette. Made with soft viscose fabric for all-day comfort.",
-        "es": "Elegante vestido de inspiración vintage con delicados estampados de rosas. El dobladillo largo té crea una silueta atemporal. Hecho con tela de viscosa suave para comodidad todo el día.",
-        "hi": "नाजुक रोज़ प्रिंट्स के साथ एलिगेंट विंटेज-इंस्पायर्ड ड्रेस। टी लेंथ हेम टाइमलेस सिल्हूट बनाता है। पूरे दिन आराम के लिए सॉफ्ट विस्कोस फैब्रिक से बना।",
-        "ru": "Элегантное платье в винтажном стиле с нежными принтами роз. Длина до чая создаёт вневременной силуэт. Изготовлено из мягкой вискозной ткани для комфорта весь день."
-      },
-      "color": {
-        "en": "Vintage Rose",
-        "es": "Rosa Vintage",
-        "hi": "विंटेज रोज़",
-        "ru": "Винтажная Роза"
-      },
-      "sku": "IL-P6-2024",
-      "minOrder": 1,
-      "sizeMinOrders": { "S": 2, "M": 3, "L": 2, "XL": 3 },
-      "imagePaths": ["P5-1.jpg", "P5-2.jpg", "P5-3.jpg", "P5-4.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1550 },
-        { "minQty": 6, "maxQty": 25, "price": 1365 },
-        { "minQty": 26, "maxQty": null, "price": 1180 }
-      ],
-      "sizes": ["S", "M", "L", "XL"],
-      "sizeMeasurements": {
-        "S": { "skirtLength": 108, "bust": 82, "waist": 64, "hips": 88 },
-        "M": { "skirtLength": 110, "bust": 86, "waist": 68, "hips": 92 },
-        "L": { "skirtLength": 112, "bust": 90, "waist": 72, "hips": 96 },
-        "XL": { "skirtLength": 114, "bust": 94, "waist": 76, "hips": 100 }
-      }
-    }
-  },
-  "currencies": {
-    "AED": { "code": "AED", "symbol": "AED", "flag": "ae", "rate": 0.044 },
-    "AUD": { "code": "AUD", "symbol": "A$", "flag": "au", "rate": 0.018 },
-    "BGN": { "code": "BGN", "symbol": "BGN", "flag": "bg", "rate": 0.022 },
-    "BHD": { "code": "BHD", "symbol": "BHD", "flag": "bh", "rate": 0.0045 },
-    "BRL": { "code": "BRL", "symbol": "R$", "flag": "br", "rate": 0.072 },
-    "BSD": { "code": "BSD", "symbol": "BSD", "flag": "bs", "rate": 0.012 },
-    "CAD": { "code": "CAD", "symbol": "CA$", "flag": "ca", "rate": 0.017 },
-    "CHF": { "code": "CHF", "symbol": "CHF", "flag": "ch", "rate": 0.0105 },
-    "CLP": { "code": "CLP", "symbol": "CLP", "flag": "cl", "rate": 11.5 },
-    "CNY": { "code": "CNY", "symbol": "CN¥", "flag": "cn", "rate": 0.086 },
-    "COP": { "code": "COP", "symbol": "COP", "flag": "co", "rate": 52.0 },
-    "CRC": { "code": "CRC", "symbol": "CRC", "flag": "cr", "rate": 6.05 },
-    "CZK": { "code": "CZK", "symbol": "CZK", "flag": "cz", "rate": 0.28 },
-    "DKK": { "code": "DKK", "symbol": "DKK", "flag": "dk", "rate": 0.082 },
-    "EUR": { "code": "EUR", "symbol": "€", "flag": "eu", "rate": 0.0095 },
-    "GBP": { "code": "GBP", "symbol": "£", "flag": "gb", "rate": 0.0083 },
-    "GHS": { "code": "GHS", "symbol": "GHS", "flag": "gh", "rate": 0.18 },
-    "HKD": { "code": "HKD", "symbol": "HK$", "flag": "hk", "rate": 0.093 },
-    "ILS": { "code": "ILS", "symbol": "₪", "flag": "il", "rate": 0.043 },
-    "INR": { "code": "INR", "symbol": "₹", "flag": "in", "rate": 1 },
-    "ISK": { "code": "ISK", "symbol": "ISK", "flag": "is", "rate": 1.65 },
-    "JPY": { "code": "JPY", "symbol": "¥", "flag": "jp", "rate": 1.78 },
-    "KRW": { "code": "KRW", "symbol": "₩", "flag": "kr", "rate": 16.5 },
-    "KWD": { "code": "KWD", "symbol": "KWD", "flag": "kw", "rate": 0.0036 },
-    "LKR": { "code": "LKR", "symbol": "LKR", "flag": "lk", "rate": 3.5 },
-    "MAD": { "code": "MAD", "symbol": "MAD", "flag": "ma", "rate": 0.12 },
-    "MKD": { "code": "MKD", "symbol": "MKD", "flag": "mk", "rate": 0.68 },
-    "MVR": { "code": "MVR", "symbol": "MVR", "flag": "mv", "rate": 0.18 },
-    "MXN": { "code": "MXN", "symbol": "MX$", "flag": "mx", "rate": 0.24 },
-    "NGN": { "code": "NGN", "symbol": "NGN", "flag": "ng", "rate": 18.5 },
-    "NOK": { "code": "NOK", "symbol": "NOK", "flag": "no", "rate": 0.13 },
-    "NZD": { "code": "NZD", "symbol": "NZ$", "flag": "nz", "rate": 0.02 },
-    "PHP": { "code": "PHP", "symbol": "₱", "flag": "ph", "rate": 0.69 },
-    "PLN": { "code": "PLN", "symbol": "PLN", "flag": "pl", "rate": 0.048 },
-    "RON": { "code": "RON", "symbol": "RON", "flag": "ro", "rate": 0.055 },
-    "RUB": { "code": "RUB", "symbol": "₽", "flag": "ru", "rate": 1.22 },
-    "SAR": { "code": "SAR", "symbol": "SAR", "flag": "sa", "rate": 0.044 },
-    "SCR": { "code": "SCR", "symbol": "SCR", "flag": "sc", "rate": 0.16 },
-    "SEK": { "code": "SEK", "symbol": "SEK", "flag": "se", "rate": 0.13 },
-    "SGD": { "code": "SGD", "symbol": "SGD", "flag": "sg", "rate": 0.016 },
-    "THB": { "code": "THB", "symbol": "THB", "flag": "th", "rate": 0.40 },
-    "TTD": { "code": "TTD", "symbol": "TTD", "flag": "tt", "rate": 0.081 },
-    "USD": { "code": "USD", "symbol": "$", "flag": "us", "rate": 0.012 },
-    "XCD": { "code": "XCD", "symbol": "EC$", "flag": "ag", "rate": 0.032 },
-    "ZAR": { "code": "ZAR", "symbol": "ZAR", "flag": "za", "rate": 0.21 }
   },
   "languages": [
     { "code": "en", "name": "English" },

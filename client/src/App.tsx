@@ -9,6 +9,7 @@ import { CartNotificationProvider } from "@/contexts/CartNotificationContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { GlobalLoadingOverlay } from "@/components/GlobalLoadingOverlay";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import Catalog from "@/pages/Catalog";
 import Product from "@/pages/Product";
 import Cart from "@/pages/Cart";
@@ -42,6 +43,7 @@ function App() {
                 </main>
                 <Footer />
               </div>
+              <WhatsAppButton />
               <Toaster />
             </CartNotificationProvider>
           </CartProvider>
