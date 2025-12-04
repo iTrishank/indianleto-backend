@@ -1,5 +1,5 @@
-import { useState, useMemo } from "react";
-import { Filter, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useMemo, useEffect, useRef } from "react";
+import { Filter, ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
 import { ProductCard } from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
@@ -24,6 +24,8 @@ export default function Catalog() {
   const [colorFilter, setColorFilter] = useState<string>("all");
   const [priceSort, setPriceSort] = useState<string>("default");
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [isFiltering, setIsFiltering] = useState<boolean>(false);
+  const filterTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const allColors = useMemo(() => {
     const colors = new Set<string>();
@@ -63,12 +65,47 @@ export default function Catalog() {
   );
 
   const clearFilters = () => {
-    setColorFilter("all");
-    setPriceSort("default");
-    setCurrentPage(1);
+    handleFilterChange(() => {
+      setColorFilter("all");
+      setPriceSort("default");
+      setCurrentPage(1);
+    });
   };
 
   const hasActiveFilters = colorFilter !== "all" || priceSort !== "default";
+
+  const handleFilterChange = (callback: () => void) => {
+    setIsFiltering(true);
+    if (filterTimeoutRef.current) {
+      clearTimeout(filterTimeoutRef.current);
+    }
+    callback();
+    filterTimeoutRef.current = setTimeout(() => {
+      setIsFiltering(false);
+    }, 300);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (filterTimeoutRef.current) {
+        clearTimeout(filterTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  const handleColorChange = (v: string) => {
+    handleFilterChange(() => {
+      setColorFilter(v);
+      setCurrentPage(1);
+    });
+  };
+
+  const handlePriceSortChange = (v: string) => {
+    handleFilterChange(() => {
+      setPriceSort(v);
+      setCurrentPage(1);
+    });
+  };
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
@@ -81,7 +118,7 @@ export default function Catalog() {
         <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
           {t("catalog.color")}
         </label>
-        <Select value={colorFilter} onValueChange={(v) => { setColorFilter(v); setCurrentPage(1); }}>
+        <Select value={colorFilter} onValueChange={handleColorChange}>
           <SelectTrigger data-testid="select-color-filter">
             <SelectValue placeholder={t("catalog.allColors")} />
           </SelectTrigger>
@@ -100,7 +137,7 @@ export default function Catalog() {
         <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
           {t("catalog.price")}
         </label>
-        <Select value={priceSort} onValueChange={(v) => { setPriceSort(v); setCurrentPage(1); }}>
+        <Select value={priceSort} onValueChange={handlePriceSortChange}>
           <SelectTrigger data-testid="select-price-sort">
             <SelectValue placeholder={t("catalog.default")} />
           </SelectTrigger>
@@ -112,16 +149,15 @@ export default function Catalog() {
         </Select>
       </div>
 
-      {hasActiveFilters && (
-        <Button
-          variant="outline"
-          className="w-full"
-          onClick={clearFilters}
-          data-testid="button-clear-filters"
-        >
-          {t("catalog.clearFilters")}
-        </Button>
-      )}
+      <Button
+        variant="outline"
+        className="w-full"
+        onClick={clearFilters}
+        disabled={!hasActiveFilters}
+        data-testid="button-clear-filters"
+      >
+        {t("catalog.clearFilters")}
+      </Button>
     </div>
   );
 
@@ -188,30 +224,39 @@ export default function Catalog() {
     );
   };
 
+  const LoadingSpinner = () => (
+    <div className="absolute inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center z-10">
+      <div className="flex flex-col items-center gap-3">
+        <Loader2 className="h-8 w-8 animate-spin text-foreground" data-testid="loading-spinner" />
+        <span className="text-sm text-muted-foreground">{t("catalog.loading") || "Loading..."}</span>
+      </div>
+    </div>
+  );
+
   return (
     <div className="min-h-screen">
-      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-12 md:py-16">
+      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-10 md:py-12">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <div className="text-center space-y-4">
+          <div className="text-center space-y-3">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
               {t("catalog.title")}
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
               {t("catalog.subtitle")}
             </p>
           </div>
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
-          <p className="text-muted-foreground" data-testid="text-product-count">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 mb-6">
+          <p className="text-sm text-muted-foreground" data-testid="text-product-count">
             {t("catalog.showing")} {paginatedProducts.length} {t("catalog.of")} {filteredProducts.length} {t("catalog.products")}
             {totalPages > 1 && ` (${t("catalog.page")} ${currentPage} ${t("catalog.of")} ${totalPages})`}
           </p>
 
-          <div className="hidden md:flex items-center gap-4 flex-wrap">
-            <Select value={colorFilter} onValueChange={(v) => { setColorFilter(v); setCurrentPage(1); }}>
+          <div className="hidden md:flex items-center gap-3 flex-wrap">
+            <Select value={colorFilter} onValueChange={handleColorChange}>
               <SelectTrigger className="w-[140px]" data-testid="desktop-color-filter">
                 <SelectValue placeholder={t("catalog.color")} />
               </SelectTrigger>
@@ -225,7 +270,7 @@ export default function Catalog() {
               </SelectContent>
             </Select>
 
-            <Select value={priceSort} onValueChange={(v) => { setPriceSort(v); setCurrentPage(1); }}>
+            <Select value={priceSort} onValueChange={handlePriceSortChange}>
               <SelectTrigger className="w-[160px]" data-testid="desktop-price-sort">
                 <SelectValue placeholder={t("catalog.price")} />
               </SelectTrigger>
@@ -236,16 +281,15 @@ export default function Catalog() {
               </SelectContent>
             </Select>
 
-            {hasActiveFilters && (
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={clearFilters}
-                data-testid="desktop-clear-filters"
-              >
-                {t("catalog.clearFilters")}
-              </Button>
-            )}
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={clearFilters}
+              disabled={!hasActiveFilters}
+              data-testid="desktop-clear-filters"
+            >
+              {t("catalog.clearFilters")}
+            </Button>
           </div>
 
           <Sheet>
@@ -271,38 +315,42 @@ export default function Catalog() {
           </Sheet>
         </div>
 
-        {paginatedProducts.length > 0 ? (
-          <>
-            <div
-              className="grid justify-center gap-4"
-              style={{
-                gridTemplateColumns: `repeat(auto-fill, ${ITEM_SIZE}px)`,
-                maxWidth: `${5 * ITEM_SIZE + 4 * 16}px`,
-                margin: "0 auto",
-              }}
-              data-testid="product-grid"
-            >
-              {paginatedProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
+        <div className="relative min-h-[400px]">
+          {isFiltering && <LoadingSpinner />}
+          
+          {paginatedProducts.length > 0 ? (
+            <>
+              <div
+                className="grid justify-center gap-4"
+                style={{
+                  gridTemplateColumns: `repeat(auto-fill, ${ITEM_SIZE}px)`,
+                  maxWidth: `${5 * ITEM_SIZE + 4 * 16}px`,
+                  margin: "0 auto",
+                }}
+                data-testid="product-grid"
+              >
+                {paginatedProducts.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
+              <Pagination />
+            </>
+          ) : (
+            <div className="min-h-[400px] flex items-center justify-center">
+              <div className="text-center space-y-4">
+                <h3 className="text-lg font-semibold text-muted-foreground">
+                  {t("catalog.noProducts")}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {t("catalog.tryAdjustingFilters")}
+                </p>
+                <Button variant="outline" onClick={clearFilters}>
+                  {t("catalog.clearFilters")}
+                </Button>
+              </div>
             </div>
-            <Pagination />
-          </>
-        ) : (
-          <div className="min-h-[400px] flex items-center justify-center">
-            <div className="text-center space-y-4">
-              <h3 className="text-lg font-semibold text-muted-foreground">
-                {t("catalog.noProducts")}
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                {t("catalog.tryAdjustingFilters")}
-              </p>
-              <Button variant="outline" onClick={clearFilters}>
-                {t("catalog.clearFilters")}
-              </Button>
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

@@ -70,7 +70,7 @@ export default function Product() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-8">
+    <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-6 md:py-8">
       <nav className="mb-6">
         <Link href="/" data-testid="link-breadcrumb-catalog">
           <Button variant="ghost" size="sm" className="gap-2">
@@ -80,13 +80,13 @@ export default function Product() {
         </Link>
       </nav>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         <div className="relative">
           <ProductGallery images={product.images} productTitle={product.title} />
         </div>
 
-        <div className="space-y-6">
-          <div className="space-y-3">
+        <div className="flex flex-col gap-5">
+          <div className="space-y-2">
             <h1
               className="text-2xl md:text-3xl font-bold tracking-tight"
               data-testid="text-product-title"
@@ -106,7 +106,7 @@ export default function Product() {
             {product.description}
           </p>
 
-          <div className="space-y-3">
+          <div className="space-y-2">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
               {t("product.wholesalePricing")}
             </h3>
@@ -139,7 +139,7 @@ export default function Product() {
             onQuantityChange={setQuantity}
           />
 
-          <div className="border-t pt-6 space-y-4">
+          <div className="border-t pt-5 space-y-3">
             <div className="flex justify-between items-center">
               <span className="text-muted-foreground">{t("product.unitPrice")}:</span>
               <span
@@ -158,7 +158,7 @@ export default function Product() {
 
             <Button
               size="lg"
-              className="w-full min-h-[48px]"
+              className="w-full min-h-[48px] mt-2"
               onClick={handleAddToCart}
               disabled={!selectedSize}
               data-testid="button-add-to-cart"
