@@ -14,6 +14,7 @@ import Catalog from "@/pages/Catalog";
 import Product from "@/pages/Product";
 import Cart from "@/pages/Cart";
 import Thanks from "@/pages/Thanks";
+import About from "@/pages/About";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -23,6 +24,7 @@ function Router() {
       <Route path="/product/:id" component={Product} />
       <Route path="/cart" component={Cart} />
       <Route path="/thanks" component={Thanks} />
+      <Route path="/about" component={About} />
       <Route component={NotFound} />
     </Switch>
   );

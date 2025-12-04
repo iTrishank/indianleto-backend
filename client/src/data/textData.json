@@ -4,6 +4,7 @@
       "header": {
         "logo": "IndianLeto",
         "catalog": "Catalog",
+        "aboutUs": "About Us",
         "cart": "Cart",
         "color": "Color",
         "themeColor": "Theme Color"
@@ -121,6 +122,7 @@
       "header": {
         "logo": "IndianLeto",
         "catalog": "Catálogo",
+        "aboutUs": "Sobre Nosotros",
         "cart": "Carrito",
         "color": "Color",
         "themeColor": "Color del Tema"
@@ -238,6 +240,7 @@
       "header": {
         "logo": "IndianLeto",
         "catalog": "कैटलॉग",
+        "aboutUs": "हमारे बारे में",
         "cart": "कार्ट",
         "color": "रंग",
         "themeColor": "थीम रंग"
@@ -355,6 +358,7 @@
       "header": {
         "logo": "IndianLeto",
         "catalog": "Каталог",
+        "aboutUs": "О Нас",
         "cart": "Корзина",
         "color": "Цвет",
         "themeColor": "Цвет Темы"

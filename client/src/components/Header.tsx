@@ -27,11 +27,27 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <Container>
         <div className="flex h-16 md:h-20 items-center justify-between gap-2 md:gap-4">
-          <Link href="/" data-testid="link-home">
-            <span className="text-xl md:text-2xl font-bold tracking-tight text-primary cursor-pointer">
-              {t("header.logo")}
-            </span>
-          </Link>
+          <div className="flex items-center gap-2 md:gap-4">
+            <Link href="/" data-testid="link-home">
+              <span className="text-xl md:text-2xl font-bold tracking-tight text-primary cursor-pointer">
+                {t("header.logo")}
+              </span>
+            </Link>
+            <nav className="hidden sm:flex items-center gap-1 text-sm text-muted-foreground">
+              <span className="text-border">|</span>
+              <Link href="/" data-testid="link-catalog">
+                <span className="hover:text-foreground cursor-pointer transition-colors">
+                  {t("header.catalog")}
+                </span>
+              </Link>
+              <span className="text-border">|</span>
+              <Link href="/about" data-testid="link-about">
+                <span className="hover:text-foreground cursor-pointer transition-colors">
+                  {t("header.aboutUs")}
+                </span>
+              </Link>
+            </nav>
+          </div>
 
           <div className="flex items-center gap-1 md:gap-2">
             <DropdownMenu>
