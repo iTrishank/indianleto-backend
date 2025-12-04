@@ -22,7 +22,15 @@
       },
       "minOrder": 1,
       "sizeMinOrders": { "S": 2, "M": 3, "L": 2, "XL": 2 },
-      "images": ["P1/1.jpg", "P1/2.jpg", "P1/3.jpg", "P1/4.jpg"],
+      "images": [
+        "P1/1.jpg",
+        "P1/2.jpg",
+        "P1/3.jpg",
+        "P1/4.jpg",
+        "P1/1.jpg",
+        "P1/2.jpg",
+        "P1/3.jpg"
+      ],
       "priceTiers": [
         { "minQty": 1, "maxQty": 5, "price": 1250 },
         { "minQty": 6, "maxQty": 25, "price": 1100 },
