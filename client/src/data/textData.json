@@ -443,7 +443,15 @@
       },
       "sku": "IL-P1-2024",
       "minOrder": 1,
-      "imagePaths": ["P1-1.jpg", "P1-2.jpg", "P1-3.jpg", "P1-4.jpg"],
+      "imagePaths": [
+        "P1-1.jpg",
+        "P1-2.jpg",
+        "P1-3.jpg",
+        "P1-4.jpg",
+        "P1-1.jpg",
+        "P1-1.jpg",
+        "P1-1.jpg"
+      ],
       "priceTiers": [
         { "minQty": 1, "maxQty": 5, "price": 1250 },
         { "minQty": 6, "maxQty": 25, "price": 1100 },

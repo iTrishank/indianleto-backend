@@ -14,11 +14,14 @@ interface PriceTiersProps {
 
 export function PriceTiers({ priceTiers, currentQuantity }: PriceTiersProps) {
   const { t, formatPrice } = useApp();
-  
+
   const getActiveTierIndex = () => {
     for (let i = 0; i < priceTiers.length; i++) {
       const tier = priceTiers[i];
-      if (currentQuantity >= tier.minQty && (tier.maxQty === null || currentQuantity <= tier.maxQty)) {
+      if (
+        currentQuantity >= tier.minQty &&
+        (tier.maxQty === null || currentQuantity <= tier.maxQty)
+      ) {
         return i;
       }
     }
@@ -48,7 +51,9 @@ export function PriceTiers({ priceTiers, currentQuantity }: PriceTiersProps) {
             }`}
             data-testid={`price-tier-${index}`}
           >
-            <div className={`text-xl md:text-2xl font-bold ${isActive ? "text-primary" : "text-foreground"}`}>
+            <div
+              className={`text-xl md:text-2xl font-bold ${isActive ? "text-primary" : "text-foreground"}`}
+            >
               {formatPrice(tier.price)}
             </div>
             <div className="text-sm text-muted-foreground mt-1">
