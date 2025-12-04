@@ -68,18 +68,18 @@ export function SizeQuantitySelector({
           return (
             <div
               key={size}
-              className="flex items-center justify-between gap-2"
+              className="flex flex-col gap-2"
               data-testid={`size-row-${size}`}
             >
-              <span
-                className="min-w-[3rem] px-3 py-2 text-sm font-medium"
-                data-testid={`label-size-${size}`}
-              >
-                {size}
-              </span>
+              <div className="flex items-center justify-between gap-2">
+                <span
+                  className="min-w-[3rem] px-3 py-2 text-sm font-medium"
+                  data-testid={`label-size-${size}`}
+                >
+                  {size}
+                </span>
 
-              <div className="flex items-center gap-4 flex-wrap justify-end">
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-1 flex-shrink-0">
                   <Button
                     type="button"
                     variant="outline"
@@ -110,23 +110,23 @@ export function SizeQuantitySelector({
                     <Plus className="h-4 w-4" />
                   </Button>
                 </div>
+              </div>
 
-                <div className="flex items-center gap-2">
-                  {QUICK_ADD_AMOUNTS.map((amount) => (
-                    <Button
-                      key={amount}
-                      type="button"
-                      variant="secondary"
-                      size="sm"
-                      className="h-8 px-2 text-xs font-medium"
-                      onClick={() => handleQuickAdd(size, amount)}
-                      disabled={quantity >= MAX_QUANTITY}
-                      data-testid={`button-quick-add-${size}-${amount}`}
-                    >
-                      +{amount}
-                    </Button>
-                  ))}
-                </div>
+              <div className="flex items-center gap-1.5 flex-wrap pl-3">
+                {QUICK_ADD_AMOUNTS.map((amount) => (
+                  <Button
+                    key={amount}
+                    type="button"
+                    variant="secondary"
+                    size="sm"
+                    className="h-7 px-2 text-xs font-medium"
+                    onClick={() => handleQuickAdd(size, amount)}
+                    disabled={quantity >= MAX_QUANTITY}
+                    data-testid={`button-quick-add-${size}-${amount}`}
+                  >
+                    +{amount}
+                  </Button>
+                ))}
               </div>
             </div>
           );

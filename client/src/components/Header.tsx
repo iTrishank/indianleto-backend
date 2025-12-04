@@ -65,8 +65,8 @@ export function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
+            <Popover>
+              <PopoverTrigger asChild>
                 <Button
                   variant="ghost"
                   size="sm"
@@ -83,27 +83,29 @@ export function Header() {
                   </span>
                   <ChevronDown className="h-3 w-3" />
                 </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48 max-h-80 overflow-y-auto">
-                {currencies.map((curr) => (
-                  <DropdownMenuItem
-                    key={curr.code}
-                    onClick={() => setCurrency(curr.code)}
-                    className="cursor-pointer flex items-center justify-between gap-2"
-                    data-testid={`currency-${curr.code}`}
-                  >
-                    <span className={currency.code === curr.code ? "font-semibold" : ""}>
-                      {curr.code} {curr.symbol}
-                    </span>
-                    <img
-                      src={`${ui.flagCdnBase}/${curr.flag}.png`}
-                      alt={curr.code}
-                      className="h-3 w-4 object-cover rounded-sm"
-                    />
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+              </PopoverTrigger>
+              <PopoverContent align="end" className="w-auto p-3 max-h-80 overflow-y-auto">
+                <div className="grid grid-cols-5 gap-1">
+                  {currencies.map((curr) => (
+                    <Button
+                      key={curr.code}
+                      variant={currency.code === curr.code ? "default" : "ghost"}
+                      size="sm"
+                      onClick={() => setCurrency(curr.code)}
+                      className="flex flex-col items-center gap-1 h-auto py-2 px-2 min-w-[56px]"
+                      data-testid={`currency-${curr.code}`}
+                    >
+                      <img
+                        src={`${ui.flagCdnBase}/${curr.flag}.png`}
+                        alt={curr.code}
+                        className="h-3 w-5 object-cover rounded-sm"
+                      />
+                      <span className="text-xs font-medium">{curr.code}</span>
+                    </Button>
+                  ))}
+                </div>
+              </PopoverContent>
+            </Popover>
 
             <Popover>
               <PopoverTrigger asChild>
