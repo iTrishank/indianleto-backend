@@ -50,14 +50,14 @@ export default function Product() {
   const totalQuantity = useMemo(() => {
     return Object.entries(sizeQuantities).reduce((sum, [size, qty]) => {
       const min = getMinOrderForSize(size);
-      return sum + (qty > min ? qty : 0);
+      return sum + (qty >= min ? qty : 0);
     }, 0);
   }, [sizeQuantities]);
 
   const sizesWithQuantity = useMemo(() => {
     return Object.entries(sizeQuantities).filter(([size, qty]) => {
       const min = getMinOrderForSize(size);
-      return qty > min;
+      return qty >= min;
     });
   }, [sizeQuantities]);
 

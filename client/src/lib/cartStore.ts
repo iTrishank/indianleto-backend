@@ -127,9 +127,9 @@ export function clearCart(): CartItem[] {
   return [];
 }
 
-// Get total item count
+// Get total item count (number of unique sizes added)
 export function getCartItemCount(items: CartItem[]): number {
-  return items.reduce((total, item) => total + item.quantity, 0);
+  return items.length;
 }
 
 // Get cart total
