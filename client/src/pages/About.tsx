@@ -11,7 +11,7 @@ export default function About() {
           {t("header.aboutUs")}
         </h1>
         <p className="text-muted-foreground" data-testid="text-about-placeholder">
-          About Us page content coming soon.
+          {t("about.placeholder")}
         </p>
       </div>
     </Container>

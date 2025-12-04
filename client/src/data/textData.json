@@ -9,6 +9,9 @@
         "color": "Color",
         "themeColor": "Theme Color"
       },
+      "about": {
+        "placeholder": "About Us page content coming soon."
+      },
       "catalog": {
         "title": "Wholesale Print Dresses",
         "subtitle": "Premium quality fashion at competitive wholesale prices. Minimum order from 1 piece.",
@@ -126,6 +129,9 @@
         "cart": "Carrito",
         "color": "Color",
         "themeColor": "Color del Tema"
+      },
+      "about": {
+        "placeholder": "Contenido de la página Sobre Nosotros próximamente."
       },
       "catalog": {
         "title": "Vestidos Estampados al Por Mayor",
@@ -245,6 +251,9 @@
         "color": "रंग",
         "themeColor": "थीम रंग"
       },
+      "about": {
+        "placeholder": "हमारे बारे में पेज की सामग्री जल्द आ रही है।"
+      },
       "catalog": {
         "title": "होलसेल प्रिंट ड्रेसेस",
         "subtitle": "प्रतिस्पर्धी होलसेल मूल्यों पर प्रीमियम गुणवत्ता वाला फैशन। न्यूनतम ऑर्डर 1 पीस से।",
@@ -362,6 +371,9 @@
         "cart": "Корзина",
         "color": "Цвет",
         "themeColor": "Цвет Темы"
+      },
+      "about": {
+        "placeholder": "Содержимое страницы О Нас скоро появится."
       },
       "catalog": {
         "title": "Оптовые Принтованные Платья",
