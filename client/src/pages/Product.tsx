@@ -32,7 +32,7 @@ export default function Product() {
     if (!product) return {};
     const quantities: Record<string, number> = {};
     product.attributes.sizes.forEach((size) => {
-      quantities[size] = getMinOrderForSize(size);
+      quantities[size] = 0;
     });
     return quantities;
   };
@@ -48,18 +48,19 @@ export default function Product() {
   };
 
   const totalQuantity = useMemo(() => {
-    return Object.entries(sizeQuantities).reduce((sum, [size, qty]) => {
-      const min = getMinOrderForSize(size);
-      return sum + (qty >= min ? qty : 0);
+    return Object.entries(sizeQuantities).reduce((sum, [, qty]) => {
+      return sum + qty;
     }, 0);
   }, [sizeQuantities]);
 
   const sizesWithQuantity = useMemo(() => {
     return Object.entries(sizeQuantities).filter(([size, qty]) => {
       const min = getMinOrderForSize(size);
-      return qty >= min;
+      return qty >= min && qty > 0;
     });
   }, [sizeQuantities]);
+
+  const hasAtLeastOneValidSize = sizesWithQuantity.length > 0;
 
   if (!product) {
     return (
@@ -204,7 +205,7 @@ export default function Product() {
               size="lg"
               className="w-full min-h-[48px] mt-2"
               onClick={handleAddToCart}
-              disabled={sizesWithQuantity.length === 0}
+              disabled={!hasAtLeastOneValidSize}
               data-testid="button-add-to-cart"
             >
               <span className="flex items-center justify-center min-w-[180px]">

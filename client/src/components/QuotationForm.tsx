@@ -205,9 +205,14 @@ export function QuotationForm() {
 
             <div className="border-t pt-4 mt-4 space-y-3">
               <div className="flex justify-between items-center">
-                <span className="text-muted-foreground">{t("cart.totalItems")}:</span>
-                <span className="font-medium" data-testid="text-item-count">
-                  {items.length}
+                <span className="text-muted-foreground">{t("cart.orderDetails")}:</span>
+                <span className="font-medium text-right" data-testid="text-item-count">
+                  {(() => {
+                    const uniqueSkus = new Set(items.map(item => item.productId)).size;
+                    const totalSizes = items.length;
+                    const totalQty = items.reduce((sum, item) => sum + item.quantity, 0);
+                    return `${totalSizes} ${t("cart.sizes")} | ${uniqueSkus} ${t("cart.skus")} | ${totalQty} ${t("cart.pcs")}`;
+                  })()}
                 </span>
               </div>
               <div className="flex justify-between items-center">

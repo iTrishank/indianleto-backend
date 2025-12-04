@@ -28,9 +28,8 @@ export function SizeQuantitySelector({
   };
 
   const handleDecrement = (size: string) => {
-    const current = sizeQuantities[size] || getMinOrderForSize(size);
-    const min = getMinOrderForSize(size);
-    if (current > min) {
+    const current = sizeQuantities[size] ?? getMinOrderForSize(size);
+    if (current > 0) {
       onQuantityChange(size, current - 1);
     }
   };
@@ -45,8 +44,7 @@ export function SizeQuantitySelector({
   const handleInputChange = (size: string, value: string) => {
     const parsed = parseInt(value, 10);
     if (!isNaN(parsed)) {
-      const min = getMinOrderForSize(size);
-      const clamped = Math.max(min, Math.min(MAX_QUANTITY, parsed));
+      const clamped = Math.max(0, Math.min(MAX_QUANTITY, parsed));
       onQuantityChange(size, clamped);
     }
   };
@@ -64,7 +62,7 @@ export function SizeQuantitySelector({
       </label>
       <div className="space-y-2" data-testid="size-quantity-selector">
         {sizes.map((size) => {
-          const quantity = sizeQuantities[size] || getMinOrderForSize(size);
+          const quantity = sizeQuantities[size] ?? 0;
           const minOrder = getMinOrderForSize(size);
 
           return (
@@ -80,21 +78,21 @@ export function SizeQuantitySelector({
                 {size}
               </span>
 
-              <div className="flex items-center gap-1 flex-wrap justify-end">
+              <div className="flex items-center gap-4 flex-wrap justify-end">
                 <div className="flex items-center gap-1">
                   <Button
                     type="button"
                     variant="outline"
                     size="icon"
                     onClick={() => handleDecrement(size)}
-                    disabled={quantity <= minOrder}
+                    disabled={quantity <= 0}
                     data-testid={`button-decrease-${size}`}
                   >
                     <Minus className="h-4 w-4" />
                   </Button>
                   <Input
                     type="number"
-                    min={minOrder}
+                    min={0}
                     max={MAX_QUANTITY}
                     value={quantity}
                     onChange={(e) => handleInputChange(size, e.target.value)}
@@ -113,7 +111,7 @@ export function SizeQuantitySelector({
                   </Button>
                 </div>
 
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-2">
                   {QUICK_ADD_AMOUNTS.map((amount) => (
                     <Button
                       key={amount}
