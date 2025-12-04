@@ -602,6 +602,41 @@
         "L": { "skirtLength": 112, "bust": 90, "waist": 72, "hips": 96 },
         "XL": { "skirtLength": 114, "bust": 94, "waist": 76, "hips": 100 }
       }
+    },
+    "P6": {
+      "title": {
+        "en": "Vintage Rose Print Tea Length Dress",
+        "es": "Vestido Vintage con Estampado de Rosas Largo Té",
+        "hi": "विंटेज रोज़ प्रिंट टी लेंथ ड्रेस",
+        "ru": "Винтажное Платье с Принтом Роз Длиной до Чая"
+      },
+      "description": {
+        "en": "Elegant vintage-inspired dress featuring delicate rose prints. Tea length hem creates a timeless silhouette. Made with soft viscose fabric for all-day comfort.",
+        "es": "Elegante vestido de inspiración vintage con delicados estampados de rosas. El dobladillo largo té crea una silueta atemporal. Hecho con tela de viscosa suave para comodidad todo el día.",
+        "hi": "नाजुक रोज़ प्रिंट्स के साथ एलिगेंट विंटेज-इंस्पायर्ड ड्रेस। टी लेंथ हेम टाइमलेस सिल्हूट बनाता है। पूरे दिन आराम के लिए सॉफ्ट विस्कोस फैब्रिक से बना।",
+        "ru": "Элегантное платье в винтажном стиле с нежными принтами роз. Длина до чая создаёт вневременной силуэт. Изготовлено из мягкой вискозной ткани для комфорта весь день."
+      },
+      "color": {
+        "en": "Vintage Rose",
+        "es": "Rosa Vintage",
+        "hi": "विंटेज रोज़",
+        "ru": "Винтажная Роза"
+      },
+      "sku": "IL-P5-2024",
+      "minOrder": 1,
+      "imagePaths": ["P5-1.jpg", "P5-2.jpg", "P5-3.jpg", "P5-4.jpg"],
+      "priceTiers": [
+        { "minQty": 1, "maxQty": 5, "price": 1550 },
+        { "minQty": 6, "maxQty": 25, "price": 1365 },
+        { "minQty": 26, "maxQty": null, "price": 1180 }
+      ],
+      "sizes": ["S", "M", "L", "XL"],
+      "sizeMeasurements": {
+        "S": { "skirtLength": 108, "bust": 82, "waist": 64, "hips": 88 },
+        "M": { "skirtLength": 110, "bust": 86, "waist": 68, "hips": 92 },
+        "L": { "skirtLength": 112, "bust": 90, "waist": 72, "hips": 96 },
+        "XL": { "skirtLength": 114, "bust": 94, "waist": 76, "hips": 100 }
+      }
     }
   },
   "currencies": {
