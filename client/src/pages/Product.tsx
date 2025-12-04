@@ -20,11 +20,28 @@ export default function Product() {
   const { addItem } = useCart();
   const { toast } = useToast();
 
+  const getMinOrderForSize = (size: string): number => {
+    if (product?.sizeMinOrders && product.sizeMinOrders[size]) {
+      return product.sizeMinOrders[size];
+    }
+    return product?.minOrder || 1;
+  };
+
   const [selectedSize, setSelectedSize] = useState<string>(
     product?.attributes.sizes[0] || ""
   );
-  const [quantity, setQuantity] = useState<number>(1);
+  const [quantity, setQuantity] = useState<number>(() => 
+    getMinOrderForSize(product?.attributes.sizes[0] || "")
+  );
   const [justAdded, setJustAdded] = useState(false);
+
+  const handleSizeChange = (size: string) => {
+    setSelectedSize(size);
+    const minForSize = getMinOrderForSize(size);
+    setQuantity(minForSize);
+  };
+
+  const currentMinOrder = getMinOrderForSize(selectedSize);
 
   if (!product) {
     return (
@@ -65,7 +82,7 @@ export default function Product() {
       description: `${product.title} (${t("product.size")}: ${selectedSize}) x ${quantity} ${t("product.addedToCartDesc")}.`,
     });
 
-    setQuantity(product.minOrder);
+    setQuantity(currentMinOrder);
 
     setTimeout(() => setJustAdded(false), 2000);
   };
@@ -96,7 +113,7 @@ export default function Product() {
             </h1>
             <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
               <span data-testid="text-product-sku">{t("product.sku")}: {product.sku}</span>
-              <span>{t("product.minOrder")}: {product.minOrder}</span>
+              <span>{t("product.minOrder")}: {currentMinOrder}</span>
             </div>
           </div>
 
@@ -124,7 +141,7 @@ export default function Product() {
           <SizeSelector
             sizes={product.attributes.sizes}
             selectedSize={selectedSize}
-            onSelectSize={setSelectedSize}
+            onSelectSize={handleSizeChange}
           />
 
           {product.attributes.measurements && (
@@ -136,7 +153,7 @@ export default function Product() {
 
           <QuantityInput
             quantity={quantity}
-            minQuantity={product.minOrder}
+            minQuantity={currentMinOrder}
             onQuantityChange={setQuantity}
           />
 

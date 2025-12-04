@@ -443,6 +443,7 @@
       },
       "sku": "IL-P1-2024",
       "minOrder": 1,
+      "sizeMinOrders": { "S": 2, "M": 3, "L": 2, "XL": 2 },
       "imagePaths": [
         "P1-1.jpg",
         "P1-2.jpg",
@@ -486,6 +487,7 @@
       },
       "sku": "IL-P2-2024",
       "minOrder": 1,
+      "sizeMinOrders": { "S": 3, "M": 2, "L": 2 },
       "imagePaths": ["P2-1.jpg", "P2-2.jpg", "P2-3.jpg", "P2-4.jpg"],
       "priceTiers": [
         { "minQty": 1, "maxQty": 5, "price": 1450 },
@@ -520,6 +522,7 @@
       },
       "sku": "IL-P3-2024",
       "minOrder": 1,
+      "sizeMinOrders": { "S": 2, "M": 3, "L": 2, "XL": 2 },
       "imagePaths": ["P3-1.jpg", "P3-2.jpg", "P3-3.jpg", "P3-4.jpg"],
       "priceTiers": [
         { "minQty": 1, "maxQty": 5, "price": 1680 },
@@ -555,6 +558,7 @@
       },
       "sku": "IL-P4-2024",
       "minOrder": 1,
+      "sizeMinOrders": { "S": 3, "M": 2, "L": 3 },
       "imagePaths": ["P4-1.jpg", "P4-2.jpg", "P4-3.jpg", "P4-4.jpg"],
       "priceTiers": [
         { "minQty": 1, "maxQty": 5, "price": 1350 },
@@ -589,6 +593,7 @@
       },
       "sku": "IL-P5-2024",
       "minOrder": 1,
+      "sizeMinOrders": { "S": 2, "M": 2, "L": 3, "XL": 2 },
       "imagePaths": ["P5-1.jpg", "P5-2.jpg", "P5-3.jpg", "P5-4.jpg"],
       "priceTiers": [
         { "minQty": 1, "maxQty": 5, "price": 1550 },
@@ -622,8 +627,9 @@
         "hi": "विंटेज रोज़",
         "ru": "Винтажная Роза"
       },
-      "sku": "IL-P5-2024",
+      "sku": "IL-P6-2024",
       "minOrder": 1,
+      "sizeMinOrders": { "S": 2, "M": 3, "L": 2, "XL": 3 },
       "imagePaths": ["P5-1.jpg", "P5-2.jpg", "P5-3.jpg", "P5-4.jpg"],
       "priceTiers": [
         { "minQty": 1, "maxQty": 5, "price": 1550 },

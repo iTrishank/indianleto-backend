@@ -1,0 +1,29 @@
+TASK: Implement the following exact changes on the project:
+
+1) Catalog layout / stretching:
+   - On the catalog screen make the product grid layout visually stretched to use the maximum available width inside the main container.
+   - Show products so they appear "stretched max" and display a summary like "Showing 6 of 6" (or "Showing X of Y") above the grid up until the Clear Filter button (i.e., the summary stays visible until filters are applied).
+   - Ensure the grid and summary align properly with the Clear Filter button and the rest of the header area.
+
+2) Per-size minimum order (data + UI behavior):
+   - Each product size must have its own `minOrder` value stored in `textData.json` under that product's key (e.g., `P1.sizeMinOrders = { "S": 2, "M": 4, "L": 3 }`).
+   - When a user clicks/selects a size on the product page, the UI must immediately use that size's `minOrder` value (update the quantity control and any validation accordingly).
+   - The `textData.json` must be structured so size-specific `minOrder` values are easy to edit in the future.
+
+3) Shorten the big gradient section:
+   - Reduce the vertical length of the section with `className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-10 md:py-12"`.
+   - Remove excessive empty whitespace so the section is compact and visually balanced while keeping the gradient look.
+
+4) Cart animation when adding product:
+   - Replace the current add-to-cart animation with a cleaner, seamless animation where the small numeric badge is proportional and does not overlap or appear larger than product cards.
+   - Make the animation subtle and smooth (no sudden jumps). The cart count square should remain visually smaller than the product card and aligned neatly in the header.
+
+5) Product card min-order tag:
+   - On each product card add a small tag at the **top-right corner** showing the minimum order for the small size only (label: `Min: <number>` or similar).
+   - The tag should be unobtrusive, consistent across cards, and follow existing styling (small font, rounded background).
+
+IMPLEMENTATION NOTES (strict):
+- Do only these changes; do not alter unrelated behavior.
+- Keep accessibility: tags and animations keyboard-focusable or non-interfering.
+- Ensure `textData.json` is updated and the data structure matches the product keys and asset naming conventions already used.
+- Make layout changes responsive and consistent with existing container rules.

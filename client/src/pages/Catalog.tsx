@@ -236,13 +236,13 @@ export default function Catalog() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-10 md:py-12">
+      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-5 md:py-6">
         <Container>
-          <div className="text-center space-y-3">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+          <div className="text-center space-y-2">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
               {t("catalog.title")}
             </h1>
-            <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
               {t("catalog.subtitle")}
             </p>
           </div>
@@ -250,12 +250,7 @@ export default function Catalog() {
       </section>
 
       <Container className="py-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 mb-6">
-          <p className="text-sm text-muted-foreground" data-testid="text-product-count">
-            {t("catalog.showing")} {paginatedProducts.length} {t("catalog.of")} {filteredProducts.length} {t("catalog.products")}
-            {totalPages > 1 && ` (${t("catalog.page")} ${currentPage} ${t("catalog.of")} ${totalPages})`}
-          </p>
-
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 mb-4">
           <div className="hidden md:flex items-center gap-3 flex-wrap">
             <Select value={colorFilter} onValueChange={handleColorChange}>
               <SelectTrigger className="w-[140px]" data-testid="desktop-color-filter">
@@ -316,15 +311,20 @@ export default function Catalog() {
           </Sheet>
         </div>
 
+        <p className="text-sm text-muted-foreground mb-4" data-testid="text-product-count">
+          {t("catalog.showing")} {paginatedProducts.length} {t("catalog.of")} {filteredProducts.length} {t("catalog.products")}
+          {totalPages > 1 && ` (${t("catalog.page")} ${currentPage} ${t("catalog.of")} ${totalPages})`}
+        </p>
+
         <div className="relative min-h-[400px]">
           {isFiltering && <LoadingSpinner />}
           
           {paginatedProducts.length > 0 ? (
             <>
               <div
-                className="grid gap-3 sm:gap-4 lg:gap-5 justify-center"
+                className="grid gap-3 sm:gap-4 lg:gap-5"
                 style={{
-                  gridTemplateColumns: `repeat(auto-fill, minmax(min(${ITEM_SIZE}px, calc(50% - 0.75rem)), ${ITEM_SIZE}px))`,
+                  gridTemplateColumns: `repeat(auto-fill, minmax(min(${ITEM_SIZE}px, calc(50% - 0.75rem)), 1fr))`,
                 }}
                 data-testid="product-grid"
               >

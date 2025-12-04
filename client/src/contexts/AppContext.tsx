@@ -18,6 +18,7 @@ interface ProductData {
   color: Record<Language, string>;
   sku: string;
   minOrder: number;
+  sizeMinOrders?: Record<string, number>;
   imagePaths: string[];
   priceTiers: { minQty: number; maxQty: number | null; price: number }[];
   sizes: string[];
@@ -27,6 +28,7 @@ interface ProductData {
 interface TranslatedProduct extends Omit<Product, 'images' | 'hasPromo'> {
   images: string[];
   hasPromo?: boolean;
+  sizeMinOrders?: Record<string, number>;
 }
 
 interface AppContextType {
@@ -114,6 +116,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
           measurements: productData.sizeMeasurements
         },
         minOrder: productData.minOrder,
+        sizeMinOrders: productData.sizeMinOrders,
         sku: productData.sku,
         hasPromo: true
       };

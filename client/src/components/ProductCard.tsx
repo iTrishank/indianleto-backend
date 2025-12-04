@@ -11,11 +11,16 @@ interface ProductCardProps {
     title: string;
     images: string[];
     priceTiers: { minQty: number; maxQty: number | null; price: number }[];
+    sizeMinOrders?: Record<string, number>;
+    minOrder?: number;
+    attributes?: {
+      sizes?: string[];
+    };
   };
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  const { formatPrice } = useApp();
+  const { formatPrice, t } = useApp();
   const [, setLocation] = useLocation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const hasMultipleImages = product.images.length > 1;
@@ -25,6 +30,9 @@ export function ProductCard({ product }: ProductCardProps) {
   const priceRange = minPrice === maxPrice 
     ? formatPrice(minPrice) 
     : `${formatPrice(minPrice)} - ${formatPrice(maxPrice)}`;
+
+  const firstSize = product.attributes?.sizes?.[0] || "S";
+  const minOrderForSmallSize = product.sizeMinOrders?.[firstSize] || product.minOrder || 1;
 
   const scrollPrev = useCallback(
     (e: React.MouseEvent) => {
@@ -73,6 +81,13 @@ export function ProductCard({ product }: ProductCardProps) {
               loading="lazy"
               data-testid={`img-product-${product.id}`}
             />
+
+            <span 
+              className="absolute top-1.5 right-1.5 px-1.5 py-0.5 bg-background/90 text-foreground text-[10px] font-medium rounded pointer-events-none"
+              data-testid={`tag-min-order-${product.id}`}
+            >
+              Min: {minOrderForSmallSize}
+            </span>
 
             {hasMultipleImages && (
               <>
