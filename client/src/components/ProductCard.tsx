@@ -69,12 +69,12 @@ export function ProductCard({ product }: ProductCardProps) {
 
   return (
     <div
-      className="flex flex-col cursor-pointer w-full"
+      className="flex flex-col cursor-pointer w-full h-full"
       data-testid={`card-product-${product.id}`}
       onClick={handleCardClick}
     >
-      <Card className="overflow-visible border hover-elevate transition-all duration-200">
-        <CardContent className="p-0">
+      <Card className="overflow-visible border hover-elevate transition-all duration-200 h-full flex flex-col">
+        <CardContent className="p-0 flex flex-col flex-1">
           <div className="relative overflow-hidden rounded-t-md aspect-square">
             <img
               src={product.images[currentImageIndex]}
@@ -123,15 +123,15 @@ export function ProductCard({ product }: ProductCardProps) {
             )}
           </div>
 
-          <div className="p-2 sm:p-2.5 space-y-1" data-testid={`link-product-${product.id}`}>
+          <div className="p-2 sm:p-2.5 space-y-1 flex-1 flex flex-col" data-testid={`link-product-${product.id}`}>
             <h3
-              className="text-xs sm:text-sm font-medium leading-tight line-clamp-2 text-foreground hover:text-primary transition-colors"
+              className="text-xs sm:text-sm font-medium leading-tight line-clamp-2 text-foreground hover:text-primary transition-colors flex-1"
               data-testid={`text-title-${product.id}`}
             >
               {product.title}
             </h3>
             <p
-              className="text-sm sm:text-base font-bold text-foreground"
+              className="text-sm sm:text-base font-bold text-foreground mt-auto"
               data-testid={`text-price-${product.id}`}
             >
               {priceRange}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useParams, Link } from "wouter";
 import { ArrowLeft, ShoppingCart, Check } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
@@ -8,8 +8,7 @@ import { useCartNotification } from "@/contexts/CartNotificationContext";
 import { Container } from "@/components/Container";
 import { ProductGallery } from "@/components/ProductGallery";
 import { PriceTiers } from "@/components/PriceTiers";
-import { SizeSelector } from "@/components/SizeSelector";
-import { QuantityInput } from "@/components/QuantityInput";
+import { SizeQuantitySelector } from "@/components/SizeQuantitySelector";
 import { MeasurementsTable } from "@/components/MeasurementsTable";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
@@ -29,21 +28,38 @@ export default function Product() {
     return product?.minOrder || 1;
   };
 
-  const [selectedSize, setSelectedSize] = useState<string>(
-    product?.attributes.sizes[0] || ""
-  );
-  const [quantity, setQuantity] = useState<number>(() => 
-    getMinOrderForSize(product?.attributes.sizes[0] || "")
-  );
-  const [justAdded, setJustAdded] = useState(false);
-
-  const handleSizeChange = (size: string) => {
-    setSelectedSize(size);
-    const minForSize = getMinOrderForSize(size);
-    setQuantity(minForSize);
+  const initializeSizeQuantities = () => {
+    if (!product) return {};
+    const quantities: Record<string, number> = {};
+    product.attributes.sizes.forEach((size) => {
+      quantities[size] = getMinOrderForSize(size);
+    });
+    return quantities;
   };
 
-  const currentMinOrder = getMinOrderForSize(selectedSize);
+  const [sizeQuantities, setSizeQuantities] = useState<Record<string, number>>(initializeSizeQuantities);
+  const [justAdded, setJustAdded] = useState(false);
+
+  const handleQuantityChange = (size: string, quantity: number) => {
+    setSizeQuantities((prev) => ({
+      ...prev,
+      [size]: quantity,
+    }));
+  };
+
+  const totalQuantity = useMemo(() => {
+    return Object.entries(sizeQuantities).reduce((sum, [size, qty]) => {
+      const min = getMinOrderForSize(size);
+      return sum + (qty > min ? qty : 0);
+    }, 0);
+  }, [sizeQuantities]);
+
+  const sizesWithQuantity = useMemo(() => {
+    return Object.entries(sizeQuantities).filter(([size, qty]) => {
+      const min = getMinOrderForSize(size);
+      return qty > min;
+    });
+  }, [sizeQuantities]);
 
   if (!product) {
     return (
@@ -64,11 +80,16 @@ export default function Product() {
     );
   }
 
-  const currentPrice = getPriceForQuantity(product.priceTiers, quantity);
-  const subtotal = currentPrice * quantity;
+  const currentPrice = getPriceForQuantity(product.priceTiers, totalQuantity || 1);
+  const subtotal = useMemo(() => {
+    return sizesWithQuantity.reduce((sum, [, qty]) => {
+      const price = getPriceForQuantity(product.priceTiers, totalQuantity || 1);
+      return sum + price * qty;
+    }, 0);
+  }, [sizesWithQuantity, totalQuantity, product.priceTiers]);
 
   const handleAddToCart = () => {
-    if (!selectedSize) {
+    if (sizesWithQuantity.length === 0) {
       toast({
         title: t("product.pleaseSelectSize"),
         description: t("product.chooseSizeBeforeAdding"),
@@ -77,15 +98,22 @@ export default function Product() {
       return;
     }
 
-    addItem(product as any, selectedSize, quantity);
-    notifyAddedToCart(product.id, quantity);
-    setJustAdded(true);
-    toast({
-      title: t("product.addedToCartTitle"),
-      description: `${product.title} (${t("product.size")}: ${selectedSize}) x ${quantity} ${t("product.addedToCartDesc")}.`,
+    let totalAdded = 0;
+    sizesWithQuantity.forEach(([size, qty]) => {
+      addItem(product as any, size, qty);
+      totalAdded += qty;
     });
 
-    setQuantity(currentMinOrder);
+    notifyAddedToCart(product.id, totalAdded);
+    setJustAdded(true);
+
+    const sizesSummary = sizesWithQuantity.map(([size, qty]) => `${size}: ${qty}`).join(", ");
+    toast({
+      title: t("product.addedToCartTitle"),
+      description: `${product.title} (${sizesSummary}) ${t("product.addedToCartDesc")}.`,
+    });
+
+    setSizeQuantities(initializeSizeQuantities());
 
     setTimeout(() => setJustAdded(false), 2000);
   };
@@ -116,7 +144,7 @@ export default function Product() {
             </h1>
             <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
               <span data-testid="text-product-sku">{t("product.sku")}: {product.sku}</span>
-              <span>{t("product.minOrder")}: {currentMinOrder}</span>
+              <span>{t("product.minOrder")}: {product.minOrder || 1}</span>
             </div>
           </div>
 
@@ -131,7 +159,7 @@ export default function Product() {
             <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
               {t("product.wholesalePricing")}
             </h3>
-            <PriceTiers priceTiers={product.priceTiers} currentQuantity={quantity} />
+            <PriceTiers priceTiers={product.priceTiers} currentQuantity={totalQuantity || 1} />
           </div>
 
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -141,23 +169,18 @@ export default function Product() {
             </span>
           </div>
 
-          <SizeSelector
-            sizes={product.attributes.sizes}
-            selectedSize={selectedSize}
-            onSelectSize={handleSizeChange}
-          />
-
           {product.attributes.measurements && (
             <MeasurementsTable
               measurements={product.attributes.measurements as Record<string, { skirtLength?: number; bust?: number; waist?: number; hips?: number }>}
-              selectedSize={selectedSize}
             />
           )}
 
-          <QuantityInput
-            quantity={quantity}
-            minQuantity={currentMinOrder}
-            onQuantityChange={setQuantity}
+          <SizeQuantitySelector
+            sizes={product.attributes.sizes}
+            sizeQuantities={sizeQuantities}
+            sizeMinOrders={product.sizeMinOrders}
+            defaultMinOrder={product.minOrder || 1}
+            onQuantityChange={handleQuantityChange}
           />
 
           <div className="border-t pt-5 space-y-3">
@@ -171,7 +194,7 @@ export default function Product() {
               </span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-muted-foreground">{t("product.subtotal")} ({quantity} {t("product.pcs")}):</span>
+              <span className="text-muted-foreground">{t("product.subtotal")} ({totalQuantity} {t("product.pcs")}):</span>
               <span className="text-lg font-semibold" data-testid="text-subtotal">
                 {formatPrice(subtotal)}
               </span>
@@ -181,7 +204,7 @@ export default function Product() {
               size="lg"
               className="w-full min-h-[48px] mt-2"
               onClick={handleAddToCart}
-              disabled={!selectedSize}
+              disabled={sizesWithQuantity.length === 0}
               data-testid="button-add-to-cart"
             >
               <span className="flex items-center justify-center min-w-[180px]">

@@ -33,14 +33,6 @@ export function Header() {
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" data-testid="link-catalog">
-              <span className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
-                {t("header.catalog")}
-              </span>
-            </Link>
-          </nav>
-
           <div className="flex items-center gap-1 md:gap-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>

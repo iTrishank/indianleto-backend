@@ -17,10 +17,9 @@ interface Measurements {
 
 interface MeasurementsTableProps {
   measurements: Record<string, Measurements>;
-  selectedSize?: string;
 }
 
-export function MeasurementsTable({ measurements, selectedSize }: MeasurementsTableProps) {
+export function MeasurementsTable({ measurements }: MeasurementsTableProps) {
   const { t } = useApp();
   const sizes = Object.keys(measurements).filter(key => measurements[key] !== undefined);
   
@@ -59,16 +58,14 @@ export function MeasurementsTable({ measurements, selectedSize }: MeasurementsTa
           </TableHeader>
           <TableBody>
             {sizes.map((size) => {
-              const isSelected = size === selectedSize;
               const sizeData = measurements[size];
               if (!sizeData) return null;
               return (
                 <TableRow 
                   key={size}
-                  className={isSelected ? "bg-primary/10" : ""}
                   data-testid={`row-size-${size}`}
                 >
-                  <TableCell className={`font-semibold ${isSelected ? "text-primary" : ""}`}>
+                  <TableCell className="font-semibold">
                     {size}
                   </TableCell>
                   {measurementKeys.map((key) => (
