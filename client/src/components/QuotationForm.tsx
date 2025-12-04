@@ -110,10 +110,10 @@ export function QuotationForm() {
             <FormField
               control={form.control}
               name="name"
-              render={({ field }) => (
+              render={({ field, fieldState }) => (
                 <FormItem>
                   <FormLabel className="text-sm font-semibold uppercase tracking-wide">
-                    {t("cart.yourName")} *
+                    {t("cart.yourName")} <span className="text-destructive">*</span>
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -122,7 +122,9 @@ export function QuotationForm() {
                       data-testid="input-name"
                     />
                   </FormControl>
-                  <FormMessage />
+                  {fieldState.error && (
+                    <p className="text-sm text-muted-foreground">{t("cart.nameRequired")}</p>
+                  )}
                 </FormItem>
               )}
             />
@@ -130,10 +132,10 @@ export function QuotationForm() {
             <FormField
               control={form.control}
               name="phone"
-              render={({ field }) => (
+              render={({ field, fieldState }) => (
                 <FormItem>
                   <FormLabel className="text-sm font-semibold uppercase tracking-wide">
-                    {t("cart.phoneNumber")} *
+                    {t("cart.phoneNumber")} <span className="text-destructive">*</span>
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -143,7 +145,9 @@ export function QuotationForm() {
                       data-testid="input-phone"
                     />
                   </FormControl>
-                  <FormMessage />
+                  {fieldState.error && (
+                    <p className="text-sm text-muted-foreground">{t("cart.phoneRequired")}</p>
+                  )}
                 </FormItem>
               )}
             />
@@ -151,10 +155,10 @@ export function QuotationForm() {
             <FormField
               control={form.control}
               name="email"
-              render={({ field }) => (
+              render={({ field, fieldState }) => (
                 <FormItem>
                   <FormLabel className="text-sm font-semibold uppercase tracking-wide">
-                    {t("cart.emailAddress")} *
+                    {t("cart.emailAddress")} <span className="text-destructive">*</span>
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -164,7 +168,9 @@ export function QuotationForm() {
                       data-testid="input-email"
                     />
                   </FormControl>
-                  <FormMessage />
+                  {fieldState.error && (
+                    <p className="text-sm text-muted-foreground">{t("cart.emailRequired")}</p>
+                  )}
                 </FormItem>
               )}
             />
@@ -211,7 +217,7 @@ export function QuotationForm() {
                     const uniqueSkus = new Set(items.map(item => item.productId)).size;
                     const totalSizes = items.length;
                     const totalQty = items.reduce((sum, item) => sum + item.quantity, 0);
-                    return `${totalSizes} ${t("cart.sizes")} | ${uniqueSkus} ${t("cart.skus")} | ${totalQty} ${t("cart.pcs")}`;
+                    return `${uniqueSkus} ${t("cart.skus")} | ${totalSizes} ${t("cart.sizes")} | ${totalQty} ${t("cart.pcs")}`;
                   })()}
                 </span>
               </div>

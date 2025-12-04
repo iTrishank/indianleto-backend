@@ -136,18 +136,20 @@ export function Header() {
             </Popover>
 
             <Link href="/cart" data-testid="link-cart">
-              <Button variant="ghost" size="icon" className="relative">
-                <ShoppingCart className="h-5 w-5" />
+              <div className="relative inline-flex">
+                <Button variant="ghost" size="icon">
+                  <ShoppingCart className="h-5 w-5" />
+                  <span className="sr-only">{t("header.cart")}</span>
+                </Button>
                 {itemCount > 0 && (
                   <Badge 
-                    className="absolute -top-0.5 -right-0.5 h-4 min-w-[16px] px-1 flex items-center justify-center text-[10px] font-medium"
+                    className="absolute -top-1 -right-1 h-5 min-w-[20px] px-1.5 flex items-center justify-center text-[10px] font-medium pointer-events-none"
                     data-testid="badge-cart-count"
                   >
                     {itemCount}
                   </Badge>
                 )}
-                <span className="sr-only">{t("header.cart")}</span>
-              </Button>
+              </div>
             </Link>
           </div>
         </div>

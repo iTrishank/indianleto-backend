@@ -88,7 +88,7 @@ export function ProductCard({ product }: ProductCardProps) {
               className="absolute top-1.5 right-1.5 px-1.5 py-0.5 bg-background/90 text-foreground text-[10px] font-medium rounded pointer-events-none"
               data-testid={`tag-min-order-${product.id}`}
             >
-              Min: {minOrderForSmallSize}
+              MOQ: {minOrderForSmallSize}
             </span>
 
             {notificationQuantity !== null && (
@@ -124,12 +124,12 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
 
           <div className="p-2 sm:p-2.5 space-y-1 flex-1 flex flex-col" data-testid={`link-product-${product.id}`}>
-            <h3
-              className="text-xs sm:text-sm font-medium leading-tight line-clamp-2 text-foreground hover:text-primary transition-colors flex-1"
-              data-testid={`text-title-${product.id}`}
+            <p
+              className="text-xs text-muted-foreground"
+              data-testid={`text-sku-${product.id}`}
             >
-              {product.title}
-            </h3>
+              SKU: {product.id}
+            </p>
             <p
               className="text-sm sm:text-base font-bold text-foreground mt-auto"
               data-testid={`text-price-${product.id}`}
