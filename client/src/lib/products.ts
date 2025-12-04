@@ -1,5 +1,3 @@
-import type { Product } from "@shared/schema";
-
 import p1_1 from "@assets/P1/1.jpg";
 import p1_2 from "@assets/P1/2.jpg";
 import p1_3 from "@assets/P1/3.jpg";
@@ -30,7 +28,7 @@ import p6_2 from "@assets/P6/2.jpg";
 import p6_3 from "@assets/P6/3.jpg";
 import p6_4 from "@assets/P6/4.jpg";
 
-export const productImages: Record<string, string> = {
+const productImages: Record<string, string> = {
   "P1/1.jpg": p1_1,
   "P1/2.jpg": p1_2,
   "P1/3.jpg": p1_3,
@@ -59,10 +57,4 @@ export const productImages: Record<string, string> = {
 
 export function getProductImage(imagePath: string): string {
   return productImages[imagePath] || p1_1;
-}
-
-export const products: Product[] = [];
-
-export function getProductById(id: string): Product | undefined {
-  return products.find(p => p.id === id);
 }
