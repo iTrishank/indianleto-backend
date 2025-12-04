@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
 import { useCart } from "@/contexts/CartContext";
+import { Container } from "@/components/Container";
 import { CartList } from "@/components/CartList";
 import { QuotationForm } from "@/components/QuotationForm";
 import { Button } from "@/components/ui/button";
@@ -16,7 +17,7 @@ export default function Cart() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-8">
+    <Container className="py-8">
       <nav className="mb-6">
         <Link href="/" data-testid="link-continue-shopping">
           <Button variant="ghost" size="sm" className="gap-2">
@@ -49,6 +50,6 @@ export default function Cart() {
           <QuotationForm />
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

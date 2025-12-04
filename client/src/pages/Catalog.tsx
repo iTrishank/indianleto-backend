@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import { Filter, ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
 import { ProductCard } from "@/components/ProductCard";
+import { Container } from "@/components/Container";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -17,7 +18,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { ITEMS_PER_PAGE, ITEM_SIZE } from "@/lib/constants";
+import { ITEMS_PER_PAGE } from "@/lib/constants";
 
 export default function Catalog() {
   const { t, products } = useApp();
@@ -236,7 +237,7 @@ export default function Catalog() {
   return (
     <div className="min-h-screen">
       <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-10 md:py-12">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <Container>
           <div className="text-center space-y-3">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
               {t("catalog.title")}
@@ -245,10 +246,10 @@ export default function Catalog() {
               {t("catalog.subtitle")}
             </p>
           </div>
-        </div>
+        </Container>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-6">
+      <Container className="py-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 mb-6">
           <p className="text-sm text-muted-foreground" data-testid="text-product-count">
             {t("catalog.showing")} {paginatedProducts.length} {t("catalog.of")} {filteredProducts.length} {t("catalog.products")}
@@ -321,12 +322,7 @@ export default function Catalog() {
           {paginatedProducts.length > 0 ? (
             <>
               <div
-                className="grid justify-center gap-4"
-                style={{
-                  gridTemplateColumns: `repeat(auto-fill, ${ITEM_SIZE}px)`,
-                  maxWidth: `${5 * ITEM_SIZE + 4 * 16}px`,
-                  margin: "0 auto",
-                }}
+                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-5"
                 data-testid="product-grid"
               >
                 {paginatedProducts.map((product) => (
@@ -351,7 +347,7 @@ export default function Catalog() {
             </div>
           )}
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

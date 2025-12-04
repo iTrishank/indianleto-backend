@@ -66,4 +66,12 @@ export const currencies: Currency[] = [
 
 export const ITEMS_PER_PAGE = 25;
 export const GRID_COLUMNS = 5;
-export const ITEM_SIZE = 200;
+export const ITEM_SIZE = 280;
+export const ITEM_SIZE_TABLET = 220;
+export const ITEM_SIZE_MOBILE = 160;
+export const CONTAINER_MAX_WIDTH = "1440px";
+export const CONTAINER_PADDING = {
+  mobile: "1rem",
+  tablet: "1.5rem", 
+  desktop: "2rem"
+};

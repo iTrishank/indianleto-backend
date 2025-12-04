@@ -3,7 +3,6 @@ import { useLocation } from "wouter";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
 import { Card, CardContent } from "@/components/ui/card";
-import { ITEM_SIZE } from "@/lib/constants";
 
 interface ProductCardProps {
   product: {
@@ -58,17 +57,13 @@ export function ProductCard({ product }: ProductCardProps) {
 
   return (
     <div
-      className="flex flex-col cursor-pointer"
-      style={{ width: `${ITEM_SIZE}px` }}
+      className="flex flex-col cursor-pointer w-full"
       data-testid={`card-product-${product.id}`}
       onClick={handleCardClick}
     >
       <Card className="overflow-visible border hover-elevate transition-all duration-200">
         <CardContent className="p-0">
-          <div
-            className="relative overflow-hidden rounded-t-md"
-            style={{ width: `${ITEM_SIZE}px`, height: `${ITEM_SIZE}px` }}
-          >
+          <div className="relative overflow-hidden rounded-t-md aspect-square">
             <img
               src={product.images[currentImageIndex]}
               alt={`${product.title} - Image ${currentImageIndex + 1}`}
@@ -80,34 +75,34 @@ export function ProductCard({ product }: ProductCardProps) {
             {hasMultipleImages && (
               <>
                 <button
-                  className="absolute left-1 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-background/90 hover:bg-background shadow-md flex items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="absolute left-1.5 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full bg-background/90 hover:bg-background shadow-md flex items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
                   onClick={scrollPrev}
                   aria-label="Previous image"
                   data-testid={`btn-prev-image-${product.id}`}
                 >
-                  <ChevronLeft className="h-3.5 w-3.5 text-foreground" />
+                  <ChevronLeft className="h-4 w-4 text-foreground" />
                 </button>
                 <button
-                  className="absolute right-1 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full bg-background/90 hover:bg-background shadow-md flex items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="absolute right-1.5 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full bg-background/90 hover:bg-background shadow-md flex items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
                   onClick={scrollNext}
                   aria-label="Next image"
                   data-testid={`btn-next-image-${product.id}`}
                 >
-                  <ChevronRight className="h-3.5 w-3.5 text-foreground" />
+                  <ChevronRight className="h-4 w-4 text-foreground" />
                 </button>
               </>
             )}
           </div>
 
-          <div className="p-2 space-y-1" data-testid={`link-product-${product.id}`}>
+          <div className="p-2.5 space-y-1" data-testid={`link-product-${product.id}`}>
             <h3
-              className="text-xs font-medium leading-tight line-clamp-2 text-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium leading-tight line-clamp-2 text-foreground hover:text-primary transition-colors"
               data-testid={`text-title-${product.id}`}
             >
               {product.title}
             </h3>
             <p
-              className="text-sm font-bold text-foreground"
+              className="text-base font-bold text-foreground"
               data-testid={`text-price-${product.id}`}
             >
               {priceRange}

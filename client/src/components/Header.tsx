@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { ShoppingCart, Globe, ChevronDown } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import { useApp } from "@/contexts/AppContext";
+import { Container } from "@/components/Container";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -19,7 +20,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <Container>
         <div className="flex h-16 md:h-20 items-center justify-between gap-2 md:gap-4">
           <Link href="/" data-testid="link-home">
             <span className="text-xl md:text-2xl font-bold tracking-tight text-primary cursor-pointer">
@@ -123,7 +124,7 @@ export function Header() {
             </Link>
           </div>
         </div>
-      </div>
+      </Container>
     </header>
   );
 }

@@ -4,6 +4,7 @@ import { ArrowLeft, ShoppingCart, Check } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
 import { getPriceForQuantity } from "@shared/schema";
 import { useCart } from "@/contexts/CartContext";
+import { Container } from "@/components/Container";
 import { ProductGallery } from "@/components/ProductGallery";
 import { PriceTiers } from "@/components/PriceTiers";
 import { SizeSelector } from "@/components/SizeSelector";
@@ -70,7 +71,7 @@ export default function Product() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-6 md:py-8">
+    <Container className="py-6 md:py-8">
       <nav className="mb-6">
         <Link href="/" data-testid="link-breadcrumb-catalog">
           <Button variant="ghost" size="sm" className="gap-2">
@@ -180,6 +181,6 @@ export default function Product() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

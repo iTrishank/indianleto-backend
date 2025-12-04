@@ -1,12 +1,13 @@
 import { Link } from "wouter";
 import { useApp } from "@/contexts/AppContext";
+import { Container } from "@/components/Container";
 
 export function Footer() {
   const { t } = useApp();
   
   return (
     <footer className="border-t bg-muted/30 mt-auto">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12">
+      <Container className="py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <h3 className="text-lg font-bold text-primary">{t("header.logo")}</h3>
@@ -45,7 +46,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {t("footer.copyright")}
           </p>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }
