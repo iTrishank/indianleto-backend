@@ -141,7 +141,7 @@ export function Header() {
         </Container>
       </header>
 
-      <div className="sm:hidden flex items-center justify-center py-2">
+      <div className="sm:hidden sticky top-[56px] z-40 flex items-center justify-center py-2 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <nav className="inline-flex items-center gap-4 px-5 py-1.5 rounded-full border border-border bg-background">
           <Link href="/" data-testid="link-catalog-mobile">
             <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
