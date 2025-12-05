@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import { useLocation } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Loader2, Send } from "lucide-react";
+import { Loader2, Send, AlertCircle } from "lucide-react";
 import { z } from "zod";
 import { useApp } from "@/contexts/AppContext";
 import { useCart } from "@/contexts/CartContext";
@@ -32,7 +32,7 @@ const quotationFormSchema = z.object({
 type QuotationFormData = z.infer<typeof quotationFormSchema>;
 
 export function QuotationForm() {
-  const { t, formatPrice } = useApp();
+  const { t, formatPrice, products } = useApp();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { items, clearCart, total } = useCart();
   const [, setLocation] = useLocation();
@@ -43,6 +43,20 @@ export function QuotationForm() {
     generateProductsSummary(items, formatPrice, emptyCartMessage), 
     [items, formatPrice, emptyCartMessage]
   );
+
+  const hasAtLeastOneValidSize = useMemo(() => {
+    if (items.length === 0) return false;
+    
+    return items.some(item => {
+      const product = products.find(p => p.id === item.productId);
+      if (!product) return false;
+      
+      const sizeMinOrders = product.sizeMinOrders || {};
+      const minOrderForSize = sizeMinOrders[item.variant.size] ?? product.minOrder ?? 1;
+      
+      return item.quantity >= minOrderForSize;
+    });
+  }, [items, products]);
 
   const form = useForm<QuotationFormData>({
     resolver: zodResolver(quotationFormSchema),
@@ -230,11 +244,18 @@ export function QuotationForm() {
               </div>
             </div>
 
+            {items.length > 0 && !hasAtLeastOneValidSize && (
+              <div className="flex items-center gap-2 text-sm text-amber-600 dark:text-amber-500 bg-amber-50 dark:bg-amber-950/30 rounded-md p-3">
+                <AlertCircle className="h-4 w-4 flex-shrink-0" />
+                <span>{t("product.minOrderWarning")}</span>
+              </div>
+            )}
+
             <Button
               type="submit"
               size="lg"
               className="w-full min-h-[48px]"
-              disabled={isSubmitting || items.length === 0}
+              disabled={isSubmitting || items.length === 0 || !hasAtLeastOneValidSize}
               data-testid="button-send-quotation"
             >
               <span className="flex items-center justify-center min-w-[200px]">

@@ -53,7 +53,7 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-const DEFAULT_PRIMARY_COLOR = "#ec4899";
+const DEFAULT_PRIMARY_COLOR = "#000000";
 const CACHE_DURATION = 10 * 60 * 1000;
 const BASE_CURRENCY = "inr";
 

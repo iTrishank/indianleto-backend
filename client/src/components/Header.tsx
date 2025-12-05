@@ -141,24 +141,20 @@ export function Header() {
         </Container>
       </header>
 
-      <div className="sm:hidden sticky top-14 z-40 w-full bg-background py-2">
-        <Container>
-          <div className="flex items-center justify-center">
-            <nav className="inline-flex items-center gap-4 px-5 py-1.5 rounded-full border border-border bg-background">
-              <Link href="/" data-testid="link-catalog-mobile">
-                <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
-                  {t("header.catalog")}
-                </span>
-              </Link>
-              <span className="text-muted-foreground">|</span>
-              <Link href="/about" data-testid="link-about-mobile">
-                <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
-                  {t("header.aboutUs")}
-                </span>
-              </Link>
-            </nav>
-          </div>
-        </Container>
+      <div className="sm:hidden flex items-center justify-center py-2">
+        <nav className="inline-flex items-center gap-4 px-5 py-1.5 rounded-full border border-border bg-background">
+          <Link href="/" data-testid="link-catalog-mobile">
+            <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
+              {t("header.catalog")}
+            </span>
+          </Link>
+          <span className="text-muted-foreground">|</span>
+          <Link href="/about" data-testid="link-about-mobile">
+            <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
+              {t("header.aboutUs")}
+            </span>
+          </Link>
+        </nav>
       </div>
     </>
   );
