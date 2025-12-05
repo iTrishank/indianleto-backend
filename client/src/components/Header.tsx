@@ -141,19 +141,25 @@ export function Header() {
         </Container>
       </header>
 
-      <nav className="sm:hidden sticky top-[56px] z-40 inline-flex items-center gap-4 px-5 py-1.5 rounded-full border border-border bg-background mx-auto mt-2">
-        <Link href="/" data-testid="link-catalog-mobile">
-          <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
-            {t("header.catalog")}
-          </span>
-        </Link>
-        <span className="text-muted-foreground">|</span>
-        <Link href="/about" data-testid="link-about-mobile">
-          <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
-            {t("header.aboutUs")}
-          </span>
-        </Link>
-      </nav>
+      <div className="sm:hidden sticky top-14 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <Container>
+          <div className="flex items-center justify-center py-3">
+            <nav className="inline-flex items-center gap-6 px-6 py-2 rounded-full border border-border bg-background/50 backdrop-blur-sm">
+              <Link href="/" data-testid="link-catalog-mobile">
+                <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
+                  {t("header.catalog")}
+                </span>
+              </Link>
+              <span className="text-muted-foreground">|</span>
+              <Link href="/about" data-testid="link-about-mobile">
+                <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
+                  {t("header.aboutUs")}
+                </span>
+              </Link>
+            </nav>
+          </div>
+        </Container>
+      </div>
     </>
   );
 }
