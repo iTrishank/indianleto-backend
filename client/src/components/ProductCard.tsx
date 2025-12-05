@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useLocation } from "wouter";
 import { ChevronLeft, ChevronRight, Check } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
@@ -21,7 +21,7 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product }: ProductCardProps) {
-  const { formatPrice, t } = useApp();
+  const { formatPrice, t, setIsLoading } = useApp();
   const { getNotificationQuantity } = useCartNotification();
   const [, setLocation] = useLocation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -65,6 +65,7 @@ export function ProductCard({ product }: ProductCardProps) {
     if (target.closest("button") || target.closest('[role="button"]')) {
       return;
     }
+    setIsLoading(true);
     setLocation(`/product/${product.id}`);
   };
 

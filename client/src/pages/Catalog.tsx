@@ -180,55 +180,58 @@ export default function Catalog() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-5 md:py-6">
+      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-4 md:py-5">
         <Container>
-          <div className="text-center space-y-2">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
+          <div className="text-center space-y-1.5">
+            <h1 className="text-2xl md:text-3xl font-semibold tracking-tight leading-tight">
               {t("catalog.title")}
             </h1>
-            <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               {t("catalog.subtitle")}
             </p>
           </div>
         </Container>
       </section>
 
-      <Container className="py-6">
-        <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
-          <Select value={colorFilter} onValueChange={handleColorChange}>
-            <SelectTrigger className="w-[120px] sm:w-[140px]" data-testid="select-color-filter">
-              <SelectValue placeholder={t("catalog.color")} />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">{t("catalog.allColors")}</SelectItem>
-              {allColors.map((color) => (
-                <SelectItem key={color} value={color}>
-                  {color}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+      <Container className="py-4 md:py-6">
+        <div className="flex flex-wrap items-center gap-2 mb-4">
+          <div className="flex items-center gap-2 flex-1 sm:flex-none">
+            <Select value={colorFilter} onValueChange={handleColorChange}>
+              <SelectTrigger className="w-full sm:w-[140px]" data-testid="select-color-filter">
+                <SelectValue placeholder={t("catalog.color")} />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">{t("catalog.allColors")}</SelectItem>
+                {allColors.map((color) => (
+                  <SelectItem key={color} value={color}>
+                    {color}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
 
-          <Select value={priceSort} onValueChange={handlePriceSortChange}>
-            <SelectTrigger className="w-[130px] sm:w-[160px]" data-testid="select-price-sort">
-              <SelectValue placeholder={t("catalog.price")} />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="default">{t("catalog.default")}</SelectItem>
-              <SelectItem value="low-high">{t("catalog.priceLowHigh")}</SelectItem>
-              <SelectItem value="high-low">{t("catalog.priceHighLow")}</SelectItem>
-            </SelectContent>
-          </Select>
+            <Select value={priceSort} onValueChange={handlePriceSortChange}>
+              <SelectTrigger className="w-full sm:w-[160px]" data-testid="select-price-sort">
+                <SelectValue placeholder={t("catalog.price")} />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="default">{t("catalog.default")}</SelectItem>
+                <SelectItem value="low-high">{t("catalog.priceLowHigh")}</SelectItem>
+                <SelectItem value="high-low">{t("catalog.priceHighLow")}</SelectItem>
+              </SelectContent>
+            </Select>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={clearFilters}
-            disabled={!hasActiveFilters}
-            data-testid="button-clear-filters"
-          >
-            {t("catalog.clearFilters")}
-          </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={clearFilters}
+              disabled={!hasActiveFilters}
+              className="whitespace-nowrap"
+              data-testid="button-clear-filters"
+            >
+              {t("catalog.clearFilters")}
+            </Button>
+          </div>
         </div>
 
         <p className="text-sm text-muted-foreground mb-4" data-testid="text-product-count">
@@ -254,7 +257,7 @@ export default function Catalog() {
           ) : (
             <div className="min-h-[400px] flex items-center justify-center">
               <div className="text-center space-y-4">
-                <h3 className="text-lg font-semibold text-muted-foreground">
+                <h3 className="text-lg font-medium text-muted-foreground">
                   {t("catalog.noProducts")}
                 </h3>
                 <p className="text-sm text-muted-foreground">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { LazyImage } from "@/components/LazyImage";
 
 interface ProductGalleryProps {
   images: string[];
@@ -33,10 +34,11 @@ export function ProductGallery({ images, productTitle }: ProductGalleryProps) {
   return (
     <div className="space-y-4">
       <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-muted">
-        <img
+        <LazyImage
           src={images[currentIndex]}
           alt={`${productTitle} - Image ${currentIndex + 1}`}
           className="h-full w-full object-cover"
+          skeletonClassName="h-full w-full"
           data-testid="img-gallery-main"
         />
         
@@ -85,10 +87,11 @@ export function ProductGallery({ images, productTitle }: ProductGalleryProps) {
               }`}
               data-testid={`button-thumbnail-${index}`}
             >
-              <img
+              <LazyImage
                 src={image}
                 alt={`${productTitle} thumbnail ${index + 1}`}
                 className="h-full w-full object-cover"
+                skeletonClassName="h-full w-full"
               />
             </button>
           ))}

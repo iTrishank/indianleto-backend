@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useParams, Link } from "wouter";
 import { ArrowLeft, ShoppingCart, Check } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
@@ -15,11 +15,15 @@ import { useToast } from "@/hooks/use-toast";
 
 export default function Product() {
   const { id } = useParams<{ id: string }>();
-  const { t, products, formatPrice } = useApp();
+  const { t, products, formatPrice, setIsLoading } = useApp();
   const product = products.find((p) => p.id === id);
   const { addItem } = useCart();
   const { notifyAddedToCart } = useCartNotification();
   const { toast } = useToast();
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, [setIsLoading]);
 
   const getMinOrderForSize = (size: string): number => {
     if (product?.sizeMinOrders && product.sizeMinOrders[size]) {

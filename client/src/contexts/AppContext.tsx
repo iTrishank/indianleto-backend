@@ -45,6 +45,7 @@ interface AppContextType {
   ui: typeof textData.ui;
   getColor: (productId: string) => string;
   isLoading: boolean;
+  setIsLoading: (loading: boolean) => void;
   primaryColor: string;
   setPrimaryColor: (color: string) => void;
   currencyLoading: boolean;
@@ -314,6 +315,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     ui: textData.ui,
     getColor,
     isLoading,
+    setIsLoading,
     primaryColor,
     setPrimaryColor,
     currencyLoading,
