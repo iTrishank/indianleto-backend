@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight, Check } from "lucide-react";
 import { useApp } from "@/contexts/AppContext";
 import { useCartNotification } from "@/contexts/CartNotificationContext";
 import { Card, CardContent } from "@/components/ui/card";
+import { LazyImage } from "@/components/LazyImage";
 
 interface ProductCardProps {
   product: {
@@ -76,11 +77,11 @@ export function ProductCard({ product }: ProductCardProps) {
       <Card className="overflow-visible border hover-elevate transition-all duration-200 h-full flex flex-col">
         <CardContent className="p-0 flex flex-col flex-1">
           <div className="relative overflow-hidden rounded-t-md aspect-square">
-            <img
+            <LazyImage
               src={product.images[currentImageIndex]}
               alt={`${product.title} - Image ${currentImageIndex + 1}`}
               className="h-full w-full object-cover"
-              loading="lazy"
+              skeletonClassName="h-full w-full"
               data-testid={`img-product-${product.id}`}
             />
 

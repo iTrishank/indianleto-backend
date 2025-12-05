@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { ShoppingCart, Globe, ChevronDown, Palette } from "lucide-react";
+import { ShoppingCart, Globe, ChevronDown } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import { useApp } from "@/contexts/AppContext";
 import { Container } from "@/components/Container";
@@ -19,159 +19,145 @@ import {
 
 export function Header() {
   const { itemCount } = useCart();
-  const { language, setLanguage, currency, setCurrency, t, languages, currencies, ui, primaryColor, setPrimaryColor } = useApp();
+  const { language, setLanguage, currency, setCurrency, t, languages, currencies, ui } = useApp();
 
   const currentLanguage = languages.find((l) => l.code === language);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <Container>
-        <div className="flex h-16 md:h-20 items-center justify-between gap-2 md:gap-4">
-          <div className="flex items-center gap-2 md:gap-4">
+    <>
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <Container>
+          <div className="flex h-14 md:h-16 items-center justify-between gap-2 md:gap-4">
             <Link href="/" data-testid="link-home">
-              <span className="text-xl md:text-2xl font-bold tracking-tight text-primary cursor-pointer">
+              <span className="text-lg md:text-xl font-bold tracking-tight text-foreground cursor-pointer">
                 {t("header.logo")}
               </span>
             </Link>
-            <nav className="hidden sm:flex items-center gap-1 text-sm text-muted-foreground">
-              <span className="text-border">|</span>
+
+            <nav className="hidden sm:flex items-center gap-3 absolute left-1/2 -translate-x-1/2">
               <Link href="/" data-testid="link-catalog">
-                <span className="hover:text-foreground cursor-pointer transition-colors">
+                <span className="text-sm font-bold text-foreground cursor-pointer hover:opacity-70 transition-opacity">
                   {t("header.catalog")}
                 </span>
               </Link>
-              <span className="text-border">|</span>
+              <span className="text-muted-foreground">|</span>
               <Link href="/about" data-testid="link-about">
-                <span className="hover:text-foreground cursor-pointer transition-colors">
+                <span className="text-sm font-bold text-foreground cursor-pointer hover:opacity-70 transition-opacity">
                   {t("header.aboutUs")}
                 </span>
               </Link>
             </nav>
-          </div>
 
-          <div className="flex items-center gap-1 md:gap-2">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="gap-1 px-2 md:px-3 sm:min-w-[100px]"
-                  data-testid="dropdown-language"
-                >
-                  <Globe className="h-4 w-4 flex-shrink-0" />
-                  <span className="hidden sm:inline text-sm min-w-[60px] text-left">
-                    {currentLanguage?.name || "English"}
-                  </span>
-                  <ChevronDown className="h-3 w-3 flex-shrink-0" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-40">
-                {languages.map((lang) => (
-                  <DropdownMenuItem
-                    key={lang.code}
-                    onClick={() => setLanguage(lang.code as "en" | "es" | "hi" | "ru")}
-                    className="cursor-pointer"
-                    data-testid={`language-${lang.code}`}
+            <div className="flex items-center gap-1 md:gap-2">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="gap-1 px-2 md:px-3 sm:min-w-[100px]"
+                    data-testid="dropdown-language"
                   >
-                    <span className={language === lang.code ? "font-semibold" : ""}>
-                      {lang.name}
+                    <Globe className="h-4 w-4 flex-shrink-0" />
+                    <span className="hidden sm:inline text-sm min-w-[60px] text-left">
+                      {currentLanguage?.name || "English"}
                     </span>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <Popover>
-              <PopoverTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="gap-1 px-2 md:px-3"
-                  data-testid="dropdown-currency"
-                >
-                  <img
-                    src={`${ui.flagCdnBase}/${currency.flag}.png`}
-                    alt={currency.code}
-                    className="h-3 w-4 object-cover rounded-sm"
-                  />
-                  <span className="text-sm">
-                    {currency.code}
-                  </span>
-                  <ChevronDown className="h-3 w-3" />
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent align="end" className="w-auto p-3 max-h-80 overflow-y-auto">
-                <div className="grid grid-cols-5 gap-1">
-                  {currencies.map((curr) => (
-                    <Button
-                      key={curr.code}
-                      variant={currency.code === curr.code ? "default" : "ghost"}
-                      size="sm"
-                      onClick={() => setCurrency(curr.code)}
-                      className="flex flex-col items-center gap-1 h-auto py-2 px-2 min-w-[56px]"
-                      data-testid={`currency-${curr.code}`}
+                    <ChevronDown className="h-3 w-3 flex-shrink-0" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-40">
+                  {languages.map((lang) => (
+                    <DropdownMenuItem
+                      key={lang.code}
+                      onClick={() => setLanguage(lang.code as "en" | "es" | "hi" | "ru")}
+                      className="cursor-pointer"
+                      data-testid={`language-${lang.code}`}
                     >
-                      <img
-                        src={`${ui.flagCdnBase}/${curr.flag}.png`}
-                        alt={curr.code}
-                        className="h-3 w-5 object-cover rounded-sm"
-                      />
-                      <span className="text-xs font-medium">{curr.code}</span>
-                    </Button>
+                      <span className={language === lang.code ? "font-semibold" : ""}>
+                        {lang.name}
+                      </span>
+                    </DropdownMenuItem>
                   ))}
-                </div>
-              </PopoverContent>
-            </Popover>
+                </DropdownMenuContent>
+              </DropdownMenu>
 
-            <Popover>
-              <PopoverTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="gap-1 px-2 md:px-3"
-                  data-testid="dropdown-color"
-                >
-                  <Palette className="h-4 w-4 flex-shrink-0" />
-                  <span className="hidden sm:inline text-sm">{t("header.color")}</span>
-                  <div 
-                    className="h-4 w-4 rounded-full border border-border"
-                    style={{ backgroundColor: primaryColor }}
-                  />
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent align="end" className="w-48 p-3">
-                <div className="space-y-3">
-                  <label className="text-sm font-medium">{t("header.themeColor")}</label>
-                  <input
-                    type="color"
-                    value={primaryColor}
-                    onChange={(e) => setPrimaryColor(e.target.value)}
-                    className="h-10 w-full cursor-pointer rounded border border-input"
-                    data-testid="input-color-picker"
-                  />
-                </div>
-              </PopoverContent>
-            </Popover>
+              <Popover>
+                <PopoverTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="gap-1 px-2 md:px-3"
+                    data-testid="dropdown-currency"
+                  >
+                    <img
+                      src={`${ui.flagCdnBase}/${currency.flag}.png`}
+                      alt={currency.code}
+                      className="h-3 w-4 object-cover rounded-sm"
+                    />
+                    <span className="text-sm">
+                      {currency.code}
+                    </span>
+                    <ChevronDown className="h-3 w-3" />
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent align="end" className="w-auto p-3 max-h-80 overflow-y-auto">
+                  <div className="grid grid-cols-5 gap-1">
+                    {currencies.map((curr) => (
+                      <Button
+                        key={curr.code}
+                        variant={currency.code === curr.code ? "default" : "ghost"}
+                        size="sm"
+                        onClick={() => setCurrency(curr.code)}
+                        className="flex flex-col items-center gap-1 h-auto py-2 px-2 min-w-[56px]"
+                        data-testid={`currency-${curr.code}`}
+                      >
+                        <img
+                          src={`${ui.flagCdnBase}/${curr.flag}.png`}
+                          alt={curr.code}
+                          className="h-3 w-5 object-cover rounded-sm"
+                        />
+                        <span className="text-xs font-medium">{curr.code}</span>
+                      </Button>
+                    ))}
+                  </div>
+                </PopoverContent>
+              </Popover>
 
-            <Link href="/cart" data-testid="link-cart">
-              <div className="relative inline-flex">
-                <Button variant="ghost" size="icon">
-                  <ShoppingCart className="h-5 w-5" />
-                  <span className="sr-only">{t("header.cart")}</span>
-                </Button>
-                {itemCount > 0 && (
+              <Link href="/cart" data-testid="link-cart">
+                <div className="relative inline-flex pr-2">
+                  <Button variant="ghost" size="icon">
+                    <ShoppingCart className="h-5 w-5" />
+                    <span className="sr-only">{t("header.cart")}</span>
+                  </Button>
                   <Badge 
-                    className="absolute -top-1 -right-1 h-5 min-w-[20px] px-1.5 flex items-center justify-center text-[10px] font-medium pointer-events-none"
+                    className={`absolute -top-1 -right-0 h-5 min-w-[20px] px-1.5 flex items-center justify-center text-[10px] font-medium pointer-events-none transition-opacity ${itemCount > 0 ? 'opacity-100' : 'opacity-0'}`}
                     data-testid="badge-cart-count"
                   >
-                    {itemCount}
+                    {itemCount || 0}
                   </Badge>
-                )}
-              </div>
-            </Link>
+                </div>
+              </Link>
+            </div>
           </div>
-        </div>
-      </Container>
-    </header>
+        </Container>
+      </header>
+
+      <div className="sm:hidden sticky top-14 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <Container>
+          <nav className="flex items-center justify-center gap-4 py-2">
+            <Link href="/" data-testid="link-catalog-mobile">
+              <span className="text-sm font-bold text-foreground cursor-pointer">
+                {t("header.catalog")}
+              </span>
+            </Link>
+            <span className="text-muted-foreground">|</span>
+            <Link href="/about" data-testid="link-about-mobile">
+              <span className="text-sm font-bold text-foreground cursor-pointer">
+                {t("header.aboutUs")}
+              </span>
+            </Link>
+          </nav>
+        </Container>
+      </div>
+    </>
   );
 }

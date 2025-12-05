@@ -68,7 +68,7 @@ export function SizeQuantitySelector({
           return (
             <div
               key={size}
-              className="flex items-center gap-2 flex-wrap md:flex-nowrap"
+              className="flex items-center justify-between gap-2"
               data-testid={`size-row-${size}`}
             >
               <span
@@ -78,72 +78,74 @@ export function SizeQuantitySelector({
                 {size}
               </span>
 
-              <div className="flex items-center gap-1 flex-shrink-0">
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8"
-                  onClick={() => handleDecrement(size)}
-                  disabled={quantity <= 0}
-                  data-testid={`button-decrease-${size}`}
-                >
-                  <Minus className="h-3 w-3" />
-                </Button>
-                <Input
-                  type="number"
-                  min={0}
-                  max={MAX_QUANTITY}
-                  value={quantity}
-                  onChange={(e) => handleInputChange(size, e.target.value)}
-                  className="w-14 h-8 text-center text-sm [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                  data-testid={`input-quantity-${size}`}
-                />
-                <Button
-                  type="button"
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8"
-                  onClick={() => handleIncrement(size)}
-                  disabled={quantity >= MAX_QUANTITY}
-                  data-testid={`button-increase-${size}`}
-                >
-                  <Plus className="h-3 w-3" />
-                </Button>
-              </div>
-
-              <div className="hidden md:flex items-center gap-1">
-                {QUICK_ADD_AMOUNTS_DESKTOP.map((amount) => (
+              <div className="flex items-center gap-1 md:gap-2">
+                <div className="flex items-center gap-1 flex-shrink-0">
                   <Button
-                    key={amount}
                     type="button"
-                    variant="secondary"
-                    size="sm"
-                    className="h-7 px-2 text-xs font-medium"
-                    onClick={() => handleQuickAdd(size, amount)}
-                    disabled={quantity >= MAX_QUANTITY}
-                    data-testid={`button-quick-add-${size}-${amount}`}
+                    variant="outline"
+                    size="icon"
+                    className="h-8 w-8"
+                    onClick={() => handleDecrement(size)}
+                    disabled={quantity <= 0}
+                    data-testid={`button-decrease-${size}`}
                   >
-                    +{amount}
+                    <Minus className="h-3 w-3" />
                   </Button>
-                ))}
-              </div>
-
-              <div className="flex md:hidden items-center gap-1">
-                {QUICK_ADD_AMOUNTS_MOBILE.map((amount) => (
+                  <Input
+                    type="number"
+                    min={0}
+                    max={MAX_QUANTITY}
+                    value={quantity}
+                    onChange={(e) => handleInputChange(size, e.target.value)}
+                    className="w-14 h-8 text-center text-sm [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    data-testid={`input-quantity-${size}`}
+                  />
                   <Button
-                    key={amount}
                     type="button"
-                    variant="secondary"
-                    size="sm"
-                    className="h-7 px-2 text-xs font-medium"
-                    onClick={() => handleQuickAdd(size, amount)}
+                    variant="outline"
+                    size="icon"
+                    className="h-8 w-8"
+                    onClick={() => handleIncrement(size)}
                     disabled={quantity >= MAX_QUANTITY}
-                    data-testid={`button-quick-add-mobile-${size}-${amount}`}
+                    data-testid={`button-increase-${size}`}
                   >
-                    +{amount}
+                    <Plus className="h-3 w-3" />
                   </Button>
-                ))}
+                </div>
+
+                <div className="hidden md:flex items-center gap-1">
+                  {QUICK_ADD_AMOUNTS_DESKTOP.map((amount) => (
+                    <Button
+                      key={amount}
+                      type="button"
+                      variant="secondary"
+                      size="sm"
+                      className="h-7 px-2 text-xs font-medium"
+                      onClick={() => handleQuickAdd(size, amount)}
+                      disabled={quantity >= MAX_QUANTITY}
+                      data-testid={`button-quick-add-${size}-${amount}`}
+                    >
+                      +{amount}
+                    </Button>
+                  ))}
+                </div>
+
+                <div className="flex md:hidden items-center gap-1">
+                  {QUICK_ADD_AMOUNTS_MOBILE.map((amount) => (
+                    <Button
+                      key={amount}
+                      type="button"
+                      variant="secondary"
+                      size="sm"
+                      className="h-7 px-2 text-xs font-medium"
+                      onClick={() => handleQuickAdd(size, amount)}
+                      disabled={quantity >= MAX_QUANTITY}
+                      data-testid={`button-quick-add-mobile-${size}-${amount}`}
+                    >
+                      +{amount}
+                    </Button>
+                  ))}
+                </div>
               </div>
             </div>
           );

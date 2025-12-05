@@ -1,0 +1,86 @@
+TASK: Apply the following changes exactly:
+
+1) Size & Quantity alignment:
+   - Push Size label to the far left.
+   - Push quantity selector + shortcut buttons to the far right (same row).
+   
+2) Navbar theme color:
+   - Remove the theme color selector completely.
+   - Set website primary color to pure black: rgb(0, 0, 0).
+
+3) Cart badge layout shift:
+   - Add extra right-side spacing around the cart icon so the badge can appear without shifting navbar items.
+   - Badge must overlay cleanly without moving anything.
+
+4) Image loading performance:
+   - Keep the current folder structure (`assets/P1/1.jpg`, `2.jpg`, etc.) but optimize loading.
+   - Use one or more of:
+       • browser caching  
+       • lazy loading  
+       • Next-gen formats (webp) if possible  
+       • preloading hero/product images  
+   - Goal: eliminate the slow-loading delay.
+
+5) Skeleton screens:
+   - Add skeleton placeholders across the entire site wherever images load (catalog, product page, thumbnails, etc.).
+
+6) Navbar links:
+   - Center “Catalog | About Us” in the navbar.
+   - Style them bold and black.
+
+7) Typography — apply full-site industry-standard typography rules:
+   - Use a consistent typography scale (e.g., 1.200 modular scale).
+   - Heading hierarchy:
+        H1: 32–40px  
+        H2: 24–28px  
+        H3: 20–22px  
+        Body: 16–18px  
+   - Line-height guidelines:
+        Headings: 1.2–1.3  
+        Body text: 1.45–1.6  
+   - Font-weight rules:
+        Headings: 600–700  
+        Body: 400–500  
+        Labels/UI elements: 500  
+   - Set consistent letter spacing:
+        Headings: normal  
+        Body: slight (-0.2px to 0px)  
+   - Paragraph spacing:
+        Uniform margin-bottom (12–16px).  
+   - Buttons:
+        All buttons share the same type scale, weight, and letter spacing.
+   - Inputs & Labels:
+        Labels 14–16px, slightly bold; inputs 16px consistent across all pages.
+   - Product cards:
+        SKU, MOQ, and pricing typography consistent across catalog and product page.
+   - Mobile rules:
+        Reduce font sizes ~10–15% but preserve hierarchy.
+   - Overall goal:
+        A fully unified, predictable, and clean typography system across the whole website.
+
+8) Loading state behavior:
+   - Navigating from catalog → product must trigger the same loading spinner.
+   - Loading must stay active until content is fully ready.
+   - If loading exceeds 5 seconds, show an error popup and keep the user on the previous page.
+
+9) Quotation section (mobile only):
+   - Layout should be:
+       for eg A1 : [ (image, name) on ONE line   
+        Under name → (size, color)  ] 
+        Under A1 → quantity selector  on the left and  unit price + total  on the right
+      
+   - Make the structure compact and readable.
+
+10) Mobile navbar rework:
+    - “Catalog | About Us” is not visible on mobile.
+    - Keep main navbar clean; add a **second navbar below it (mobile only)** that contains Catalog | About Us.
+
+11) Mobile filters layout:
+    - Put Filters & Clear Filter on the same row.
+    - Adjust widths so both fit side-by-side.
+
+12) Footer height:
+    - Reduce height of “© 2025 IndianLeto…” to minimum so only the text is visible.
+    - Remove unnecessary vertical padding.
+
+Implement ONLY these changes.
