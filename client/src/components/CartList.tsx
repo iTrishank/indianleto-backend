@@ -4,6 +4,7 @@ import type { CartItem, PriceTier } from "@shared/schema";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
+import { LazyImage } from "@/components/LazyImage";
 
 interface CartListProps {
   items: CartItem[];
@@ -68,11 +69,11 @@ export function CartList({
           >
             <div className="hidden sm:flex gap-4">
               <div className="w-16 h-16 flex-shrink-0 rounded-md overflow-hidden bg-muted">
-                <img
+                <LazyImage
                   src={item.productImage}
                   alt={item.productTitle}
                   className="w-full h-full object-cover"
-                  loading="lazy"
+                  skeletonClassName="w-full h-full"
                   data-testid={`img-cart-item-${index}`}
                 />
               </div>
@@ -155,11 +156,11 @@ export function CartList({
             <div className="sm:hidden space-y-2">
               <div className="flex items-center gap-2">
                 <div className="w-12 h-12 flex-shrink-0 rounded overflow-hidden bg-muted">
-                  <img
+                  <LazyImage
                     src={item.productImage}
                     alt={item.productTitle}
                     className="w-full h-full object-cover"
-                    loading="lazy"
+                    skeletonClassName="w-full h-full"
                   />
                 </div>
                 <div className="flex-1 min-w-0">
