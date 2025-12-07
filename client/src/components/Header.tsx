@@ -25,6 +25,7 @@ export function Header() {
 
   const currentLanguage = languages.find((l) => l.code === language);
   const isProductPage = location.startsWith("/product/");
+  const shouldHideMobileNav = isProductPage || location === "/cart" || location === "/thanks";
 
   return (
     <>
@@ -148,7 +149,7 @@ export function Header() {
         </Container>
       </header>
 
-      {!isProductPage && (
+      {!shouldHideMobileNav && (
         <nav className="sm:hidden sticky top-14 z-40 flex items-center justify-center py-3 mx-auto">
           <div className="inline-flex items-center gap-6 px-6 py-2 rounded-full border border-border bg-background">
             <Link href="/" data-testid="link-catalog-mobile">
