@@ -5,6 +5,7 @@ import { useApp } from "@/contexts/AppContext";
 import { Container } from "@/components/Container";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/logoUse_1765068131996.jpg";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -29,9 +30,16 @@ export function Header() {
         <Container>
           <div className="flex h-14 md:h-16 items-center justify-between gap-2 md:gap-4">
             <Link href="/" data-testid="link-home">
-              <span className="text-lg md:text-xl font-bold tracking-tight text-foreground cursor-pointer">
-                {t("header.logo")}
-              </span>
+              <div className="flex items-center gap-2 cursor-pointer">
+                <img 
+                  src={logoImage} 
+                  alt="IndianLeto" 
+                  className="h-10 md:h-12 w-auto object-contain"
+                />
+                <span className="text-lg md:text-xl font-bold tracking-tight text-foreground hidden sm:inline">
+                  IndianLeto
+                </span>
+              </div>
             </Link>
 
             <nav className="hidden sm:flex items-center gap-3 absolute left-1/2 -translate-x-1/2">
