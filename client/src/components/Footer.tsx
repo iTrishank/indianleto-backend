@@ -59,6 +59,7 @@ export function Footer() {
               <a 
                 href="mailto:connect@indianleto.com" 
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="link-email"
               >
                 connect@indianleto.com
               </a>
@@ -71,6 +72,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="Facebook"
+                data-testid="link-facebook"
               >
                 <SiFacebook className="h-5 w-5" />
               </a>
@@ -80,6 +82,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="Instagram"
+                data-testid="link-instagram"
               >
                 <SiInstagram className="h-5 w-5" />
               </a>
