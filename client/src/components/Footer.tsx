@@ -1,4 +1,3 @@
-import { MapPin } from "lucide-react";
 import { SiFacebook, SiInstagram } from "react-icons/si";
 import { Container } from "@/components/Container";
 import logoImage from "@assets/logoUse_1765112823302.jpg";
@@ -23,21 +22,21 @@ export function Footer() {
           </div>
 
           <div className="space-y-4">
-            <div className="flex items-start gap-3">
-              <MapPin className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
-              <div className="space-y-3">
-                <div>
-                  <p className="text-sm font-medium">India</p>
-                  <p className="text-sm text-muted-foreground">
-                    431 Vivek Vihar, Shyam Nagar, Jaipur, Rajasthan, India, 302019
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm font-medium">Russia</p>
-                  <p className="text-sm text-muted-foreground">
-                    5 Izmailovski Prospekt, Moscow, Russia
-                  </p>
-                </div>
+            <h3 className="text-sm font-semibold uppercase tracking-wide">Address</h3>
+            <div className="space-y-4">
+              <div>
+                <p className="text-sm font-medium">India</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  431 Vivek Vihar, Shyam Nagar,<br />
+                  Jaipur, Rajasthan, India, 302019
+                </p>
+              </div>
+              <div>
+                <p className="text-sm font-medium">Russia</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  5 Izmailovski Prospekt,<br />
+                  Moscow, Russia, 105203
+                </p>
               </div>
             </div>
           </div>
@@ -45,7 +44,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-wide">Stay Connected</h3>
             
-            <div className="space-y-1">
+            <div className="flex flex-col gap-2">
               <p className="text-sm text-muted-foreground">+7 915 277 4869</p>
               <p className="text-sm text-muted-foreground">+91 96808 96969</p>
               <p className="text-sm text-muted-foreground">+91 98283 72435</p>
@@ -59,7 +58,7 @@ export function Footer() {
               connect@indianleto.com
             </a>
 
-            <div className="flex items-center gap-4 pt-2">
+            <div className="flex items-center gap-4">
               <a 
                 href="https://facebook.com" 
                 target="_blank" 

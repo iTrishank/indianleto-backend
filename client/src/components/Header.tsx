@@ -28,7 +28,7 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 w-full border-b bg-background">
         <Container>
           <div className="flex h-14 md:h-16 items-center justify-between gap-2 md:gap-4">
             <Link href="/" data-testid="link-home">
@@ -153,7 +153,7 @@ export function Header() {
 
       {!isProductPage && (
         <nav className="sm:hidden sticky top-14 z-40 flex items-center justify-center py-3 mx-auto">
-          <div className="inline-flex items-center gap-6 px-6 py-2 rounded-full border border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+          <div className="inline-flex items-center gap-6 px-6 py-2 rounded-full border border-border bg-background">
             <Link href="/" data-testid="link-catalog-mobile">
               <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
                 {t("header.catalog")}

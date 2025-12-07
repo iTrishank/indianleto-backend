@@ -351,19 +351,43 @@
 
 .brush-stroke-bg {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   pointer-events: none;
-  z-index: 0;
-  background:
-    radial-gradient(ellipse 40% 80% at 30% 50%, rgba(0, 0, 0, 0.04) 0%, transparent 70%),
-    radial-gradient(ellipse 35% 60% at 70% 40%, rgba(0, 0, 0, 0.03) 0%, transparent 65%),
-    radial-gradient(ellipse 50% 40% at 50% 60%, rgba(0, 0, 0, 0.025) 0%, transparent 60%);
-  filter: blur(20px);
+  z-index: 1;
 }
 
-.dark .brush-stroke-bg {
-  background:
-    radial-gradient(ellipse 40% 80% at 30% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 70%),
-    radial-gradient(ellipse 35% 60% at 70% 40%, rgba(255, 255, 255, 0.025) 0%, transparent 65%),
-    radial-gradient(ellipse 50% 40% at 50% 60%, rgba(255, 255, 255, 0.02) 0%, transparent 60%);
+.brush-stroke-bg::before,
+.brush-stroke-bg::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.brush-stroke-bg::before {
+  top: -30px;
+  left: 5%;
+  width: 40%;
+  height: 120%;
+  background: radial-gradient(ellipse 100% 100% at center, rgba(0, 0, 0, 0.12) 0%, transparent 70%);
+  filter: blur(30px);
+}
+
+.brush-stroke-bg::after {
+  top: -20px;
+  right: 10%;
+  width: 35%;
+  height: 100%;
+  background: radial-gradient(ellipse 100% 100% at center, rgba(0, 0, 0, 0.09) 0%, transparent 65%);
+  filter: blur(25px);
+}
+
+.dark .brush-stroke-bg::before {
+  background: radial-gradient(ellipse 100% 100% at center, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+}
+
+.dark .brush-stroke-bg::after {
+  background: radial-gradient(ellipse 100% 100% at center, rgba(255, 255, 255, 0.06) 0%, transparent 65%);
 }
