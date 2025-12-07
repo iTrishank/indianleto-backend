@@ -1,7 +1,7 @@
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { SiFacebook, SiInstagram } from "react-icons/si";
 import { Container } from "@/components/Container";
-import logoImage from "@assets/logoUse_1765068131996.jpg";
+import logoImage from "@assets/logoUse_1765112823302.jpg";
 
 export function Footer() {
   return (
@@ -45,25 +45,19 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-wide">Stay Connected</h3>
             
-            <div className="flex items-start gap-3">
-              <Phone className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
-              <div className="space-y-1">
-                <p className="text-sm text-muted-foreground">+7 915 277 4869</p>
-                <p className="text-sm text-muted-foreground">+91 96808 96969</p>
-                <p className="text-sm text-muted-foreground">+91 98283 72435</p>
-              </div>
+            <div className="space-y-1">
+              <p className="text-sm text-muted-foreground">+7 915 277 4869</p>
+              <p className="text-sm text-muted-foreground">+91 96808 96969</p>
+              <p className="text-sm text-muted-foreground">+91 98283 72435</p>
             </div>
 
-            <div className="flex items-center gap-3">
-              <Mail className="h-5 w-5 text-muted-foreground flex-shrink-0" />
-              <a 
-                href="mailto:connect@indianleto.com" 
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                data-testid="link-email"
-              >
-                connect@indianleto.com
-              </a>
-            </div>
+            <a 
+              href="mailto:connect@indianleto.com" 
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors block"
+              data-testid="link-email"
+            >
+              connect@indianleto.com
+            </a>
 
             <div className="flex items-center gap-4 pt-2">
               <a 

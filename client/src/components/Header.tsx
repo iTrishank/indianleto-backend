@@ -1,11 +1,11 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { ShoppingCart, Globe, ChevronDown } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import { useApp } from "@/contexts/AppContext";
 import { Container } from "@/components/Container";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import logoImage from "@assets/logoUse_1765068131996.jpg";
+import logoImage from "@assets/logoUse_1765112823302.jpg";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -21,8 +21,10 @@ import {
 export function Header() {
   const { itemCount } = useCart();
   const { language, setLanguage, currency, setCurrency, t, languages, currencies, ui } = useApp();
+  const [location] = useLocation();
 
   const currentLanguage = languages.find((l) => l.code === language);
+  const isProductPage = location.startsWith("/product/");
 
   return (
     <>
@@ -149,21 +151,23 @@ export function Header() {
         </Container>
       </header>
 
-      <nav className="sm:hidden sticky top-14 z-40 flex items-center justify-center py-3 mx-auto">
-        <div className="inline-flex items-center gap-6 px-6 py-2 rounded-full border border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-          <Link href="/" data-testid="link-catalog-mobile">
-            <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
-              {t("header.catalog")}
-            </span>
-          </Link>
-          <span className="text-muted-foreground">|</span>
-          <Link href="/about" data-testid="link-about-mobile">
-            <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
-              {t("header.aboutUs")}
-            </span>
-          </Link>
-        </div>
-      </nav>
+      {!isProductPage && (
+        <nav className="sm:hidden sticky top-14 z-40 flex items-center justify-center py-3 mx-auto">
+          <div className="inline-flex items-center gap-6 px-6 py-2 rounded-full border border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+            <Link href="/" data-testid="link-catalog-mobile">
+              <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
+                {t("header.catalog")}
+              </span>
+            </Link>
+            <span className="text-muted-foreground">|</span>
+            <Link href="/about" data-testid="link-about-mobile">
+              <span className="text-sm font-medium text-foreground cursor-pointer hover:opacity-70 transition-opacity">
+                {t("header.aboutUs")}
+              </span>
+            </Link>
+          </div>
+        </nav>
+      )}
     </>
   );
 }

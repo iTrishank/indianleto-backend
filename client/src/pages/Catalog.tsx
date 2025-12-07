@@ -180,8 +180,9 @@ export default function Catalog() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-background py-4 md:py-5">
-        <Container>
+      <section className="relative bg-background py-4 md:py-5 overflow-hidden">
+        <div className="brush-stroke-bg" aria-hidden="true" />
+        <Container className="relative z-10">
           <div className="text-center space-y-1.5">
             <h1 className="text-2xl md:text-3xl font-semibold tracking-tight leading-tight">
               {t("catalog.title")}
