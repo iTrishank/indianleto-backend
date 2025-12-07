@@ -14,7 +14,6 @@ export function Footer() {
                 alt="IndianLeto" 
                 className="h-10 w-auto object-contain"
               />
-              <span className="text-lg font-bold tracking-tight">IndianLeto</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               IndianLeto is a B2B apparel supplier offering high-quality Indian dresses in bulk. Fast delivery, premium fabrics, and reliable wholesale service.

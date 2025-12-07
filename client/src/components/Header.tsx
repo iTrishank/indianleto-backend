@@ -38,9 +38,6 @@ export function Header() {
                   alt="IndianLeto" 
                   className="h-10 md:h-12 w-auto object-contain"
                 />
-                <span className="text-lg md:text-xl font-bold tracking-tight text-foreground hidden sm:inline">
-                  IndianLeto
-                </span>
               </div>
             </Link>
 
