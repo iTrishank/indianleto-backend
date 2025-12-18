@@ -1,4 +1,6 @@
 import "dotenv/config";
+import cors from "cors";
+
 
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
@@ -7,6 +9,18 @@ import { createServer } from "http";
 
 const app = express();
 const httpServer = createServer(app);
+
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5000",
+      "https://indianleto.com",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
+app.options("*", cors());
 
 declare module "http" {
   interface IncomingMessage {
@@ -69,7 +83,6 @@ app.use((req, res, next) => {
     const message = err.message || "Internal Server Error";
 
     res.status(status).json({ message });
-    throw err;
   });
 
   // importantly only setup vite in development and after
