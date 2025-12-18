@@ -20,6 +20,7 @@ app.use(
     allowedHeaders: ["Content-Type"],
   })
 );
+app.options("/api/*", cors());
 
 declare module "http" {
   interface IncomingMessage {

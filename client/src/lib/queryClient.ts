@@ -16,8 +16,8 @@ export async function apiRequest(
 ): Promise<Response> {
   const res = await fetch(`${API_BASE_URL}${url}`, {
     method,
-    headers: data ? { "Content-Type": "application/json" } : {},
-    body: data ? JSON.stringify(data) : undefined,
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
   });
 
   await throwIfResNotOk(res);
