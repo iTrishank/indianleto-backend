@@ -1,52 +1,48 @@
-import { google } from 'googleapis';
+import { google } from "googleapis";
 
-let connectionSettings: any;
-
-async function getAccessToken() {
-  if (connectionSettings && connectionSettings.settings.expires_at && new Date(connectionSettings.settings.expires_at).getTime() > Date.now()) {
-    return connectionSettings.settings.access_token;
-  }
-  
-  const hostname = process.env.REPLIT_CONNECTORS_HOSTNAME;
-  const xReplitToken = process.env.REPL_IDENTITY 
-    ? 'repl ' + process.env.REPL_IDENTITY 
-    : process.env.WEB_REPL_RENEWAL 
-    ? 'depl ' + process.env.WEB_REPL_RENEWAL 
-    : null;
-
-  if (!xReplitToken) {
-    throw new Error('X_REPLIT_TOKEN not found for repl/depl');
-  }
-
-  connectionSettings = await fetch(
-    'https://' + hostname + '/api/v2/connection?include_secrets=true&connector_names=google-sheet',
-    {
-      headers: {
-        'Accept': 'application/json',
-        'X_REPLIT_TOKEN': xReplitToken
-      }
-    }
-  ).then(res => res.json()).then(data => data.items?.[0]);
-
-  const accessToken = connectionSettings?.settings?.access_token || connectionSettings.settings?.oauth?.credentials?.access_token;
-
-  if (!connectionSettings || !accessToken) {
-    throw new Error('Google Sheet not connected');
-  }
-  return accessToken;
-}
-
+/**
+ * Creates an authenticated Google Sheets client using
+ * a Service Account (works in VS Code / local / servers).
+ *
+ * Required env vars:
+ * - GOOGLE_SERVICE_ACCOUNT_KEY  (JSON string of service account key)
+ */
 export async function getUncachableGoogleSheetClient() {
-  const accessToken = await getAccessToken();
+  const keyJson = process.env.GOOGLE_SERVICE_ACCOUNT_KEY;
 
-  const oauth2Client = new google.auth.OAuth2();
-  oauth2Client.setCredentials({
-    access_token: accessToken
+  if (!keyJson) {
+    throw new Error("GOOGLE_SERVICE_ACCOUNT_KEY env var is not set");
+  }
+
+  let key: any;
+  try {
+    key = JSON.parse(keyJson);
+  } catch (err) {
+    throw new Error("Failed to parse GOOGLE_SERVICE_ACCOUNT_KEY JSON");
+  }
+
+  if (!key.client_email || !key.private_key) {
+    throw new Error("Service account key is missing client_email or private_key");
+  }
+
+  const jwtClient = new google.auth.JWT(
+    key.client_email,
+    undefined,
+    key.private_key,
+    ["https://www.googleapis.com/auth/spreadsheets"]
+  );
+
+  await jwtClient.authorize();
+
+  return google.sheets({
+    version: "v4",
+    auth: jwtClient,
   });
-
-  return google.sheets({ version: 'v4', auth: oauth2Client });
 }
 
+/**
+ * Appends one quotation row to the Google Sheet
+ */
 export async function appendQuotationToSheet(
   spreadsheetId: string,
   quotationData: {
@@ -62,7 +58,7 @@ export async function appendQuotationToSheet(
 ) {
   try {
     const sheets = await getUncachableGoogleSheetClient();
-    
+
     const values = [[
       quotationData.quoteId,
       quotationData.customerName,
@@ -71,59 +67,59 @@ export async function appendQuotationToSheet(
       quotationData.products,
       quotationData.totalAmount,
       quotationData.notes,
-      quotationData.createdAt
+      quotationData.createdAt,
     ]];
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId,
-      range: 'Sheet1!A:H',
-      valueInputOption: 'USER_ENTERED',
-      insertDataOption: 'INSERT_ROWS',
-      requestBody: {
-        values
-      }
+      range: "Sheet1!A:H",
+      valueInputOption: "USER_ENTERED",
+      insertDataOption: "INSERT_ROWS",
+      requestBody: { values },
     });
 
     return response.data;
   } catch (error) {
-    console.error('Error appending to Google Sheet:', error);
+    console.error("Error appending to Google Sheet:", error);
     throw error;
   }
 }
 
+/**
+ * Ensures header row exists in the Google Sheet
+ */
 export async function ensureSheetHeaders(spreadsheetId: string) {
   try {
     const sheets = await getUncachableGoogleSheetClient();
-    
+
     const getResponse = await sheets.spreadsheets.values.get({
       spreadsheetId,
-      range: 'Sheet1!A1:H1'
+      range: "Sheet1!A1:H1",
     });
 
     const existingHeaders = getResponse.data.values?.[0];
-    
+
     if (!existingHeaders || existingHeaders.length === 0) {
       const headers = [[
-        'Quote ID',
-        'Customer Name',
-        'Phone',
-        'Email',
-        'Products',
-        'Total Amount (INR)',
-        'Notes',
-        'Created At'
+        "Quote ID",
+        "Customer Name",
+        "Phone",
+        "Email",
+        "Products",
+        "Total Amount (INR)",
+        "Notes",
+        "Created At",
       ]];
 
       await sheets.spreadsheets.values.update({
         spreadsheetId,
-        range: 'Sheet1!A1:H1',
-        valueInputOption: 'USER_ENTERED',
-        requestBody: {
-          values: headers
-        }
+        range: "Sheet1!A1:H1",
+        valueInputOption: "USER_ENTERED",
+        requestBody: { values: headers },
       });
     }
   } catch (error) {
-    console.error('Error ensuring sheet headers:', error);
+    console.error("Error ensuring sheet headers:", error);
   }
 }
+console.log("ENV SHEET ID:", process.env.GOOGLE_SHEET_ID);

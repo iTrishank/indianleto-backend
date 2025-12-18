@@ -70,7 +70,7 @@ export function addToCart(
     productImage: product.images[0] || "",
     variant: {
       size,
-      color: product.attributes.color
+      color: product.attributes.color || ""
     },
     unitPrice,
     quantity

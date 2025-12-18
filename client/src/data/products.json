@@ -1,225 +1,1856 @@
 {
   "products": {
-    "P1": {
-      "sku": "IL-P1-2024",
+    "02": {
+      "sku": "IL1245789630",
       "title": {
-        "en": "Elegant Floral Maxi Dress Summer Collection",
-        "es": "Elegante Vestido Maxi Floral Colección Verano",
-        "hi": "एलिगेंट फ्लोरल मैक्सी ड्रेस समर कलेक्शन",
-        "ru": "Элегантное Цветочное Макси Платье Летняя Коллекция"
+        "en": "Wholesale Women Spring And Summer Fashion Flower Print Vacation Strap Bodycon Maxi Dress"
       },
       "description": {
-        "en": "Beautiful floral print maxi dress perfect for summer occasions. Made with premium polyester blend fabric. Features a flattering A-line silhouette with adjustable straps.",
-        "es": "Hermoso vestido maxi con estampado floral perfecto para ocasiones de verano. Hecho con tela de mezcla de poliéster premium. Presenta una silueta favorecedora en línea A con tirantes ajustables.",
-        "hi": "गर्मियों के अवसरों के लिए सुंदर फ्लोरल प्रिंट मैक्सी ड्रेस। प्रीमियम पॉलिएस्टर ब्लेंड फैब्रिक से बना। एडजस्टेबल स्ट्रैप्स के साथ फ्लैटरिंग ए-लाइन सिल्हूट।",
-        "ru": "Красивое макси платье с цветочным принтом, идеально подходящее для летних мероприятий. Изготовлено из премиальной смеси полиэстера. Отличается лестным силуэтом А-линии с регулируемыми бретелями."
+        "en": "Fabric: Polyester, Milk Fiber, Spandex. Material: Stretch Polyester Blend. A stylish spring–summer maxi dress featuring an all-over floral print and a flattering bodycon silhouette. The sleeveless sling-style design, U-shaped collar, and high waistline enhance the figure while ensuring comfort and ease of movement. The one-step skirt adds graceful drape and elegant length, making it ideal for vacations, evening outings, and social events. Lightweight, breathable, and easy to care for, this dress blends modern sexy appeal with everyday wearability.",
+        "ru": "Ткань: полиэстер, молочное волокно, спандекс. Материал: эластичный смесовый полиэстер. Стильное летнее платье-макси с цветочным принтом и облегающим силуэтом. Модель на тонких бретелях с U-образным вырезом и завышенной талией выгодно подчёркивает фигуру и обеспечивает комфорт при носке. Юбка-одна ступень придаёт плавную элегантную драпировку и достаточную длину, что делает платье отличным выбором для отпуска, вечерних выходов и светских мероприятий. Лёгкая, дышащая и простая в уходе ткань сочетает современный сексуальный стиль с повседневной практичностью."
       },
       "color": {
-        "en": "Rose Floral",
-        "es": "Floral Rosa",
-        "hi": "गुलाबी फूल",
-        "ru": "Розовый Цветочный"
+        "primary": "Red"
       },
-      "minOrder": 1,
-      "sizeMinOrders": { "S": 2, "M": 3, "L": 2, "XL": 2 },
+      "minOrder": 3,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 4,
+        "L": 5,
+        "XL": 3
+      },
       "images": [
-        "P1/1.jpg",
-        "P1/2.jpg",
-        "P1/3.jpg",
-        "P1/4.jpg",
-        "P1/1.jpg",
-        "P1/2.jpg",
-        "P1/3.jpg"
+        "02/1.jpg",
+        "02/2.jpg",
+        "02/3.jpg",
+        "02/4.jpg",
+        "02/5.jpg",
+        "02/6.jpg",
+        "02/7.jpg",
+        "02/8.jpg"
       ],
       "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1250 },
-        { "minQty": 6, "maxQty": 25, "price": 1100 },
-        { "minQty": 26, "maxQty": null, "price": 950 }
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 560.32
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 509.06
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 476.68
+        }
       ],
-      "sizes": ["S", "M", "L", "XL"],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "sizeMeasurements": {
-        "S": { "skirtLength": 125, "bust": 84, "waist": 66, "hips": 90 },
-        "M": { "skirtLength": 127, "bust": 88, "waist": 70, "hips": 94 },
-        "L": { "skirtLength": 129, "bust": 92, "waist": 74, "hips": 98 },
-        "XL": { "skirtLength": 131, "bust": 96, "waist": 78, "hips": 102 }
+        "S": {
+          "skirtLength": 126,
+          "bust": 75,
+          "waist": 68,
+          "hips": 82
+        },
+        "M": {
+          "skirtLength": 128,
+          "bust": 79,
+          "waist": 72,
+          "hips": 86
+        },
+        "L": {
+          "skirtLength": 130,
+          "bust": 83,
+          "waist": 76,
+          "hips": 90
+        }
       }
     },
-    "P2": {
-      "sku": "IL-P2-2024",
+    "03": {
+      "sku": "IL2356897411",
       "title": {
-        "en": "Bohemian Paisley Print Midi Dress",
-        "es": "Vestido Midi Bohemio con Estampado Paisley",
-        "hi": "बोहेमियन पेस्ले प्रिंट मिडी ड्रेस",
-        "ru": "Богемное Миди Платье с Принтом Пейсли"
+        "en": "Wholesale Women Spring And Summer Fashion Flower Print Ruffle Side Slit Dress"
       },
       "description": {
-        "en": "Stunning bohemian style midi dress with intricate paisley patterns. Lightweight rayon fabric ideal for warm weather. Features elegant flutter sleeves and a tie waist.",
-        "es": "Impresionante vestido midi de estilo bohemio con intrincados patrones paisley. Tela de rayón liviana ideal para clima cálido. Presenta elegantes mangas con volantes y cintura con lazo.",
-        "hi": "जटिल पेस्ले पैटर्न के साथ शानदार बोहेमियन स्टाइल मिडी ड्रेस। गर्म मौसम के लिए आदर्श हल्के रेयॉन फैब्रिक। एलिगेंट फ्लटर स्लीव्स और टाई वेस्ट।",
-        "ru": "Потрясающее миди платье в богемном стиле с замысловатыми узорами пейсли. Лёгкая вискозная ткань идеально подходит для тёплой погоды. Элегантные рукава-флаттер и поясок на талии."
+        "en": "Fabric: Stretch Polyester, Spandex. Material: Soft Elastic Polyester Blend. An elegant medium-length floral dress crafted from soft stretch polyester, designed with a flattering V-neck, petal sleeves, and a stylish ruffle side slit. Featuring a tiny-flower print, a mid-waist silhouette, and a feminine sling-style structure, this dress blends comfort with refined aesthetics, making it perfect for warm-season outings and vacation looks.",
+        "ru": "Ткань: эластичный полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Элегантное платье средней длины с цветочным принтом выполнено из мягкого эластичного полиэстера и дополнено V-образным вырезом, рукавами-«лепестками» и стильным разрезом с оборкой сбоку. Модель с завышенной талией, мелким цветочным рисунком и женственным кройом на бретелях сочетает комфорт и утончённый дизайн, идеально подойдёт для тёплого сезона, отдыха и летних прогулок."
       },
       "color": {
-        "en": "Blue Paisley",
-        "es": "Paisley Azul",
-        "hi": "नीला पेस्ले",
-        "ru": "Синий Пейсли"
+        "primary": "Red"
       },
-      "minOrder": 1,
-      "sizeMinOrders": { "S": 3, "M": 2, "L": 2 },
-      "images": ["P2/1.jpg", "P2/2.jpg", "P2/3.jpg", "P2/4.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1450 },
-        { "minQty": 6, "maxQty": 25, "price": 1280 },
-        { "minQty": 26, "maxQty": null, "price": 1100 }
+      "minOrder": 3,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 4,
+        "L": 5,
+        "XL": 3
+      },
+      "images": [
+        "03/1.jpg",
+        "03/2.jpg",
+        "03/3.jpg",
+        "03/4.jpg",
+        "03/5.jpg",
+        "03/6.jpg",
+        "03/7.jpg"
       ],
-      "sizes": ["S", "M", "L"],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 700.63
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 615.19
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 584.61
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
       "sizeMeasurements": {
-        "S": { "skirtLength": 100, "bust": 82, "waist": 64, "hips": 88 },
-        "M": { "skirtLength": 102, "bust": 86, "waist": 68, "hips": 92 },
-        "L": { "skirtLength": 104, "bust": 90, "waist": 72, "hips": 96 }
+        "S": {
+          "skirtLength": 86,
+          "bust": "86-88",
+          "waist": 70,
+          "hips": 92
+        },
+        "M": {
+          "skirtLength": 87,
+          "bust": "90-92",
+          "waist": 74,
+          "hips": 96
+        },
+        "L": {
+          "skirtLength": 88,
+          "bust": "95-97",
+          "waist": 80,
+          "hips": 101
+        },
+        "XL": {
+          "skirtLength": 89,
+          "bust": "100-102",
+          "waist": 86,
+          "hips": 107
+        }
       }
     },
-    "P3": {
-      "sku": "IL-P3-2024",
+    "04": {
+      "sku": "IL3467908522",
       "title": {
-        "en": "Classic Striped Wrap Dress Business Casual",
-        "es": "Vestido Cruzado Clásico de Rayas Business Casual",
-        "hi": "क्लासिक स्ट्राइप्ड रैप ड्रेस बिजनेस कैजुअल",
-        "ru": "Классическое Полосатое Платье с Запахом Бизнес Кэжуал"
+        "en": "Wholesale Women Fashion Sexy Floral Printing Mesh Stitching Strap Dress"
       },
       "description": {
-        "en": "Sophisticated striped wrap dress perfect for business casual settings. Premium cotton-polyester blend ensures comfort all day. True wrap design with adjustable fit.",
-        "es": "Sofisticado vestido cruzado a rayas perfecto para entornos de negocios casuales. Mezcla premium de algodón-poliéster garantiza comodidad todo el día. Diseño cruzado verdadero con ajuste regulable.",
-        "hi": "बिजनेस कैजुअल सेटिंग्स के लिए परिष्कृत स्ट्राइप्ड रैप ड्रेस। प्रीमियम कॉटन-पॉलिएस्टर ब्लेंड पूरे दिन आराम सुनिश्चित करता है। एडजस्टेबल फिट के साथ ट्रू रैप डिज़ाइन।",
-        "ru": "Изысканное полосатое платье с запахом, идеально подходящее для делового кэжуала. Премиальная смесь хлопка и полиэстера обеспечивает комфорт весь день. Настоящий дизайн с запахом и регулируемой посадкой."
+        "en": "Fabric: Polyester, Spandex, Mesh Stitching. Material: Soft Stretch Polyester Blend. A stylish short-length strap dress crafted with mesh stitching and soft polyester-spandex fabric, designed to offer a flattering body-hugging silhouette. With a floral print, a U-shaped collar, and a mid-waist cut, this sleeveless piece blends elegance with a sexy, modern aesthetic. Lightweight, comfortable, and ideal for both casual outings and evening looks.",
+        "ru": "Ткань: полиэстер, спандекс, сетчатые вставки. Материал: мягкий эластичный смесовый полиэстер. Стильное короткое платье на бретелях выполнено с сетчатыми вставками и из мягкой ткани полиэстер–спандекс, обеспечивая облегающий и привлекательный силуэт. Цветочный принт, U-образный вырез и посадка по линии талии создают сочетание элегантности и современного сексуального стиля. Лёгкое, удобное и подходящее как для повседневных выходов, так и для вечерних образов."
       },
       "color": {
-        "en": "Navy Stripe",
-        "es": "Rayas Azul Marino",
-        "hi": "नेवी स्ट्राइप",
-        "ru": "Тёмно-Синяя Полоса"
+        "primary": "Red"
       },
-      "minOrder": 1,
-      "sizeMinOrders": { "S": 2, "M": 3, "L": 2, "XL": 2 },
-      "images": ["P3/1.jpg", "P3/2.jpg", "P3/3.jpg", "P3/4.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1680 },
-        { "minQty": 6, "maxQty": 25, "price": 1480 },
-        { "minQty": 26, "maxQty": null, "price": 1280 }
+      "minOrder": 3,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 4,
+        "L": 5
+      },
+      "images": [
+        "04/1.jpg",
+        "04/2.jpg",
+        "04/3.jpg",
+        "04/4.jpg",
+        "04/5.jpg",
+        "04/6.jpg",
+        "04/7.jpg"
       ],
-      "sizes": ["S", "M", "L", "XL"],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 525.25
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 447.9
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 380.45
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "sizeMeasurements": {
-        "S": { "skirtLength": 95, "bust": 84, "waist": 66, "hips": 90 },
-        "M": { "skirtLength": 97, "bust": 88, "waist": 70, "hips": 94 },
-        "L": { "skirtLength": 99, "bust": 92, "waist": 74, "hips": 98 },
-        "XL": { "skirtLength": 101, "bust": 96, "waist": 78, "hips": 102 }
+        "S": {
+          "skirtLength": 75,
+          "bust": "72-88",
+          "waist": "62-70",
+          "hips": "83-92"
+        },
+        "M": {
+          "skirtLength": 77,
+          "bust": "76-92",
+          "waist": "66-74",
+          "hips": "87-96"
+        },
+        "L": {
+          "skirtLength": 79,
+          "bust": "80-96",
+          "waist": "70-78",
+          "hips": "91-100"
+        }
       }
     },
-    "P4": {
-      "sku": "IL-P4-2024",
+    "05": {
+      "sku": "IL4578019633",
       "title": {
-        "en": "Tropical Print Off-Shoulder Party Dress",
-        "es": "Vestido de Fiesta Tropical con Hombros Descubiertos",
-        "hi": "ट्रॉपिकल प्रिंट ऑफ-शोल्डर पार्टी ड्रेस",
-        "ru": "Тропическое Платье для Вечеринок с Открытыми Плечами"
+        "en": "Wholesale Women's Casual Floral-Print Halter-Back Maxi Dress"
       },
       "description": {
-        "en": "Vibrant tropical print party dress with off-shoulder design. Stretchy spandex blend for comfortable fit. Perfect for beach parties and summer celebrations.",
-        "es": "Vibrante vestido de fiesta con estampado tropical y diseño de hombros descubiertos. Mezcla de spandex elástico para un ajuste cómodo. Perfecto para fiestas en la playa y celebraciones de verano.",
-        "hi": "ऑफ-शोल्डर डिज़ाइन के साथ जीवंत ट्रॉपिकल प्रिंट पार्टी ड्रेस। आरामदायक फिट के लिए स्ट्रेची स्पैन्डेक्स ब्लेंड। बीच पार्टियों और समर सेलिब्रेशन के लिए परफेक्ट।",
-        "ru": "Яркое платье для вечеринок с тропическим принтом и дизайном с открытыми плечами. Эластичная смесь спандекса для комфортной посадки. Идеально для пляжных вечеринок и летних торжеств."
+        "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A breezy long floral-print halter-back maxi dress crafted from soft polyester, designed with a flattering U-neckline and an elegant A-line silhouette. This sleeveless piece offers a comfortable mid-waist fit, making it ideal for casual outings, beachwear, and stylish everyday looks with a modern street-hipster influence.",
+        "ru": "Ткань: полиэстер. Материал: мягкая полиэстеровая ткань. Лёгкое платье-макси с цветочным принтом и открытой спиной выполнено из мягкого полиэстера. Модель с U-образным вырезом и элегантным А-силуэтом подчёркивает фигуру и обеспечивает комфортную посадку по линии талии. Идеально подходит для повседневных образов, пляжного отдыха и стильных летних прогулок в современном городском стиле."
       },
       "color": {
-        "en": "Tropical Green",
-        "es": "Verde Tropical",
-        "hi": "ट्रॉपिकल ग्रीन",
-        "ru": "Тропический Зелёный"
+        "primary": "White"
       },
-      "minOrder": 1,
-      "sizeMinOrders": { "S": 3, "M": 2, "L": 3 },
-      "images": ["P4/1.jpg", "P4/2.jpg", "P4/3.jpg", "P4/4.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1350 },
-        { "minQty": 6, "maxQty": 25, "price": 1190 },
-        { "minQty": 26, "maxQty": null, "price": 1020 }
+      "minOrder": 3,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 4,
+        "L": 5
+      },
+      "images": [
+        "05/1.jpg",
+        "05/2.jpg",
+        "05/3.jpg",
+        "05/4.jpg",
+        "05/5.jpg"
       ],
-      "sizes": ["S", "M", "L"],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 846.33
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 777.98
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 663.76
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "sizeMeasurements": {
-        "S": { "skirtLength": 88, "bust": 80, "waist": 62, "hips": 86 },
-        "M": { "skirtLength": 90, "bust": 84, "waist": 66, "hips": 90 },
-        "L": { "skirtLength": 92, "bust": 88, "waist": 70, "hips": 94 }
+        "S": {
+          "skirtLength": 123,
+          "bust": "70-86",
+          "waist": "60-78",
+          "hips": "78-96"
+        },
+        "M": {
+          "skirtLength": 125.5,
+          "bust": "74-90",
+          "waist": "64-82",
+          "hips": "82-100"
+        },
+        "L": {
+          "skirtLength": 128,
+          "bust": "78-94",
+          "waist": "68-86",
+          "hips": "86-104"
+        }
       }
     },
-    "P5": {
-      "sku": "IL-P5-2024",
+    "06": {
+      "sku": "IL5689120744",
       "title": {
-        "en": "Vintage Rose Print Tea Length Dress",
-        "es": "Vestido Vintage con Estampado de Rosas Largo Té",
-        "hi": "विंटेज रोज़ प्रिंट टी लेंथ ड्रेस",
-        "ru": "Винтажное Платье с Принтом Роз Длиной до Чая"
+        "en": "Wholesale Women Fashion Sexy Floral Printed Spaghetti Strap Dress"
       },
       "description": {
-        "en": "Elegant vintage-inspired dress featuring delicate rose prints. Tea length hem creates a timeless silhouette. Made with soft viscose fabric for all-day comfort.",
-        "es": "Elegante vestido de inspiración vintage con delicados estampados de rosas. El dobladillo largo té crea una silueta atemporal. Hecho con tela de viscosa suave para comodidad todo el día.",
-        "hi": "नाजुक रोज़ प्रिंट्स के साथ एलिगेंट विंटेज-इंस्पायर्ड ड्रेस। टी लेंथ हेम टाइमलेस सिल्हूट बनाता है। पूरे दिन आराम के लिए सॉफ्ट विस्कोस फैब्रिक से बना।",
-        "ru": "Элегантное платье в винтажном стиле с нежными принтами роз. Длина до чая создаёт вневременной силуэт. Изготовлено из мягкой вискозной ткани для комфорта весь день."
+        "en": "Fabric: Stretch Polyester, Spandex. Material: Soft Elastic Polyester Blend. A stylish floral spaghetti-strap dress crafted from stretch polyester with added spandex for comfort. Designed with a mid-waist silhouette, an A-line skirt, and a sleeveless profile, this piece blends a flattering fit with a delicate tiny-flower print. Its lightweight construction and versatile shape make it suitable for multiple body types, offering a chic and feminine look for casual or evening wear.",
+        "ru": "Ткань: эластичный полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Стильное платье на тонких бретелях с цветочным принтом выполнено из эластичного полиэстера с добавлением спандекса для комфорта. Модель с посадкой по линии талии, А-силуэтом и открытыми плечами подчёркивает фигуру и остаётся лёгкой и удобной. Универсальный крой подходит для разных типов телосложения, создавая женственный и изящный образ для повседневного или вечернего выхода."
       },
       "color": {
-        "en": "Vintage Rose",
-        "es": "Rosa Vintage",
-        "hi": "विंटेज रोज़",
-        "ru": "Винтажная Роза"
+        "primary": "Black1"
       },
-      "minOrder": 1,
-      "sizeMinOrders": { "S": 2, "M": 2, "L": 3, "XL": 2 },
-      "images": ["P5/1.jpg", "P5/2.jpg", "P5/3.jpg", "P5/4.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1550 },
-        { "minQty": 6, "maxQty": 25, "price": 1365 },
-        { "minQty": 26, "maxQty": null, "price": 1180 }
+      "minOrder": 3,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 4,
+        "L": 5,
+        "XL": 3
+      },
+      "images": [
+        "06/1.jpg",
+        "06/2.jpg",
+        "06/3.jpg",
+        "06/4.jpg",
+        "06/5.jpg",
+        "06/6.jpg",
+        "06/7.jpg",
+        "06/8.jpg",
+        "06/9.jpg",
+        "06/10.jpg",
+        "06/11.jpg",
+        "06/12.jpg",
+        "06/13.jpg",
+        "06/14.jpg",
+        "06/15.jpg",
+        "06/16.jpg",
+        "06/17.jpg",
+        "06/18.jpg",
+        "06/19.jpg",
+        "06/20.jpg",
+        "06/21.jpg",
+        "06/22.jpg",
+        "06/23.jpg",
+        "06/24.jpg",
+        "06/25.jpg",
+        "06/26.jpg",
+        "06/27.jpg",
+        "06/28.jpg",
+        "06/29.jpg",
+        "06/30.jpg",
+        "06/31.jpg",
+        "06/32.jpg",
+        "06/33.jpg",
+        "06/34.jpg",
+        "06/35.jpg",
+        "06/36.jpg",
+        "06/37.jpg",
+        "06/38.jpg",
+        "06/39.jpg",
+        "06/40.jpg",
+        "06/41.jpg",
+        "06/42.jpg",
+        "06/43.jpg",
+        "06/44.jpg"
       ],
-      "sizes": ["S", "M", "L", "XL"],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 613.39
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 518.05
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 494.67
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
       "sizeMeasurements": {
-        "S": { "skirtLength": 108, "bust": 82, "waist": 64, "hips": 88 },
-        "M": { "skirtLength": 110, "bust": 86, "waist": 68, "hips": 92 },
-        "L": { "skirtLength": 112, "bust": 90, "waist": 72, "hips": 96 },
-        "XL": { "skirtLength": 114, "bust": 94, "waist": 76, "hips": 100 }
+        "S": {
+          "skirtLength": 123,
+          "bust": "70-86",
+          "waist": "60-78",
+          "hips": "78-96"
+        },
+        "M": {
+          "skirtLength": 125.5,
+          "bust": "74-90",
+          "waist": "64-82",
+          "hips": "82-100"
+        },
+        "L": {
+          "skirtLength": 128,
+          "bust": "78-94",
+          "waist": "68-86",
+          "hips": "86-104"
+        },
+        "XL": {
+          "skirtLength": null,
+          "bust": null,
+          "waist": null,
+          "hips": null
+        }
       }
     },
-    "P6": {
-      "sku": "IL-P6-2024",
+    "07": {
+      "sku": "IL6790231855",
       "title": {
-        "en": "Vintage Rose Print Tea Length Dress",
-        "es": "Vestido Vintage con Estampado de Rosas Largo Té",
-        "hi": "विंटेज रोज़ प्रिंट टी लेंथ ड्रेस",
-        "ru": "Винтажное Платье с Принтом Роз Длиной до Чая"
+        "en": "Wholesale Spring And Summer Women Sexy Vacation Tube Top Floral Print Bodycon Maxi Dress"
       },
       "description": {
-        "en": "Elegant vintage-inspired dress featuring delicate rose prints. Tea length hem creates a timeless silhouette. Made with soft viscose fabric for all-day comfort.",
-        "es": "Elegante vestido de inspiración vintage con delicados estampados de rosas. El dobladillo largo té crea una silueta atemporal. Hecho con tela de viscosa suave para comodidad todo el día.",
-        "hi": "नाजुक रोज़ प्रिंट्स के साथ एलिगेंट विंटेज-इंस्पायर्ड ड्रेस। टी लेंथ हेम टाइमलेस सिल्हूट बनाता है। पूरे दिन आराम के लिए सॉफ्ट विस्कोस फैब्रिक से बना।",
-        "ru": "Элегантное платье в винтажном стиле с нежными принтами роз. Длина до чая создаёт вневременной силуэт. Изготовлено из мягкой вискозной ткани для комфорта весь день."
+        "en": "Fabric: Milk Fiber, Spandex. Material: Soft Stretch Polyester Blend. A stylish strapless bodycon maxi dress designed for spring and summer vacations. Crafted from soft milk fiber with added spandex, it features a flattering tube-top silhouette, a high-waist fit, and a sleek one-step skirt. The floral print and feminine shape create an elegant yet sexy look suitable for warm-weather outings and special occasions.",
+        "ru": "Ткань: молочное волокно, спандекс. Материал: мягкий эластичный смесовый полиэстер. Стильное платье-макси без бретелек создано для весенне-летнего отдыха. Модель из мягкого материала с добавлением спандекса имеет удобный крой с лифом в виде топа, завышенной талией и гладкой прямой юбкой. Цветочный принт и женственный силуэт создают элегантный и сексуальный образ, идеально подходящий для тёплой погоды и особых случаев."
       },
       "color": {
-        "en": "Vintage Rose",
-        "es": "Rosa Vintage",
-        "hi": "विंटेज रोज़",
-        "ru": "Винтажная Роза"
+        "primary": "White Red"
+      },
+      "minOrder": 3,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 4,
+        "L": 5
+      },
+      "images": [
+        "07/1.jpg",
+        "07/2.jpg",
+        "07/3.jpg",
+        "07/4.jpg",
+        "07/5.jpg",
+        "07/6.jpg",
+        "07/7.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 518.05
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 455.1
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 428.11
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 123,
+          "bust": 72,
+          "waist": 64,
+          "hips": 82
+        },
+        "M": {
+          "skirtLength": 125,
+          "bust": 76,
+          "waist": 68,
+          "hips": 86
+        },
+        "L": {
+          "skirtLength": 127,
+          "bust": 80,
+          "waist": 72,
+          "hips": 90
+        }
+      }
+    },
+    "08": {
+      "sku": "IL7801342966",
+      "title": {
+        "en": "Wholesale Summer Women Fashionable Small Fresh Square Collar Tiny Flower Printed Short Sleeve Split Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A charming summer midi dress featuring a tiny floral print, designed with a fresh square collar and comfortable short sleeves. The mid-waist fit and A-line skirt create a flattering silhouette, while the soft polyester fabric makes it ideal for warm-weather outings. The side split adds a stylish touch, blending elegance with a light, feminine look.",
+        "ru": "Ткань: полиэстер. Материал: мягкая полиэстеровая ткань. Очаровательное летнее платье миди с мелким цветочным принтом выполнено со стильным квадратным вырезом и удобными короткими рукавами. Посадка по линии талии и А-силуэт формируют выгодный женственный образ, а мягкая полиэстеровая ткань делает модель идеальной для тёплой погоды. Разрез сбоку добавляет стильный акцент, сочетая элегантность и лёгкий, женственный характер."
+      },
+      "color": {
+        "primary": "Apricot"
+      },
+      "minOrder": 3,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 4,
+        "L": 5,
+        "XL": 3
+      },
+      "images": [
+        "08/1.jpg",
+        "08/2.jpg",
+        "08/3.jpg",
+        "08/4.jpg",
+        "08/5.jpg",
+        "08/6.jpg",
+        "08/7.jpg",
+        "08/8.jpg",
+        "08/9.jpg",
+        "08/10.jpg",
+        "08/11.jpg",
+        "08/12.jpg",
+        "08/13.jpg",
+        "08/14.jpg",
+        "08/15.jpg",
+        "08/16.jpg",
+        "08/17.jpg",
+        "08/18.jpg",
+        "08/19.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 610.69
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 563.92
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 471.28
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 123,
+          "bust": 72,
+          "waist": 64,
+          "hips": 82
+        },
+        "M": {
+          "skirtLength": 125,
+          "bust": 76,
+          "waist": 68,
+          "hips": 86
+        },
+        "L": {
+          "skirtLength": 127,
+          "bust": 80,
+          "waist": 72,
+          "hips": 90
+        },
+        "XL": {
+          "skirtLength": null,
+          "bust": null,
+          "waist": null,
+          "hips": null
+        }
+      }
+    },
+    "09": {
+      "sku": "IL8912453077",
+      "title": {
+        "en": "Wholesale Women Fashion Beach Vacation Print Mini Sling Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A lightweight and stylish mini sling dress designed for beach vacations and warm summer days. Made from soft polyester, it features a flattering hanging-neck design, an elastic waist, and a smooth slip-skirt silhouette. The floral plant print adds a fresh and feminine touch, while the sleeveless cut keeps the look cool, sexy, and effortless.",
+        "ru": "Ткань: полиэстер. Материал: мягкая полиэстеровая ткань. Лёгкое и стильное мини-платье на бретелях создано для пляжного отдыха и тёплых летних дней. Модель из мягкого полиэстера выполнена с удобным воротом-халтер, эластичной талией и гладким силуэтом в стиле комбинации. Цветочный растительный принт добавляет свежести и женственности, а отсутствие рукавов делает образ лёгким, сексуальным и непринуждённым."
+      },
+      "color": {
+        "primary": "Red"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 4,
+        "L": 5,
+        "XL": 2
+      },
+      "images": [
+        "09/1.jpg",
+        "09/2.jpg",
+        "09/3.jpg",
+        "09/4.jpg",
+        "09/5.jpg",
+        "09/6.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 656.56
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 611.59
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 588.21
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 123,
+          "bust": 72,
+          "waist": 64,
+          "hips": 82
+        },
+        "M": {
+          "skirtLength": 125,
+          "bust": 76,
+          "waist": 68,
+          "hips": 86
+        },
+        "L": {
+          "skirtLength": 127,
+          "bust": 80,
+          "waist": 72,
+          "hips": 90
+        },
+        "XL": {
+          "skirtLength": null,
+          "bust": null,
+          "waist": null,
+          "hips": null
+        }
+      }
+    },
+    "10": {
+      "sku": "IL9023564188",
+      "title": {
+        "en": "Wholesale Women Fashion Casual Printed V-Neck Flying Sleeve Lace-Up Loose Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester, Spandex. Material: Lightweight Polyester Blend. A comfortable and stylish loose-fit dress designed with a soft V-neckline, feifei flying sleeves, and a casual lace-up detail. Made from lightweight polyester with a 3D-effect floral print, this short skirt silhouette offers a relaxed and breathable fit ideal for warm weather and everyday wear while maintaining a feminine and fashionable look.",
+        "ru": "Ткань: полиэстер, спандекс. Материал: лёгкий смесовый полиэстер. Удобное и стильное платье свободного кроя выполнено с мягким V-образным вырезом, летящими рукавами «фэйфэй» и декоративной шнуровкой. Модель из лёгкого полиэстера с цветочным принтом с 3D-эффектом обеспечивает комфортную и дышащую посадку, идеально подходящую для тёплой погоды и повседневного ношения, сохраняя женственный и модный образ."
+      },
+      "color": {
+        "primary": "Flower 1"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 4,
+        "L": 5,
+        "XL": 2
+      },
+      "images": [
+        "10/1.jpg",
+        "10/2.jpg",
+        "10/3.jpg",
+        "10/4.jpg",
+        "10/5.jpg",
+        "10/6.jpg",
+        "10/7.jpg",
+        "10/8.jpg",
+        "10/9.jpg",
+        "10/10.jpg",
+        "10/11.jpg",
+        "10/12.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 604.4
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 589.11
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 568.42
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 83,
+          "bust": 98,
+          "waist": null,
+          "hips": null
+        },
+        "M": {
+          "skirtLength": 84,
+          "bust": 102,
+          "waist": null,
+          "hips": null
+        },
+        "L": {
+          "skirtLength": 85,
+          "bust": 106,
+          "waist": null,
+          "hips": null
+        },
+        "XL": {
+          "skirtLength": 86,
+          "bust": 110,
+          "waist": null,
+          "hips": null
+        }
+      }
+    },
+    "11": {
+      "sku": "IL0134675299",
+      "title": {
+        "en": "Wholesale Women Fashion Sexy Printed V-Neck Backless Loose Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester. Material: Lightweight Printed Polyester. A stylish and airy loose-fit dress crafted from soft polyester, featuring a flattering V-neckline and a bold backless design. The lightweight printed fabric and high-waist silhouette create an effortlessly sexy and feminine look, perfect for warm-weather outings, vacations, and casual daywear.",
+        "ru": "Ткань: полиэстер. Материал: лёгкий печатный полиэстер. Стильное и воздушное платье свободного кроя выполнено из мягкого полиэстера и дополнено привлекательным V-образным вырезом и смелой открытой спиной. Лёгкая ткань с принтом и завышенная линия талии формируют женственный и сексуальный образ, идеально подходящий для тёплой погоды, отдыха и повседневных прогулок."
+      },
+      "color": {
+        "primary": "Pink"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 4,
+        "M": 4,
+        "L": 4,
+        "XL": 2
+      },
+      "images": [
+        "11/1.jpg",
+        "11/2.jpg",
+        "11/3.jpg",
+        "11/4.jpg",
+        "11/5.jpg",
+        "11/6.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 814.85
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 743.8
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 732.11
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 83,
+          "bust": 98,
+          "waist": null,
+          "hips": null
+        },
+        "M": {
+          "skirtLength": 84,
+          "bust": 102,
+          "waist": null,
+          "hips": null
+        },
+        "L": {
+          "skirtLength": 85,
+          "bust": 106,
+          "waist": null,
+          "hips": null
+        },
+        "XL": {
+          "skirtLength": 86,
+          "bust": 110,
+          "waist": null,
+          "hips": null
+        }
+      }
+    },
+    "12": {
+      "sku": "IL1245786301",
+      "title": {
+        "en": "Wholesale Women Fashion Casual Spring And Autumn Floral Print Lapel Long Sleeve Lace-Up Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester, Spandex. Material: Soft Polyester Blend. A chic floral-print dress designed for spring and autumn, featuring a stylish lapel collar, long lantern sleeves, and a feminine ruffled skirt. Made from soft polyester, this lace-up dress offers a comfortable loose fit with a flattering silhouette, perfect for casual outings and everyday wear.",
+        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий смесовый полиэстер. Стильное платье с цветочным принтом, созданное для весенне-осеннего сезона, выполнено с модным воротником-лацканом, длинными рукавами-фонариками и женственной юбкой с оборками. Платье на шнуровке из мягкого полиэстера обеспечивает комфортную свободную посадку и выгодный силуэт, идеально подходящее для повседневной носки и прогулок."
+      },
+      "color": {
+        "primary": "Black"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 4,
+        "M": 4,
+        "L": 4,
+        "XL": 2
+      },
+      "images": [
+        "12/1.jpg",
+        "12/2.jpg",
+        "12/3.jpg",
+        "12/4.jpg",
+        "12/5.jpg",
+        "12/6.jpg",
+        "12/7.jpg",
+        "12/8.jpg",
+        "12/9.jpg",
+        "12/10.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 793.27
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 689.84
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 664.66
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 83,
+          "bust": 98,
+          "waist": null,
+          "hips": null
+        },
+        "M": {
+          "skirtLength": 84,
+          "bust": 102,
+          "waist": null,
+          "hips": null
+        },
+        "L": {
+          "skirtLength": 85,
+          "bust": 106,
+          "waist": null,
+          "hips": null
+        },
+        "XL": {
+          "skirtLength": 86,
+          "bust": 110,
+          "waist": null,
+          "hips": null
+        }
+      }
+    },
+    "13": {
+      "sku": "IL2356897412",
+      "title": {
+        "en": "Wholesale Women Sexy Deep V Neck Ruffled Floral Halter Neck Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A stunning long floral dress designed with a deep V-neckline, elegant ruffled details, and a flattering halter-neck silhouette. Crafted from soft polyester with added spandex, it offers a smooth, body-enhancing fit and a mid-waist profile that complements the feminine flow of the skirt. Perfect for evening events, vacations, and fashionable outings.",
+        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Роскошное длинное платье с цветочным принтом выполнено с глубоким V-образным вырезом, элегантными рюшами и изящным силуэтом с открытой спиной на завязках. Мягкий полиэстер с добавлением спандекса обеспечивает гладкую посадку, подчёркивающую фигуру, а завышенная линия талии подчёркивает женственный плавный низ. Идеальный выбор для вечеринок, отдыха и стильных выходов."
+      },
+      "color": {
+        "primary": "Red"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 4,
+        "M": 4,
+        "L": 4
+      },
+      "images": [
+        "13/1.jpg",
+        "13/2.jpg",
+        "13/3.jpg",
+        "13/4.jpg",
+        "13/5.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 854.43
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 822.05
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 797.77
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 152.5,
+          "bust": "66-78",
+          "waist": "75-86",
+          "hips": "82-96"
+        },
+        "M": {
+          "skirtLength": 154.7,
+          "bust": "70-82",
+          "waist": "79-90",
+          "hips": "86-100"
+        },
+        "L": {
+          "skirtLength": 156.9,
+          "bust": "74-86",
+          "waist": "83-94",
+          "hips": "90-104"
+        }
+      }
+    },
+    "14": {
+      "sku": "IL3467908523",
+      "title": {
+        "en": "Wholesale Women Fashion Casual Elegant Floral Printed Short-Sleeve Loose Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A stunning long floral dress designed with a deep V-neckline, elegant ruffled details, and a flattering halter-neck silhouette. Crafted from soft polyester with added spandex, it offers a smooth, body-enhancing fit and a mid-waist profile that complements the feminine flow of the skirt. Perfect for evening events, vacations, and fashionable outings.",
+        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Роскошное длинное платье с цветочным принтом выполнено с глубоким V-образным вырезом, элегантными рюшами и изящным силуэтом с открытой спиной на завязках. Мягкий полиэстер с добавлением спандекса обеспечивает гладкую посадку, подчёркивающую фигуру, а завышенная линия талии подчёркивает женственный плавный низ. Идеальный выбор для вечеринок, отдыха и стильных выходов."
+      },
+      "color": {
+        "primary": "Floral Dress"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 4,
+        "M": 4,
+        "L": 4,
+        "XL": 2
+      },
+      "images": [
+        "14/1.jpg",
+        "14/2.jpg",
+        "14/3.jpg",
+        "14/4.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 690.74
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 625.08
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 615.19
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 152.5,
+          "bust": "66-78",
+          "waist": "75-86",
+          "hips": "82-96"
+        },
+        "M": {
+          "skirtLength": 154.7,
+          "bust": "70-82",
+          "waist": "79-90",
+          "hips": "86-100"
+        },
+        "L": {
+          "skirtLength": 156.9,
+          "bust": "74-86",
+          "waist": "83-94",
+          "hips": "90-104"
+        },
+        "XL": {
+          "skirtLength": null,
+          "bust": null,
+          "waist": null,
+          "hips": null
+        }
+      }
+    },
+    "15": {
+      "sku": "IL4578019634",
+      "title": {
+        "en": "Wholesale Women Fashion Casual Irregular Leopard V-Neck Long-Sleeve Lace-Up Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A stunning long floral dress designed with a deep V-neckline, elegant ruffled details, and a flattering halter-neck silhouette. Crafted from soft polyester with added spandex, it offers a smooth, body-enhancing fit and a mid-waist profile that complements the feminine flow of the skirt. Perfect for evening events, vacations, and fashionable outings.",
+        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Роскошное длинное платье с цветочным принтом выполнено с глубоким V-образным вырезом, элегантными рюшами и изящным силуэтом с открытой спиной на завязках. Мягкий полиэстер с добавлением спандекса обеспечивает гладкую посадку, подчёркивающую фигуру, а завышенная линия талии подчёркивает женственный плавный низ. Идеальный выбор для вечеринок, отдыха и стильных выходов."
+      },
+      "color": {
+        "primary": "Multicolor"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 4,
+        "M": 5,
+        "L": 4,
+        "XL": 2
+      },
+      "images": [
+        "15/1.jpg",
+        "15/2.jpg",
+        "15/3.jpg",
+        "15/4.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 784.28
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 693.44
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 674.55
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 152.5,
+          "bust": "66-78",
+          "waist": "75-86",
+          "hips": "82-96"
+        },
+        "M": {
+          "skirtLength": 154.7,
+          "bust": "70-82",
+          "waist": "79-90",
+          "hips": "86-100"
+        },
+        "L": {
+          "skirtLength": 156.9,
+          "bust": "74-86",
+          "waist": "83-94",
+          "hips": "90-104"
+        },
+        "XL": {
+          "skirtLength": null,
+          "bust": null,
+          "waist": null,
+          "hips": null
+        }
+      }
+    },
+    "16": {
+      "sku": "IL5689120745",
+      "title": {
+        "en": "Wholesale Bohemian Women Casual Tiny Flower Print V-Neck Dress"
+      },
+      "description": {
+        "en": "Fabric: Cotton Blend, Polyester. Material: Soft Cotton-Polyester Blend. A bohemian-inspired midi dress featuring a soft tiny-flower pattern, elegant V-neckline, and airy bubble sleeves. Designed with an A-line silhouette and comfortable mid-waist fit, this cotton-blend piece offers a relaxed yet stylish look ideal for warm seasons and casual outings.",
+        "ru": "Ткань: хлопковая смесь, полиэстер. Материал: мягкая хлопково-полиэстеровая смесь. Платье миди в бохо-стиле выполнено с мелким цветочным принтом, элегантным V-образным вырезом и воздушными рукавами-«фонариками». А-силуэт и удобная посадка по линии талии создают расслабленный, но стильный образ, идеально подходящий для тёплого сезона и повседневных прогулок."
+      },
+      "color": {
+        "primary": "Blue"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 4,
+        "M": 5,
+        "L": 4,
+        "XL": 2
+      },
+      "images": [
+        "16/1.jpg",
+        "16/2.jpg",
+        "16/3.jpg",
+        "16/4.jpg",
+        "16/5.jpg",
+        "16/6.jpg",
+        "16/7.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 675.45
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 574.72
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 479.38
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 152.5,
+          "bust": "66-78",
+          "waist": "75-86",
+          "hips": "82-96"
+        },
+        "M": {
+          "skirtLength": 154.7,
+          "bust": "70-82",
+          "waist": "79-90",
+          "hips": "86-100"
+        },
+        "L": {
+          "skirtLength": 156.9,
+          "bust": "74-86",
+          "waist": "83-94",
+          "hips": "90-104"
+        },
+        "XL": {
+          "skirtLength": null,
+          "bust": null,
+          "waist": null,
+          "hips": null
+        }
+      }
+    },
+    "17": {
+      "sku": "IL6790231856",
+      "title": {
+        "en": "Wholesale Vintage Women Summer Vacation V-Neck Red Tiny Flower Slip Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester. Material: Lightweight Printed Polyester. A charming vintage-inspired slip dress designed with a delicate tiny-flower print and a flattering V-neckline. Featuring a high-waist silhouette and lightweight polyester fabric, this sweet and fresh summer dress offers a soft, feminine, and effortless look perfect for warm weather and vacation wear.",
+        "ru": "Ткань: полиэстер. Материал: лёгкий полиэстер с принтом. Очаровательное платье-комбинация в винтажном стиле выполнено с нежным мелким цветочным принтом и привлекательным V-образным вырезом. Высокая линия талии и лёгкая полиэстеровая ткань создают мягкий, женственный и непринуждённый образ, идеально подходящий для тёплой погоды и отдыха."
+      },
+      "color": {
+        "primary": "As Shown"
       },
       "minOrder": 1,
-      "sizeMinOrders": { "S": 2, "M": 3, "L": 2, "XL": 3 },
-      "images": ["P6/1.jpg", "P6/2.jpg", "P6/3.jpg", "P6/4.jpg"],
-      "priceTiers": [
-        { "minQty": 1, "maxQty": 5, "price": 1550 },
-        { "minQty": 6, "maxQty": 25, "price": 1365 },
-        { "minQty": 26, "maxQty": null, "price": 1180 }
+      "sizeMinOrders": {
+        "S": 4,
+        "M": 5,
+        "L": 4,
+        "XL": 1
+      },
+      "images": [
+        "17/1.jpg",
+        "17/2.jpg",
+        "17/3.jpg",
+        "17/4.jpg",
+        "17/5.jpg"
       ],
-      "sizes": ["S", "M", "L", "XL"],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 413.72
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 369.65
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 325.58
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
       "sizeMeasurements": {
-        "S": { "skirtLength": 108, "bust": 82, "waist": 64, "hips": 88 },
-        "M": { "skirtLength": 110, "bust": 86, "waist": 68, "hips": 92 },
-        "L": { "skirtLength": 112, "bust": 90, "waist": 72, "hips": 96 },
-        "XL": { "skirtLength": 114, "bust": 94, "waist": 76, "hips": 100 }
+        "S": {
+          "skirtLength": 152.5,
+          "bust": "66-78",
+          "waist": "75-86",
+          "hips": "82-96"
+        },
+        "M": {
+          "skirtLength": 154.7,
+          "bust": "70-82",
+          "waist": "79-90",
+          "hips": "86-100"
+        },
+        "L": {
+          "skirtLength": 156.9,
+          "bust": "74-86",
+          "waist": "83-94",
+          "hips": "90-104"
+        },
+        "XL": {
+          "skirtLength": null,
+          "bust": null,
+          "waist": null,
+          "hips": null
+        }
+      }
+    },
+    "18": {
+      "sku": "IL7801342967",
+      "title": {
+        "en": "Wholesale Women Fashion Sexy Floral Printed Tube Top Slim Fit Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A sleek and sexy strapless tube-top dress featuring a vibrant floral print and a flattering high-waist slim-fit silhouette. Crafted from soft polyester with added spandex, this long A-line dress offers both comfort and elegance, making it ideal for vacation wear and stylish warm-weather outings.",
+        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Эффектное платье без бретелек с ярким цветочным принтом выполнено в виде облегающего топа и имеет привлекательный приталенный силуэт с завышенной талией. Мягкий полиэстер с добавлением спандекса обеспечивает комфорт и отличную посадку, а удлинённый А-силуэт добавляет элегантности. Идеально подходит для отдыха и стильных летних образов."
+      },
+      "color": {
+        "primary": "White"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 5,
+        "L": 4,
+        "XL": 2
+      },
+      "images": [
+        "18/1.jpg",
+        "18/2.jpg",
+        "18/3.jpg",
+        "18/4.jpg",
+        "18/5.jpg",
+        "18/6.jpg",
+        "18/7.jpg",
+        "18/8.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 590.01
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 484.78
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 464.99
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 118,
+          "bust": "70-88",
+          "waist": "62-68",
+          "hips": "78-94"
+        },
+        "M": {
+          "skirtLength": 119,
+          "bust": "74-92",
+          "waist": "66-72",
+          "hips": "82-98"
+        },
+        "L": {
+          "skirtLength": 120,
+          "bust": "78-98",
+          "waist": "70-78",
+          "hips": "86-104"
+        },
+        "XL": {
+          "skirtLength": null,
+          "bust": null,
+          "waist": null,
+          "hips": null
+        }
+      }
+    },
+    "19": {
+      "sku": "IL8912453078",
+      "title": {
+        "en": "Wholesale Women Fashion Floral Print Short Sleeve V-Neck Vacation Dress"
+      },
+      "description": {
+        "en": "Fabric: Pearl Chiffon, Polyester. Material: Lightweight Chiffon Blend. A graceful floral-print midi dress crafted from soft pearl chiffon, featuring a flattering V-neckline and elegant lantern sleeves. The high-waist A-line silhouette creates a comfortable and refined look, perfect for vacation styles and everyday wear with an elegant touch.",
+        "ru": "Ткань: перламутровый шифон, полиэстер. Материал: лёгкая шифоновая смесь. Изящное платье миди с цветочным принтом выполнено из мягкого перламутрового шифона и дополнено привлекательным V-образным вырезом и элегантными рукавами-фонариками. Завышенная линия талии и А-силуэт создают комфортный и утончённый образ, идеально подходящий для отдыха и повседневной носки с ноткой элегантности."
+      },
+      "color": {
+        "primary": "Red"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 5,
+        "L": 4,
+        "XL": 2
+      },
+      "images": [
+        "19/1.jpg",
+        "19/2.jpg",
+        "19/3.jpg",
+        "19/4.jpg",
+        "19/5.jpg",
+        "19/6.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 1189.9
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 1120.65
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 1095.47
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 123,
+          "bust": 95,
+          "waist": 68,
+          "hips": 35
+        },
+        "M": {
+          "skirtLength": 125,
+          "bust": 100,
+          "waist": 73,
+          "hips": 35.8
+        },
+        "L": {
+          "skirtLength": 127,
+          "bust": 106,
+          "waist": 79,
+          "hips": 36.6
+        },
+        "XL": {
+          "skirtLength": 129,
+          "bust": 113,
+          "waist": 86,
+          "hips": 37.4
+        }
+      }
+    },
+    "20": {
+      "sku": "IL9023564189",
+      "title": {
+        "en": "Wholesale Women Fashion Casual Vacation Floral Printed Off-Shoulder Pleated Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester. Material: Lightweight Polyester Blend. A beautifully pleated off-shoulder vacation dress featuring a floral print and a flattering high-waist silhouette. Designed with feifei sleeves and a flowing large-pendulum skirt, this lightweight long dress offers an elegant, sweet, and feminine look ideal for summer outings.",
+        "ru": "Ткань: полиэстер. Материал: лёгкая смесовая полиэстеровая ткань. Элегантное летнее платье с открытыми плечами выполнено с красивыми плетёными складками и цветочным принтом. Завышенная линия талии, рукава «фэйфэй» и свободная расклёшенная юбка создают нежный, женственный и утончённый образ, идеально подходящий для летнего отдыха и прогулок."
+      },
+      "color": {
+        "primary": "White"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 5,
+        "L": 4,
+        "XL": 2
+      },
+      "images": [
+        "20/1.jpg",
+        "20/2.jpg",
+        "20/3.jpg",
+        "20/4.jpg",
+        "20/5.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 1246.57
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 1032.51
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 1011.82
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 133,
+          "bust": 90,
+          "waist": 64,
+          "hips": 116
+        },
+        "M": {
+          "skirtLength": 134,
+          "bust": 94,
+          "waist": 68,
+          "hips": 120
+        },
+        "L": {
+          "skirtLength": 135,
+          "bust": 98,
+          "waist": 72,
+          "hips": 124
+        },
+        "XL": {
+          "skirtLength": 136,
+          "bust": 102,
+          "waist": 76,
+          "hips": 128
+        }
+      }
+    },
+    "21": {
+      "sku": "IL0134675200",
+      "title": {
+        "en": "Wholesale Summer Women's Fashion Sexy V-Neck Floral Print Bat Sleeve Lace-Up Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A stylish summer dress featuring a floral print, flattering V-neckline, and airy bat sleeves. The lace-up design enhances the waistline, while the soft polyester fabric and mid-skirt length create a comfortable and artistic look inspired by retro and Chinese-wind aesthetics.",
+        "ru": "Ткань: полиэстер. Материал: мягкая полиэстеровая ткань. Стильное летнее платье с цветочным принтом выполнено с привлекательным V-образным вырезом и воздушными рукавами «летучая мышь». Декоративная шнуровка подчёркивает талию, а мягкая ткань и средняя длина создают комфортный и эстетичный образ, вдохновлённый ретро-стилем и элементами китайской моды."
+      },
+      "color": {
+        "primary": "Red"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 5,
+        "L": 5,
+        "XL": 2
+      },
+      "images": [
+        "21/1.jpg",
+        "21/2.jpg",
+        "21/3.jpg",
+        "21/4.jpg",
+        "21/5.jpg",
+        "21/6.jpg",
+        "21/7.jpg",
+        "21/8.jpg",
+        "21/9.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 604.4
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 459.59
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 417.32
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 84,
+          "bust": 96,
+          "waist": null,
+          "hips": null
+        },
+        "M": {
+          "skirtLength": 85,
+          "bust": 100,
+          "waist": null,
+          "hips": null
+        },
+        "L": {
+          "skirtLength": 86,
+          "bust": 104,
+          "waist": null,
+          "hips": null
+        },
+        "XL": {
+          "skirtLength": 87,
+          "bust": 108,
+          "waist": null,
+          "hips": null
+        }
+      }
+    },
+    "22": {
+      "sku": "IL1245786302",
+      "title": {
+        "en": "Wholesale Women Summer Vacation Hollow-Out Slim-Fit Deep V Ruffled Tiny Flower Backless Maxi Dress"
+      },
+      "description": {
+        "en": "Fabric: Chiffon, Polyester. Material: Lightweight Chiffon Blend. A romantic vacation maxi dress crafted from airy chiffon, featuring a deep V-neckline, delicate ruffles, and a beautiful tiny-flower print. The slim-fit backless design and high-waist A-line silhouette create an elegant, flowy, and feminine summer look.",
+        "ru": "Ткань: шифон, полиэстер. Материал: лёгкая шифоновая смесь. Романтичное платье-макси для отдыха выполнено из воздушного шифона и украшено глубоким V-образным вырезом, нежными рюшами и красивым принтом с мелкими цветами. Приталенный крой с открытой спиной и завышенной талией создаёт элегантный, струящийся и женственный летний образ."
+      },
+      "color": {
+        "primary": "Pink"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 5,
+        "L": 5,
+        "XL": 2
+      },
+      "images": [
+        "22/1.jpg",
+        "22/2.jpg",
+        "22/3.jpg",
+        "22/4.jpg",
+        "22/5.jpg",
+        "22/6.jpg",
+        "22/7.jpg",
+        "22/8.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 1984.07
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 1858.16
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 1816.78
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 129,
+          "bust": "86-90",
+          "waist": 72,
+          "hips": null
+        },
+        "M": {
+          "skirtLength": 130,
+          "bust": "90-94",
+          "waist": 76,
+          "hips": null
+        },
+        "L": {
+          "skirtLength": 131,
+          "bust": "94-98",
+          "waist": 80,
+          "hips": null
+        },
+        "XL": {
+          "skirtLength": 132,
+          "bust": "98-102",
+          "waist": 84,
+          "hips": null
+        }
+      }
+    },
+    "23": {
+      "sku": "IL2356897413",
+      "title": {
+        "en": "Wholesale Women Fashion Sexy Flower Printed Sleeveless Backless Lace-Up Slim-Fit Dress"
+      },
+      "description": {
+        "en": "Fabric: Milk Fiber, Polyester. Material: Soft Stretch Polyester Blend. A bold slim-fit long dress featuring a floral print, deep V-neckline, and open back. Crafted from soft milk fiber with a high-waist silhouette, this sleeveless lace-up design offers a stylish and confident look inspired by modern street fashion.",
+        "ru": "Ткань: молочное волокно, полиэстер. Материал: мягкий эластичный смесовый полиэстер. Эффектное облегающее платье в длину выполнено с цветочным принтом, глубоким V-образным вырезом и открытой спиной. Мягкий материал и завышенная линия талии подчёркивают фигуру, а дизайн без рукавов со шнуровкой создаёт стильный и уверенный образ в духе современной уличной моды."
+      },
+      "color": {
+        "primary": "Red"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 5,
+        "L": 5
+      },
+      "images": [
+        "23/1.jpg",
+        "23/2.jpg",
+        "23/3.jpg",
+        "23/4.jpg",
+        "23/5.jpg",
+        "23/6.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 793.27
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 651.16
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 642.17
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 139,
+          "bust": null,
+          "waist": 31,
+          "hips": "84-104"
+        },
+        "M": {
+          "skirtLength": 141,
+          "bust": null,
+          "waist": 33,
+          "hips": "88-108"
+        },
+        "L": {
+          "skirtLength": 143,
+          "bust": null,
+          "waist": 36,
+          "hips": "94-114"
+        }
+      }
+    },
+    "24": {
+      "sku": "IL3467908524",
+      "title": {
+        "en": "Wholesale Women Fashion Sexy Vacation Digital Print Slim Fit Camisole Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester. Material: Smooth Printed Polyester. A sleek digital-print camisole dress designed with a slim-fit silhouette and high-waist profile. Made from smooth polyester, this long dress features a stylish floral pattern and a sleeveless cut, offering an elegant and modern vacation-ready look.",
+        "ru": "Ткань: полиэстер. Материал: гладкий полиэстер с цифровым принтом. Стильное платье-комбинация с цифровым принтом выполнено в приталенном силуэте с завышенной талией. Гладкая полиэстеровая ткань и изящный цветочный узор формируют современный и элегантный образ, идеальный для отдыха и летних прогулок."
+      },
+      "color": {
+        "primary": "Lotus Red"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 5,
+        "L": 5
+      },
+      "images": [
+        "24/1.jpg",
+        "24/2.jpg",
+        "24/3.jpg",
+        "24/4.jpg",
+        "24/5.jpg",
+        "24/6.jpg",
+        "24/7.jpg",
+        "24/8.jpg",
+        "24/9.jpg",
+        "24/10.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 661.06
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 512.66
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 499.17
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 74,
+          "bust": 86,
+          "waist": 68,
+          "hips": 94
+        },
+        "M": {
+          "skirtLength": 91,
+          "bust": 73,
+          "waist": 99,
+          "hips": null
+        },
+        "L": {
+          "skirtLength": 101,
+          "bust": 83,
+          "waist": 109,
+          "hips": null
+        }
+      }
+    },
+    "25": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "Wholesale Women Fashion Sexy Printed Sleeveless Pleated Backless Long Tassel Dress"
+      },
+      "description": {
+        "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A striking sleeveless tassel dress featuring an abstract print, pleated design, and bold backless silhouette. Crafted from soft polyester with added spandex, this mid-waist wrong-hip skirt style offers a modern street-inspired look with an elegant, feminine touch.",
+        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Эффектное платье без рукавов с кисточками выполнено с абстрактным принтом, плиссированным дизайном и смелым открытым верхом. Мягкая ткань с добавлением спандекса и посадка по линии талии создают современный уличный образ с элегантным и женственным акцентом."
+      },
+      "color": {
+        "primary": "Blue Multicolor"
+      },
+      "minOrder": 2,
+      "sizeMinOrders": {
+        "S": 5,
+        "M": 5,
+        "L": 5
+      },
+      "images": [
+        "25/1.jpg",
+        "25/2.jpg",
+        "25/3.jpg",
+        "25/4.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 10,
+          "maxQty": 50,
+          "price": 753.7
+        },
+        {
+          "minQty": 51,
+          "maxQty": 100,
+          "price": 605.29
+        },
+        {
+          "minQty": 101,
+          "maxQty": null,
+          "price": 590.9
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 74,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 76,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 78,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
       }
     }
   }

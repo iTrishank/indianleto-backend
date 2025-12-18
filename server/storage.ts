@@ -28,7 +28,7 @@ export class MemStorage implements IStorage {
 
   constructor() {
     this.quotations = new Map();
-    this.spreadsheetId = process.env.GOOGLE_SHEET_ID || null;
+    this.spreadsheetId = process.env.GOOGLE_SHEET_ID || "1X-jCFkBvY-XJRi6-ni3rwSdAVEW8k56Vlq-2MXMIAAU";
   }
 
   private generateQuoteId(): string {

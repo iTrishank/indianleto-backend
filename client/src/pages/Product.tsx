@@ -154,7 +154,7 @@ export default function Product() {
           </div>
 
           <p
-            className="text-muted-foreground leading-relaxed"
+            className="text-muted-foreground leading-relaxed text-justify"
             data-testid="text-product-description"
           >
             {product.description}

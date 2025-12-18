@@ -1,8 +1,10 @@
 import { SiFacebook, SiInstagram } from "react-icons/si";
 import { Container } from "@/components/Container";
 import logoImage from "@assets/logoUse_1765112823302.jpg";
+import { useApp } from "@/contexts/AppContext";
 
 export function Footer() {
+  const { t } = useApp();
   return (
     <footer className="border-t bg-muted/30 mt-auto">
       <Container className="py-8 md:py-12">
@@ -16,25 +18,25 @@ export function Footer() {
               />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              IndianLeto is a B2B apparel supplier offering high-quality Indian dresses in bulk. Fast delivery, premium fabrics, and reliable wholesale service.
-            </p>
+              {t("footer.description")}
+              </p>
           </div>
 
           <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-wide">Address</h3>
             <div className="space-y-4">
               <div>
-                <p className="text-sm font-medium">India</p>
+                <p className="text-sm font-medium">{t("footer.country1")}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  431 Vivek Vihar, Shyam Nagar,<br />
-                  Jaipur, Rajasthan, India, 302019
+                  {t("footer.address1.one")}<br /> 
+                   {t("footer.address1.two")}
                 </p>
               </div>
               <div>
-                <p className="text-sm font-medium">Russia</p>
+                <p className="text-sm font-medium">{t("footer.country2")}</p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  5 Izmailovski Prospekt,<br />
-                  Moscow, Russia, 105203
+                {t("footer.address2.one")}<br />
+                {t("footer.address2.two")}
                 </p>
               </div>
             </div>
@@ -43,7 +45,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-wide">Stay Connected</h3>
             
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col">
               <p className="text-sm text-muted-foreground">+7 915 277 4869</p>
               <p className="text-sm text-muted-foreground">+91 96808 96969</p>
               <p className="text-sm text-muted-foreground">+91 98283 72435</p>
@@ -86,7 +88,7 @@ export function Footer() {
       <div className="border-t">
         <Container className="py-4">
           <p className="text-xs text-muted-foreground text-center">
-            &copy; 2025 IndianLeto. All rights reserved. B2B Wholesale Only.
+            &copy; {t("footer.copyright")}
           </p>
         </Container>
       </div>

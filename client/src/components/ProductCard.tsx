@@ -126,12 +126,14 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
 
           <div className="p-2 sm:p-2.5 space-y-1 flex-1 flex flex-col" data-testid={`link-product-${product.id}`}>
-            <p
+            {/* her boi */}
+            {/* <p
               className="text-xs text-muted-foreground"
               data-testid={`text-sku-${product.id}`}
             >
               SKU: {product.id}
-            </p>
+            </p> */}
+            {/* till her boi */}
             <p
               className="text-sm sm:text-base font-bold text-foreground mt-auto"
               data-testid={`text-price-${product.id}`}
