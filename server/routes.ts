@@ -13,7 +13,13 @@ export async function registerRoutes(
   app.use('/assets', express.static(path.join(process.cwd(), 'assets')));
   app.post("/api/quote", async (req, res) => {
     try {
-      const validatedData = quotationRequestSchema.parse(req.body);
+      const body =
+  typeof req.body === "string"
+    ? JSON.parse(req.body)
+    : req.body;
+
+const validatedData = quotationRequestSchema.parse(body);
+
       
       if (validatedData.cart.length === 0) {
         return res.status(400).json({
