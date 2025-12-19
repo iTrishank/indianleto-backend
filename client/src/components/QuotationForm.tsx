@@ -11,14 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 
@@ -37,23 +30,20 @@ export function QuotationForm() {
   const { items, clearCart, total } = useCart();
   const [, setLocation] = useLocation();
   const { toast } = useToast();
-  
+
   const emptyCartMessage = t("cart.emptyCart");
-  const productsSummary = useMemo(() => 
-    generateProductsSummary(items, formatPrice, emptyCartMessage), 
-    [items, formatPrice, emptyCartMessage]
-  );
+  const productsSummary = useMemo(() => generateProductsSummary(items, formatPrice, emptyCartMessage), [items, formatPrice, emptyCartMessage]);
 
   const hasAtLeastOneValidSize = useMemo(() => {
     if (items.length === 0) return false;
-    
-    return items.some(item => {
-      const product = products.find(p => p.id === item.productId);
+
+    return items.some((item) => {
+      const product = products.find((p) => p.id === item.productId);
       if (!product) return false;
-      
+
       const sizeMinOrders = product.sizeMinOrders || {};
       const minOrderForSize = sizeMinOrders[item.variant.size] ?? product.minOrder ?? 1;
-      
+
       return item.quantity >= minOrderForSize;
     });
   }, [items, products]);
@@ -80,13 +70,21 @@ export function QuotationForm() {
 
     setIsSubmitting(true);
     try {
+      const fixedItems = items.map((item) => ({
+        ...item,
+        variant: {
+          size: item.variant.size,
+          color: item.variant.color || "Default",
+        },
+      }));
+
       const res = await apiRequest("POST", "/api/quote", {
         customer: {
           name: data.name,
-          phone: data.phone,
+          phone: data.phone.replace(/\D/g, ""),
           email: data.email,
         },
-        cart: items,
+        cart: fixedItems,
         notes: data.notes || "",
       });
 
@@ -103,10 +101,9 @@ export function QuotationForm() {
         });
       }
     } catch (error) {
-      const isNetworkError = error instanceof TypeError && error.message.includes('fetch');
       toast({
-        title: isNetworkError ? t("cart.networkError") : t("cart.quotationError"),
-        description: isNetworkError ? t("cart.networkErrorDesc") : t("cart.quotationErrorDesc"),
+        title: t("cart.quotationError"),
+        description: t("cart.quotationErrorDesc"),
         variant: "destructive",
       });
     } finally {
@@ -131,15 +128,9 @@ export function QuotationForm() {
                     {t("cart.yourName")} <span className="text-destructive">*</span>
                   </FormLabel>
                   <FormControl>
-                    <Input
-                      placeholder={t("cart.enterName")}
-                      {...field}
-                      data-testid="input-name"
-                    />
+                    <Input placeholder={t("cart.enterName")} {...field} data-testid="input-name" />
                   </FormControl>
-                  {fieldState.error && (
-                    <p className="text-sm text-muted-foreground">{t("cart.nameRequired")}</p>
-                  )}
+                  {fieldState.error && <p className="text-sm text-muted-foreground">{t("cart.nameRequired")}</p>}
                 </FormItem>
               )}
             />
@@ -153,16 +144,9 @@ export function QuotationForm() {
                     {t("cart.phoneNumber")} <span className="text-destructive">*</span>
                   </FormLabel>
                   <FormControl>
-                    <Input
-                      type="tel"
-                      placeholder="+91 98765 43210"
-                      {...field}
-                      data-testid="input-phone"
-                    />
+                    <Input type="tel" placeholder="+91 98765 43210" {...field} data-testid="input-phone" />
                   </FormControl>
-                  {fieldState.error && (
-                    <p className="text-sm text-muted-foreground">{t("cart.phoneRequired")}</p>
-                  )}
+                  {fieldState.error && <p className="text-sm text-muted-foreground">{t("cart.phoneRequired")}</p>}
                 </FormItem>
               )}
             />
@@ -176,31 +160,16 @@ export function QuotationForm() {
                     {t("cart.emailAddress")} <span className="text-destructive">*</span>
                   </FormLabel>
                   <FormControl>
-                    <Input
-                      type="email"
-                      placeholder={t("cart.enterEmail")}
-                      {...field}
-                      data-testid="input-email"
-                    />
+                    <Input type="email" placeholder={t("cart.enterEmail")} {...field} data-testid="input-email" />
                   </FormControl>
-                  {fieldState.error && (
-                    <p className="text-sm text-muted-foreground">{t("cart.emailRequired")}</p>
-                  )}
+                  {fieldState.error && <p className="text-sm text-muted-foreground">{t("cart.emailRequired")}</p>}
                 </FormItem>
               )}
             />
 
             <div className="space-y-2">
-              <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-                {t("cart.orderSummary")}
-              </label>
-              <Textarea
-                value={productsSummary}
-                readOnly
-                rows={6}
-                className="bg-muted/50 resize-none text-sm"
-                data-testid="textarea-products-summary"
-              />
+              <label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">{t("cart.orderSummary")}</label>
+              <Textarea value={productsSummary} readOnly rows={6} className="bg-muted/50 resize-none text-sm" data-testid="textarea-products-summary" />
             </div>
 
             <FormField
@@ -208,16 +177,9 @@ export function QuotationForm() {
               name="notes"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-sm font-semibold uppercase tracking-wide">
-                    {t("cart.additionalNotes")}
-                  </FormLabel>
+                  <FormLabel className="text-sm font-semibold uppercase tracking-wide">{t("cart.additionalNotes")}</FormLabel>
                   <FormControl>
-                    <Textarea
-                      placeholder={t("cart.notesPlaceholder")}
-                      rows={3}
-                      {...field}
-                      data-testid="textarea-notes"
-                    />
+                    <Textarea placeholder={t("cart.notesPlaceholder")} rows={3} {...field} data-testid="textarea-notes" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -229,7 +191,7 @@ export function QuotationForm() {
                 <span className="text-muted-foreground">{t("cart.orderDetails")}:</span>
                 <span className="font-medium text-right" data-testid="text-item-count">
                   {(() => {
-                    const uniqueSkus = new Set(items.map(item => item.productId)).size;
+                    const uniqueSkus = new Set(items.map((item) => item.productId)).size;
                     const totalSizes = items.length;
                     const totalQty = items.reduce((sum, item) => sum + item.quantity, 0);
                     return `${uniqueSkus} ${t("cart.skus")} | ${totalSizes} ${t("cart.sizes")} | ${totalQty} ${t("cart.pcs")}`;
@@ -251,13 +213,7 @@ export function QuotationForm() {
               </div>
             )}
 
-            <Button
-              type="submit"
-              size="lg"
-              className="w-full min-h-[48px]"
-              disabled={isSubmitting || items.length === 0 || !hasAtLeastOneValidSize}
-              data-testid="button-send-quotation"
-            >
+            <Button type="submit" size="lg" className="w-full min-h-[48px]" disabled={isSubmitting || items.length === 0 || !hasAtLeastOneValidSize} data-testid="button-send-quotation">
               <span className="flex items-center justify-center min-w-[200px]">
                 {isSubmitting ? (
                   <>
