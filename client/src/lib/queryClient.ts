@@ -1,6 +1,8 @@
 import { QueryClient, QueryFunction } from "@tanstack/react-query";
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "";
+//const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "";
+const API_BASE_URL = "https://indianleto-backend.onrender.com";
+
 
 async function throwIfResNotOk(res: Response) {
   if (!res.ok) {
