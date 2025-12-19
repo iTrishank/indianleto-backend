@@ -17,10 +17,10 @@ export async function apiRequest(
   return fetch(`${API_BASE_URL}${url}`, {
     method,
     headers: {
-      // 🔥 text/plain makes this a SIMPLE REQUEST → NO PREFLIGHT
-      "Content-Type": "text/plain"
+      "Content-Type": "application/json",
+      "Accept": "application/json",
     },
-    body: data ? JSON.stringify(data) : undefined
+    body: data ? JSON.stringify(data) : undefined,
   });
 }
 
