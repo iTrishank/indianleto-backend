@@ -13,35 +13,48 @@ const httpServer = createServer(app);
  * 🔥 CORS — MUST BE FIRST MIDDLEWARE
  * =========================================================
  */
+// app.use((req, res, next) => {
+//   const origin = req.headers.origin;
+
+//   if (
+//     origin === "https://indianleto.com" ||
+//     origin === "http://localhost:5000"
+//   ) {
+//     res.setHeader("Access-Control-Allow-Origin", origin);
+//   }
+
+//   res.setHeader(
+//     "Access-Control-Allow-Methods",
+//     "GET,POST,PUT,DELETE,OPTIONS"
+//   );
+
+//   res.setHeader(
+//     "Access-Control-Allow-Headers",
+//     "Content-Type"
+//   );
+
+//   res.setHeader("Access-Control-Allow-Credentials", "true");
+
+//   // 🔒 END PREFLIGHT HERE — DO NOT CONTINUE
+//   if (req.method === "OPTIONS") {
+//     return res.sendStatus(204);
+//   }
+
+//   next();
+// });
+
 app.use((req, res, next) => {
-  const origin = req.headers.origin;
+  res.setHeader("Access-Control-Allow-Origin", "https://indianleto.com");
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-  if (
-    origin === "https://indianleto.com" ||
-    origin === "http://localhost:5000"
-  ) {
-    res.setHeader("Access-Control-Allow-Origin", origin);
-  }
-
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET,POST,PUT,DELETE,OPTIONS"
-  );
-
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "Content-Type"
-  );
-
-  res.setHeader("Access-Control-Allow-Credentials", "true");
-
-  // 🔒 END PREFLIGHT HERE — DO NOT CONTINUE
   if (req.method === "OPTIONS") {
     return res.sendStatus(204);
   }
 
   next();
 });
+
 
 /**
  * =========================================================
@@ -130,12 +143,17 @@ app.use((req, res, next) => {
     res.status(status).json({ message });
   });
 
-  if (process.env.NODE_ENV === "production") {
-    serveStatic(app);
-  } else {
-    const { setupVite } = await import("./vite");
-    await setupVite(httpServer, app);
-  }
+  // if (process.env.NODE_ENV === "production") {
+  //   serveStatic(app);
+  // } else {
+  //   const { setupVite } = await import("./vite");
+  //   await setupVite(httpServer, app);
+  // }
+
+  if (process.env.NODE_ENV !== "production") {
+  const { setupVite } = await import("./vite");
+  await setupVite(httpServer, app);
+}
 
   const port = parseInt(process.env.PORT || "5000", 10);
   httpServer.listen(
