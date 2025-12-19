@@ -1,5 +1,4 @@
 import "dotenv/config";
-import cors from "cors";
 
 
 import express, { type Request, Response, NextFunction } from "express";
@@ -10,17 +9,36 @@ import { createServer } from "http";
 const app = express();
 const httpServer = createServer(app);
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5000",
-      "https://indianleto.com",
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type"],
-  })
-);
-app.options("/api/*", cors());
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+
+  // Allow only known frontend origins
+  if (
+    origin === "https://indianleto.com" ||
+    origin === "http://localhost:5000"
+  ) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
+
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET,POST,PUT,DELETE,OPTIONS"
+  );
+
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Content-Type"
+  );
+
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+
+  // 🔥 IMPORTANT: End preflight HERE
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(204);
+  }
+
+  next();
+});
 
 declare module "http" {
   interface IncomingMessage {
