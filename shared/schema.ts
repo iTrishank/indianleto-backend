@@ -55,11 +55,14 @@ export type CartItemVariant = z.infer<typeof cartItemVariantSchema>;
 export const cartItemSchema = z.object({
   productId: z.string(),
   productTitle: z.string(),
-  productImage: z.string(),
   variant: cartItemVariantSchema,
-  unitPrice: z.number(),
   quantity: z.number().min(1),
+
+  // optional / derived on backend
+  productImage: z.string().optional(),
+  unitPrice: z.number().optional(),
 });
+
 
 export type CartItem = z.infer<typeof cartItemSchema>;
 

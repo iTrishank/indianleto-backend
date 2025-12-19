@@ -8,14 +8,16 @@ import { z } from "zod";
 
 export async function registerRoutes(httpServer: Server, app: Express): Promise<Server> {
   app.use("/assets", express.static(path.join(process.cwd(), "assets")));
-  app.post("/api/quote", async (req, res) => {
-    try {
-      const raw = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+app.post("/api/quote", async (req, res) => {
+  try {
+    console.log("RAW BODY TYPE:", typeof req.body);
+    console.log("RAW BODY:", req.body);
 
-      // 🔥 unwrap if frontend wrapped it accidentally
-      const body = raw?.customer && raw?.cart ? raw : raw?.data ?? raw;
+    const raw = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
 
-      const validatedData = quotationRequestSchema.parse(body);
+    const body = raw?.customer && raw?.cart ? raw : raw?.data ?? raw;
+
+    const validatedData = quotationRequestSchema.parse(body);
 
       if (validatedData.cart.length === 0) {
         return res.status(400).json({
