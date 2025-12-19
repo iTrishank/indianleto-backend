@@ -78,16 +78,18 @@ declare module "http" {
   }
 }
 
-// 🔥 Accept text/plain bodies (bypass CORS preflight)
-app.use(express.text({ type: "*/*" }));
+// 🔥 Handle text/plain ONLY
+// app.use(express.text({ type: "text/plain" }));
 
-app.use(
-  express.json({
-    verify: (req, _res, buf) => {
-      req.rawBody = buf;
-    },
-  })
-);
+// // 🔥 Handle application/json ONLY
+// app.use(express.json({
+//   type: "application/json",
+//   verify: (req, _res, buf) => {
+//     req.rawBody = buf;
+//   },
+// }));
+
+app.use(express.json());
 
 app.use(express.urlencoded({ extended: false }));
 
