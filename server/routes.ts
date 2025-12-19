@@ -8,47 +8,82 @@ import { z } from "zod";
 
 export async function registerRoutes(httpServer: Server, app: Express): Promise<Server> {
   app.use("/assets", express.static(path.join(process.cwd(), "assets")));
-app.post("/api/quote", async (req, res) => {
+// app.post("/api/quote", async (req, res) => {
+//   try {
+//     console.log("RAW BODY TYPE:", typeof req.body);
+//     console.log("RAW BODY:", req.body);
+
+//     const raw = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+
+//     const body = raw?.customer && raw?.cart ? raw : raw?.data ?? raw;
+
+//     const validatedData = quotationRequestSchema.parse(body);
+
+//       if (validatedData.cart.length === 0) {
+//         return res.status(400).json({
+//           success: false,
+//           message: "Cart is empty. Please add items before submitting a quotation.",
+//         });
+//       }
+
+//       const result = await storage.createQuotation(validatedData);
+
+//       res.json({
+//         success: true,
+//         quoteId: result.quoteId,
+//         message: "Quotation submitted successfully",
+//       });
+//     } catch (error) {
+//       if (error instanceof z.ZodError) {
+//         const errorMessages = error.errors.map((e) => `${e.path.join(".")}: ${e.message}`).join(", ");
+//         return res.status(400).json({
+//           success: false,
+//           message: `Validation error: ${errorMessages}`,
+//         });
+//       }
+
+//       console.error("Error processing quotation:", error);
+//       res.status(500).json({
+//         success: false,
+//         message: "Failed to process quotation. Please try again.",
+//       });
+//     }
+//   });
+
+  app.post("/api/quote", async (req, res) => {
   try {
-    console.log("RAW BODY TYPE:", typeof req.body);
-    console.log("RAW BODY:", req.body);
+    const rawBody = req.body?.toString("utf8") ?? "{}";
+    const body = JSON.parse(rawBody);
 
-    const raw = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
-
-    const body = raw?.customer && raw?.cart ? raw : raw?.data ?? raw;
+    console.log("RAW BODY:", rawBody);
+    console.log("PARSED BODY:", body);
 
     const validatedData = quotationRequestSchema.parse(body);
 
-      if (validatedData.cart.length === 0) {
-        return res.status(400).json({
-          success: false,
-          message: "Cart is empty. Please add items before submitting a quotation.",
-        });
-      }
+    const result = await storage.createQuotation(validatedData);
 
-      const result = await storage.createQuotation(validatedData);
-
-      res.json({
-        success: true,
-        quoteId: result.quoteId,
-        message: "Quotation submitted successfully",
-      });
-    } catch (error) {
-      if (error instanceof z.ZodError) {
-        const errorMessages = error.errors.map((e) => `${e.path.join(".")}: ${e.message}`).join(", ");
-        return res.status(400).json({
-          success: false,
-          message: `Validation error: ${errorMessages}`,
-        });
-      }
-
-      console.error("Error processing quotation:", error);
-      res.status(500).json({
+    res.json({
+      success: true,
+      quoteId: result.quoteId,
+      message: "Quotation submitted successfully",
+    });
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return res.status(400).json({
         success: false,
-        message: "Failed to process quotation. Please try again.",
+        message: error.errors
+          .map(e => `${e.path.join(".")}: ${e.message}`)
+          .join(", "),
       });
     }
-  });
+
+    console.error("QUOTE ERROR:", error);
+    res.status(500).json({
+      success: false,
+      message: "Failed to process quotation",
+    });
+  }
+});
 
   app.get("/api/quote/:quoteId", async (req, res) => {
     try {

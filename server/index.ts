@@ -3,46 +3,15 @@ import "dotenv/config";
 import express, { type Request, Response, NextFunction } from "express";
 import { createServer } from "http";
 import { registerRoutes } from "./routes";
-import { serveStatic } from "./static";
 
 const app = express();
 const httpServer = createServer(app);
 
 /**
  * =========================================================
- * 🔥 CORS — MUST BE FIRST MIDDLEWARE
+ * 🔥 CORS — MUST BE FIRST
  * =========================================================
  */
-// app.use((req, res, next) => {
-//   const origin = req.headers.origin;
-
-//   if (
-//     origin === "https://indianleto.com" ||
-//     origin === "http://localhost:5000"
-//   ) {
-//     res.setHeader("Access-Control-Allow-Origin", origin);
-//   }
-
-//   res.setHeader(
-//     "Access-Control-Allow-Methods",
-//     "GET,POST,PUT,DELETE,OPTIONS"
-//   );
-
-//   res.setHeader(
-//     "Access-Control-Allow-Headers",
-//     "Content-Type"
-//   );
-
-//   res.setHeader("Access-Control-Allow-Credentials", "true");
-
-//   // 🔒 END PREFLIGHT HERE — DO NOT CONTINUE
-//   if (req.method === "OPTIONS") {
-//     return res.sendStatus(204);
-//   }
-
-//   next();
-// });
-
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "https://indianleto.com");
   res.setHeader("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
@@ -55,43 +24,12 @@ app.use((req, res, next) => {
   next();
 });
 
-
 /**
  * =========================================================
- * 🔒 PROTECT /api FROM STATIC & VITE
+ * 🔥 BODY PARSER — HARD MODE (NO EXPRESS MAGIC)
  * =========================================================
  */
-app.use((req, _res, next) => {
-  if (req.method === "OPTIONS") return next();
-  if (req.path.startsWith("/api")) return next();
-  next();
-});
-
-/**
- * =========================================================
- * BODY PARSERS
- * =========================================================
- */
-declare module "http" {
-  interface IncomingMessage {
-    rawBody: unknown;
-  }
-}
-
-// 🔥 Handle text/plain ONLY
-// app.use(express.text({ type: "text/plain" }));
-
-// // 🔥 Handle application/json ONLY
-// app.use(express.json({
-//   type: "application/json",
-//   verify: (req, _res, buf) => {
-//     req.rawBody = buf;
-//   },
-// }));
-
-app.use(express.json());
-
-app.use(express.urlencoded({ extended: false }));
+app.use(express.raw({ type: "*/*" }));
 
 /**
  * =========================================================
@@ -136,29 +74,16 @@ app.use((req, res, next) => {
 
 /**
  * =========================================================
- * ROUTES, STATIC, SERVER START
+ * ROUTES + ERROR HANDLER + SERVER START
  * =========================================================
  */
 (async () => {
   await registerRoutes(httpServer, app);
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
-    const status = err.status || err.statusCode || 500;
-    const message = err.message || "Internal Server Error";
-    res.status(status).json({ message });
+    console.error("UNHANDLED ERROR:", err);
+    res.status(500).json({ message: "Internal Server Error" });
   });
-
-  // if (process.env.NODE_ENV === "production") {
-  //   serveStatic(app);
-  // } else {
-  //   const { setupVite } = await import("./vite");
-  //   await setupVite(httpServer, app);
-  // }
-
-  if (process.env.NODE_ENV !== "production") {
-  const { setupVite } = await import("./vite");
-  await setupVite(httpServer, app);
-}
 
   const port = parseInt(process.env.PORT || "5000", 10);
   httpServer.listen(
