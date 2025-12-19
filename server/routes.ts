@@ -6,25 +6,21 @@ import { storage } from "./storage";
 import { quotationRequestSchema } from "@shared/schema";
 import { z } from "zod";
 
-export async function registerRoutes(
-  httpServer: Server,
-  app: Express
-): Promise<Server> {
-  app.use('/assets', express.static(path.join(process.cwd(), 'assets')));
+export async function registerRoutes(httpServer: Server, app: Express): Promise<Server> {
+  app.use("/assets", express.static(path.join(process.cwd(), "assets")));
   app.post("/api/quote", async (req, res) => {
     try {
-      const body =
-  typeof req.body === "string"
-    ? JSON.parse(req.body)
-    : req.body;
+      const raw = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
 
-const validatedData = quotationRequestSchema.parse(body);
+      // 🔥 unwrap if frontend wrapped it accidentally
+      const body = raw?.customer && raw?.cart ? raw : raw?.data ?? raw;
 
-      
+      const validatedData = quotationRequestSchema.parse(body);
+
       if (validatedData.cart.length === 0) {
         return res.status(400).json({
           success: false,
-          message: "Cart is empty. Please add items before submitting a quotation."
+          message: "Cart is empty. Please add items before submitting a quotation.",
         });
       }
 
@@ -33,21 +29,21 @@ const validatedData = quotationRequestSchema.parse(body);
       res.json({
         success: true,
         quoteId: result.quoteId,
-        message: "Quotation submitted successfully"
+        message: "Quotation submitted successfully",
       });
     } catch (error) {
       if (error instanceof z.ZodError) {
-        const errorMessages = error.errors.map(e => `${e.path.join('.')}: ${e.message}`).join(', ');
+        const errorMessages = error.errors.map((e) => `${e.path.join(".")}: ${e.message}`).join(", ");
         return res.status(400).json({
           success: false,
-          message: `Validation error: ${errorMessages}`
+          message: `Validation error: ${errorMessages}`,
         });
       }
-      
+
       console.error("Error processing quotation:", error);
       res.status(500).json({
         success: false,
-        message: "Failed to process quotation. Please try again."
+        message: "Failed to process quotation. Please try again.",
       });
     }
   });
@@ -56,23 +52,23 @@ const validatedData = quotationRequestSchema.parse(body);
     try {
       const { quoteId } = req.params;
       const quotation = await storage.getQuotation(quoteId);
-      
+
       if (!quotation) {
         return res.status(404).json({
           success: false,
-          message: "Quotation not found"
+          message: "Quotation not found",
         });
       }
 
       res.json({
         success: true,
-        quotation
+        quotation,
       });
     } catch (error) {
       console.error("Error fetching quotation:", error);
       res.status(500).json({
         success: false,
-        message: "Failed to fetch quotation"
+        message: "Failed to fetch quotation",
       });
     }
   });
