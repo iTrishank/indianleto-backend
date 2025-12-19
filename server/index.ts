@@ -13,19 +13,24 @@ const httpServer = createServer(app);
  * =========================================================
  */
 app.use((req, res, next) => {
+  // Allow only your frontend domain
   res.setHeader("Access-Control-Allow-Origin", "https://indianleto.com");
+
+  // Allowed methods
   res.setHeader(
     "Access-Control-Allow-Methods",
-    "GET,POST,OPTIONS"
+    "GET, POST, OPTIONS"
   );
+
+  // Allowed headers for preflight
   res.setHeader(
     "Access-Control-Allow-Headers",
     "Content-Type, Accept"
   );
 
   if (req.method === "OPTIONS") {
-    res.status(200).end();
-    return;
+    // Must include headers before ending
+    return res.status(200).end();
   }
 
   next();
