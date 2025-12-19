@@ -14,7 +14,7 @@ const httpServer = createServer(app);
  */
 app.use((req, res, next) => {
   // Allow only your frontend domain
-  res.setHeader("Access-Control-Allow-Origin", "https://indianleto.com");
+  res.setHeader("Access-Control-Allow-Origin", "https://www.indianleto.com");
 
   // Allowed methods
   res.setHeader(
