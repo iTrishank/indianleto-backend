@@ -12,29 +12,53 @@ const httpServer = createServer(app);
  * 🔥 CORS — MUST BE FIRST
  * =========================================================
  */
+// app.use((req, res, next) => {
+//   // Allow only your frontend domain
+//   res.setHeader("Access-Control-Allow-Origin", "https://www.indianleto.com");
+
+//   // Allowed methods
+//   res.setHeader(
+//     "Access-Control-Allow-Methods",
+//     "GET, POST, OPTIONS"
+//   );
+
+//   // Allowed headers for preflight
+//   res.setHeader(
+//     "Access-Control-Allow-Headers",
+//     "Content-Type, Accept"
+//   );
+
+//   if (req.method === "OPTIONS") {
+//     // Must include headers before ending
+//     return res.status(200).end();
+//   }
+
+//   next();
+// });
+
 app.use((req, res, next) => {
-  // Allow only your frontend domain
-  res.setHeader("Access-Control-Allow-Origin", "https://www.indianleto.com");
+  const origin = req.headers.origin;
 
-  // Allowed methods
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, OPTIONS"
-  );
+  if (
+    origin === "https://indianleto.com" ||
+    origin === "https://www.indianleto.com"
+  ) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
 
-  // Allowed headers for preflight
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
   res.setHeader(
     "Access-Control-Allow-Headers",
     "Content-Type, Accept"
   );
 
   if (req.method === "OPTIONS") {
-    // Must include headers before ending
-    return res.status(200).end();
+    return res.sendStatus(204);
   }
 
   next();
 });
+
 
 /**
  * =========================================================
