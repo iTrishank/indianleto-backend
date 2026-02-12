@@ -3,7 +3,7 @@
     "02": {
       "sku": "IL1245789630",
       "title": {
-        "en": "Wholesale Women Spring And Summer Fashion Flower Print Vacation Strap Bodycon Maxi Dress"
+        "en": "Strap Bodycon Maxi Dress"
       },
       "description": {
         "en": "Fabric: Polyester, Milk Fiber, Spandex. Material: Stretch Polyester Blend. A stylish spring–summer maxi dress featuring an all-over floral print and a flattering bodycon silhouette. The sleeveless sling-style design, U-shaped collar, and high waistline enhance the figure while ensuring comfort and ease of movement. The one-step skirt adds graceful drape and elegant length, making it ideal for vacations, evening outings, and social events. Lightweight, breathable, and easy to care for, this dress blends modern sexy appeal with everyday wearability.",
@@ -12,12 +12,12 @@
       "color": {
         "primary": "Red"
       },
-      "minOrder": 3,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 4,
-        "L": 5,
-        "XL": 3
+        "S": 50,
+        "M": 40,
+        "L": 50,
+        "XL": 30
       },
       "images": [
         "02/1.jpg",
@@ -33,17 +33,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 560.32
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 509.06
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 476.68
+          "price": 420
         }
       ],
       "sizes": [
@@ -75,7 +75,7 @@
     "03": {
       "sku": "IL2356897411",
       "title": {
-        "en": "Wholesale Women Spring And Summer Fashion Flower Print Ruffle Side Slit Dress"
+        "en": "Ruffle Side Slit Dress"
       },
       "description": {
         "en": "Fabric: Stretch Polyester, Spandex. Material: Soft Elastic Polyester Blend. An elegant medium-length floral dress crafted from soft stretch polyester, designed with a flattering V-neck, petal sleeves, and a stylish ruffle side slit. Featuring a tiny-flower print, a mid-waist silhouette, and a feminine sling-style structure, this dress blends comfort with refined aesthetics, making it perfect for warm-season outings and vacation looks.",
@@ -84,12 +84,12 @@
       "color": {
         "primary": "Red"
       },
-      "minOrder": 3,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 4,
-        "L": 5,
-        "XL": 3
+        "S": 50,
+        "M": 50,
+        "L": 50,
+        "XL": 30
       },
       "images": [
         "03/1.jpg",
@@ -104,17 +104,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 700.63
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 615.19
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 584.61
+          "price": 410
         }
       ],
       "sizes": [
@@ -153,7 +153,7 @@
     "04": {
       "sku": "IL3467908522",
       "title": {
-        "en": "Wholesale Women Fashion Sexy Floral Printing Mesh Stitching Strap Dress"
+        "en": "Mesh Stitching Strap Dress"
       },
       "description": {
         "en": "Fabric: Polyester, Spandex, Mesh Stitching. Material: Soft Stretch Polyester Blend. A stylish short-length strap dress crafted with mesh stitching and soft polyester-spandex fabric, designed to offer a flattering body-hugging silhouette. With a floral print, a U-shaped collar, and a mid-waist cut, this sleeveless piece blends elegance with a sexy, modern aesthetic. Lightweight, comfortable, and ideal for both casual outings and evening looks.",
@@ -162,11 +162,11 @@
       "color": {
         "primary": "Red"
       },
-      "minOrder": 3,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 4,
-        "L": 5
+        "S": 50,
+        "M": 50,
+        "L": 50
       },
       "images": [
         "04/1.jpg",
@@ -181,17 +181,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 525.25
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 447.9
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 380.45
+          "price": 400
         }
       ],
       "sizes": [
@@ -223,7 +223,7 @@
     "05": {
       "sku": "IL4578019633",
       "title": {
-        "en": "Wholesale Women's Casual Floral-Print Halter-Back Maxi Dress"
+        "en": "Halter-Back Maxi Dress"
       },
       "description": {
         "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A breezy long floral-print halter-back maxi dress crafted from soft polyester, designed with a flattering U-neckline and an elegant A-line silhouette. This sleeveless piece offers a comfortable mid-waist fit, making it ideal for casual outings, beachwear, and stylish everyday looks with a modern street-hipster influence.",
@@ -232,11 +232,11 @@
       "color": {
         "primary": "White"
       },
-      "minOrder": 3,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 4,
-        "L": 5
+        "S": 50,
+        "M": 40,
+        "L": 50
       },
       "images": [
         "05/1.jpg",
@@ -249,17 +249,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 846.33
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 777.98
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 663.76
+          "price": 410
         }
       ],
       "sizes": [
@@ -291,7 +291,7 @@
     "06": {
       "sku": "IL5689120744",
       "title": {
-        "en": "Wholesale Women Fashion Sexy Floral Printed Spaghetti Strap Dress"
+        "en": "Printed Spaghetti Strap Dress"
       },
       "description": {
         "en": "Fabric: Stretch Polyester, Spandex. Material: Soft Elastic Polyester Blend. A stylish floral spaghetti-strap dress crafted from stretch polyester with added spandex for comfort. Designed with a mid-waist silhouette, an A-line skirt, and a sleeveless profile, this piece blends a flattering fit with a delicate tiny-flower print. Its lightweight construction and versatile shape make it suitable for multiple body types, offering a chic and feminine look for casual or evening wear.",
@@ -300,12 +300,12 @@
       "color": {
         "primary": "Black1"
       },
-      "minOrder": 3,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 4,
-        "L": 5,
-        "XL": 3
+        "S": 50,
+        "M": 40,
+        "L": 50,
+        "XL": 40
       },
       "images": [
         "06/1.jpg",
@@ -357,17 +357,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 613.39
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 518.05
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 494.67
+          "price": 410
         }
       ],
       "sizes": [
@@ -406,7 +406,7 @@
     "07": {
       "sku": "IL6790231855",
       "title": {
-        "en": "Wholesale Spring And Summer Women Sexy Vacation Tube Top Floral Print Bodycon Maxi Dress"
+        "en": "Print Bodycon Maxi Dress"
       },
       "description": {
         "en": "Fabric: Milk Fiber, Spandex. Material: Soft Stretch Polyester Blend. A stylish strapless bodycon maxi dress designed for spring and summer vacations. Crafted from soft milk fiber with added spandex, it features a flattering tube-top silhouette, a high-waist fit, and a sleek one-step skirt. The floral print and feminine shape create an elegant yet sexy look suitable for warm-weather outings and special occasions.",
@@ -415,11 +415,11 @@
       "color": {
         "primary": "White Red"
       },
-      "minOrder": 3,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 4,
-        "L": 5
+        "S": 50,
+        "M": 40,
+        "L": 50
       },
       "images": [
         "07/1.jpg",
@@ -434,17 +434,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 518.05
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 455.1
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 428.11
+          "price": 420
         }
       ],
       "sizes": [
@@ -476,7 +476,7 @@
     "08": {
       "sku": "IL7801342966",
       "title": {
-        "en": "Wholesale Summer Women Fashionable Small Fresh Square Collar Tiny Flower Printed Short Sleeve Split Dress"
+        "en": "Printed Short Sleeve Split Dress"
       },
       "description": {
         "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A charming summer midi dress featuring a tiny floral print, designed with a fresh square collar and comfortable short sleeves. The mid-waist fit and A-line skirt create a flattering silhouette, while the soft polyester fabric makes it ideal for warm-weather outings. The side split adds a stylish touch, blending elegance with a light, feminine look.",
@@ -485,12 +485,12 @@
       "color": {
         "primary": "Apricot"
       },
-      "minOrder": 3,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 4,
-        "L": 5,
-        "XL": 3
+        "S": 50,
+        "M": 40,
+        "L": 50,
+        "XL": 40
       },
       "images": [
         "08/1.jpg",
@@ -517,17 +517,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 610.69
+          "price": 550
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 563.92
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 471.28
+          "price": 400
         }
       ],
       "sizes": [
@@ -566,7 +566,7 @@
     "09": {
       "sku": "IL8912453077",
       "title": {
-        "en": "Wholesale Women Fashion Beach Vacation Print Mini Sling Dress"
+        "en": "Print Mini Sling Dress"
       },
       "description": {
         "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A lightweight and stylish mini sling dress designed for beach vacations and warm summer days. Made from soft polyester, it features a flattering hanging-neck design, an elastic waist, and a smooth slip-skirt silhouette. The floral plant print adds a fresh and feminine touch, while the sleeveless cut keeps the look cool, sexy, and effortless.",
@@ -575,12 +575,12 @@
       "color": {
         "primary": "Red"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 4,
-        "L": 5,
-        "XL": 2
+        "S": 50,
+        "M": 40,
+        "L": 50,
+        "XL": 40
       },
       "images": [
         "09/1.jpg",
@@ -594,17 +594,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 656.56
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 611.59
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 588.21
+          "price": 410
         }
       ],
       "sizes": [
@@ -643,7 +643,7 @@
     "10": {
       "sku": "IL9023564188",
       "title": {
-        "en": "Wholesale Women Fashion Casual Printed V-Neck Flying Sleeve Lace-Up Loose Dress"
+        "en": "Printed V-Neck Flying Sleeve Lace-Up Loose Dress"
       },
       "description": {
         "en": "Fabric: Polyester, Spandex. Material: Lightweight Polyester Blend. A comfortable and stylish loose-fit dress designed with a soft V-neckline, feifei flying sleeves, and a casual lace-up detail. Made from lightweight polyester with a 3D-effect floral print, this short skirt silhouette offers a relaxed and breathable fit ideal for warm weather and everyday wear while maintaining a feminine and fashionable look.",
@@ -652,12 +652,12 @@
       "color": {
         "primary": "Flower 1"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 4,
-        "L": 5,
-        "XL": 2
+        "S": 50,
+        "M": 40,
+        "L": 50,
+        "XL": 50
       },
       "images": [
         "10/1.jpg",
@@ -677,17 +677,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 604.4
+          "price": 400.4
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 589.11
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 568.42
+          "price": 400
         }
       ],
       "sizes": [
@@ -726,7 +726,7 @@
     "11": {
       "sku": "IL0134675299",
       "title": {
-        "en": "Wholesale Women Fashion Sexy Printed V-Neck Backless Loose Dress"
+        "en": "Printed V-Neck Backless Loose Dress"
       },
       "description": {
         "en": "Fabric: Polyester. Material: Lightweight Printed Polyester. A stylish and airy loose-fit dress crafted from soft polyester, featuring a flattering V-neckline and a bold backless design. The lightweight printed fabric and high-waist silhouette create an effortlessly sexy and feminine look, perfect for warm-weather outings, vacations, and casual daywear.",
@@ -735,12 +735,12 @@
       "color": {
         "primary": "Pink"
       },
-      "minOrder": 2,
+      "minOrder": 40,
       "sizeMinOrders": {
-        "S": 4,
-        "M": 4,
-        "L": 4,
-        "XL": 2
+        "S": 40,
+        "M": 40,
+        "L": 40,
+        "XL": 40
       },
       "images": [
         "11/1.jpg",
@@ -754,17 +754,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 814.85
+          "price": 600
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 743.8
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 430
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 732.11
+          "price": 410
         }
       ],
       "sizes": [
@@ -812,12 +812,12 @@
       "color": {
         "primary": "Black"
       },
-      "minOrder": 2,
+      "minOrder": 40,
       "sizeMinOrders": {
-        "S": 4,
-        "M": 4,
-        "L": 4,
-        "XL": 2
+        "S": 40,
+        "M": 40,
+        "L": 40,
+        "XL": 40
       },
       "images": [
         "12/1.jpg",
@@ -835,17 +835,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 793.27
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 689.84
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 664.66
+          "price": 440
         }
       ],
       "sizes": [
@@ -884,7 +884,7 @@
     "13": {
       "sku": "IL2356897412",
       "title": {
-        "en": "Wholesale Women Sexy Deep V Neck Ruffled Floral Halter Neck Dress"
+        "en": "Deep V Neck Ruffled Floral Halter Neck Dress"
       },
       "description": {
         "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A stunning long floral dress designed with a deep V-neckline, elegant ruffled details, and a flattering halter-neck silhouette. Crafted from soft polyester with added spandex, it offers a smooth, body-enhancing fit and a mid-waist profile that complements the feminine flow of the skirt. Perfect for evening events, vacations, and fashionable outings.",
@@ -893,11 +893,11 @@
       "color": {
         "primary": "Red"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 4,
-        "M": 4,
-        "L": 4
+        "S": 50,
+        "M": 40,
+        "L": 50
       },
       "images": [
         "13/1.jpg",
@@ -910,17 +910,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 854.43
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 822.05
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 797.77
+          "price": 420
         }
       ],
       "sizes": [
@@ -952,7 +952,7 @@
     "14": {
       "sku": "IL3467908523",
       "title": {
-        "en": "Wholesale Women Fashion Casual Elegant Floral Printed Short-Sleeve Loose Dress"
+        "en": "Elegant Floral Printed Short-Sleeve Loose Dress"
       },
       "description": {
         "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A stunning long floral dress designed with a deep V-neckline, elegant ruffled details, and a flattering halter-neck silhouette. Crafted from soft polyester with added spandex, it offers a smooth, body-enhancing fit and a mid-waist profile that complements the feminine flow of the skirt. Perfect for evening events, vacations, and fashionable outings.",
@@ -961,12 +961,12 @@
       "color": {
         "primary": "Floral Dress"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 4,
-        "M": 4,
-        "L": 4,
-        "XL": 2
+        "S": 50,
+        "M": 50,
+        "L": 50,
+        "XL": 30
       },
       "images": [
         "14/1.jpg",
@@ -978,17 +978,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 690.74
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 625.08
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 615.19
+          "price": 430
         }
       ],
       "sizes": [
@@ -1027,7 +1027,7 @@
     "15": {
       "sku": "IL4578019634",
       "title": {
-        "en": "Wholesale Women Fashion Casual Irregular Leopard V-Neck Long-Sleeve Lace-Up Dress"
+        "en": "Leopard V-Neck Long-Sleeve Lace-Up Dress"
       },
       "description": {
         "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A stunning long floral dress designed with a deep V-neckline, elegant ruffled details, and a flattering halter-neck silhouette. Crafted from soft polyester with added spandex, it offers a smooth, body-enhancing fit and a mid-waist profile that complements the feminine flow of the skirt. Perfect for evening events, vacations, and fashionable outings.",
@@ -1036,12 +1036,12 @@
       "color": {
         "primary": "Multicolor"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 4,
-        "M": 5,
-        "L": 4,
-        "XL": 2
+        "S": 50,
+        "M": 50,
+        "L": 40,
+        "XL": 30
       },
       "images": [
         "15/1.jpg",
@@ -1053,17 +1053,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 784.28
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 693.44
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 674.55
+          "price": 420
         }
       ],
       "sizes": [
@@ -1102,7 +1102,7 @@
     "16": {
       "sku": "IL5689120745",
       "title": {
-        "en": "Wholesale Bohemian Women Casual Tiny Flower Print V-Neck Dress"
+        "en": "Tiny Flower Print V-Neck Dress"
       },
       "description": {
         "en": "Fabric: Cotton Blend, Polyester. Material: Soft Cotton-Polyester Blend. A bohemian-inspired midi dress featuring a soft tiny-flower pattern, elegant V-neckline, and airy bubble sleeves. Designed with an A-line silhouette and comfortable mid-waist fit, this cotton-blend piece offers a relaxed yet stylish look ideal for warm seasons and casual outings.",
@@ -1111,12 +1111,12 @@
       "color": {
         "primary": "Blue"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 4,
-        "M": 5,
-        "L": 4,
-        "XL": 2
+        "S": 50,
+        "M": 50,
+        "L": 40,
+        "XL": 30
       },
       "images": [
         "16/1.jpg",
@@ -1131,17 +1131,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 675.45
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 574.72
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 479.38
+          "price": 410
         }
       ],
       "sizes": [
@@ -1180,7 +1180,7 @@
     "17": {
       "sku": "IL6790231856",
       "title": {
-        "en": "Wholesale Vintage Women Summer Vacation V-Neck Red Tiny Flower Slip Dress"
+        "en": "Summer Vacation V-Neck Red Tiny Flower Slip Dress"
       },
       "description": {
         "en": "Fabric: Polyester. Material: Lightweight Printed Polyester. A charming vintage-inspired slip dress designed with a delicate tiny-flower print and a flattering V-neckline. Featuring a high-waist silhouette and lightweight polyester fabric, this sweet and fresh summer dress offers a soft, feminine, and effortless look perfect for warm weather and vacation wear.",
@@ -1189,12 +1189,12 @@
       "color": {
         "primary": "As Shown"
       },
-      "minOrder": 1,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 4,
-        "M": 5,
-        "L": 4,
-        "XL": 1
+        "S": 50,
+        "M": 50,
+        "L": 40,
+        "XL": 20
       },
       "images": [
         "17/1.jpg",
@@ -1207,17 +1207,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 413.72
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 369.65
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 430
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 325.58
+          "price": 390
         }
       ],
       "sizes": [
@@ -1256,7 +1256,7 @@
     "18": {
       "sku": "IL7801342967",
       "title": {
-        "en": "Wholesale Women Fashion Sexy Floral Printed Tube Top Slim Fit Dress"
+        "en": "Floral Printed Tube Top Slim Fit Dress"
       },
       "description": {
         "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A sleek and sexy strapless tube-top dress featuring a vibrant floral print and a flattering high-waist slim-fit silhouette. Crafted from soft polyester with added spandex, this long A-line dress offers both comfort and elegance, making it ideal for vacation wear and stylish warm-weather outings.",
@@ -1265,12 +1265,12 @@
       "color": {
         "primary": "White"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 5,
-        "L": 4,
-        "XL": 2
+        "S": 50,
+        "M": 50,
+        "L": 50,
+        "XL": 40
       },
       "images": [
         "18/1.jpg",
@@ -1286,17 +1286,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 590.01
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 484.78
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 440
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 464.99
+          "price": 400
         }
       ],
       "sizes": [
@@ -1335,7 +1335,7 @@
     "19": {
       "sku": "IL8912453078",
       "title": {
-        "en": "Wholesale Women Fashion Floral Print Short Sleeve V-Neck Vacation Dress"
+        "en": "Floral Print Short Sleeve V-Neck Vacation Dress"
       },
       "description": {
         "en": "Fabric: Pearl Chiffon, Polyester. Material: Lightweight Chiffon Blend. A graceful floral-print midi dress crafted from soft pearl chiffon, featuring a flattering V-neckline and elegant lantern sleeves. The high-waist A-line silhouette creates a comfortable and refined look, perfect for vacation styles and everyday wear with an elegant touch.",
@@ -1344,12 +1344,12 @@
       "color": {
         "primary": "Red"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 5,
-        "L": 4,
-        "XL": 2
+        "S": 50,
+        "M": 50,
+        "L": 40,
+        "XL": 40
       },
       "images": [
         "19/1.jpg",
@@ -1363,17 +1363,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 1189.9
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 1120.65
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 1095.47
+          "price": 420
         }
       ],
       "sizes": [
@@ -1412,7 +1412,7 @@
     "20": {
       "sku": "IL9023564189",
       "title": {
-        "en": "Wholesale Women Fashion Casual Vacation Floral Printed Off-Shoulder Pleated Dress"
+        "en": "Floral Printed Off-Shoulder Pleated Dress"
       },
       "description": {
         "en": "Fabric: Polyester. Material: Lightweight Polyester Blend. A beautifully pleated off-shoulder vacation dress featuring a floral print and a flattering high-waist silhouette. Designed with feifei sleeves and a flowing large-pendulum skirt, this lightweight long dress offers an elegant, sweet, and feminine look ideal for summer outings.",
@@ -1421,12 +1421,12 @@
       "color": {
         "primary": "White"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 5,
-        "L": 4,
-        "XL": 2
+        "S": 50,
+        "M": 50,
+        "L": 40,
+        "XL": 20
       },
       "images": [
         "20/1.jpg",
@@ -1439,17 +1439,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 1246.57
+          "price": 550
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 1032.51
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 470
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 1011.82
+          "price": 420
         }
       ],
       "sizes": [
@@ -1488,7 +1488,7 @@
     "21": {
       "sku": "IL0134675200",
       "title": {
-        "en": "Wholesale Summer Women's Fashion Sexy V-Neck Floral Print Bat Sleeve Lace-Up Dress"
+        "en": "Print Bat Sleeve Lace-Up Dress"
       },
       "description": {
         "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A stylish summer dress featuring a floral print, flattering V-neckline, and airy bat sleeves. The lace-up design enhances the waistline, while the soft polyester fabric and mid-skirt length create a comfortable and artistic look inspired by retro and Chinese-wind aesthetics.",
@@ -1497,12 +1497,12 @@
       "color": {
         "primary": "Red"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 5,
-        "L": 5,
-        "XL": 2
+        "S": 50,
+        "M": 50,
+        "L": 50,
+        "XL": 20
       },
       "images": [
         "21/1.jpg",
@@ -1519,17 +1519,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 604.4
+          "price": 480
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 459.59
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 440
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 417.32
+          "price": 380
         }
       ],
       "sizes": [
@@ -1568,7 +1568,7 @@
     "22": {
       "sku": "IL1245786302",
       "title": {
-        "en": "Wholesale Women Summer Vacation Hollow-Out Slim-Fit Deep V Ruffled Tiny Flower Backless Maxi Dress"
+        "en": "Slim-Fit Deep V Ruffled Tiny Flower Backless Maxi Dress"
       },
       "description": {
         "en": "Fabric: Chiffon, Polyester. Material: Lightweight Chiffon Blend. A romantic vacation maxi dress crafted from airy chiffon, featuring a deep V-neckline, delicate ruffles, and a beautiful tiny-flower print. The slim-fit backless design and high-waist A-line silhouette create an elegant, flowy, and feminine summer look.",
@@ -1577,12 +1577,12 @@
       "color": {
         "primary": "Pink"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 5,
-        "L": 5,
-        "XL": 2
+        "S": 50,
+        "M": 50,
+        "L": 50,
+        "XL": 20
       },
       "images": [
         "22/1.jpg",
@@ -1598,17 +1598,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 1984.07
+          "price": 520
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 1858.16
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 1816.78
+          "price": 410
         }
       ],
       "sizes": [
@@ -1647,7 +1647,7 @@
     "23": {
       "sku": "IL2356897413",
       "title": {
-        "en": "Wholesale Women Fashion Sexy Flower Printed Sleeveless Backless Lace-Up Slim-Fit Dress"
+        "en": "Backless Lace-Up Slim-Fit Dress"
       },
       "description": {
         "en": "Fabric: Milk Fiber, Polyester. Material: Soft Stretch Polyester Blend. A bold slim-fit long dress featuring a floral print, deep V-neckline, and open back. Crafted from soft milk fiber with a high-waist silhouette, this sleeveless lace-up design offers a stylish and confident look inspired by modern street fashion.",
@@ -1656,11 +1656,11 @@
       "color": {
         "primary": "Red"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 5,
-        "L": 5
+        "S": 50,
+        "M": 50,
+        "L": 50
       },
       "images": [
         "23/1.jpg",
@@ -1674,17 +1674,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 793.27
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 651.16
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 440
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 642.17
+          "price": 400
         }
       ],
       "sizes": [
@@ -1716,7 +1716,7 @@
     "24": {
       "sku": "IL3467908524",
       "title": {
-        "en": "Wholesale Women Fashion Sexy Vacation Digital Print Slim Fit Camisole Dress"
+        "en": "Slim Fit Camisole Dress"
       },
       "description": {
         "en": "Fabric: Polyester. Material: Smooth Printed Polyester. A sleek digital-print camisole dress designed with a slim-fit silhouette and high-waist profile. Made from smooth polyester, this long dress features a stylish floral pattern and a sleeveless cut, offering an elegant and modern vacation-ready look.",
@@ -1725,11 +1725,11 @@
       "color": {
         "primary": "Lotus Red"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 5,
-        "L": 5
+        "S": 50,
+        "M": 50,
+        "L": 50
       },
       "images": [
         "24/1.jpg",
@@ -1747,17 +1747,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 661.06
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 512.66
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 499.17
+          "price": 420
         }
       ],
       "sizes": [
@@ -1789,7 +1789,7 @@
     "25": {
       "sku": "IL4578019635",
       "title": {
-        "en": "Wholesale Women Fashion Sexy Printed Sleeveless Pleated Backless Long Tassel Dress"
+        "en": "Sleeveless Pleated Backless Long Tassel Dress"
       },
       "description": {
         "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A striking sleeveless tassel dress featuring an abstract print, pleated design, and bold backless silhouette. Crafted from soft polyester with added spandex, this mid-waist wrong-hip skirt style offers a modern street-inspired look with an elegant, feminine touch.",
@@ -1798,11 +1798,11 @@
       "color": {
         "primary": "Blue Multicolor"
       },
-      "minOrder": 2,
+      "minOrder": 50,
       "sizeMinOrders": {
-        "S": 5,
-        "M": 5,
-        "L": 5
+        "S": 50,
+        "M": 50,
+        "L": 50
       },
       "images": [
         "25/1.jpg",
@@ -1814,17 +1814,17 @@
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 753.7
+          "price": 500
         },
         {
-          "minQty": 51,
-          "maxQty": 100,
-          "price": 605.29
+          "minQty": 1000,
+          "maxQty": 3000,
+          "price": 450
         },
         {
-          "minQty": 101,
+          "minQty": 3001,
           "maxQty": null,
-          "price": 590.9
+          "price": 410
         }
       ],
       "sizes": [
