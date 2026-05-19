@@ -33,7 +33,7 @@ export function ProductGallery({ images, productTitle }: ProductGalleryProps) {
 
   return (
     <div className="space-y-4">
-      <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-muted">
+      <div className="relative aspect-[3/5] overflow-hidden rounded-lg bg-muted">
         <LazyImage
           src={images[currentIndex]}
           alt={`${productTitle} - Image ${currentIndex + 1}`}
@@ -80,7 +80,7 @@ export function ProductGallery({ images, productTitle }: ProductGalleryProps) {
             <button
               key={index}
               onClick={() => selectImage(index)}
-              className={`aspect-square overflow-hidden rounded-md border-2 transition-all ${
+              className={`aspect-[3/5] overflow-hidden rounded-md border-2 transition-all ${
                 index === currentIndex
                   ? "border-primary ring-2 ring-primary ring-offset-2"
                   : "border-transparent hover:border-muted-foreground/30"

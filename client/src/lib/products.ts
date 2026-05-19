@@ -173,97 +173,109 @@ import p09_4 from "@assets/09/4.jpg";
 import p09_5 from "@assets/09/5.jpg";
 import p09_6 from "@assets/09/6.jpg";
 
-import p10_1 from "@assets/10/1.jpg";
-import p10_2 from "@assets/10/2.jpg";
-import p10_3 from "@assets/10/3.jpg";
-import p10_4 from "@assets/10/4.jpg";
-import p10_5 from "@assets/10/5.jpg";
-import p10_6 from "@assets/10/6.jpg";
-import p10_7 from "@assets/10/7.jpg";
-import p10_8 from "@assets/10/8.jpg";
-import p10_9 from "@assets/10/9.jpg";
-import p10_10 from "@assets/10/10.jpg";
-import p10_11 from "@assets/10/11.jpg";
-import p10_12 from "@assets/10/12.jpg";
+//import p10_1 from "@assets/10/1.jpg";
+import p10_2 from "@assets/10/2.jpeg";
+import p10_3 from "@assets/10/3.jpeg";
+import p10_4 from "@assets/10/4.jpeg";
+import p10_5 from "@assets/10/5.jpeg";
+import p10_6 from "@assets/10/6.jpeg";
+//import p10_7 from "@assets/10/7.jpg";
+//import p10_8 from "@assets/10/8.jpg";
+//import p10_9 from "@assets/10/9.jpg";
+//import p10_10 from "@assets/10/10.jpg";
+//import p10_11 from "@assets/10/11.jpg";
+//import p10_12 from "@assets/10/12.jpg";
 
-import p11_1 from "@assets/11/1.jpg";
-import p11_2 from "@assets/11/2.jpg";
-import p11_3 from "@assets/11/3.jpg";
-import p11_4 from "@assets/11/4.jpg";
-import p11_5 from "@assets/11/5.jpg";
-import p11_6 from "@assets/11/6.jpg";
+//import p11_1 from "@assets/11/1.jpg";
+import p11_2 from "@assets/11/2.jpeg";
+import p11_3 from "@assets/11/3.jpeg";
+import p11_4 from "@assets/11/4.jpeg";
+import p11_5 from "@assets/11/5.jpeg";
+//import p11_6 from "@assets/11/6.jpg";
 
-import p12_1 from "@assets/12/1.jpg";
-import p12_2 from "@assets/12/2.jpg";
-import p12_3 from "@assets/12/3.jpg";
-import p12_4 from "@assets/12/4.jpg";
-import p12_5 from "@assets/12/5.jpg";
-import p12_6 from "@assets/12/6.jpg";
-import p12_7 from "@assets/12/7.jpg";
-import p12_8 from "@assets/12/8.jpg";
-import p12_9 from "@assets/12/9.jpg";
-import p12_10 from "@assets/12/10.jpg";
+//import p12_1 from "@assets/12/1.jpg";
+import p12_2 from "@assets/12/2.jpeg";
+import p12_3 from "@assets/12/3.jpeg";
+import p12_4 from "@assets/12/4.jpeg";
+import p12_5 from "@assets/12/5.jpeg";
+import p12_6 from "@assets/12/6.jpeg";
+import p12_7 from "@assets/12/7.jpeg";
+//import p12_8 from "@assets/12/8.jpg";
+//import p12_9 from "@assets/12/9.jpg";
+//import p12_10 from "@assets/12/10.jpg";
 
-import p13_1 from "@assets/13/1.jpg";
-import p13_2 from "@assets/13/2.jpg";
-import p13_3 from "@assets/13/3.jpg";
-import p13_4 from "@assets/13/4.jpg";
+//import p13_1 from "@assets/13/1.jpeg";
+import p13_2 from "@assets/13/2.jpeg";
+import p13_3 from "@assets/13/3.jpeg";
+import p13_4 from "@assets/13/4.jpeg";
+import p13_5 from "@assets/13/5.jpeg";
+import p13_6 from "@assets/13/6.jpeg";
 
-import p14_1 from "@assets/14/1.jpg";
-import p14_2 from "@assets/14/2.jpg";
-import p14_3 from "@assets/14/3.jpg";
-import p14_4 from "@assets/14/4.jpg";
+// import p14_1 from "@assets/14/1.jpg";
+import p14_2 from "@assets/14/2.jpeg";
+import p14_3 from "@assets/14/3.jpeg";
+import p14_4 from "@assets/14/4.jpeg";
+import p14_5 from "@assets/14/5.jpeg";
+import p14_6 from "@assets/14/6.jpeg";
+import p14_7 from "@assets/14/7.jpeg";
 
-import p15_1 from "@assets/15/1.jpg";
-import p15_2 from "@assets/15/2.jpg";
-import p15_3 from "@assets/15/3.jpg";
-import p15_4 from "@assets/15/4.jpg";
+//import p15_1 from "@assets/15/1.jpg";
+import p15_2 from "@assets/15/2.jpeg";
+import p15_3 from "@assets/15/3.jpeg";
+import p15_4 from "@assets/15/4.jpeg";
+import p15_5 from "@assets/15/5.jpeg";
 
-import p16_1 from "@assets/16/1.jpg";
-import p16_2 from "@assets/16/2.jpg";
-import p16_3 from "@assets/16/3.jpg";
-import p16_4 from "@assets/16/4.jpg";
-import p16_5 from "@assets/16/5.jpg";
-import p16_6 from "@assets/16/6.jpg";
-import p16_7 from "@assets/16/7.jpg";
+//import p16_1 from "@assets/16/1.jpg";
+import p16_2 from "@assets/16/2.jpeg";
+import p16_3 from "@assets/16/3.jpeg";
+import p16_4 from "@assets/16/4.jpeg";
+import p16_5 from "@assets/16/5.jpeg";
+import p16_6 from "@assets/16/6.jpeg";
+import p16_7 from "@assets/16/7.jpeg";
 
-import p17_1 from "@assets/17/1.jpg";
-import p17_2 from "@assets/17/2.jpg";
-import p17_3 from "@assets/17/3.jpg";
-import p17_4 from "@assets/17/4.jpg";
-import p17_5 from "@assets/17/5.jpg";
+//import p17_1 from "@assets/17/1.jpg";
+import p17_2 from "@assets/17/2.jpeg";
+import p17_3 from "@assets/17/3.jpeg";
+import p17_4 from "@assets/17/4.jpeg";
+import p17_5 from "@assets/17/5.jpeg";
+import p17_6 from "@assets/17/6.jpeg";
+import p17_7 from "@assets/17/7.jpeg";
+import p17_8 from "@assets/17/8.jpeg";
+import p17_9 from "@assets/17/9.jpeg";
+import p17_10 from "@assets/17/10.jpeg";
 
-import p18_1 from "@assets/18/1.jpg";
+//import p18_1 from "@assets/18/1.jpg";
 import p18_2 from "@assets/18/2.jpg";
-import p18_3 from "@assets/18/3.jpg";
-import p18_4 from "@assets/18/4.jpg";
-import p18_5 from "@assets/18/5.jpg";
-import p18_6 from "@assets/18/6.jpg";
-import p18_7 from "@assets/18/7.jpg";
-import p18_8 from "@assets/18/8.jpg";
+import p18_3 from "@assets/18/3.jpeg";
+import p18_4 from "@assets/18/4.jpeg";
+import p18_5 from "@assets/18/5.jpeg";
+import p18_6 from "@assets/18/6.jpeg";
+//import p18_7 from "@assets/18/7.jpg";
+//import p18_8 from "@assets/18/8.jpg";
 
-import p19_1 from "@assets/19/1.jpg";
-import p19_2 from "@assets/19/2.jpg";
-import p19_3 from "@assets/19/3.jpg";
-import p19_4 from "@assets/19/4.jpg";
-import p19_5 from "@assets/19/5.jpg";
-import p19_6 from "@assets/19/6.jpg";
+//import p19_1 from "@assets/19/1.jpg";
+import p19_2 from "@assets/19/2.jpeg";
+import p19_3 from "@assets/19/3.jpeg";
+import p19_4 from "@assets/19/4.jpeg";
+import p19_5 from "@assets/19/5.jpeg";
+import p19_6 from "@assets/19/6.jpeg";
+import p19_7 from "@assets/19/7.jpeg";
 
-import p20_1 from "@assets/20/1.jpg";
+//import p20_1 from "@assets/20/1.jpg";
 import p20_2 from "@assets/20/2.jpg";
 import p20_3 from "@assets/20/3.jpg";
 import p20_4 from "@assets/20/4.jpg";
-import p20_5 from "@assets/20/5.jpg";
+import p20_5 from "@assets/20/5.jpeg";
 
-import p21_1 from "@assets/21/1.jpg";
-import p21_2 from "@assets/21/2.jpg";
-import p21_3 from "@assets/21/3.jpg";
-import p21_4 from "@assets/21/4.jpg";
-import p21_5 from "@assets/21/5.jpg";
-import p21_6 from "@assets/21/6.jpg";
-import p21_7 from "@assets/21/7.jpg";
-import p21_8 from "@assets/21/8.jpg";
-import p21_9 from "@assets/21/9.jpg";
+//import p21_1 from "@assets/21/1.jpg";
+import p21_2 from "@assets/21/2.jpeg";
+import p21_3 from "@assets/21/3.jpeg";
+import p21_4 from "@assets/21/4.jpeg";
+import p21_5 from "@assets/21/5.jpeg";
+import p21_6 from "@assets/21/6.jpeg";
+// import p21_7 from "@assets/21/7.jpg";
+// import p21_8 from "@assets/21/8.jpg";
+// import p21_9 from "@assets/21/9.jpg";
 
 import p22_1 from "@assets/22/1.jpg";
 import p22_2 from "@assets/22/2.jpg";
@@ -409,97 +421,109 @@ const productImages: Record<string, string> = {
   "09/5.jpg": p09_5,
   "09/6.jpg": p09_6,
 
-  "10/1.jpg": p10_1,
-  "10/2.jpg": p10_2,
-  "10/3.jpg": p10_3,
-  "10/4.jpg": p10_4,
-  "10/5.jpg": p10_5,
-  "10/6.jpg": p10_6,
-  "10/7.jpg": p10_7,
-  "10/8.jpg": p10_8,
-  "10/9.jpg": p10_9,
-  "10/10.jpg": p10_10,
-  "10/11.jpg": p10_11,
-  "10/12.jpg": p10_12,
+  //"10/1.jpg": p10_1,
+  "10/2.jpeg": p10_2,
+  "10/3.jpeg": p10_3,
+  "10/4.jpeg": p10_4,
+  "10/5.jpeg": p10_5,
+  "10/6.jpeg": p10_6,
+  //"10/7.jpg": p10_7,
+  //"10/8.jpg": p10_8,
+  //"10/9.jpg": p10_9,
+  //"10/10.jpg": p10_10,
+  //"10/11.jpg": p10_11,
+  //"10/12.jpg": p10_12,
 
-  "11/1.jpg": p11_1,
-  "11/2.jpg": p11_2,
-  "11/3.jpg": p11_3,
-  "11/4.jpg": p11_4,
-  "11/5.jpg": p11_5,
-  "11/6.jpg": p11_6,
+  //"11/1.jpg": p11_1,
+  "11/2.jpeg": p11_2,
+  "11/3.jpeg": p11_3,
+  "11/4.jpeg": p11_4,
+  "11/5.jpeg": p11_5,
+  //"11/6.jpg": p11_6,
 
-  "12/1.jpg": p12_1,
-  "12/2.jpg": p12_2,
-  "12/3.jpg": p12_3,
-  "12/4.jpg": p12_4,
-  "12/5.jpg": p12_5,
-  "12/6.jpg": p12_6,
-  "12/7.jpg": p12_7,
-  "12/8.jpg": p12_8,
-  "12/9.jpg": p12_9,
-  "12/10.jpg": p12_10,
+  //"12/1.jpg": p12_1,
+  "12/2.jpeg": p12_2,
+  "12/3.jpeg": p12_3,
+  "12/4.jpeg": p12_4,
+  "12/5.jpeg": p12_5,
+  "12/6.jpeg": p12_6,
+  "12/7.jpeg": p12_7,
+  // "12/8.jpg": p12_8,
+  // "12/9.jpg": p12_9,
+  // "12/10.jpg": p12_10,
 
-  "13/1.jpg": p13_1,
-  "13/2.jpg": p13_2,
-  "13/3.jpg": p13_3,
-  "13/4.jpg": p13_4,
+  //"13/1.jpg": p13_1,
+  "13/2.jpeg": p13_2,
+  "13/3.jpeg": p13_3,
+  "13/4.jpeg": p13_4,
+  "13/5.jpeg": p13_5,
+  "13/6.jpeg": p13_6,
 
-  "14/1.jpg": p14_1,
-  "14/2.jpg": p14_2,
-  "14/3.jpg": p14_3,
-  "14/4.jpg": p14_4,
+  //"14/1.jpg": p14_1,
+  "14/2.jpeg": p14_2,
+  "14/3.jpeg": p14_3,
+  "14/4.jpeg": p14_4,
+  "14/5.jpeg": p14_5,
+  "14/6.jpeg": p14_6,
+  "14/7.jpeg": p14_7,
 
-  "15/1.jpg": p15_1,
-  "15/2.jpg": p15_2,
-  "15/3.jpg": p15_3,
-  "15/4.jpg": p15_4,
+  //"15/1.jpg": p15_1,
+  "15/2.jpeg": p15_2,
+  "15/3.jpeg": p15_3,
+  "15/4.jpeg": p15_4,
+  "15/5.jpeg": p15_5,
 
-  "16/1.jpg": p16_1,
-  "16/2.jpg": p16_2,
-  "16/3.jpg": p16_3,
-  "16/4.jpg": p16_4,
-  "16/5.jpg": p16_5,
-  "16/6.jpg": p16_6,
-  "16/7.jpg": p16_7,
+  //"16/1.jpg": p16_1,
+  "16/2.jpeg": p16_2,
+  "16/3.jpeg": p16_3,
+  "16/4.jpeg": p16_4,
+  "16/5.jpeg": p16_5,
+  "16/6.jpeg": p16_6,
+  "16/7.jpeg": p16_7,
 
-  "17/1.jpg": p17_1,
-  "17/2.jpg": p17_2,
-  "17/3.jpg": p17_3,
-  "17/4.jpg": p17_4,
-  "17/5.jpg": p17_5,
+  //"17/1.jpg": p17_1,
+  "17/2.jpeg": p17_2,
+  "17/3.jpeg": p17_3,
+  "17/4.jpeg": p17_4,
+  "17/5.jpeg": p17_5,
+  "17/6.jpeg": p17_6,
+  "17/7.jpeg": p17_7,
+  "17/8.jpeg": p17_8,
+  "17/9.jpeg": p17_9,
+  "17/10.jpeg": p17_10,
 
-  "18/1.jpg": p18_1,
+  //"18/1.jpg": p18_1,
   "18/2.jpg": p18_2,
-  "18/3.jpg": p18_3,
-  "18/4.jpg": p18_4,
-  "18/5.jpg": p18_5,
-  "18/6.jpg": p18_6,
-  "18/7.jpg": p18_7,
-  "18/8.jpg": p18_8,
+  "18/3.jpeg": p18_3,
+  "18/4.jpeg": p18_4,
+  "18/5.jpeg": p18_5,
+  "18/6.jpeg": p18_6,
+  // "18/7.jpg": p18_7,
+  // "18/8.jpg": p18_8,
 
-  "19/1.jpg": p19_1,
-  "19/2.jpg": p19_2,
-  "19/3.jpg": p19_3,
-  "19/4.jpg": p19_4,
-  "19/5.jpg": p19_5,
-  "19/6.jpg": p19_6,
+  //"19/1.jpg": p19_1,
+  "19/2.jpeg": p19_2,
+  "19/3.jpeg": p19_3,
+  "19/4.jpeg": p19_4,
+  "19/5.jpeg": p19_5,
+  "19/6.jpeg": p19_6,
+  "19/7.jpeg": p19_7,
 
-  "20/1.jpg": p20_1,
+  //"20/1.jpg": p20_1,
   "20/2.jpg": p20_2,
   "20/3.jpg": p20_3,
   "20/4.jpg": p20_4,
-  "20/5.jpg": p20_5,
+  "20/5.jpeg": p20_5,
 
-  "21/1.jpg": p21_1,
-  "21/2.jpg": p21_2,
-  "21/3.jpg": p21_3,
-  "21/4.jpg": p21_4,
-  "21/5.jpg": p21_5,
-  "21/6.jpg": p21_6,
-  "21/7.jpg": p21_7,
-  "21/8.jpg": p21_8,
-  "21/9.jpg": p21_9,
+  //"21/1.jpg": p21_1,
+  "21/2.jpeg": p21_2,
+  "21/3.jpeg": p21_3,
+  "21/4.jpeg": p21_4,
+  "21/5.jpeg": p21_5,
+  "21/6.jpeg": p21_6,
+  // "21/7.jpg": p21_7,
+  // "21/8.jpg": p21_8,
+  // "21/9.jpg": p21_9,
 
   "22/1.jpg": p22_1,
   "22/2.jpg": p22_2,

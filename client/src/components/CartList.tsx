@@ -68,7 +68,7 @@ export function CartList({
             data-testid={`cart-item-${index}`}
           >
             <div className="hidden sm:flex gap-4">
-              <div className="w-16 h-16 flex-shrink-0 rounded-md overflow-hidden bg-muted">
+              <div className="w-16 h-32 flex-shrink-0 rounded-md overflow-hidden bg-muted">
                 <LazyImage
                   src={item.productImage}
                   alt={item.productTitle}

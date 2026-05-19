@@ -643,58 +643,49 @@
     "10": {
       "sku": "IL9023564188",
       "title": {
-        "en": "Printed V-Neck Flying Sleeve Lace-Up Loose Dress"
+        "en": "VELORA BLACK"
       },
       "description": {
-        "en": "Fabric: Polyester, Spandex. Material: Lightweight Polyester Blend. A comfortable and stylish loose-fit dress designed with a soft V-neckline, feifei flying sleeves, and a casual lace-up detail. Made from lightweight polyester with a 3D-effect floral print, this short skirt silhouette offers a relaxed and breathable fit ideal for warm weather and everyday wear while maintaining a feminine and fashionable look.",
-        "ru": "Ткань: полиэстер, спандекс. Материал: лёгкий смесовый полиэстер. Удобное и стильное платье свободного кроя выполнено с мягким V-образным вырезом, летящими рукавами «фэйфэй» и декоративной шнуровкой. Модель из лёгкого полиэстера с цветочным принтом с 3D-эффектом обеспечивает комфортную и дышащую посадку, идеально подходящую для тёплой погоды и повседневного ношения, сохраняя женственный и модный образ."
-      },
+  "en": "Fabric: Moss Crape Spendex. \n Wash & Care: Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat.",
+  "ru": "Ткань: мосс-креп, спандекс. Уход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать, не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
+},
       "color": {
-        "primary": "Flower 1"
+        "primary": "Black"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 40,
-        "L": 50,
-        "XL": 50
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "10/1.jpg",
-        "10/2.jpg",
-        "10/3.jpg",
-        "10/4.jpg",
-        "10/5.jpg",
-        "10/6.jpg",
-        "10/7.jpg",
-        "10/8.jpg",
-        "10/9.jpg",
-        "10/10.jpg",
-        "10/11.jpg",
-        "10/12.jpg"
+        "10/2.jpeg",
+        "10/3.jpeg",
+        "10/4.jpeg",
+        "10/5.jpeg",
+        "10/6.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
-          "maxQty": 50,
-          "price": 400.4
+          "maxQty": 15,
+          "price": 1155
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
+          "minQty": 500,
+          "maxQty": 1000,
+          "price": 950
         },
         {
-          "minQty": 3001,
+          "minQty": 1001,
           "maxQty": null,
-          "price": 400
+          "price": 900
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -712,12 +703,6 @@
         "L": {
           "skirtLength": 85,
           "bust": 106,
-          "waist": null,
-          "hips": null
-        },
-        "XL": {
-          "skirtLength": 86,
-          "bust": 110,
           "waist": null,
           "hips": null
         }
@@ -726,52 +711,48 @@
     "11": {
       "sku": "IL0134675299",
       "title": {
-        "en": "Printed V-Neck Backless Loose Dress"
+        "en": "VELORA WHITE"
       },
       "description": {
-        "en": "Fabric: Polyester. Material: Lightweight Printed Polyester. A stylish and airy loose-fit dress crafted from soft polyester, featuring a flattering V-neckline and a bold backless design. The lightweight printed fabric and high-waist silhouette create an effortlessly sexy and feminine look, perfect for warm-weather outings, vacations, and casual daywear.",
-        "ru": "Ткань: полиэстер. Материал: лёгкий печатный полиэстер. Стильное и воздушное платье свободного кроя выполнено из мягкого полиэстера и дополнено привлекательным V-образным вырезом и смелой открытой спиной. Лёгкая ткань с принтом и завышенная линия талии формируют женственный и сексуальный образ, идеально подходящий для тёплой погоды, отдыха и повседневных прогулок."
-      },
+  "en": "Fabric: Moss Crape Spendex. \n Wash & Care: Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat.",
+  "ru": "Ткань: мосс-креп, спандекс. Уход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать, не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
+},
       "color": {
-        "primary": "Pink"
+        "primary": "White"
       },
-      "minOrder": 40,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 40,
-        "M": 40,
-        "L": 40,
-        "XL": 40
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "11/1.jpg",
-        "11/2.jpg",
-        "11/3.jpg",
-        "11/4.jpg",
-        "11/5.jpg",
-        "11/6.jpg"
+        "11/2.jpeg",
+        "11/3.jpeg",
+        "11/4.jpeg",
+        "11/5.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
-          "maxQty": 50,
-          "price": 600
+          "maxQty": 15,
+          "price": 1155
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 430
+          "minQty": 500,
+          "maxQty": 1000,
+          "price": 950
         },
         {
-          "minQty": 3001,
+          "minQty": 1001,
           "maxQty": null,
-          "price": 410
+          "price": 900
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -789,12 +770,6 @@
         "L": {
           "skirtLength": 85,
           "bust": 106,
-          "waist": null,
-          "hips": null
-        },
-        "XL": {
-          "skirtLength": 86,
-          "bust": 110,
           "waist": null,
           "hips": null
         }
@@ -803,56 +778,50 @@
     "12": {
       "sku": "IL1245786301",
       "title": {
-        "en": "Wholesale Women Fashion Casual Spring And Autumn Floral Print Lapel Long Sleeve Lace-Up Dress"
+        "en": "ROSELINE CO-ORD"
       },
       "description": {
-        "en": "Fabric: Polyester, Spandex. Material: Soft Polyester Blend. A chic floral-print dress designed for spring and autumn, featuring a stylish lapel collar, long lantern sleeves, and a feminine ruffled skirt. Made from soft polyester, this lace-up dress offers a comfortable loose fit with a flattering silhouette, perfect for casual outings and everyday wear.",
-        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий смесовый полиэстер. Стильное платье с цветочным принтом, созданное для весенне-осеннего сезона, выполнено с модным воротником-лацканом, длинными рукавами-фонариками и женственной юбкой с оборками. Платье на шнуровке из мягкого полиэстера обеспечивает комфортную свободную посадку и выгодный силуэт, идеально подходящее для повседневной носки и прогулок."
-      },
+  "en": "Fabric: Nylon Lycra. Wash & Care:  Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat",
+  "ru": "Ткань: нейлон, лайкра. Уход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать, не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
+},
       "color": {
-        "primary": "Black"
+        "primary": "Red"
       },
-      "minOrder": 40,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 40,
-        "M": 40,
-        "L": 40,
-        "XL": 40
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "12/1.jpg",
-        "12/2.jpg",
-        "12/3.jpg",
-        "12/4.jpg",
-        "12/5.jpg",
-        "12/6.jpg",
-        "12/7.jpg",
-        "12/8.jpg",
-        "12/9.jpg",
-        "12/10.jpg"
+        "12/2.jpeg",
+        "12/3.jpeg",
+        "12/4.jpeg",
+        "12/5.jpeg",
+        "12/6.jpeg",
+        "12/7.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
-          "maxQty": 50,
-          "price": 500
+          "maxQty": 15,
+          "price": 1170
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
+          "minQty": 500,
+          "maxQty": 1000,
+          "price": 975
         },
         {
-          "minQty": 3001,
+          "minQty": 1001,
           "maxQty": null,
-          "price": 440
+          "price": 900
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -872,55 +841,49 @@
           "bust": 106,
           "waist": null,
           "hips": null
-        },
-        "XL": {
-          "skirtLength": 86,
-          "bust": 110,
-          "waist": null,
-          "hips": null
         }
       }
     },
     "13": {
       "sku": "IL2356897412",
       "title": {
-        "en": "Deep V Neck Ruffled Floral Halter Neck Dress"
+        "en": "VALESSIA MIDI"
       },
       "description": {
-        "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A stunning long floral dress designed with a deep V-neckline, elegant ruffled details, and a flattering halter-neck silhouette. Crafted from soft polyester with added spandex, it offers a smooth, body-enhancing fit and a mid-waist profile that complements the feminine flow of the skirt. Perfect for evening events, vacations, and fashionable outings.",
-        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Роскошное длинное платье с цветочным принтом выполнено с глубоким V-образным вырезом, элегантными рюшами и изящным силуэтом с открытой спиной на завязках. Мягкий полиэстер с добавлением спандекса обеспечивает гладкую посадку, подчёркивающую фигуру, а завышенная линия талии подчёркивает женственный плавный низ. Идеальный выбор для вечеринок, отдыха и стильных выходов."
-      },
+  "en": "Fabric: Polyester Lycra. Wash & Care: Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat",
+  "ru": "Ткань: полиэстер, лайкра. Уход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать, не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
+},
       "color": {
-        "primary": "Red"
+        "primary": "Black"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 40,
-        "L": 50
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "13/1.jpg",
-        "13/2.jpg",
-        "13/3.jpg",
-        "13/4.jpg",
-        "13/5.jpg"
+        "13/2.jpeg",
+        "13/3.jpeg",
+        "13/4.jpeg",
+        "13/5.jpeg",
+        "13/6.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
-          "maxQty": 50,
-          "price": 500
+          "maxQty": 15,
+          "price": 975
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
+          "minQty": 500,
+          "maxQty": 1000,
+          "price": 815
         },
         {
-          "minQty": 3001,
+          "minQty": 1001,
           "maxQty": null,
-          "price": 420
+          "price": 750
         }
       ],
       "sizes": [
@@ -952,50 +915,50 @@
     "14": {
       "sku": "IL3467908523",
       "title": {
-        "en": "Elegant Floral Printed Short-Sleeve Loose Dress"
+        "en": "NOIRA"
       },
       "description": {
-        "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A stunning long floral dress designed with a deep V-neckline, elegant ruffled details, and a flattering halter-neck silhouette. Crafted from soft polyester with added spandex, it offers a smooth, body-enhancing fit and a mid-waist profile that complements the feminine flow of the skirt. Perfect for evening events, vacations, and fashionable outings.",
-        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Роскошное длинное платье с цветочным принтом выполнено с глубоким V-образным вырезом, элегантными рюшами и изящным силуэтом с открытой спиной на завязках. Мягкий полиэстер с добавлением спандекса обеспечивает гладкую посадку, подчёркивающую фигуру, а завышенная линия талии подчёркивает женственный плавный низ. Идеальный выбор для вечеринок, отдыха и стильных выходов."
-      },
+  "en": "Fabric: Georgette, Polyester Lining. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: жоржет, полиэстеровая подкладка. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
-        "primary": "Floral Dress"
+        "primary": "Black"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 50,
-        "XL": 30
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "14/1.jpg",
-        "14/2.jpg",
-        "14/3.jpg",
-        "14/4.jpg"
+        "14/2.jpeg",
+        "14/3.jpeg",
+        "14/4.jpeg",
+        "14/5.jpeg",
+        "14/6.jpeg",
+        "14/7.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
-          "maxQty": 50,
-          "price": 500
+          "maxQty": 15,
+          "price": 1185
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
+          "minQty": 500,
+          "maxQty": 1000,
+          "price": 980
         },
         {
-          "minQty": 3001,
+          "minQty": 1001,
           "maxQty": null,
-          "price": 430
+          "price": 900
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -1015,62 +978,54 @@
           "bust": "74-86",
           "waist": "83-94",
           "hips": "90-104"
-        },
-        "XL": {
-          "skirtLength": null,
-          "bust": null,
-          "waist": null,
-          "hips": null
         }
       }
     },
     "15": {
       "sku": "IL4578019634",
       "title": {
-        "en": "Leopard V-Neck Long-Sleeve Lace-Up Dress"
+        "en": "LUXORIA"
       },
       "description": {
-        "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A stunning long floral dress designed with a deep V-neckline, elegant ruffled details, and a flattering halter-neck silhouette. Crafted from soft polyester with added spandex, it offers a smooth, body-enhancing fit and a mid-waist profile that complements the feminine flow of the skirt. Perfect for evening events, vacations, and fashionable outings.",
-        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Роскошное длинное платье с цветочным принтом выполнено с глубоким V-образным вырезом, элегантными рюшами и изящным силуэтом с открытой спиной на завязках. Мягкий полиэстер с добавлением спандекса обеспечивает гладкую посадку, подчёркивающую фигуру, а завышенная линия талии подчёркивает женственный плавный низ. Идеальный выбор для вечеринок, отдыха и стильных выходов."
-      },
+  "en": "Fabric: Polyester based Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: полиэстер на основе лайкры. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
-        "primary": "Multicolor"
+        "primary": "Black"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 40,
-        "XL": 30
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "15/1.jpg",
-        "15/2.jpg",
-        "15/3.jpg",
-        "15/4.jpg"
+        "15/2.jpeg",
+        "15/3.jpeg",
+        "15/4.jpeg",
+        "15/5.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
           "maxQty": 50,
-          "price": 500
+          "price": 1200
         },
         {
           "minQty": 1000,
           "maxQty": 3000,
-          "price": 450
+          "price": 1000
         },
         {
           "minQty": 3001,
           "maxQty": null,
-          "price": 420
+          "price": 900
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -1090,65 +1045,56 @@
           "bust": "74-86",
           "waist": "83-94",
           "hips": "90-104"
-        },
-        "XL": {
-          "skirtLength": null,
-          "bust": null,
-          "waist": null,
-          "hips": null
         }
       }
     },
     "16": {
       "sku": "IL5689120745",
       "title": {
-        "en": "Tiny Flower Print V-Neck Dress"
+        "en": "ZARELLE JUMPSUIT"
       },
       "description": {
-        "en": "Fabric: Cotton Blend, Polyester. Material: Soft Cotton-Polyester Blend. A bohemian-inspired midi dress featuring a soft tiny-flower pattern, elegant V-neckline, and airy bubble sleeves. Designed with an A-line silhouette and comfortable mid-waist fit, this cotton-blend piece offers a relaxed yet stylish look ideal for warm seasons and casual outings.",
-        "ru": "Ткань: хлопковая смесь, полиэстер. Материал: мягкая хлопково-полиэстеровая смесь. Платье миди в бохо-стиле выполнено с мелким цветочным принтом, элегантным V-образным вырезом и воздушными рукавами-«фонариками». А-силуэт и удобная посадка по линии талии создают расслабленный, но стильный образ, идеально подходящий для тёплого сезона и повседневных прогулок."
-      },
+  "en": "Fabric: Polyester Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: полиэстер, лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
-        "primary": "Blue"
+        "primary": "White"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 40,
-        "XL": 30
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "16/1.jpg",
-        "16/2.jpg",
-        "16/3.jpg",
-        "16/4.jpg",
-        "16/5.jpg",
-        "16/6.jpg",
-        "16/7.jpg"
+        "16/2.jpeg",
+        "16/3.jpeg",
+        "16/4.jpeg",
+        "16/5.jpeg",
+        "16/6.jpeg",
+        "16/7.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
-          "maxQty": 50,
-          "price": 500
+          "maxQty": 15,
+          "price": 1080
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
+          "minQty": 500,
+          "maxQty": 1000,
+          "price": 900
         },
         {
-          "minQty": 3001,
+          "minQty": 1001,
           "maxQty": null,
-          "price": 410
+          "price": 850
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -1168,63 +1114,59 @@
           "bust": "74-86",
           "waist": "83-94",
           "hips": "90-104"
-        },
-        "XL": {
-          "skirtLength": null,
-          "bust": null,
-          "waist": null,
-          "hips": null
         }
       }
     },
     "17": {
       "sku": "IL6790231856",
       "title": {
-        "en": "Summer Vacation V-Neck Red Tiny Flower Slip Dress"
+        "en": "SELIORA MERMAID"
       },
       "description": {
-        "en": "Fabric: Polyester. Material: Lightweight Printed Polyester. A charming vintage-inspired slip dress designed with a delicate tiny-flower print and a flattering V-neckline. Featuring a high-waist silhouette and lightweight polyester fabric, this sweet and fresh summer dress offers a soft, feminine, and effortless look perfect for warm weather and vacation wear.",
-        "ru": "Ткань: полиэстер. Материал: лёгкий полиэстер с принтом. Очаровательное платье-комбинация в винтажном стиле выполнено с нежным мелким цветочным принтом и привлекательным V-образным вырезом. Высокая линия талии и лёгкая полиэстеровая ткань создают мягкий, женственный и непринуждённый образ, идеально подходящий для тёплой погоды и отдыха."
-      },
+  "en": "Fabric: Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
-        "primary": "As Shown"
+        "primary": "Yellow"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 40,
-        "XL": 20
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "17/1.jpg",
-        "17/2.jpg",
-        "17/3.jpg",
-        "17/4.jpg",
-        "17/5.jpg"
+        "17/2.jpeg",
+        "17/3.jpeg",
+        "17/4.jpeg",
+        "17/5.jpeg",
+        "17/6.jpeg",
+        "17/7.jpeg",
+        "17/8.jpeg",
+        "17/9.jpeg",
+        "17/10.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
-          "maxQty": 50,
-          "price": 500
+          "maxQty": 15,
+          "price": 1050
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 430
+          "minQty": 500,
+          "maxQty": 1000,
+          "price": 900
         },
         {
-          "minQty": 3001,
+          "minQty": 1001,
           "maxQty": null,
-          "price": 390
+          "price": 850
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -1244,66 +1186,55 @@
           "bust": "74-86",
           "waist": "83-94",
           "hips": "90-104"
-        },
-        "XL": {
-          "skirtLength": null,
-          "bust": null,
-          "waist": null,
-          "hips": null
         }
       }
     },
     "18": {
       "sku": "IL7801342967",
       "title": {
-        "en": "Floral Printed Tube Top Slim Fit Dress"
+        "en": "VIRELLE CO-ORD"
       },
       "description": {
-        "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A sleek and sexy strapless tube-top dress featuring a vibrant floral print and a flattering high-waist slim-fit silhouette. Crafted from soft polyester with added spandex, this long A-line dress offers both comfort and elegance, making it ideal for vacation wear and stylish warm-weather outings.",
-        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Эффектное платье без бретелек с ярким цветочным принтом выполнено в виде облегающего топа и имеет привлекательный приталенный силуэт с завышенной талией. Мягкий полиэстер с добавлением спандекса обеспечивает комфорт и отличную посадку, а удлинённый А-силуэт добавляет элегантности. Идеально подходит для отдыха и стильных летних образов."
-      },
+  "en": "Fabric: Top (Cotton), Bottom (Poly Blend). For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: верх — хлопок, низ — смесовый полиэстер. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
         "primary": "White"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 50,
-        "XL": 40
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "18/1.jpg",
         "18/2.jpg",
-        "18/3.jpg",
-        "18/4.jpg",
-        "18/5.jpg",
-        "18/6.jpg",
-        "18/7.jpg",
-        "18/8.jpg"
+        "18/3.jpeg",
+        "18/4.jpeg",
+        "18/5.jpeg",
+        "18/6.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
-          "maxQty": 50,
-          "price": 500
+          "maxQty": 15,
+          "price": 1170
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 440
+          "minQty": 500,
+          "maxQty": 1000,
+          "price": 975
         },
         {
-          "minQty": 3001,
+          "minQty": 1001,
           "maxQty": null,
-          "price": 400
+          "price": 900
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -1323,64 +1254,56 @@
           "bust": "78-98",
           "waist": "70-78",
           "hips": "86-104"
-        },
-        "XL": {
-          "skirtLength": null,
-          "bust": null,
-          "waist": null,
-          "hips": null
         }
       }
     },
     "19": {
       "sku": "IL8912453078",
       "title": {
-        "en": "Floral Print Short Sleeve V-Neck Vacation Dress"
+        "en": "ESMERA CO-ORD"
       },
       "description": {
-        "en": "Fabric: Pearl Chiffon, Polyester. Material: Lightweight Chiffon Blend. A graceful floral-print midi dress crafted from soft pearl chiffon, featuring a flattering V-neckline and elegant lantern sleeves. The high-waist A-line silhouette creates a comfortable and refined look, perfect for vacation styles and everyday wear with an elegant touch.",
-        "ru": "Ткань: перламутровый шифон, полиэстер. Материал: лёгкая шифоновая смесь. Изящное платье миди с цветочным принтом выполнено из мягкого перламутрового шифона и дополнено привлекательным V-образным вырезом и элегантными рукавами-фонариками. Завышенная линия талии и А-силуэт создают комфортный и утончённый образ, идеально подходящий для отдыха и повседневной носки с ноткой элегантности."
-      },
+  "en": "Fabric: Mesh & Satin Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: сетка и сатин-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
-        "primary": "Red"
+        "primary": "Black"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 40,
-        "XL": 40
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "19/1.jpg",
-        "19/2.jpg",
-        "19/3.jpg",
-        "19/4.jpg",
-        "19/5.jpg",
-        "19/6.jpg"
+        "19/2.jpeg",
+        "19/3.jpeg",
+        "19/4.jpeg",
+        "19/5.jpeg",
+        "19/6.jpeg",
+        "19/7.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
-          "maxQty": 50,
-          "price": 500
+          "maxQty": 15,
+          "price": 1125
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
+          "minQty": 500,
+          "maxQty": 1000,
+          "price": 940
         },
         {
-          "minQty": 3001,
+          "minQty": 1001,
           "maxQty": null,
-          "price": 420
+          "price": 850
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -1400,63 +1323,54 @@
           "bust": 106,
           "waist": 79,
           "hips": 36.6
-        },
-        "XL": {
-          "skirtLength": 129,
-          "bust": 113,
-          "waist": 86,
-          "hips": 37.4
         }
       }
     },
     "20": {
       "sku": "IL9023564189",
       "title": {
-        "en": "Floral Printed Off-Shoulder Pleated Dress"
+        "en": "MONELIA"
       },
       "description": {
-        "en": "Fabric: Polyester. Material: Lightweight Polyester Blend. A beautifully pleated off-shoulder vacation dress featuring a floral print and a flattering high-waist silhouette. Designed with feifei sleeves and a flowing large-pendulum skirt, this lightweight long dress offers an elegant, sweet, and feminine look ideal for summer outings.",
-        "ru": "Ткань: полиэстер. Материал: лёгкая смесовая полиэстеровая ткань. Элегантное летнее платье с открытыми плечами выполнено с красивыми плетёными складками и цветочным принтом. Завышенная линия талии, рукава «фэйфэй» и свободная расклёшенная юбка создают нежный, женственный и утончённый образ, идеально подходящий для летнего отдыха и прогулок."
-      },
+  "en": "Fabric: Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
-        "primary": "White"
+        "primary": "Black"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 40,
-        "XL": 20
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "20/1.jpg",
         "20/2.jpg",
         "20/3.jpg",
         "20/4.jpg",
-        "20/5.jpg"
+        "20/5.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
-          "maxQty": 50,
-          "price": 550
+          "maxQty": 15,
+          "price": 1000
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 470
+          "minQty": 500,
+          "maxQty": 1000,
+          "price": 900
         },
         {
-          "minQty": 3001,
+          "minQty": 1001,
           "maxQty": null,
-          "price": 420
+          "price": 850
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -1476,67 +1390,55 @@
           "bust": 98,
           "waist": 72,
           "hips": 124
-        },
-        "XL": {
-          "skirtLength": 136,
-          "bust": 102,
-          "waist": 76,
-          "hips": 128
         }
       }
     },
     "21": {
       "sku": "IL0134675200",
       "title": {
-        "en": "Print Bat Sleeve Lace-Up Dress"
+        "en": "SERAPHINA WHITE"
       },
       "description": {
-        "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A stylish summer dress featuring a floral print, flattering V-neckline, and airy bat sleeves. The lace-up design enhances the waistline, while the soft polyester fabric and mid-skirt length create a comfortable and artistic look inspired by retro and Chinese-wind aesthetics.",
-        "ru": "Ткань: полиэстер. Материал: мягкая полиэстеровая ткань. Стильное летнее платье с цветочным принтом выполнено с привлекательным V-образным вырезом и воздушными рукавами «летучая мышь». Декоративная шнуровка подчёркивает талию, а мягкая ткань и средняя длина создают комфортный и эстетичный образ, вдохновлённый ретро-стилем и элементами китайской моды."
-      },
+  "en": "Fabric: Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
-        "primary": "Red"
+        "primary": "White"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 50,
-        "XL": 20
+        "S": 14,
+        "M": 14,
+        "L": 14
       },
       "images": [
-        "21/1.jpg",
-        "21/2.jpg",
-        "21/3.jpg",
-        "21/4.jpg",
-        "21/5.jpg",
-        "21/6.jpg",
-        "21/7.jpg",
-        "21/8.jpg",
-        "21/9.jpg"
+        "21/2.jpeg",
+        "21/3.jpeg",
+        "21/4.jpeg",
+        "21/5.jpeg",
+        "21/6.jpeg"
       ],
       "priceTiers": [
         {
           "minQty": 10,
-          "maxQty": 50,
-          "price": 480
+          "maxQty": 15,
+          "price": 1230
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 440
+          "minQty": 500,
+          "maxQty": 1000,
+          "price": 999
         },
         {
           "minQty": 3001,
           "maxQty": null,
-          "price": 380
+          "price": 900
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -1554,12 +1456,6 @@
         "L": {
           "skirtLength": 86,
           "bust": 104,
-          "waist": null,
-          "hips": null
-        },
-        "XL": {
-          "skirtLength": 87,
-          "bust": 108,
           "waist": null,
           "hips": null
         }

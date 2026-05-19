@@ -208,7 +208,7 @@ export default function Product() {
             {!hasAtLeastOneValidSize && (
               <div className="flex items-center gap-2 text-sm text-amber-600 dark:text-amber-500 bg-amber-50 dark:bg-amber-950/30 rounded-md p-3">
                 <AlertCircle className="h-4 w-4 flex-shrink-0" />
-                <span>{t("product.minOrderWarning")}</span>
+                <span>{t("product.minOrderWarning") + " (" + product.minOrder + ")"} </span>
               </div>
             )}
 

@@ -34,7 +34,7 @@ export function ProductCard({ product }: ProductCardProps) {
     : `${formatPrice(minPrice)} - ${formatPrice(maxPrice)}`;
 
   const firstSize = product.attributes?.sizes?.[0] || "S";
-  const minOrderForSmallSize = product.sizeMinOrders?.[firstSize] || product.minOrder || 1;
+  const minOrderForSmallSize = product.minOrder || 1;
   
   const notificationQuantity = getNotificationQuantity(product.id);
 
@@ -77,7 +77,7 @@ export function ProductCard({ product }: ProductCardProps) {
     >
       <Card className="overflow-visible border hover-elevate transition-all duration-200 h-full flex flex-col">
         <CardContent className="p-0 flex flex-col flex-1">
-          <div className="relative overflow-hidden rounded-t-md aspect-square">
+          <div className="relative overflow-hidden rounded-t-md aspect-[3/5]">
             <LazyImage
               src={product.images[currentImageIndex]}
               alt={`${product.title} - Image ${currentImageIndex + 1}`}
@@ -125,7 +125,7 @@ export function ProductCard({ product }: ProductCardProps) {
             )}
           </div>
 
-          <div className="p-2 sm:p-2.5 space-y-1 flex-1 flex flex-col" data-testid={`link-product-${product.id}`}>
+          <div className="px-2 py-1 sm:px-2.5 sm:py-1" data-testid={`link-product-${product.id}`}>
             {/* her boi */}
             {/* <p
               className="text-xs text-muted-foreground"
@@ -134,12 +134,12 @@ export function ProductCard({ product }: ProductCardProps) {
               SKU: {product.id}
             </p> */}
             {/* till her boi */}
-            <p
-              className="text-sm sm:text-base font-bold text-foreground mt-auto"
+            <div
+              className="px-2 py-1 sm:px-1 sm:py-1 font-bold"
               data-testid={`text-price-${product.id}`}
             >
               {priceRange}
-            </p>
+            </div>
           </div>
         </CardContent>
       </Card>
