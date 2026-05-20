@@ -1,645 +1,5 @@
 {
   "products": {
-    "02": {
-      "sku": "IL1245789630",
-      "title": {
-        "en": "Strap Bodycon Maxi Dress"
-      },
-      "description": {
-        "en": "Fabric: Polyester, Milk Fiber, Spandex. Material: Stretch Polyester Blend. A stylish spring–summer maxi dress featuring an all-over floral print and a flattering bodycon silhouette. The sleeveless sling-style design, U-shaped collar, and high waistline enhance the figure while ensuring comfort and ease of movement. The one-step skirt adds graceful drape and elegant length, making it ideal for vacations, evening outings, and social events. Lightweight, breathable, and easy to care for, this dress blends modern sexy appeal with everyday wearability.",
-        "ru": "Ткань: полиэстер, молочное волокно, спандекс. Материал: эластичный смесовый полиэстер. Стильное летнее платье-макси с цветочным принтом и облегающим силуэтом. Модель на тонких бретелях с U-образным вырезом и завышенной талией выгодно подчёркивает фигуру и обеспечивает комфорт при носке. Юбка-одна ступень придаёт плавную элегантную драпировку и достаточную длину, что делает платье отличным выбором для отпуска, вечерних выходов и светских мероприятий. Лёгкая, дышащая и простая в уходе ткань сочетает современный сексуальный стиль с повседневной практичностью."
-      },
-      "color": {
-        "primary": "Red"
-      },
-      "minOrder": 50,
-      "sizeMinOrders": {
-        "S": 50,
-        "M": 40,
-        "L": 50,
-        "XL": 30
-      },
-      "images": [
-        "02/1.jpg",
-        "02/2.jpg",
-        "02/3.jpg",
-        "02/4.jpg",
-        "02/5.jpg",
-        "02/6.jpg",
-        "02/7.jpg",
-        "02/8.jpg"
-      ],
-      "priceTiers": [
-        {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 500
-        },
-        {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
-        },
-        {
-          "minQty": 3001,
-          "maxQty": null,
-          "price": 420
-        }
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "sizeMeasurements": {
-        "S": {
-          "skirtLength": 126,
-          "bust": 75,
-          "waist": 68,
-          "hips": 82
-        },
-        "M": {
-          "skirtLength": 128,
-          "bust": 79,
-          "waist": 72,
-          "hips": 86
-        },
-        "L": {
-          "skirtLength": 130,
-          "bust": 83,
-          "waist": 76,
-          "hips": 90
-        }
-      }
-    },
-    "03": {
-      "sku": "IL2356897411",
-      "title": {
-        "en": "Ruffle Side Slit Dress"
-      },
-      "description": {
-        "en": "Fabric: Stretch Polyester, Spandex. Material: Soft Elastic Polyester Blend. An elegant medium-length floral dress crafted from soft stretch polyester, designed with a flattering V-neck, petal sleeves, and a stylish ruffle side slit. Featuring a tiny-flower print, a mid-waist silhouette, and a feminine sling-style structure, this dress blends comfort with refined aesthetics, making it perfect for warm-season outings and vacation looks.",
-        "ru": "Ткань: эластичный полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Элегантное платье средней длины с цветочным принтом выполнено из мягкого эластичного полиэстера и дополнено V-образным вырезом, рукавами-«лепестками» и стильным разрезом с оборкой сбоку. Модель с завышенной талией, мелким цветочным рисунком и женственным кройом на бретелях сочетает комфорт и утончённый дизайн, идеально подойдёт для тёплого сезона, отдыха и летних прогулок."
-      },
-      "color": {
-        "primary": "Red"
-      },
-      "minOrder": 50,
-      "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 50,
-        "XL": 30
-      },
-      "images": [
-        "03/1.jpg",
-        "03/2.jpg",
-        "03/3.jpg",
-        "03/4.jpg",
-        "03/5.jpg",
-        "03/6.jpg",
-        "03/7.jpg"
-      ],
-      "priceTiers": [
-        {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 500
-        },
-        {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
-        },
-        {
-          "minQty": 3001,
-          "maxQty": null,
-          "price": 410
-        }
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "sizeMeasurements": {
-        "S": {
-          "skirtLength": 86,
-          "bust": "86-88",
-          "waist": 70,
-          "hips": 92
-        },
-        "M": {
-          "skirtLength": 87,
-          "bust": "90-92",
-          "waist": 74,
-          "hips": 96
-        },
-        "L": {
-          "skirtLength": 88,
-          "bust": "95-97",
-          "waist": 80,
-          "hips": 101
-        },
-        "XL": {
-          "skirtLength": 89,
-          "bust": "100-102",
-          "waist": 86,
-          "hips": 107
-        }
-      }
-    },
-    "04": {
-      "sku": "IL3467908522",
-      "title": {
-        "en": "Mesh Stitching Strap Dress"
-      },
-      "description": {
-        "en": "Fabric: Polyester, Spandex, Mesh Stitching. Material: Soft Stretch Polyester Blend. A stylish short-length strap dress crafted with mesh stitching and soft polyester-spandex fabric, designed to offer a flattering body-hugging silhouette. With a floral print, a U-shaped collar, and a mid-waist cut, this sleeveless piece blends elegance with a sexy, modern aesthetic. Lightweight, comfortable, and ideal for both casual outings and evening looks.",
-        "ru": "Ткань: полиэстер, спандекс, сетчатые вставки. Материал: мягкий эластичный смесовый полиэстер. Стильное короткое платье на бретелях выполнено с сетчатыми вставками и из мягкой ткани полиэстер–спандекс, обеспечивая облегающий и привлекательный силуэт. Цветочный принт, U-образный вырез и посадка по линии талии создают сочетание элегантности и современного сексуального стиля. Лёгкое, удобное и подходящее как для повседневных выходов, так и для вечерних образов."
-      },
-      "color": {
-        "primary": "Red"
-      },
-      "minOrder": 50,
-      "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 50
-      },
-      "images": [
-        "04/1.jpg",
-        "04/2.jpg",
-        "04/3.jpg",
-        "04/4.jpg",
-        "04/5.jpg",
-        "04/6.jpg",
-        "04/7.jpg"
-      ],
-      "priceTiers": [
-        {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 500
-        },
-        {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
-        },
-        {
-          "minQty": 3001,
-          "maxQty": null,
-          "price": 400
-        }
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "sizeMeasurements": {
-        "S": {
-          "skirtLength": 75,
-          "bust": "72-88",
-          "waist": "62-70",
-          "hips": "83-92"
-        },
-        "M": {
-          "skirtLength": 77,
-          "bust": "76-92",
-          "waist": "66-74",
-          "hips": "87-96"
-        },
-        "L": {
-          "skirtLength": 79,
-          "bust": "80-96",
-          "waist": "70-78",
-          "hips": "91-100"
-        }
-      }
-    },
-    "05": {
-      "sku": "IL4578019633",
-      "title": {
-        "en": "Halter-Back Maxi Dress"
-      },
-      "description": {
-        "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A breezy long floral-print halter-back maxi dress crafted from soft polyester, designed with a flattering U-neckline and an elegant A-line silhouette. This sleeveless piece offers a comfortable mid-waist fit, making it ideal for casual outings, beachwear, and stylish everyday looks with a modern street-hipster influence.",
-        "ru": "Ткань: полиэстер. Материал: мягкая полиэстеровая ткань. Лёгкое платье-макси с цветочным принтом и открытой спиной выполнено из мягкого полиэстера. Модель с U-образным вырезом и элегантным А-силуэтом подчёркивает фигуру и обеспечивает комфортную посадку по линии талии. Идеально подходит для повседневных образов, пляжного отдыха и стильных летних прогулок в современном городском стиле."
-      },
-      "color": {
-        "primary": "White"
-      },
-      "minOrder": 50,
-      "sizeMinOrders": {
-        "S": 50,
-        "M": 40,
-        "L": 50
-      },
-      "images": [
-        "05/1.jpg",
-        "05/2.jpg",
-        "05/3.jpg",
-        "05/4.jpg",
-        "05/5.jpg"
-      ],
-      "priceTiers": [
-        {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 500
-        },
-        {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
-        },
-        {
-          "minQty": 3001,
-          "maxQty": null,
-          "price": 410
-        }
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "sizeMeasurements": {
-        "S": {
-          "skirtLength": 123,
-          "bust": "70-86",
-          "waist": "60-78",
-          "hips": "78-96"
-        },
-        "M": {
-          "skirtLength": 125.5,
-          "bust": "74-90",
-          "waist": "64-82",
-          "hips": "82-100"
-        },
-        "L": {
-          "skirtLength": 128,
-          "bust": "78-94",
-          "waist": "68-86",
-          "hips": "86-104"
-        }
-      }
-    },
-    "06": {
-      "sku": "IL5689120744",
-      "title": {
-        "en": "Printed Spaghetti Strap Dress"
-      },
-      "description": {
-        "en": "Fabric: Stretch Polyester, Spandex. Material: Soft Elastic Polyester Blend. A stylish floral spaghetti-strap dress crafted from stretch polyester with added spandex for comfort. Designed with a mid-waist silhouette, an A-line skirt, and a sleeveless profile, this piece blends a flattering fit with a delicate tiny-flower print. Its lightweight construction and versatile shape make it suitable for multiple body types, offering a chic and feminine look for casual or evening wear.",
-        "ru": "Ткань: эластичный полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Стильное платье на тонких бретелях с цветочным принтом выполнено из эластичного полиэстера с добавлением спандекса для комфорта. Модель с посадкой по линии талии, А-силуэтом и открытыми плечами подчёркивает фигуру и остаётся лёгкой и удобной. Универсальный крой подходит для разных типов телосложения, создавая женственный и изящный образ для повседневного или вечернего выхода."
-      },
-      "color": {
-        "primary": "Black1"
-      },
-      "minOrder": 50,
-      "sizeMinOrders": {
-        "S": 50,
-        "M": 40,
-        "L": 50,
-        "XL": 40
-      },
-      "images": [
-        "06/1.jpg",
-        "06/2.jpg",
-        "06/3.jpg",
-        "06/4.jpg",
-        "06/5.jpg",
-        "06/6.jpg",
-        "06/7.jpg",
-        "06/8.jpg",
-        "06/9.jpg",
-        "06/10.jpg",
-        "06/11.jpg",
-        "06/12.jpg",
-        "06/13.jpg",
-        "06/14.jpg",
-        "06/15.jpg",
-        "06/16.jpg",
-        "06/17.jpg",
-        "06/18.jpg",
-        "06/19.jpg",
-        "06/20.jpg",
-        "06/21.jpg",
-        "06/22.jpg",
-        "06/23.jpg",
-        "06/24.jpg",
-        "06/25.jpg",
-        "06/26.jpg",
-        "06/27.jpg",
-        "06/28.jpg",
-        "06/29.jpg",
-        "06/30.jpg",
-        "06/31.jpg",
-        "06/32.jpg",
-        "06/33.jpg",
-        "06/34.jpg",
-        "06/35.jpg",
-        "06/36.jpg",
-        "06/37.jpg",
-        "06/38.jpg",
-        "06/39.jpg",
-        "06/40.jpg",
-        "06/41.jpg",
-        "06/42.jpg",
-        "06/43.jpg",
-        "06/44.jpg"
-      ],
-      "priceTiers": [
-        {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 500
-        },
-        {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
-        },
-        {
-          "minQty": 3001,
-          "maxQty": null,
-          "price": 410
-        }
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "sizeMeasurements": {
-        "S": {
-          "skirtLength": 123,
-          "bust": "70-86",
-          "waist": "60-78",
-          "hips": "78-96"
-        },
-        "M": {
-          "skirtLength": 125.5,
-          "bust": "74-90",
-          "waist": "64-82",
-          "hips": "82-100"
-        },
-        "L": {
-          "skirtLength": 128,
-          "bust": "78-94",
-          "waist": "68-86",
-          "hips": "86-104"
-        },
-        "XL": {
-          "skirtLength": null,
-          "bust": null,
-          "waist": null,
-          "hips": null
-        }
-      }
-    },
-    "07": {
-      "sku": "IL6790231855",
-      "title": {
-        "en": "Print Bodycon Maxi Dress"
-      },
-      "description": {
-        "en": "Fabric: Milk Fiber, Spandex. Material: Soft Stretch Polyester Blend. A stylish strapless bodycon maxi dress designed for spring and summer vacations. Crafted from soft milk fiber with added spandex, it features a flattering tube-top silhouette, a high-waist fit, and a sleek one-step skirt. The floral print and feminine shape create an elegant yet sexy look suitable for warm-weather outings and special occasions.",
-        "ru": "Ткань: молочное волокно, спандекс. Материал: мягкий эластичный смесовый полиэстер. Стильное платье-макси без бретелек создано для весенне-летнего отдыха. Модель из мягкого материала с добавлением спандекса имеет удобный крой с лифом в виде топа, завышенной талией и гладкой прямой юбкой. Цветочный принт и женственный силуэт создают элегантный и сексуальный образ, идеально подходящий для тёплой погоды и особых случаев."
-      },
-      "color": {
-        "primary": "White Red"
-      },
-      "minOrder": 50,
-      "sizeMinOrders": {
-        "S": 50,
-        "M": 40,
-        "L": 50
-      },
-      "images": [
-        "07/1.jpg",
-        "07/2.jpg",
-        "07/3.jpg",
-        "07/4.jpg",
-        "07/5.jpg",
-        "07/6.jpg",
-        "07/7.jpg"
-      ],
-      "priceTiers": [
-        {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 500
-        },
-        {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
-        },
-        {
-          "minQty": 3001,
-          "maxQty": null,
-          "price": 420
-        }
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "sizeMeasurements": {
-        "S": {
-          "skirtLength": 123,
-          "bust": 72,
-          "waist": 64,
-          "hips": 82
-        },
-        "M": {
-          "skirtLength": 125,
-          "bust": 76,
-          "waist": 68,
-          "hips": 86
-        },
-        "L": {
-          "skirtLength": 127,
-          "bust": 80,
-          "waist": 72,
-          "hips": 90
-        }
-      }
-    },
-    "08": {
-      "sku": "IL7801342966",
-      "title": {
-        "en": "Printed Short Sleeve Split Dress"
-      },
-      "description": {
-        "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A charming summer midi dress featuring a tiny floral print, designed with a fresh square collar and comfortable short sleeves. The mid-waist fit and A-line skirt create a flattering silhouette, while the soft polyester fabric makes it ideal for warm-weather outings. The side split adds a stylish touch, blending elegance with a light, feminine look.",
-        "ru": "Ткань: полиэстер. Материал: мягкая полиэстеровая ткань. Очаровательное летнее платье миди с мелким цветочным принтом выполнено со стильным квадратным вырезом и удобными короткими рукавами. Посадка по линии талии и А-силуэт формируют выгодный женственный образ, а мягкая полиэстеровая ткань делает модель идеальной для тёплой погоды. Разрез сбоку добавляет стильный акцент, сочетая элегантность и лёгкий, женственный характер."
-      },
-      "color": {
-        "primary": "Apricot"
-      },
-      "minOrder": 50,
-      "sizeMinOrders": {
-        "S": 50,
-        "M": 40,
-        "L": 50,
-        "XL": 40
-      },
-      "images": [
-        "08/1.jpg",
-        "08/2.jpg",
-        "08/3.jpg",
-        "08/4.jpg",
-        "08/5.jpg",
-        "08/6.jpg",
-        "08/7.jpg",
-        "08/8.jpg",
-        "08/9.jpg",
-        "08/10.jpg",
-        "08/11.jpg",
-        "08/12.jpg",
-        "08/13.jpg",
-        "08/14.jpg",
-        "08/15.jpg",
-        "08/16.jpg",
-        "08/17.jpg",
-        "08/18.jpg",
-        "08/19.jpg"
-      ],
-      "priceTiers": [
-        {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 550
-        },
-        {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
-        },
-        {
-          "minQty": 3001,
-          "maxQty": null,
-          "price": 400
-        }
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "sizeMeasurements": {
-        "S": {
-          "skirtLength": 123,
-          "bust": 72,
-          "waist": 64,
-          "hips": 82
-        },
-        "M": {
-          "skirtLength": 125,
-          "bust": 76,
-          "waist": 68,
-          "hips": 86
-        },
-        "L": {
-          "skirtLength": 127,
-          "bust": 80,
-          "waist": 72,
-          "hips": 90
-        },
-        "XL": {
-          "skirtLength": null,
-          "bust": null,
-          "waist": null,
-          "hips": null
-        }
-      }
-    },
-    "09": {
-      "sku": "IL8912453077",
-      "title": {
-        "en": "Print Mini Sling Dress"
-      },
-      "description": {
-        "en": "Fabric: Polyester. Material: Soft Polyester Fabric. A lightweight and stylish mini sling dress designed for beach vacations and warm summer days. Made from soft polyester, it features a flattering hanging-neck design, an elastic waist, and a smooth slip-skirt silhouette. The floral plant print adds a fresh and feminine touch, while the sleeveless cut keeps the look cool, sexy, and effortless.",
-        "ru": "Ткань: полиэстер. Материал: мягкая полиэстеровая ткань. Лёгкое и стильное мини-платье на бретелях создано для пляжного отдыха и тёплых летних дней. Модель из мягкого полиэстера выполнена с удобным воротом-халтер, эластичной талией и гладким силуэтом в стиле комбинации. Цветочный растительный принт добавляет свежести и женственности, а отсутствие рукавов делает образ лёгким, сексуальным и непринуждённым."
-      },
-      "color": {
-        "primary": "Red"
-      },
-      "minOrder": 50,
-      "sizeMinOrders": {
-        "S": 50,
-        "M": 40,
-        "L": 50,
-        "XL": 40
-      },
-      "images": [
-        "09/1.jpg",
-        "09/2.jpg",
-        "09/3.jpg",
-        "09/4.jpg",
-        "09/5.jpg",
-        "09/6.jpg"
-      ],
-      "priceTiers": [
-        {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 500
-        },
-        {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
-        },
-        {
-          "minQty": 3001,
-          "maxQty": null,
-          "price": 410
-        }
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "sizeMeasurements": {
-        "S": {
-          "skirtLength": 123,
-          "bust": 72,
-          "waist": 64,
-          "hips": 82
-        },
-        "M": {
-          "skirtLength": 125,
-          "bust": 76,
-          "waist": 68,
-          "hips": 86
-        },
-        "L": {
-          "skirtLength": 127,
-          "bust": 80,
-          "waist": 72,
-          "hips": 90
-        },
-        "XL": {
-          "skirtLength": null,
-          "bust": null,
-          "waist": null,
-          "hips": null
-        }
-      }
-    },
     "10": {
       "sku": "IL9023564188",
       "title": {
@@ -654,9 +14,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "10/2.jpeg",
@@ -667,17 +27,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
+          "minQty": 15,
           "maxQty": 15,
           "price": 1155
         },
         {
-          "minQty": 500,
-          "maxQty": 1000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 950
         },
         {
-          "minQty": 1001,
+          "minQty": 100,
           "maxQty": null,
           "price": 900
         }
@@ -722,9 +82,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "11/2.jpeg",
@@ -734,17 +94,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
+          "minQty": 15,
           "maxQty": 15,
           "price": 1155
         },
         {
-          "minQty": 500,
-          "maxQty": 1000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 950
         },
         {
-          "minQty": 1001,
+          "minQty": 100,
           "maxQty": null,
           "price": 900
         }
@@ -778,7 +138,7 @@
     "12": {
       "sku": "IL1245786301",
       "title": {
-        "en": "ROSELINE CO-ORD"
+        "en": "REDLINE CO-ORD"
       },
       "description": {
   "en": "Fabric: Nylon Lycra. Wash & Care:  Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat",
@@ -789,9 +149,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "12/2.jpeg",
@@ -803,17 +163,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
+          "minQty": 15,
           "maxQty": 15,
           "price": 1170
         },
         {
-          "minQty": 500,
-          "maxQty": 1000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 975
         },
         {
-          "minQty": 1001,
+          "minQty": 100,
           "maxQty": null,
           "price": 900
         }
@@ -858,9 +218,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "13/2.jpeg",
@@ -871,17 +231,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
+          "minQty": 15,
           "maxQty": 15,
           "price": 975
         },
         {
-          "minQty": 500,
-          "maxQty": 1000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 815
         },
         {
-          "minQty": 1001,
+          "minQty": 100,
           "maxQty": null,
           "price": 750
         }
@@ -926,9 +286,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "14/2.jpeg",
@@ -940,17 +300,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
+          "minQty": 15,
           "maxQty": 15,
           "price": 1185
         },
         {
-          "minQty": 500,
-          "maxQty": 1000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 980
         },
         {
-          "minQty": 1001,
+          "minQty": 100,
           "maxQty": null,
           "price": 900
         }
@@ -995,9 +355,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "15/2.jpeg",
@@ -1007,17 +367,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
-          "maxQty": 50,
+          "minQty": 15,
+          "maxQty": 15,
           "price": 1200
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 1000
         },
         {
-          "minQty": 3001,
+          "minQty": 100,
           "maxQty": null,
           "price": 900
         }
@@ -1062,9 +422,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "16/2.jpeg",
@@ -1076,17 +436,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
+          "minQty": 15,
           "maxQty": 15,
           "price": 1080
         },
         {
-          "minQty": 500,
-          "maxQty": 1000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 900
         },
         {
-          "minQty": 1001,
+          "minQty": 100,
           "maxQty": null,
           "price": 850
         }
@@ -1120,7 +480,7 @@
     "17": {
       "sku": "IL6790231856",
       "title": {
-        "en": "SELIORA MERMAID"
+        "en": "SELORA MERMAID"
       },
       "description": {
   "en": "Fabric: Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
@@ -1131,9 +491,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "17/2.jpeg",
@@ -1148,17 +508,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
+          "minQty": 15,
           "maxQty": 15,
           "price": 1050
         },
         {
-          "minQty": 500,
-          "maxQty": 1000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 900
         },
         {
-          "minQty": 1001,
+          "minQty": 100,
           "maxQty": null,
           "price": 850
         }
@@ -1203,9 +563,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "18/2.jpg",
@@ -1216,17 +576,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
+          "minQty": 15,
           "maxQty": 15,
           "price": 1170
         },
         {
-          "minQty": 500,
-          "maxQty": 1000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 975
         },
         {
-          "minQty": 1001,
+          "minQty": 100,
           "maxQty": null,
           "price": 900
         }
@@ -1271,9 +631,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "19/2.jpeg",
@@ -1285,17 +645,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
+          "minQty": 15,
           "maxQty": 15,
           "price": 1125
         },
         {
-          "minQty": 500,
-          "maxQty": 1000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 940
         },
         {
-          "minQty": 1001,
+          "minQty": 100,
           "maxQty": null,
           "price": 850
         }
@@ -1340,9 +700,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "20/2.jpg",
@@ -1352,17 +712,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
+          "minQty": 15,
           "maxQty": 15,
           "price": 1000
         },
         {
-          "minQty": 500,
-          "maxQty": 1000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 900
         },
         {
-          "minQty": 1001,
+          "minQty": 100,
           "maxQty": null,
           "price": 850
         }
@@ -1407,9 +767,9 @@
       },
       "minOrder": 15,
       "sizeMinOrders": {
-        "S": 14,
-        "M": 14,
-        "L": 14
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "21/2.jpeg",
@@ -1420,17 +780,17 @@
       ],
       "priceTiers": [
         {
-          "minQty": 10,
+          "minQty": 15,
           "maxQty": 15,
           "price": 1230
         },
         {
-          "minQty": 500,
-          "maxQty": 1000,
+          "minQty": 16,
+          "maxQty": 99,
           "price": 999
         },
         {
-          "minQty": 3001,
+          "minQty": 100,
           "maxQty": null,
           "price": 900
         }
@@ -1464,21 +824,20 @@
     "22": {
       "sku": "IL1245786302",
       "title": {
-        "en": "Slim-Fit Deep V Ruffled Tiny Flower Backless Maxi Dress"
+        "en": "FLORAL"
       },
       "description": {
-        "en": "Fabric: Chiffon, Polyester. Material: Lightweight Chiffon Blend. A romantic vacation maxi dress crafted from airy chiffon, featuring a deep V-neckline, delicate ruffles, and a beautiful tiny-flower print. The slim-fit backless design and high-waist A-line silhouette create an elegant, flowy, and feminine summer look.",
-        "ru": "Ткань: шифон, полиэстер. Материал: лёгкая шифоновая смесь. Романтичное платье-макси для отдыха выполнено из воздушного шифона и украшено глубоким V-образным вырезом, нежными рюшами и красивым принтом с мелкими цветами. Приталенный крой с открытой спиной и завышенной талией создаёт элегантный, струящийся и женственный летний образ."
-      },
+  "en": "Fabric: Cotton. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: хлопок. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
-        "primary": "Pink"
+        "primary": "White"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 50,
-        "XL": 20
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "22/1.jpg",
@@ -1488,30 +847,30 @@
         "22/5.jpg",
         "22/6.jpg",
         "22/7.jpg",
-        "22/8.jpg"
+        "22/8.jpg",
+        "22/9.jpg"
       ],
       "priceTiers": [
         {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 520
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 999
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 900
         },
         {
-          "minQty": 3001,
+          "minQty": 100,
           "maxQty": null,
-          "price": 410
+          "price": 850
         }
       ],
       "sizes": [
         "S",
         "M",
-        "L",
-        "XL"
+        "L"
       ],
       "sizeMeasurements": {
         "S": {
@@ -1531,56 +890,51 @@
           "bust": "94-98",
           "waist": 80,
           "hips": null
-        },
-        "XL": {
-          "skirtLength": 132,
-          "bust": "98-102",
-          "waist": 84,
-          "hips": null
         }
       }
     },
     "23": {
       "sku": "IL2356897413",
       "title": {
-        "en": "Backless Lace-Up Slim-Fit Dress"
+        "en": "ELIORA"
       },
       "description": {
-        "en": "Fabric: Milk Fiber, Polyester. Material: Soft Stretch Polyester Blend. A bold slim-fit long dress featuring a floral print, deep V-neckline, and open back. Crafted from soft milk fiber with a high-waist silhouette, this sleeveless lace-up design offers a stylish and confident look inspired by modern street fashion.",
-        "ru": "Ткань: молочное волокно, полиэстер. Материал: мягкий эластичный смесовый полиэстер. Эффектное облегающее платье в длину выполнено с цветочным принтом, глубоким V-образным вырезом и открытой спиной. Мягкий материал и завышенная линия талии подчёркивают фигуру, а дизайн без рукавов со шнуровкой создаёт стильный и уверенный образ в духе современной уличной моды."
-      },
+  "en": "Fabric: Nylon Lycra and Georgette. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: нейлон-лайкра и жоржет. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
-        "primary": "Red"
+        "primary": "Brown"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 50
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
-        "23/1.jpg",
-        "23/2.jpg",
-        "23/3.jpg",
-        "23/4.jpg",
-        "23/5.jpg",
-        "23/6.jpg"
+        "23/1.avif",
+        "23/2.avif",
+        "23/3.avif",
+        "23/4.avif",
+        "23/5.avif",
+        "23/6.avif",
+        "23/7.jpg"
       ],
       "priceTiers": [
         {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 500
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1155
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 440
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 950
         },
         {
-          "minQty": 3001,
+          "minQty": 100,
           "maxQty": null,
-          "price": 400
+          "price": 900
         }
       ],
       "sizes": [
@@ -1590,7 +944,7 @@
       ],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 139,
+          "skirtLength": 82,
           "bust": null,
           "waist": 31,
           "hips": "84-104"
@@ -1612,20 +966,20 @@
     "24": {
       "sku": "IL3467908524",
       "title": {
-        "en": "Slim Fit Camisole Dress"
+        "en": "AURELUNE DRAPE"
       },
       "description": {
-        "en": "Fabric: Polyester. Material: Smooth Printed Polyester. A sleek digital-print camisole dress designed with a slim-fit silhouette and high-waist profile. Made from smooth polyester, this long dress features a stylish floral pattern and a sleeveless cut, offering an elegant and modern vacation-ready look.",
-        "ru": "Ткань: полиэстер. Материал: гладкий полиэстер с цифровым принтом. Стильное платье-комбинация с цифровым принтом выполнено в приталенном силуэте с завышенной талией. Гладкая полиэстеровая ткань и изящный цветочный узор формируют современный и элегантный образ, идеальный для отдыха и летних прогулок."
-      },
+  "en": "Fabric: Nylon Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: нейлон-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
-        "primary": "Lotus Red"
+        "primary": "Black"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 50
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
         "24/1.jpg",
@@ -1633,27 +987,23 @@
         "24/3.jpg",
         "24/4.jpg",
         "24/5.jpg",
-        "24/6.jpg",
-        "24/7.jpg",
-        "24/8.jpg",
-        "24/9.jpg",
-        "24/10.jpg"
+        "24/6.jpg"
       ],
       "priceTiers": [
         {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 500
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1237
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 999
         },
         {
-          "minQty": 3001,
+          "minQty": 100,
           "maxQty": null,
-          "price": 420
+          "price": 950
         }
       ],
       "sizes": [
@@ -1685,42 +1035,44 @@
     "25": {
       "sku": "IL4578019635",
       "title": {
-        "en": "Sleeveless Pleated Backless Long Tassel Dress"
+        "en": "SESILIA"
       },
       "description": {
-        "en": "Fabric: Polyester, Spandex. Material: Soft Stretch Polyester Blend. A striking sleeveless tassel dress featuring an abstract print, pleated design, and bold backless silhouette. Crafted from soft polyester with added spandex, this mid-waist wrong-hip skirt style offers a modern street-inspired look with an elegant, feminine touch.",
-        "ru": "Ткань: полиэстер, спандекс. Материал: мягкий эластичный смесовый полиэстер. Эффектное платье без рукавов с кисточками выполнено с абстрактным принтом, плиссированным дизайном и смелым открытым верхом. Мягкая ткань с добавлением спандекса и посадка по линии талии создают современный уличный образ с элегантным и женственным акцентом."
-      },
+  "en": "Fabric: Laser Georgette. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: лазерный жоржет. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
       "color": {
-        "primary": "Blue Multicolor"
+        "primary": "Black"
       },
-      "minOrder": 50,
+      "minOrder": 15,
       "sizeMinOrders": {
-        "S": 50,
-        "M": 50,
-        "L": 50
+        "S": 15,
+        "M": 15,
+        "L": 15
       },
       "images": [
-        "25/1.jpg",
-        "25/2.jpg",
-        "25/3.jpg",
-        "25/4.jpg"
+        "25/1.avif",
+        "25/3.avif",
+        "25/4.avif",
+        "25/5.avif",
+        "25/6.avif",
+        "25/7.jpg"
       ],
       "priceTiers": [
         {
-          "minQty": 10,
-          "maxQty": 50,
-          "price": 500
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 945
         },
         {
-          "minQty": 1000,
-          "maxQty": 3000,
-          "price": 450
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 800
         },
         {
-          "minQty": 3001,
+          "minQty": 100,
           "maxQty": null,
-          "price": 410
+          "price": 750
         }
       ],
       "sizes": [
@@ -1743,6 +1095,1250 @@
         },
         "L": {
           "skirtLength": 78,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "26": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "CELERINE"
+      },
+      "description": {
+  "en": "Fabric: Moss Georgette with Sequence Scattered. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: мосс-жоржет с рассеянными пайетками. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "White"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "26/1.jpg",
+        "26/2.jpg",
+        "26/3.jpg",
+        "26/4.jpg",
+        "26/5.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1200
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 999
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 950
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 32,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 32,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 32,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "27": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "SOLÉVIA"
+      },
+      "description": {
+  "en": "Fabric: Nylon Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: нейлон-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Red"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "27/1.jpg",
+        "27/2.jpg",
+        "27/3.jpg",
+        "27/4.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1020
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 900
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 850
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 32,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 32,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 32,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "28": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "ZÉLORIA"
+      },
+      "description": {
+  "en": "Fabric: Polyester Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: полиэстер, лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Black"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "28/1.jpg",
+        "28/2.jpg",
+        "28/3.jpg",
+        "28/4.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1020
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 900
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 850
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 32,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 32,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 32,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "29": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "VALENZIA"
+      },
+      "description": {
+  "en": "Fabric: Crepe. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: креп. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Pink"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "29/1.jpg",
+        "29/2.jpg",
+        "29/3.jpg",
+        "29/4.jpg",
+        "29/5.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1170
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 975
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 900
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 32,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 32,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 32,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "30": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "CELESTRA"
+      },
+      "description": {
+  "en": "Fabric: Polyester Lycra and Mesh Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: полиэстер-лайкра и сетка-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Black"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "30/1.avif",
+        "30/2.avif",
+        "30/3.avif",
+        "30/4.avif",
+        "30/5.avif",
+        "30/6.avif",
+        "30/7.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1170
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 975
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 900
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "31": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "CELESTRA"
+      },
+      "description": {
+  "en": "Fabric: Polyester Lycra and Mesh Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: полиэстер-лайкра и сетка-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Red"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "31/1.avif",
+        "31/2.avif",
+        "31/3.avif",
+        "31/4.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1170
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 975
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 900
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "32": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "CELÉRINE"
+      },
+      "description": {
+  "en": "Fabric: Georgette based Polyester Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: полиэстер-лайкра на основе жоржета. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Black"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "32/1.avif",
+        "32/2.avif",
+        "32/3.avif",
+        "32/4.avif",
+        "32/5.avif",
+        "32/6.avif",
+        "32/7.avif",
+        "32/8.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1200
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 999
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 900
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "33": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "CELÉRINE"
+      },
+      "description": {
+  "en": "Fabric: Georgette based Polyester Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: полиэстер-лайкра на основе жоржета. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Red"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "33/1.avif",
+        "33/2.avif",
+        "33/3.avif",
+        "33/4.avif",
+        "33/5.avif",
+        "33/6.avif",
+        "33/7.avif",
+        "33/8.avif",
+        "33/9.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1200
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 999
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 900
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "34": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "SOLÉVIA"
+      },
+      "description": {
+  "en": "Fabric: Laser Georgette. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: лазерный жоржет. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Brown"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "34/1.avif",
+        "34/2.avif",
+        "34/3.avif",
+        "34/4.avif",
+        "34/5.avif",
+        "34/6.avif",
+        "34/7.avif",
+        "34/8.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1100
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 999
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 900
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "35": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "SERAVINA"
+      },
+      "description": {
+  "en": "Fabric: Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Red"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "35/1.avif",
+        "35/2.avif",
+        "35/3.avif",
+        "35/4.avif",
+        "35/5.avif",
+        "35/6.avif",
+        "35/7.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1100
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 999
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 900
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "36": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "MIRALIS"
+      },
+      "description": {
+  "en": "Fabric: Velvet. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: бархат. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Black"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "36/1.jpg",
+        "36/2.jpg",
+        "36/3.jpg",
+        "36/4.jpg",
+        "36/5.jpg",
+        "36/6.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1700
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 1400
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 1350
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "37": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "VIRELUX"
+      },
+      "description": {
+  "en": "Fabric: Suede. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: замша. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Green"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "37/1.jpg",
+        "37/2.jpg",
+        "37/3.jpg",
+        "37/4.jpg",
+        "37/5.jpg",
+        "37/6.jpg",
+        "37/7.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 900
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 850
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 800
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "39": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "RUBELLA"
+      },
+      "description": {
+  "en": "Fabric: Nylon Lycra with the beautiful highlight of satin ruffle. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: нейлон-лайкра с красивой отделкой из сатиновых рюшей. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Black"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "39/1.avif",
+        "39/2.avif",
+        "39/3.avif",
+        "39/4.avif",
+        "39/5.avif",
+        "39/6.avif",
+        "39/7.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1100
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 999
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 950
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "40": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "SERALUX"
+      },
+      "description": {
+  "en": "Fabric: Nylon Lycra with Embroidered Mesh. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: нейлон-лайкра с вышитой сеткой. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Black"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "40/1.avif",
+        "40/2.avif",
+        "40/3.avif",
+        "40/4.avif",
+        "40/5.avif",
+        "40/6.avif",
+        "40/7.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1100
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 999
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 950
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "41": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "VIRESSA"
+      },
+      "description": {
+  "en": "Fabric: Shimmer Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: шиммер-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Black"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "41/1.jpg",
+        "41/2.jpg",
+        "41/4.jpg",
+        "41/5.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1350
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 1125
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 950
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "42": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "MIRALIS"
+      },
+      "description": {
+  "en": "Fabric: Soft Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: мягкая лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "White"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "42/1.jpg",
+        "42/2.jpg",
+        "42/3.jpg",
+        "42/4.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1200
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 1125
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 950
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "45": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "RUBENZA"
+      },
+      "description": {
+  "en": "Fabric: Mesh Lycra-based with Nylon Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: сетка на основе лайкры с нейлон-лайкрой. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Red"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "45/1.avif",
+        "45/2.avif",
+        "45/3.avif",
+        "45/4.avif",
+        "45/5.avif",
+        "45/6.avif",
+        "45/7.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1400
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 1125
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 950
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
+          "bust": "80-94",
+          "waist": "70-74",
+          "hips": "84-98"
+        }
+      }
+    },
+    "46": {
+      "sku": "IL4578019635",
+      "title": {
+        "en": "ELYSORA"
+      },
+      "description": {
+  "en": "Fabric: Georgette. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+  "ru": "Ткань: жоржет. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+},
+      "color": {
+        "primary": "Black"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": [
+        "46/1.jpg",
+        "46/2.jpg",
+        "46/3.jpg",
+        "46/4.jpg",
+        "46/5.jpg",
+        "46/6.jpg",
+        "46/7.jpg"
+      ],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1400
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 1125
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 950
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 48,
+          "bust": "72-86",
+          "waist": "62-66",
+          "hips": "76-90"
+        },
+        "M": {
+          "skirtLength": 48,
+          "bust": "76-90",
+          "waist": "66-70",
+          "hips": "80-94"
+        },
+        "L": {
+          "skirtLength": 48,
           "bust": "80-94",
           "waist": "70-74",
           "hips": "84-98"

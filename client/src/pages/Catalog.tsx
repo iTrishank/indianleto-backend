@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ITEMS_PER_PAGE } from "@/lib/constants";
+import { Input } from "@/components/ui/input";
 
 export default function Catalog() {
   const { t, products } = useApp();
@@ -20,6 +21,7 @@ export default function Catalog() {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [isFiltering, setIsFiltering] = useState<boolean>(false);
   const filterTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [search, setSearch] = useState("");
 
   const allColors = useMemo(() => {
     const colors = new Set<string>();
@@ -27,29 +29,38 @@ export default function Catalog() {
     return Array.from(colors).sort();
   }, [products]);
 
-  const filteredProducts = useMemo(() => {
-    let result = [...products];
+const filteredProducts = useMemo(() => {
+  let result = [...products];
 
-    if (colorFilter !== "all") {
-      result = result.filter((p) => p.attributes.color === colorFilter);
-    }
+  // SEARCH
+  if (search.trim() !== "") {
+    result = result.filter((p) =>
+      p.title.toLowerCase().includes(search.toLowerCase())
+    );
+  }
 
-    if (priceSort === "low-high") {
-      result.sort((a, b) => {
-        const aMin = Math.min(...a.priceTiers.map((tier) => tier.price));
-        const bMin = Math.min(...b.priceTiers.map((tier) => tier.price));
-        return aMin - bMin;
-      });
-    } else if (priceSort === "high-low") {
-      result.sort((a, b) => {
-        const aMax = Math.max(...a.priceTiers.map((tier) => tier.price));
-        const bMax = Math.max(...b.priceTiers.map((tier) => tier.price));
-        return bMax - aMax;
-      });
-    }
+  // COLOR FILTER
+  if (colorFilter !== "all") {
+    result = result.filter((p) => p.attributes.color === colorFilter);
+  }
 
-    return result;
-  }, [products, colorFilter, priceSort]);
+  // SORTING
+  if (priceSort === "low-high") {
+    result.sort((a, b) => {
+      const aMin = Math.min(...a.priceTiers.map((tier) => tier.price));
+      const bMin = Math.min(...b.priceTiers.map((tier) => tier.price));
+      return aMin - bMin;
+    });
+  } else if (priceSort === "high-low") {
+    result.sort((a, b) => {
+      const aMax = Math.max(...a.priceTiers.map((tier) => tier.price));
+      const bMax = Math.max(...b.priceTiers.map((tier) => tier.price));
+      return bMax - aMax;
+    });
+  }
+
+  return result;
+}, [products, colorFilter, priceSort, search]);
 
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -62,11 +73,12 @@ export default function Catalog() {
     handleFilterChange(() => {
       setColorFilter("all");
       setPriceSort("default");
+      setSearch("");
       setCurrentPage(1);
     });
   };
 
-  const hasActiveFilters = colorFilter !== "all" || priceSort !== "default";
+  const hasActiveFilters = colorFilter !== "all" || priceSort !== "default" || search.trim() !== "";
 
   const handleFilterChange = (callback: () => void) => {
     setIsFiltering(true);
@@ -197,7 +209,13 @@ export default function Catalog() {
       <Container className="py-4 md:py-6">
         <div className="flex flex-wrap items-center gap-2 mb-4">
           <div className="flex items-center gap-2 flex-1 sm:flex-none">
-            <Select value={colorFilter} onValueChange={handleColorChange}>
+            <Input
+  placeholder="Search"
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+  className="w-full sm:w-[220px]"
+/>
+            {/* <Select value={colorFilter} onValueChange={handleColorChange}>
               <SelectTrigger className="w-full sm:w-[140px]" data-testid="select-color-filter">
                 <SelectValue placeholder={t("catalog.color")} />
               </SelectTrigger>
@@ -209,7 +227,7 @@ export default function Catalog() {
                   </SelectItem>
                 ))}
               </SelectContent>
-            </Select>
+            </Select> */}
 
             <Select value={priceSort} onValueChange={handlePriceSortChange}>
               <SelectTrigger className="w-full sm:w-[160px]" data-testid="select-price-sort">

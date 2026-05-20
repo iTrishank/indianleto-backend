@@ -125,17 +125,13 @@ export function ProductCard({ product }: ProductCardProps) {
             )}
           </div>
 
-          <div className="px-2 py-1 sm:px-2.5 sm:py-1" data-testid={`link-product-${product.id}`}>
-            {/* her boi */}
-            {/* <p
-              className="text-xs text-muted-foreground"
-              data-testid={`text-sku-${product.id}`}
-            >
-              SKU: {product.id}
-            </p> */}
-            {/* till her boi */}
+          <div className="px-2 py-1 sm:px1 sm:py-1" data-testid={`link-product-${product.title}`}>
+            
+              {product.title}
+            
+            
             <div
-              className="px-2 py-1 sm:px-1 sm:py-1 font-bold"
+              className="px1 py-1 sm:px1 sm:py-1"
               data-testid={`text-price-${product.id}`}
             >
               {priceRange}

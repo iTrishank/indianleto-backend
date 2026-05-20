@@ -15,11 +15,19 @@ export function PriceTiers({ priceTiers }: PriceTiersProps) {
   const { t, formatPrice } = useApp();
 
   const formatTierRange = (tier: PriceTier) => {
-    if (tier.maxQty === null) {
-      return `${tier.minQty}+ ${t("product.pieces")}`;
-    }
-    return `${tier.minQty}-${tier.maxQty} ${t("product.pieces")}`;
-  };
+  // SINGLE VALUE
+  if (tier.minQty === tier.maxQty) {
+    return `${tier.minQty} ${t("product.pieces")}`;
+  }
+
+  // OPEN RANGE
+  if (tier.maxQty === null) {
+    return `${tier.minQty}+ ${t("product.pieces")}`;
+  }
+
+  // NORMAL RANGE
+  return `${tier.minQty}-${tier.maxQty} ${t("product.pieces")}`;
+};
 
   return (
     <div className="flex flex-row flex-wrap gap-2 sm:gap-3" data-testid="price-tiers">

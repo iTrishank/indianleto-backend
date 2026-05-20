@@ -71,107 +71,107 @@ import p02_6 from "@assets/02/6.jpg";
 import p02_7 from "@assets/02/7.jpg";
 import p02_8 from "@assets/02/8.jpg";
 
-import p03_1 from "@assets/03/1.jpg";
-import p03_2 from "@assets/03/2.jpg";
-import p03_3 from "@assets/03/3.jpg";
-import p03_4 from "@assets/03/4.jpg";
-import p03_5 from "@assets/03/5.jpg";
-import p03_6 from "@assets/03/6.jpg";
-import p03_7 from "@assets/03/7.jpg";
+// import p03_1 from "@assets/03/1.jpg";
+// import p03_2 from "@assets/03/2.jpg";
+// import p03_3 from "@assets/03/3.jpg";
+// import p03_4 from "@assets/03/4.jpg";
+// import p03_5 from "@assets/03/5.jpg";
+// import p03_6 from "@assets/03/6.jpg";
+// import p03_7 from "@assets/03/7.jpg";
 
-import p04_1 from "@assets/04/1.jpg";
-import p04_2 from "@assets/04/2.jpg";
-import p04_3 from "@assets/04/3.jpg";
-import p04_4 from "@assets/04/4.jpg";
-import p04_5 from "@assets/04/5.jpg";
-import p04_6 from "@assets/04/6.jpg";
-import p04_7 from "@assets/04/7.jpg";
+// import p04_1 from "@assets/04/1.jpg";
+// import p04_2 from "@assets/04/2.jpg";
+// import p04_3 from "@assets/04/3.jpg";
+// import p04_4 from "@assets/04/4.jpg";
+// import p04_5 from "@assets/04/5.jpg";
+// import p04_6 from "@assets/04/6.jpg";
+// import p04_7 from "@assets/04/7.jpg";
 
-import p05_1 from "@assets/05/1.jpg";
-import p05_2 from "@assets/05/2.jpg";
-import p05_3 from "@assets/05/3.jpg";
-import p05_4 from "@assets/05/4.jpg";
-import p05_5 from "@assets/05/5.jpg";
+// import p05_1 from "@assets/05/1.jpg";
+// import p05_2 from "@assets/05/2.jpg";
+// import p05_3 from "@assets/05/3.jpg";
+// import p05_4 from "@assets/05/4.jpg";
+// import p05_5 from "@assets/05/5.jpg";
 
-import p06_1 from "@assets/06/1.jpg";
-import p06_2 from "@assets/06/2.jpg";
-import p06_3 from "@assets/06/3.jpg";
-import p06_4 from "@assets/06/4.jpg";
-import p06_5 from "@assets/06/5.jpg";
-import p06_6 from "@assets/06/6.jpg";
-import p06_7 from "@assets/06/7.jpg";
-import p06_8 from "@assets/06/8.jpg";
-import p06_9 from "@assets/06/9.jpg";
-import p06_10 from "@assets/06/10.jpg";
-import p06_11 from "@assets/06/11.jpg";
-import p06_12 from "@assets/06/12.jpg";
-import p06_13 from "@assets/06/13.jpg";
-import p06_14 from "@assets/06/14.jpg";
-import p06_15 from "@assets/06/15.jpg";
-import p06_16 from "@assets/06/16.jpg";
-import p06_17 from "@assets/06/17.jpg";
-import p06_18 from "@assets/06/18.jpg";
-import p06_19 from "@assets/06/19.jpg";
-import p06_20 from "@assets/06/20.jpg";
-import p06_21 from "@assets/06/21.jpg";
-import p06_22 from "@assets/06/22.jpg";
-import p06_23 from "@assets/06/23.jpg";
-import p06_24 from "@assets/06/24.jpg";
-import p06_25 from "@assets/06/25.jpg";
-import p06_26 from "@assets/06/26.jpg";
-import p06_27 from "@assets/06/27.jpg";
-import p06_28 from "@assets/06/28.jpg";
-import p06_29 from "@assets/06/29.jpg";
-import p06_30 from "@assets/06/30.jpg";
-import p06_31 from "@assets/06/31.jpg";
-import p06_32 from "@assets/06/32.jpg";
-import p06_33 from "@assets/06/33.jpg";
-import p06_34 from "@assets/06/34.jpg";
-import p06_35 from "@assets/06/35.jpg";
-import p06_36 from "@assets/06/36.jpg";
-import p06_37 from "@assets/06/37.jpg";
-import p06_38 from "@assets/06/38.jpg";
-import p06_39 from "@assets/06/39.jpg";
-import p06_40 from "@assets/06/40.jpg";
-import p06_41 from "@assets/06/41.jpg";
-import p06_42 from "@assets/06/42.jpg";
-import p06_43 from "@assets/06/43.jpg";
-import p06_44 from "@assets/06/44.jpg";
+// import p06_1 from "@assets/06/1.jpg";
+// import p06_2 from "@assets/06/2.jpg";
+// import p06_3 from "@assets/06/3.jpg";
+// import p06_4 from "@assets/06/4.jpg";
+// import p06_5 from "@assets/06/5.jpg";
+// import p06_6 from "@assets/06/6.jpg";
+// import p06_7 from "@assets/06/7.jpg";
+// import p06_8 from "@assets/06/8.jpg";
+// import p06_9 from "@assets/06/9.jpg";
+// import p06_10 from "@assets/06/10.jpg";
+// import p06_11 from "@assets/06/11.jpg";
+// import p06_12 from "@assets/06/12.jpg";
+// import p06_13 from "@assets/06/13.jpg";
+// import p06_14 from "@assets/06/14.jpg";
+// import p06_15 from "@assets/06/15.jpg";
+// import p06_16 from "@assets/06/16.jpg";
+// import p06_17 from "@assets/06/17.jpg";
+// import p06_18 from "@assets/06/18.jpg";
+// import p06_19 from "@assets/06/19.jpg";
+// import p06_20 from "@assets/06/20.jpg";
+// import p06_21 from "@assets/06/21.jpg";
+// import p06_22 from "@assets/06/22.jpg";
+// import p06_23 from "@assets/06/23.jpg";
+// import p06_24 from "@assets/06/24.jpg";
+// import p06_25 from "@assets/06/25.jpg";
+// import p06_26 from "@assets/06/26.jpg";
+// import p06_27 from "@assets/06/27.jpg";
+// import p06_28 from "@assets/06/28.jpg";
+// import p06_29 from "@assets/06/29.jpg";
+// import p06_30 from "@assets/06/30.jpg";
+// import p06_31 from "@assets/06/31.jpg";
+// import p06_32 from "@assets/06/32.jpg";
+// import p06_33 from "@assets/06/33.jpg";
+// import p06_34 from "@assets/06/34.jpg";
+// import p06_35 from "@assets/06/35.jpg";
+// import p06_36 from "@assets/06/36.jpg";
+// import p06_37 from "@assets/06/37.jpg";
+// import p06_38 from "@assets/06/38.jpg";
+// import p06_39 from "@assets/06/39.jpg";
+// import p06_40 from "@assets/06/40.jpg";
+// import p06_41 from "@assets/06/41.jpg";
+// import p06_42 from "@assets/06/42.jpg";
+// import p06_45 from "@assets/06/45.jpg";
+// import p06_44 from "@assets/06/44.jpg";
 
-import p07_1 from "@assets/07/1.jpg";
-import p07_2 from "@assets/07/2.jpg";
-import p07_3 from "@assets/07/3.jpg";
-import p07_4 from "@assets/07/4.jpg";
-import p07_5 from "@assets/07/5.jpg";
-import p07_6 from "@assets/07/6.jpg";
-import p07_7 from "@assets/07/7.jpg";
+// import p07_1 from "@assets/07/1.jpg";
+// import p07_2 from "@assets/07/2.jpg";
+// import p07_3 from "@assets/07/3.jpg";
+// import p07_4 from "@assets/07/4.jpg";
+// import p07_5 from "@assets/07/5.jpg";
+// import p07_6 from "@assets/07/6.jpg";
+// import p07_7 from "@assets/07/7.jpg";
 
-import p08_1 from "@assets/08/1.jpg";
-import p08_2 from "@assets/08/2.jpg";
-import p08_3 from "@assets/08/3.jpg";
-import p08_4 from "@assets/08/4.jpg";
-import p08_5 from "@assets/08/5.jpg";
-import p08_6 from "@assets/08/6.jpg";
-import p08_7 from "@assets/08/7.jpg";
-import p08_8 from "@assets/08/8.jpg";
-import p08_9 from "@assets/08/9.jpg";
-import p08_10 from "@assets/08/10.jpg";
-import p08_11 from "@assets/08/11.jpg";
-import p08_12 from "@assets/08/12.jpg";
-import p08_13 from "@assets/08/13.jpg";
-import p08_14 from "@assets/08/14.jpg";
-import p08_15 from "@assets/08/15.jpg";
-import p08_16 from "@assets/08/16.jpg";
-import p08_17 from "@assets/08/17.jpg";
-import p08_18 from "@assets/08/18.jpg";
-import p08_19 from "@assets/08/19.jpg";
+// import p08_1 from "@assets/08/1.jpg";
+// import p08_2 from "@assets/08/2.jpg";
+// import p08_3 from "@assets/08/3.jpg";
+// import p08_4 from "@assets/08/4.jpg";
+// import p08_5 from "@assets/08/5.jpg";
+// import p08_6 from "@assets/08/6.jpg";
+// import p08_7 from "@assets/08/7.jpg";
+// import p08_8 from "@assets/08/8.jpg";
+// import p08_9 from "@assets/08/9.jpg";
+// import p08_10 from "@assets/08/10.jpg";
+// import p08_11 from "@assets/08/11.jpg";
+// import p08_12 from "@assets/08/12.jpg";
+// import p08_13 from "@assets/08/13.jpg";
+// import p08_14 from "@assets/08/14.jpg";
+// import p08_15 from "@assets/08/15.jpg";
+// import p08_16 from "@assets/08/16.jpg";
+// import p08_17 from "@assets/08/17.jpg";
+// import p08_18 from "@assets/08/18.jpg";
+// import p08_19 from "@assets/08/19.jpg";
 
-import p09_1 from "@assets/09/1.jpg";
-import p09_2 from "@assets/09/2.jpg";
-import p09_3 from "@assets/09/3.jpg";
-import p09_4 from "@assets/09/4.jpg";
-import p09_5 from "@assets/09/5.jpg";
-import p09_6 from "@assets/09/6.jpg";
+// import p09_1 from "@assets/09/1.jpg";
+// import p09_2 from "@assets/09/2.jpg";
+// import p09_3 from "@assets/09/3.jpg";
+// import p09_4 from "@assets/09/4.jpg";
+// import p09_5 from "@assets/09/5.jpg";
+// import p09_6 from "@assets/09/6.jpg";
 
 //import p10_1 from "@assets/10/1.jpg";
 import p10_2 from "@assets/10/2.jpeg";
@@ -179,6 +179,8 @@ import p10_3 from "@assets/10/3.jpeg";
 import p10_4 from "@assets/10/4.jpeg";
 import p10_5 from "@assets/10/5.jpeg";
 import p10_6 from "@assets/10/6.jpeg";
+// import p10_9 from "@assets/10/9.mp4";
+// import p10_1 from "@assets/10/1.avif";
 //import p10_7 from "@assets/10/7.jpg";
 //import p10_8 from "@assets/10/8.jpg";
 //import p10_9 from "@assets/10/9.jpg";
@@ -285,13 +287,15 @@ import p22_5 from "@assets/22/5.jpg";
 import p22_6 from "@assets/22/6.jpg";
 import p22_7 from "@assets/22/7.jpg";
 import p22_8 from "@assets/22/8.jpg";
+import p22_9 from "@assets/22/9.jpg";
 
-import p23_1 from "@assets/23/1.jpg";
-import p23_2 from "@assets/23/2.jpg";
-import p23_3 from "@assets/23/3.jpg";
-import p23_4 from "@assets/23/4.jpg";
-import p23_5 from "@assets/23/5.jpg";
-import p23_6 from "@assets/23/6.jpg";
+import p23_1 from "@assets/23/1.avif";
+import p23_2 from "@assets/23/2.avif";
+import p23_3 from "@assets/23/3.avif";
+import p23_4 from "@assets/23/4.avif";
+import p23_5 from "@assets/23/5.avif";
+import p23_6 from "@assets/23/6.avif";
+import p23_7 from "@assets/23/7.jpg";
 
 import p24_1 from "@assets/24/1.jpg";
 import p24_2 from "@assets/24/2.jpg";
@@ -299,15 +303,143 @@ import p24_3 from "@assets/24/3.jpg";
 import p24_4 from "@assets/24/4.jpg";
 import p24_5 from "@assets/24/5.jpg";
 import p24_6 from "@assets/24/6.jpg";
-import p24_7 from "@assets/24/7.jpg";
-import p24_8 from "@assets/24/8.jpg";
-import p24_9 from "@assets/24/9.jpg";
-import p24_10 from "@assets/24/10.jpg";
 
-import p25_1 from "@assets/25/1.jpg";
-import p25_2 from "@assets/25/2.jpg";
-import p25_3 from "@assets/25/3.jpg";
-import p25_4 from "@assets/25/4.jpg";
+import p25_1 from "@assets/25/1.avif";
+//import p25_2 from "@assets/25/2.avif";
+import p25_3 from "@assets/25/3.avif";
+import p25_4 from "@assets/25/4.avif";
+import p25_5 from "@assets/25/5.avif";
+import p25_6 from "@assets/25/6.avif";
+import p25_7 from "@assets/25/7.jpg";
+
+import p26_1 from "@assets/26/1.jpg";
+import p26_2 from "@assets/26/2.jpg";
+import p26_3 from "@assets/26/3.jpg";
+import p26_4 from "@assets/26/4.jpg";
+import p26_5 from "@assets/26/5.jpg";
+
+import p27_1 from "@assets/27/1.jpg";
+import p27_2 from "@assets/27/2.jpg";
+import p27_3 from "@assets/27/3.jpg";
+import p27_4 from "@assets/27/4.jpg";
+
+import p28_1 from "@assets/28/1.jpg";
+import p28_2 from "@assets/28/2.jpg";
+import p28_3 from "@assets/28/3.jpg";
+import p28_4 from "@assets/28/4.jpg";
+
+import p29_1 from "@assets/29/1.jpg";
+import p29_2 from "@assets/29/2.jpg";
+import p29_3 from "@assets/29/3.jpg";
+import p29_4 from "@assets/29/4.jpg";
+import p29_5 from "@assets/29/5.jpg";
+
+import p30_1 from "@assets/30/1.avif";
+import p30_2 from "@assets/30/2.avif";
+import p30_3 from "@assets/30/3.avif";
+import p30_4 from "@assets/30/4.avif";
+import p30_5 from "@assets/30/5.avif";
+import p30_6 from "@assets/30/6.avif";
+import p30_7 from "@assets/30/7.jpg";
+
+import p31_1 from "@assets/31/1.avif";
+import p31_2 from "@assets/31/2.avif";
+import p31_3 from "@assets/31/3.avif";
+import p31_4 from "@assets/31/4.jpg";
+
+import p32_1 from "@assets/32/1.avif";
+import p32_2 from "@assets/32/2.avif";
+import p32_3 from "@assets/32/3.avif";
+import p32_4 from "@assets/32/4.avif";
+import p32_5 from "@assets/32/5.avif";
+import p32_6 from "@assets/32/6.avif";
+import p32_7 from "@assets/32/7.avif";
+import p32_8 from "@assets/32/8.jpg";
+
+import p33_1 from "@assets/33/1.avif";
+import p33_2 from "@assets/33/2.avif";
+import p33_3 from "@assets/33/3.avif";
+import p33_4 from "@assets/33/4.avif";
+import p33_5 from "@assets/33/5.avif";
+import p33_6 from "@assets/33/6.avif";
+import p33_7 from "@assets/33/7.avif";
+import p33_8 from "@assets/33/8.avif";
+import p33_9 from "@assets/33/9.jpg";
+
+import p34_1 from "@assets/34/1.avif";
+import p34_2 from "@assets/34/2.avif";
+import p34_3 from "@assets/34/3.avif";
+import p34_4 from "@assets/34/4.avif";
+import p34_5 from "@assets/34/5.avif";
+import p34_6 from "@assets/34/6.avif";
+import p34_7 from "@assets/34/7.avif";
+import p34_8 from "@assets/34/8.jpg";
+
+import p35_1 from "@assets/35/1.avif";
+import p35_2 from "@assets/35/2.avif";
+import p35_3 from "@assets/35/3.avif";
+import p35_4 from "@assets/35/4.avif";
+import p35_5 from "@assets/35/5.avif";
+import p35_6 from "@assets/35/6.avif";
+import p35_7 from "@assets/35/7.jpg";
+
+import p36_1 from "@assets/36/1.jpg";
+import p36_2 from "@assets/36/2.jpg";
+import p36_3 from "@assets/36/3.jpg";
+import p36_4 from "@assets/36/4.jpg";
+import p36_5 from "@assets/36/5.jpg";
+import p36_6 from "@assets/36/6.jpg";
+
+import p37_1 from "@assets/37/1.jpg";
+import p37_2 from "@assets/37/2.jpg";
+import p37_3 from "@assets/37/3.jpg";
+import p37_4 from "@assets/37/4.jpg";
+import p37_5 from "@assets/37/5.jpg";
+import p37_6 from "@assets/37/6.jpg";
+import p37_7 from "@assets/37/7.jpg";
+
+import p39_1 from "@assets/39/1.avif";
+import p39_2 from "@assets/39/2.avif";
+import p39_3 from "@assets/39/3.avif";
+import p39_4 from "@assets/39/4.avif";
+import p39_5 from "@assets/39/5.avif";
+import p39_6 from "@assets/39/6.avif";
+import p39_7 from "@assets/39/7.jpg";
+
+import p40_1 from "@assets/40/1.avif";
+import p40_2 from "@assets/40/2.avif";
+import p40_3 from "@assets/40/3.avif";
+import p40_4 from "@assets/40/4.avif";
+import p40_5 from "@assets/40/5.avif";
+import p40_6 from "@assets/40/6.avif";
+import p40_7 from "@assets/40/7.jpg";
+
+import p41_1 from "@assets/41/1.jpg";
+import p41_2 from "@assets/41/2.jpg";
+import p41_4 from "@assets/41/4.jpg";
+import p41_5 from "@assets/41/5.jpg";
+
+import p42_1 from "@assets/42/1.jpg";
+import p42_2 from "@assets/42/2.jpg";
+import p42_3 from "@assets/42/3.jpg";
+import p42_4 from "@assets/42/4.jpg";
+
+import p45_1 from "@assets/45/1.avif";
+import p45_2 from "@assets/45/2.avif";
+import p45_3 from "@assets/45/3.avif";
+import p45_4 from "@assets/45/4.avif";
+import p45_5 from "@assets/45/5.avif";
+import p45_6 from "@assets/45/6.avif";
+import p45_7 from "@assets/45/7.jpg";
+
+import p46_1 from "@assets/46/1.jpg";
+import p46_2 from "@assets/46/2.jpg";
+import p46_3 from "@assets/46/3.jpg";
+import p46_4 from "@assets/46/4.jpg";
+import p46_5 from "@assets/46/5.jpg";
+import p46_6 from "@assets/46/6.jpg";
+import p46_7 from "@assets/46/7.jpg";
+
 
 const productImages: Record<string, string> = {
   "02/1.jpg": p02_1,
@@ -319,107 +451,107 @@ const productImages: Record<string, string> = {
   "02/7.jpg": p02_7,
   "02/8.jpg": p02_8,
 
-  "03/1.jpg": p03_1,
-  "03/2.jpg": p03_2,
-  "03/3.jpg": p03_3,
-  "03/4.jpg": p03_4,
-  "03/5.jpg": p03_5,
-  "03/6.jpg": p03_6,
-  "03/7.jpg": p03_7,
+  // "03/1.jpg": p03_1,
+  // "03/2.jpg": p03_2,
+  // "03/3.jpg": p03_3,
+  // "03/4.jpg": p03_4,
+  // "03/5.jpg": p03_5,
+  // "03/6.jpg": p03_6,
+  // "03/7.jpg": p03_7,
 
-  "04/1.jpg": p04_1,
-  "04/2.jpg": p04_2,
-  "04/3.jpg": p04_3,
-  "04/4.jpg": p04_4,
-  "04/5.jpg": p04_5,
-  "04/6.jpg": p04_6,
-  "04/7.jpg": p04_7,
+  // "04/1.jpg": p04_1,
+  // "04/2.jpg": p04_2,
+  // "04/3.jpg": p04_3,
+  // "04/4.jpg": p04_4,
+  // "04/5.jpg": p04_5,
+  // "04/6.jpg": p04_6,
+  // "04/7.jpg": p04_7,
 
-  "05/1.jpg": p05_1,
-  "05/2.jpg": p05_2,
-  "05/3.jpg": p05_3,
-  "05/4.jpg": p05_4,
-  "05/5.jpg": p05_5,
+  // "05/1.jpg": p05_1,
+  // "05/2.jpg": p05_2,
+  // "05/3.jpg": p05_3,
+  // "05/4.jpg": p05_4,
+  // "05/5.jpg": p05_5,
 
-  "06/1.jpg": p06_1,
-  "06/2.jpg": p06_2,
-  "06/3.jpg": p06_3,
-  "06/4.jpg": p06_4,
-  "06/5.jpg": p06_5,
-  "06/6.jpg": p06_6,
-  "06/7.jpg": p06_7,
-  "06/8.jpg": p06_8,
-  "06/9.jpg": p06_9,
-  "06/10.jpg": p06_10,
-  "06/11.jpg": p06_11,
-  "06/12.jpg": p06_12,
-  "06/13.jpg": p06_13,
-  "06/14.jpg": p06_14,
-  "06/15.jpg": p06_15,
-  "06/16.jpg": p06_16,
-  "06/17.jpg": p06_17,
-  "06/18.jpg": p06_18,
-  "06/19.jpg": p06_19,
-  "06/20.jpg": p06_20,
-  "06/21.jpg": p06_21,
-  "06/22.jpg": p06_22,
-  "06/23.jpg": p06_23,
-  "06/24.jpg": p06_24,
-  "06/25.jpg": p06_25,
-  "06/26.jpg": p06_26,
-  "06/27.jpg": p06_27,
-  "06/28.jpg": p06_28,
-  "06/29.jpg": p06_29,
-  "06/30.jpg": p06_30,
-  "06/31.jpg": p06_31,
-  "06/32.jpg": p06_32,
-  "06/33.jpg": p06_33,
-  "06/34.jpg": p06_34,
-  "06/35.jpg": p06_35,
-  "06/36.jpg": p06_36,
-  "06/37.jpg": p06_37,
-  "06/38.jpg": p06_38,
-  "06/39.jpg": p06_39,
-  "06/40.jpg": p06_40,
-  "06/41.jpg": p06_41,
-  "06/42.jpg": p06_42,
-  "06/43.jpg": p06_43,
-  "06/44.jpg": p06_44,
+  // "06/1.jpg": p06_1,
+  // "06/2.jpg": p06_2,
+  // "06/3.jpg": p06_3,
+  // "06/4.jpg": p06_4,
+  // "06/5.jpg": p06_5,
+  // "06/6.jpg": p06_6,
+  // "06/7.jpg": p06_7,
+  // "06/8.jpg": p06_8,
+  // "06/9.jpg": p06_9,
+  // "06/10.jpg": p06_10,
+  // "06/11.jpg": p06_11,
+  // "06/12.jpg": p06_12,
+  // "06/13.jpg": p06_13,
+  // "06/14.jpg": p06_14,
+  // "06/15.jpg": p06_15,
+  // "06/16.jpg": p06_16,
+  // "06/17.jpg": p06_17,
+  // "06/18.jpg": p06_18,
+  // "06/19.jpg": p06_19,
+  // "06/20.jpg": p06_20,
+  // "06/21.jpg": p06_21,
+  // "06/22.jpg": p06_22,
+  // "06/23.jpg": p06_23,
+  // "06/24.jpg": p06_24,
+  // "06/25.jpg": p06_25,
+  // "06/26.jpg": p06_26,
+  // "06/27.jpg": p06_27,
+  // "06/28.jpg": p06_28,
+  // "06/29.jpg": p06_29,
+  // "06/30.jpg": p06_30,
+  // "06/31.jpg": p06_31,
+  // "06/32.jpg": p06_32,
+  // "06/33.jpg": p06_33,
+  // "06/34.jpg": p06_34,
+  // "06/35.jpg": p06_35,
+  // "06/36.jpg": p06_36,
+  // "06/37.jpg": p06_37,
+  // "06/38.jpg": p06_38,
+  // "06/39.jpg": p06_39,
+  // "06/40.jpg": p06_40,
+  // "06/41.jpg": p06_41,
+  // "06/42.jpg": p06_42,
+  // "06/45.jpg": p06_45,
+  // "06/44.jpg": p06_44,
 
-  "07/1.jpg": p07_1,
-  "07/2.jpg": p07_2,
-  "07/3.jpg": p07_3,
-  "07/4.jpg": p07_4,
-  "07/5.jpg": p07_5,
-  "07/6.jpg": p07_6,
-  "07/7.jpg": p07_7,
+  // "07/1.jpg": p07_1,
+  // "07/2.jpg": p07_2,
+  // "07/3.jpg": p07_3,
+  // "07/4.jpg": p07_4,
+  // "07/5.jpg": p07_5,
+  // "07/6.jpg": p07_6,
+  // "07/7.jpg": p07_7,
 
-  "08/1.jpg": p08_1,
-  "08/2.jpg": p08_2,
-  "08/3.jpg": p08_3,
-  "08/4.jpg": p08_4,
-  "08/5.jpg": p08_5,
-  "08/6.jpg": p08_6,
-  "08/7.jpg": p08_7,
-  "08/8.jpg": p08_8,
-  "08/9.jpg": p08_9,
-  "08/10.jpg": p08_10,
-  "08/11.jpg": p08_11,
-  "08/12.jpg": p08_12,
-  "08/13.jpg": p08_13,
-  "08/14.jpg": p08_14,
-  "08/15.jpg": p08_15,
-  "08/16.jpg": p08_16,
-  "08/17.jpg": p08_17,
-  "08/18.jpg": p08_18,
-  "08/19.jpg": p08_19,
+  // "08/1.jpg": p08_1,
+  // "08/2.jpg": p08_2,
+  // "08/3.jpg": p08_3,
+  // "08/4.jpg": p08_4,
+  // "08/5.jpg": p08_5,
+  // "08/6.jpg": p08_6,
+  // "08/7.jpg": p08_7,
+  // "08/8.jpg": p08_8,
+  // "08/9.jpg": p08_9,
+  // "08/10.jpg": p08_10,
+  // "08/11.jpg": p08_11,
+  // "08/12.jpg": p08_12,
+  // "08/13.jpg": p08_13,
+  // "08/14.jpg": p08_14,
+  // "08/15.jpg": p08_15,
+  // "08/16.jpg": p08_16,
+  // "08/17.jpg": p08_17,
+  // "08/18.jpg": p08_18,
+  // "08/19.jpg": p08_19,
 
-  "09/1.jpg": p09_1,
-  "09/2.jpg": p09_2,
-  "09/3.jpg": p09_3,
-  "09/4.jpg": p09_4,
-  "09/5.jpg": p09_5,
-  "09/6.jpg": p09_6,
+  // "09/1.jpg": p09_1,
+  // "09/2.jpg": p09_2,
+  // "09/3.jpg": p09_3,
+  // "09/4.jpg": p09_4,
+  // "09/5.jpg": p09_5,
+  // "09/6.jpg": p09_6,
 
   //"10/1.jpg": p10_1,
   "10/2.jpeg": p10_2,
@@ -427,12 +559,14 @@ const productImages: Record<string, string> = {
   "10/4.jpeg": p10_4,
   "10/5.jpeg": p10_5,
   "10/6.jpeg": p10_6,
+  // "10/9.mp4": p10_9,
+  // "10/1.avif": p10_1,
   //"10/7.jpg": p10_7,
   //"10/8.jpg": p10_8,
   //"10/9.jpg": p10_9,
   //"10/10.jpg": p10_10,
   //"10/11.jpg": p10_11,
-  //"10/12.jpg": p10_12,
+  // "10/12.jpg": p10_12,
 
   //"11/1.jpg": p11_1,
   "11/2.jpeg": p11_2,
@@ -533,13 +667,15 @@ const productImages: Record<string, string> = {
   "22/6.jpg": p22_6,
   "22/7.jpg": p22_7,
   "22/8.jpg": p22_8,
+  "22/9.jpg": p22_9,
 
-  "23/1.jpg": p23_1,
-  "23/2.jpg": p23_2,
-  "23/3.jpg": p23_3,
-  "23/4.jpg": p23_4,
-  "23/5.jpg": p23_5,
-  "23/6.jpg": p23_6,
+  "23/1.avif": p23_1,
+  "23/2.avif": p23_2,
+  "23/3.avif": p23_3,
+  "23/4.avif": p23_4,
+  "23/5.avif": p23_5,
+  "23/6.avif": p23_6,
+  "23/7.jpg": p23_7,
 
   "24/1.jpg": p24_1,
   "24/2.jpg": p24_2,
@@ -547,15 +683,142 @@ const productImages: Record<string, string> = {
   "24/4.jpg": p24_4,
   "24/5.jpg": p24_5,
   "24/6.jpg": p24_6,
-  "24/7.jpg": p24_7,
-  "24/8.jpg": p24_8,
-  "24/9.jpg": p24_9,
-  "24/10.jpg": p24_10,
 
-  "25/1.jpg": p25_1,
-  "25/2.jpg": p25_2,
-  "25/3.jpg": p25_3,
-  "25/4.jpg": p25_4
+  "25/1.avif": p25_1,
+  //"25/2.avif": p25_2,
+  "25/3.avif": p25_3,
+  "25/4.avif": p25_4,
+  "25/5.avif": p25_5,
+  "25/6.avif": p25_6,
+  "25/7.jpg": p25_7,
+
+  "26/1.jpg": p26_1,
+  "26/2.jpg": p26_2,
+  "26/3.jpg": p26_3,
+  "26/4.jpg": p26_4,
+  "26/5.jpg": p26_5,
+
+  "27/1.jpg": p27_1,
+  "27/2.jpg": p27_2,
+  "27/3.jpg": p27_3,
+  "27/4.jpg": p27_4,
+
+  "28/1.jpg": p28_1,
+  "28/2.jpg": p28_2,
+  "28/3.jpg": p28_3,
+  "28/4.jpg": p28_4,
+
+  "29/1.jpg": p29_1,
+  "29/2.jpg": p29_2,
+  "29/3.jpg": p29_3,
+  "29/4.jpg": p29_4,
+  "29/5.jpg": p29_5,
+
+  "30/1.avif": p30_1,
+  "30/2.avif": p30_2,
+  "30/3.avif": p30_3,
+  "30/4.avif": p30_4,
+  "30/5.avif": p30_5,
+  "30/6.avif": p30_6,
+  "30/7.jpg": p30_7,
+
+  "31/1.avif": p31_1,
+  "31/2.avif": p31_2,
+  "31/3.avif": p31_3,
+  "31/4.jpg": p31_4,
+  
+  "32/1.avif": p32_1,
+  "32/2.avif": p32_2,
+  "32/3.avif": p32_3,
+  "32/4.avif": p32_4,
+  "32/5.avif": p32_5,
+  "32/6.avif": p32_6,
+  "32/7.avif": p32_7,
+  "32/8.jpg": p32_8,
+
+  "33/1.avif": p33_1,
+  "33/2.avif": p33_2,
+  "33/3.avif": p33_3,
+  "33/4.avif": p33_4,
+  "33/5.avif": p33_5,
+  "33/6.avif": p33_6,
+  "33/7.avif": p33_7,
+  "33/8.avif": p33_8,
+  "33/9.jpg": p33_9,
+
+  "34/1.avif": p34_1,
+  "34/2.avif": p34_2,
+  "34/3.avif": p34_3,
+  "34/4.avif": p34_4,
+  "34/5.avif": p34_5,
+  "34/6.avif": p34_6,
+  "34/7.avif": p34_7,
+  "34/8.jpg": p34_8,
+
+  "35/1.avif": p35_1,
+  "35/2.avif": p35_2,
+  "35/3.avif": p35_3,
+  "35/4.avif": p35_4,
+  "35/5.avif": p35_5,
+  "35/6.avif": p35_6,
+  "35/7.jpg": p35_7,
+
+  "36/1.jpg": p36_1,
+  "36/2.jpg": p36_2,
+  "36/3.jpg": p36_3,
+  "36/4.jpg": p36_4,
+  "36/5.jpg": p36_5,
+  "36/6.jpg": p36_6,
+
+  "37/1.jpg": p37_1,
+  "37/2.jpg": p37_2,
+  "37/3.jpg": p37_3,
+  "37/4.jpg": p37_4,
+  "37/5.jpg": p37_5,
+  "37/6.jpg": p37_6,
+  "37/7.jpg": p37_7,
+
+  "39/1.avif": p39_1,
+  "39/2.avif": p39_2,
+  "39/3.avif": p39_3,
+  "39/4.avif": p39_4,
+  "39/5.avif": p39_5,
+  "39/6.avif": p39_6,
+  "39/7.jpg": p39_7,
+
+  "40/1.avif": p40_1,
+  "40/2.avif": p40_2,
+  "40/3.avif": p40_3,
+  "40/4.avif": p40_4,
+  "40/5.avif": p40_5,
+  "40/6.avif": p40_6,
+  "40/7.jpg": p40_7,
+
+  "41/1.jpg": p41_1,
+  "41/2.jpg": p41_2,
+  "41/4.jpg": p41_4,
+  "41/5.jpg": p41_5,
+
+  "42/1.jpg": p42_1,
+  "42/2.jpg": p42_2,
+  "42/3.jpg": p42_3,
+  "42/4.jpg": p42_4,
+
+  "45/1.avif": p45_1,
+  "45/2.avif": p45_2,
+  "45/3.avif": p45_3,
+  "45/4.avif": p45_4,
+  "45/5.avif": p45_5,
+  "45/6.avif": p45_6,
+  "45/7.jpg": p45_7,
+
+  "46/1.jpg": p46_1,
+  "46/2.jpg": p46_2,
+  "46/3.jpg": p46_3,
+  "46/4.jpg": p46_4,
+  "46/5.jpg": p46_5,
+  "46/6.jpg": p46_6,
+  "46/7.jpg": p46_7,
 };
 
 export function getProductImage(imagePath: string): string {
