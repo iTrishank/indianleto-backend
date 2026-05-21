@@ -29,8 +29,8 @@ export default function About() {
         backgroundImage: `url(${aboutImage})`,
       }}
     >
-      <Container className="py-8 md:py-12">
-        <div className="max-w-3xl mx-auto text-center bg-[f03a3a]/90 p-6 rounded-xl backdrop-blur-md">
+      <Container className="py-20 md:py-12">
+        <div className="max-w-3xl mx-auto text-center bg-[#f03a3a]/30 p-6 rounded-xl backdrop-blur-[2px]">
           <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white" data-testid="heading-about">
             {t("header.aboutUs")}
           </h1>
