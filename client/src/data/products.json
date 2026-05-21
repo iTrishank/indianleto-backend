@@ -61,7 +61,7 @@
     },
     "11": {
       "sku": "IL0134675299",
-      "order": 3,
+      "order": 9,
       "title": {
         "en": "VELORA WHITE"
       },
@@ -415,7 +415,7 @@
     },
     "17": {
       "sku": "IL6790231856",
-      "order": 2,
+      "order": 3,
       "title": {
         "en": "SELORA MERMAID"
       },
@@ -1064,7 +1064,7 @@
     },
     "28": {
       "sku": "IL4578019635",
-      "order": 2,
+      "order": 18,
       "title": {
         "en": "ZELORIA"
       },
@@ -1359,7 +1359,7 @@
     },
     "33": {
       "sku": "IL4578019635",
-      "order": 8,
+      "order": 2,
       "title": {
         "en": "CELERINE"
       },

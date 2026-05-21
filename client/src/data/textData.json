@@ -10,7 +10,7 @@
         "themeColor": "Theme Color"
       },
       "about": {
-        "placeholder": "Indian Leto is a B2B apparel supplier connecting India’s finest women’s wear with the growing retail landscape of Russia. With nearly 20 years of manufacturing experience in India — where our production partners have delivered for international brands such as H&M and other major retailers — we bring the same world-class quality to boutique buyers, online sellers, and wholesale distributors across Russia. Based in both Jaipur and Moscow, we focus on premium summer dresses, elegant print gowns, and contemporary resort-wear crafted using India’s renowned textile craftsmanship. Our goal is to combine reliable Indian production, competitive factory-direct pricing, and consistent logistics into a seamless, trustworthy buying experience for the Russian market. Every collection is curated to match local tastes, seasonal demand, and evolving fashion trends, ensuring that our clients receive fresh, commercial, and high-quality products ready for retail."
+        "placeholder": "Indian Leto is a B2B apparel supplier connecting India’s finest women’s wear with the growing retail landscape of Russia. With nearly 20 years of manufacturing experience in India — where our production partners have delivered for international brands such as H&M and other major retailers — we bring the same world-class quality to boutique buyers, online sellers, and wholesale distributors across Russia. \n\n Based in both Jaipur and Moscow, we focus on premium summer dresses, elegant print gowns, and contemporary resort-wear crafted using India’s renowned textile craftsmanship. Our goal is to combine reliable Indian production, competitive factory-direct pricing, and consistent logistics into a seamless, trustworthy buying experience for the Russian market. Every collection is curated to match local tastes, seasonal demand, and evolving fashion trends, ensuring that our clients receive fresh, commercial, and high-quality products ready for retail."
       },
       "catalog": {
         "title": "Indianleto",
@@ -114,13 +114,13 @@
       },
       "footer": {
         "description": "IndianLeto is a B2B apparel supplier offering high-quality Indian dresses in bulk. Fast delivery, premium fabrics, and reliable wholesale service.",
-        "country1":"India",
-        "address1":{
+        "country1": "India",
+        "address1": {
           "one": "431 Vivek Vihar, Shyam Nagar",
           "two": "Jaipur, Rajasthan, India, 302019"
         },
-        "country2":"Russia",
-        "address2":{
+        "country2": "Russia",
+        "address2": {
           "one": "Izmailovski Prospekt, 5,",
           "two": "Moscow, Russia, 105203"
         },
@@ -241,13 +241,13 @@
       },
       "footer": {
         "description": "IndianLeto is a B2B apparel supplier offering high-quality Indian dresses in bulk. Fast delivery, premium fabrics, and reliable wholesale service.",
-        "country1":"India",
-        "address1":{
+        "country1": "India",
+        "address1": {
           "one": "431 Vivek Vihar, Shyam Nagar",
           "two": "Jaipur, Rajasthan, India, 302019"
         },
-        "country2":"Russia",
-        "address2":{
+        "country2": "Russia",
+        "address2": {
           "one": "Izmailovski Prospekt, 5,",
           "two": "Moscow, Russia, 105203"
         },
@@ -368,13 +368,13 @@
       },
       "footer": {
         "description": "IndianLeto is a B2B apparel supplier offering high-quality Indian dresses in bulk. Fast delivery, premium fabrics, and reliable wholesale service.",
-        "country1":"India",
-        "address1":{
+        "country1": "India",
+        "address1": {
           "one": "431 Vivek Vihar, Shyam Nagar",
           "two": "Jaipur, Rajasthan, India, 302019"
         },
-        "country2":"Russia",
-        "address2":{
+        "country2": "Russia",
+        "address2": {
           "one": "Izmailovski Prospekt, 5,",
           "two": "Moscow, Russia, 105203"
         },
@@ -495,13 +495,13 @@
       },
       "footer": {
         "description": "IndianLeto — это B2B-поставщик женской одежды, предлагающий высококачественные индийские платья оптом. Быстрая доставка, премиальные ткани и надёжный сервис для оптовых клиентов.",
-        "country1":"Индия",
-        "address1":{
+        "country1": "Индия",
+        "address1": {
           "one": "431 Вивек Вихар, Шьям Нагар,",
           "two": "Джайпур, Раджастхан, Индия, 302019"
         },
-        "country2":"Россия",
-        "address2":{
+        "country2": "Россия",
+        "address2": {
           "one": "Измайловский проспект, 5,",
           "two": "Москва, Россия, 105203"
         },
