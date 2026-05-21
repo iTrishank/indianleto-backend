@@ -13,14 +13,9 @@ interface CartListProps {
   getProductPriceTiers: (productId: string) => PriceTier[];
 }
 
-export function CartList({ 
-  items, 
-  onUpdateQuantity, 
-  onRemoveItem,
-  getProductPriceTiers 
-}: CartListProps) {
+export function CartList({ items, onUpdateQuantity, onRemoveItem, getProductPriceTiers }: CartListProps) {
   const { t, formatPrice } = useApp();
-  
+
   if (items.length === 0) {
     return (
       <Card className="min-h-[300px] flex items-center justify-center">
@@ -28,12 +23,8 @@ export function CartList({
           <div className="text-5xl text-muted-foreground/30">
             <ShoppingCart className="h-12 w-12 mx-auto" />
           </div>
-          <h3 className="text-base font-medium text-muted-foreground">
-            {t("cart.emptyCart")}
-          </h3>
-          <p className="text-sm text-muted-foreground">
-            {t("cart.reviewItems")}
-          </p>
+          <h3 className="text-base font-medium text-muted-foreground">{t("cart.emptyCart")}</h3>
+          <p className="text-sm text-muted-foreground">{t("cart.reviewItems")}</p>
         </div>
       </Card>
     );
@@ -43,7 +34,7 @@ export function CartList({
     <div className="space-y-3" data-testid="cart-list">
       {items.map((item, index) => {
         const priceTiers = getProductPriceTiers(item.productId);
-        
+
         const handleDecrement = () => {
           if (item.quantity > 1) {
             onUpdateQuantity(item.productId, item.variant.size, item.quantity - 1, priceTiers);
@@ -62,91 +53,47 @@ export function CartList({
         };
 
         return (
-          <Card 
-            key={`${item.productId}-${item.variant.size}`} 
-            className="p-3"
-            data-testid={`cart-item-${index}`}
-          >
+          <Card key={`${item.productId}-${item.variant.size}`} className="p-3" data-testid={`cart-item-${index}`}>
             <div className="hidden sm:flex gap-4">
               <div className="w-16 h-32 flex-shrink-0 rounded-md overflow-hidden bg-muted">
-                <LazyImage
-                  src={item.productImage}
-                  alt={item.productTitle}
-                  className="w-full h-full object-cover"
-                  skeletonClassName="w-full h-full"
-                  data-testid={`img-cart-item-${index}`}
-                />
+                <LazyImage src={item.productImage} alt={item.productTitle} className="w-full h-full object-cover" skeletonClassName="w-full h-full" data-testid={`img-cart-item-${index}`} />
               </div>
 
               <div className="flex-1 space-y-1">
-                <h3 
-                  className="font-medium text-sm line-clamp-1"
-                  data-testid={`text-cart-title-${index}`}
-                >
+                <h3 className="font-medium text-sm line-clamp-1" data-testid={`text-cart-title-${index}`}>
                   {item.productTitle}
                 </h3>
                 <div className="flex flex-wrap gap-2 text-xs text-muted-foreground">
-                  <span data-testid={`text-cart-size-${index}`}>{t("product.size")}: {item.variant.size}</span>
-                  <span data-testid={`text-cart-color-${index}`}>{t("product.color")}: {item.variant.color}</span>
+                  <span data-testid={`text-cart-size-${index}`}>
+                    {t("product.size")}: {item.variant.size}
+                  </span>
+                  <span data-testid={`text-cart-color-${index}`}>
+                    {t("product.color")}: {item.variant.color}
+                  </span>
                 </div>
               </div>
 
               <div className="flex items-center gap-3">
                 <div className="flex items-center gap-1">
-                  <Button
-                    type="button"
-                    variant="outline"
-                    size="icon"
-                    className="h-7 w-7"
-                    onClick={handleDecrement}
-                    disabled={item.quantity <= 1}
-                    data-testid={`button-cart-decrease-${index}`}
-                  >
+                  <Button type="button" variant="outline" size="icon" className="h-7 w-7" onClick={handleDecrement} disabled={item.quantity <= 1} data-testid={`button-cart-decrease-${index}`}>
                     <Minus className="h-3 w-3" />
                   </Button>
-                  <Input
-                    type="number"
-                    min={1}
-                    value={item.quantity}
-                    onChange={handleInputChange}
-                    className="w-14 h-7 text-center text-sm [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                    data-testid={`input-cart-quantity-${index}`}
-                  />
-                  <Button
-                    type="button"
-                    variant="outline"
-                    size="icon"
-                    className="h-7 w-7"
-                    onClick={handleIncrement}
-                    data-testid={`button-cart-increase-${index}`}
-                  >
+                  <Input type="number" min={1} value={item.quantity} onChange={handleInputChange} className="w-14 h-7 text-center text-sm [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" data-testid={`input-cart-quantity-${index}`} />
+                  <Button type="button" variant="outline" size="icon" className="h-7 w-7" onClick={handleIncrement} data-testid={`button-cart-increase-${index}`}>
                     <Plus className="h-3 w-3" />
                   </Button>
                 </div>
 
                 <div className="text-right min-w-[80px]">
-                  <div 
-                    className="font-semibold text-sm text-foreground"
-                    data-testid={`text-cart-unit-price-${index}`}
-                  >
+                  <div className="font-semibold text-sm text-foreground" data-testid={`text-cart-unit-price-${index}`}>
                     {formatPrice(item.unitPrice)}
                   </div>
-                  <div 
-                    className="text-xs text-muted-foreground"
-                    data-testid={`text-cart-subtotal-${index}`}
-                  >
+                  <div className="text-xs text-muted-foreground" data-testid={`text-cart-subtotal-${index}`}>
                     {t("product.total")}: {formatPrice(item.unitPrice * item.quantity)}
                   </div>
                 </div>
 
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="icon"
-                  className="h-7 w-7 text-destructive hover:text-destructive hover:bg-destructive/10"
-                  onClick={() => onRemoveItem(item.productId, item.variant.size)}
-                  data-testid={`button-cart-remove-${index}`}
-                >
+                <Button type="button" variant="ghost" size="icon" className="h-7 w-7 text-destructive hover:text-destructive hover:bg-destructive/10" onClick={() => onRemoveItem(item.productId, item.variant.size)} data-testid={`button-cart-remove-${index}`}>
                   <Trash2 className="h-4 w-4" />
                   <span className="sr-only">{t("cart.remove")}</span>
                 </Button>
@@ -156,69 +103,33 @@ export function CartList({
             <div className="sm:hidden space-y-2">
               <div className="flex items-center gap-2">
                 <div className="w-12 h-12 flex-shrink-0 rounded overflow-hidden bg-muted">
-                  <LazyImage
-                    src={item.productImage}
-                    alt={item.productTitle}
-                    className="w-full h-full object-cover"
-                    skeletonClassName="w-full h-full"
-                  />
+                  <LazyImage src={item.productImage} alt={item.productTitle} className="w-full h-full object-cover" skeletonClassName="w-full h-full" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-medium text-sm line-clamp-1">
-                    {item.productTitle}
-                  </h3>
+                  <h3 className="font-medium text-sm line-clamp-1">{item.productTitle}</h3>
                   <div className="text-xs text-muted-foreground">
                     {item.variant.size} / {item.variant.color}
                   </div>
                 </div>
-                <Button
-                  type="button"
-                  variant="ghost"
-                  size="icon"
-                  className="h-7 w-7 text-destructive hover:text-destructive hover:bg-destructive/10 flex-shrink-0"
-                  onClick={() => onRemoveItem(item.productId, item.variant.size)}
-                >
+                <Button type="button" variant="ghost" size="icon" className="h-7 w-7 text-destructive hover:text-destructive hover:bg-destructive/10 flex-shrink-0" onClick={() => onRemoveItem(item.productId, item.variant.size)}>
                   <Trash2 className="h-4 w-4" />
                 </Button>
               </div>
 
               <div className="flex items-center justify-between gap-2">
                 <div className="flex items-center gap-1">
-                  <Button
-                    type="button"
-                    variant="outline"
-                    size="icon"
-                    className="h-7 w-7"
-                    onClick={handleDecrement}
-                    disabled={item.quantity <= 1}
-                  >
+                  <Button type="button" variant="outline" size="icon" className="h-7 w-7" onClick={handleDecrement} disabled={item.quantity <= 1}>
                     <Minus className="h-3 w-3" />
                   </Button>
-                  <Input
-                    type="number"
-                    min={1}
-                    value={item.quantity}
-                    onChange={handleInputChange}
-                    className="w-12 h-7 text-center text-xs [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                  />
-                  <Button
-                    type="button"
-                    variant="outline"
-                    size="icon"
-                    className="h-7 w-7"
-                    onClick={handleIncrement}
-                  >
+                  <Input type="number" min={1} value={item.quantity} onChange={handleInputChange} className="w-12 h-7 text-center text-xs [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+                  <Button type="button" variant="outline" size="icon" className="h-7 w-7" onClick={handleIncrement}>
                     <Plus className="h-3 w-3" />
                   </Button>
                 </div>
 
                 <div className="text-right">
-                  <div className="font-semibold text-sm">
-                    {formatPrice(item.unitPrice)}
-                  </div>
-                  <div className="text-xs text-muted-foreground">
-                    = {formatPrice(item.unitPrice * item.quantity)}
-                  </div>
+                  <div className="font-semibold text-sm">{formatPrice(item.unitPrice)}</div>
+                  <div className="text-xs text-muted-foreground">= {formatPrice(item.unitPrice * item.quantity)}</div>
                 </div>
               </div>
             </div>

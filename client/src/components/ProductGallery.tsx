@@ -34,40 +34,20 @@ export function ProductGallery({ images, productTitle }: ProductGalleryProps) {
   return (
     <div className="space-y-4">
       <div className="relative aspect-[3/5] overflow-hidden rounded-lg bg-muted">
-        <LazyImage
-          src={images[currentIndex]}
-          alt={`${productTitle} - Image ${currentIndex + 1}`}
-          className="h-full w-full object-cover"
-          skeletonClassName="h-full w-full"
-          data-testid="img-gallery-main"
-        />
-        
+        {/* <LazyImage src={images[currentIndex]} alt={`${productTitle} - Image ${currentIndex + 1}`} className="h-full w-full object-cover" skeletonClassName="h-full w-full" data-testid="img-gallery-main" /> */}
+        {images[currentIndex].endsWith(".mp4") ? <video src={images[currentIndex]} className="h-full w-full object-cover" autoPlay muted loop playsInline /> : <LazyImage src={images[currentIndex]} alt={`${productTitle} - Image ${currentIndex + 1}`} className="h-full w-full object-cover" skeletonClassName="h-full w-full" data-testid="img-gallery-main" />}
+
         {images.length > 1 && (
           <>
-            <Button
-              variant="secondary"
-              size="icon"
-              className="hidden sm:flex absolute left-3 top-1/2 -translate-y-1/2 rounded-full opacity-80 hover:opacity-100"
-              onClick={goToPrevious}
-              data-testid="button-gallery-prev"
-            >
+            <Button variant="secondary" size="icon" className="hidden sm:flex absolute left-3 top-1/2 -translate-y-1/2 rounded-full opacity-80 hover:opacity-100" onClick={goToPrevious} data-testid="button-gallery-prev">
               <ChevronLeft className="h-5 w-5" />
               <span className="sr-only">Previous image</span>
             </Button>
-            <Button
-              variant="secondary"
-              size="icon"
-              className="hidden sm:flex absolute right-3 top-1/2 -translate-y-1/2 rounded-full opacity-80 hover:opacity-100"
-              onClick={goToNext}
-              data-testid="button-gallery-next"
-            >
+            <Button variant="secondary" size="icon" className="hidden sm:flex absolute right-3 top-1/2 -translate-y-1/2 rounded-full opacity-80 hover:opacity-100" onClick={goToNext} data-testid="button-gallery-next">
               <ChevronRight className="h-5 w-5" />
               <span className="sr-only">Next image</span>
             </Button>
-            <div 
-              className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-background/80 backdrop-blur-sm rounded-full px-3 py-1 text-sm font-medium"
-              data-testid="text-gallery-counter"
-            >
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-background/80 backdrop-blur-sm rounded-full px-3 py-1 text-sm font-medium" data-testid="text-gallery-counter">
               {currentIndex + 1} / {images.length}
             </div>
           </>
@@ -77,22 +57,8 @@ export function ProductGallery({ images, productTitle }: ProductGalleryProps) {
       {images.length > 1 && (
         <div className="grid grid-cols-4 gap-2">
           {images.map((image, index) => (
-            <button
-              key={index}
-              onClick={() => selectImage(index)}
-              className={`aspect-[3/5] overflow-hidden rounded-md border-2 transition-all ${
-                index === currentIndex
-                  ? "border-primary ring-2 ring-primary ring-offset-2"
-                  : "border-transparent hover:border-muted-foreground/30"
-              }`}
-              data-testid={`button-thumbnail-${index}`}
-            >
-              <LazyImage
-                src={image}
-                alt={`${productTitle} thumbnail ${index + 1}`}
-                className="h-full w-full object-cover"
-                skeletonClassName="h-full w-full"
-              />
+            <button key={index} onClick={() => selectImage(index)} className={`aspect-[3/5] overflow-hidden rounded-md border-2 transition-all ${index === currentIndex ? "border-primary ring-2 ring-primary ring-offset-2" : "border-transparent hover:border-muted-foreground/30"}`} data-testid={`button-thumbnail-${index}`}>
+              {image.endsWith(".mp4") ? <video src={image} className="h-full w-full object-cover" autoPlay muted loop playsInline /> : <LazyImage src={image} alt={`${productTitle} thumbnail ${index + 1}`} className="h-full w-full object-cover" skeletonClassName="h-full w-full" />}
             </button>
           ))}
         </div>

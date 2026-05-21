@@ -18,6 +18,7 @@ interface ProductData {
   description: Record<Language, string>;
   color: Record<Language, string>;
   sku: string;
+  order?: number;
   minOrder: number;
   sizeMinOrders?: Record<string, number>;
   images: string[];
@@ -26,10 +27,11 @@ interface ProductData {
   sizeMeasurements: Record<string, { skirtLength: number; bust: number; waist: number; hips: number }>;
 }
 
-interface TranslatedProduct extends Omit<Product, 'images' | 'hasPromo'> {
+interface TranslatedProduct extends Omit<Product, "images" | "hasPromo"> {
   images: string[];
   hasPromo?: boolean;
   sizeMinOrders?: Record<string, number>;
+  order?: number;
 }
 
 interface AppContextType {
@@ -186,7 +188,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     setCurrencyLoading(true);
     fetchCurrencyRates()
-      .then(rates => {
+      .then((rates) => {
         setExchangeRates(rates);
       })
       .finally(() => {
@@ -197,12 +199,12 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const setPrimaryColor = useCallback((color: string) => {
     setPrimaryColorState(color);
     const hsl = hexToHSL(color);
-    document.documentElement.style.setProperty('--primary', hsl);
+    document.documentElement.style.setProperty("--primary", hsl);
   }, []);
 
   useEffect(() => {
     const hsl = hexToHSL(primaryColor);
-    document.documentElement.style.setProperty('--primary', hsl);
+    document.documentElement.style.setProperty("--primary", hsl);
   }, []);
 
   const currencies = useMemo((): Currency[] => {
@@ -248,84 +250,93 @@ export function AppProvider({ children }: { children: ReactNode }) {
     }, 300);
   }, []);
 
-  const t = useCallback((key: string): string => {
-    const keys = key.split(".");
-    let value: unknown = textData.translations[language];
-    
-    for (const k of keys) {
-      if (value && typeof value === "object" && k in value) {
-        value = (value as Record<string, unknown>)[k];
-      } else {
-        return key;
+  const t = useCallback(
+    (key: string): string => {
+      const keys = key.split(".");
+      let value: unknown = textData.translations[language];
+
+      for (const k of keys) {
+        if (value && typeof value === "object" && k in value) {
+          value = (value as Record<string, unknown>)[k];
+        } else {
+          return key;
+        }
       }
-    }
-    
-    return typeof value === "string" ? value : key;
-  }, [language]);
 
-  const getColor = useCallback((productId: string): string => {
-    const productData = productsData.products[productId as keyof typeof productsData.products] as ProductData | undefined;
-    if (productData?.color) {
-      return productData.color[language] || productData.color.en;
-    }
-    return productId;
-  }, [language]);
+      return typeof value === "string" ? value : key;
+    },
+    [language]
+  );
 
-  const formatPrice = useCallback((priceInINR: number): string => {
-    const convertedPrice = priceInINR * currency.rate;
-    const formatted = convertedPrice.toFixed(2);
-    return `${currency.symbol}${formatted}`;
-  }, [currency]);
+  const getColor = useCallback(
+    (productId: string): string => {
+      const productData = productsData.products[productId as keyof typeof productsData.products] as ProductData | undefined;
+      if (productData?.color) {
+        return productData.color[language] || productData.color.en;
+      }
+      return productId;
+    },
+    [language]
+  );
+
+  const formatPrice = useCallback(
+    (priceInINR: number): string => {
+      const convertedPrice = priceInINR * currency.rate;
+      const formatted = convertedPrice.toFixed(2);
+      return `${currency.symbol}${formatted}`;
+    },
+    [currency]
+  );
 
   const products = useMemo((): TranslatedProduct[] => {
     const productIds = Object.keys(productsData.products) as Array<keyof typeof productsData.products>;
-    
+
     return productIds.map((productId) => {
       const productData = productsData.products[productId] as ProductData;
-      
+
       return {
         id: productId,
+        order: productData.order,
         title: productData.title[language] || productData.title.en,
         description: productData.description[language] || productData.description.en,
-        images: productData.images.map(img => getProductImage(img)),
+        images: productData.images.map((img) => getProductImage(img)),
         priceTiers: productData.priceTiers,
         attributes: {
           color: productData.color[language] || productData.color.en,
           sizes: productData.sizes,
-          measurements: productData.sizeMeasurements
+          measurements: productData.sizeMeasurements,
         },
         minOrder: productData.minOrder,
         sizeMinOrders: productData.sizeMinOrders,
         sku: productData.sku,
-        hasPromo: true
+        hasPromo: true,
       };
     });
   }, [language]);
 
-  const value = useMemo(() => ({
-    language,
-    setLanguage,
-    currency,
-    setCurrency,
-    t,
-    formatPrice,
-    currencies,
-    languages: textData.languages,
-    products,
-    ui: textData.ui,
-    getColor,
-    isLoading,
-    setIsLoading,
-    primaryColor,
-    setPrimaryColor,
-    currencyLoading,
-  }), [language, setLanguage, currency, setCurrency, t, formatPrice, currencies, products, getColor, isLoading, primaryColor, setPrimaryColor, currencyLoading]);
-
-  return (
-    <AppContext.Provider value={value}>
-      {children}
-    </AppContext.Provider>
+  const value = useMemo(
+    () => ({
+      language,
+      setLanguage,
+      currency,
+      setCurrency,
+      t,
+      formatPrice,
+      currencies,
+      languages: textData.languages,
+      products,
+      ui: textData.ui,
+      getColor,
+      isLoading,
+      setIsLoading,
+      primaryColor,
+      setPrimaryColor,
+      currencyLoading,
+    }),
+    [language, setLanguage, currency, setCurrency, t, formatPrice, currencies, products, getColor, isLoading, primaryColor, setPrimaryColor, currencyLoading]
   );
+
+  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 }
 
 export function useApp() {

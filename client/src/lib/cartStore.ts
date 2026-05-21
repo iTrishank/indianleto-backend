@@ -67,7 +67,9 @@ export function addToCart(
   const newItem: CartItem = {
     productId: product.id,
     productTitle: product.title,
-    productImage: product.images[0] || "",
+    productImage:
+  product.images.find((img) => !img.endsWith(".mp4")) ||
+  product.images[0] || "",
     variant: {
       size,
       color: product.attributes.color || ""

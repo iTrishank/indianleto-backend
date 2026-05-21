@@ -1,14 +1,6 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 import type { CartItem, Product, PriceTier } from "@shared/schema";
-import {
-  loadCart,
-  addToCart,
-  removeFromCart,
-  updateCartQuantity,
-  clearCart as clearCartStorage,
-  getCartItemCount,
-  getCartTotal
-} from "@/lib/cartStore";
+import { loadCart, addToCart, removeFromCart, updateCartQuantity, clearCart as clearCartStorage, getCartItemCount, getCartTotal } from "@/lib/cartStore";
 
 interface CartContextType {
   items: CartItem[];
@@ -30,15 +22,15 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const addItem = (product: Product, size: string, quantity: number) => {
-    setItems(current => addToCart(current, product, size, quantity));
+    setItems((current) => addToCart(current, product, size, quantity));
   };
 
   const removeItem = (productId: string, size: string) => {
-    setItems(current => removeFromCart(current, productId, size));
+    setItems((current) => removeFromCart(current, productId, size));
   };
 
   const updateQuantity = (productId: string, size: string, quantity: number, priceTiers: PriceTier[]) => {
-    setItems(current => updateCartQuantity(current, productId, size, quantity, priceTiers));
+    setItems((current) => updateCartQuantity(current, productId, size, quantity, priceTiers));
   };
 
   const clearCart = () => {
@@ -52,14 +44,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
     updateQuantity,
     clearCart,
     itemCount: getCartItemCount(items),
-    total: getCartTotal(items)
+    total: getCartTotal(items),
   };
 
-  return (
-    <CartContext.Provider value={value}>
-      {children}
-    </CartContext.Provider>
-  );
+  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }
 
 export function useCart() {

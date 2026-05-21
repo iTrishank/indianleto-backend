@@ -2,13 +2,14 @@
   "products": {
     "10": {
       "sku": "IL9023564188",
+      "order": 17,
       "title": {
         "en": "VELORA BLACK"
       },
       "description": {
-  "en": "Fabric: Moss Crape Spendex. \n Wash & Care: Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat.",
-  "ru": "Ткань: мосс-креп, спандекс. Уход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать, не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
-},
+        "en": "Fabric: Moss Crape Spendex. \n\n Wash & Care: Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat. ",
+        "ru": "Ткань: мосс-креп, спандекс. \n\n Уход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать, не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
+      },
       "color": {
         "primary": "Black"
       },
@@ -18,13 +19,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "10/2.jpeg",
-        "10/3.jpeg",
-        "10/4.jpeg",
-        "10/5.jpeg",
-        "10/6.jpeg"
-      ],
+      "images": ["10/2.jpeg", "10/3.jpeg", "10/4.jpeg", "10/5.jpeg", "10/6.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -42,41 +37,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 83,
-          "bust": 98,
-          "waist": null,
-          "hips": null
+          "skirtLength": 133,
+          "bust": 82,
+          "waist": 62,
+          "hips": 90
         },
         "M": {
-          "skirtLength": 84,
-          "bust": 102,
-          "waist": null,
-          "hips": null
+          "skirtLength": 134,
+          "bust": 86,
+          "waist": 66,
+          "hips": 93
         },
         "L": {
-          "skirtLength": 85,
-          "bust": 106,
-          "waist": null,
-          "hips": null
+          "skirtLength": 135,
+          "bust": 91,
+          "waist": 71,
+          "hips": 99
         }
       }
     },
     "11": {
       "sku": "IL0134675299",
+      "order": 3,
       "title": {
         "en": "VELORA WHITE"
       },
       "description": {
-  "en": "Fabric: Moss Crape Spendex. \n Wash & Care: Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat.",
-  "ru": "Ткань: мосс-креп, спандекс. Уход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать, не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
-},
+        "en": "Fabric: Moss Crape Spendex. \n\n Wash & Care: Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat.",
+        "ru": "Ткань: мосс-креп, спандекс. \n\n Уход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать, не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
+      },
       "color": {
         "primary": "White"
       },
@@ -86,12 +78,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "11/2.jpeg",
-        "11/3.jpeg",
-        "11/4.jpeg",
-        "11/5.jpeg"
-      ],
+      "images": ["11/2.jpeg", "11/3.jpeg", "11/4.jpeg", "11/5.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -109,41 +96,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 83,
-          "bust": 98,
-          "waist": null,
-          "hips": null
+          "skirtLength": 133,
+          "bust": 82,
+          "waist": 62,
+          "hips": 90
         },
         "M": {
-          "skirtLength": 84,
-          "bust": 102,
-          "waist": null,
-          "hips": null
+          "skirtLength": 134,
+          "bust": 86,
+          "waist": 66,
+          "hips": 93
         },
         "L": {
-          "skirtLength": 85,
-          "bust": 106,
-          "waist": null,
-          "hips": null
+          "skirtLength": 135,
+          "bust": 91,
+          "waist": 71,
+          "hips": 99
         }
       }
     },
     "12": {
       "sku": "IL1245786301",
+      "order": 6,
       "title": {
         "en": "REDLINE CO-ORD"
       },
       "description": {
-  "en": "Fabric: Nylon Lycra. Wash & Care:  Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat",
-  "ru": "Ткань: нейлон, лайкра. Уход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать, не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
-},
+        "en": "Fabric: Nylon Lycra. \n\n Wash & Care:  Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat",
+        "ru": "Ткань: нейлон, лайкра.\n\n Роскошный красный корсет для вечерних выходов и особых случаев выполнен из эластичного крепа и дополнен изящным высоким вырезом, подчёркивающим линию шеи. Корсетная конструкция с косточками визуально утягивает талию и создаёт женственный силуэт, а сатиновая отделка добавляет образу элегантности. Чашки на косточках обеспечивают лёгкую поддержку и комфортную посадку.\n Открытая спина с завязками на шее позволяет идеально подогнать модель по фигуре. Длинные облегающие рукава дополнены расклешёнными манжетами с разрезами, придавая образу утончённость. Для удобства модель оснащена застёжкой-молнией сзади и мягкой сатиновой подкладкой.\n\nУход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
+      },
       "color": {
         "primary": "Red"
       },
@@ -153,14 +137,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "12/2.jpeg",
-        "12/3.jpeg",
-        "12/4.jpeg",
-        "12/5.jpeg",
-        "12/6.jpeg",
-        "12/7.jpeg"
-      ],
+      "images": ["12/2.jpeg", "12/3.jpeg", "12/4.jpeg", "12/5.jpeg", "12/6.jpeg", "12/7.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -178,41 +155,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 83,
-          "bust": 98,
-          "waist": null,
-          "hips": null
+          "skirtLength": "54",
+          "bust": "86",
+          "waist": "65",
+          "hips": "91"
         },
         "M": {
-          "skirtLength": 84,
-          "bust": 102,
-          "waist": null,
-          "hips": null
+          "skirtLength": "54",
+          "bust": "92",
+          "waist": 71,
+          "hips": 97
         },
         "L": {
-          "skirtLength": 85,
-          "bust": 106,
-          "waist": null,
-          "hips": null
+          "skirtLength": 54,
+          "bust": 98,
+          "waist": 77,
+          "hips": 103
         }
       }
     },
     "13": {
       "sku": "IL2356897412",
+      "order": 4,
       "title": {
         "en": "VALESSIA MIDI"
       },
       "description": {
-  "en": "Fabric: Polyester Lycra. Wash & Care: Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat",
-  "ru": "Ткань: полиэстер, лайкра. Уход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать, не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
-},
+        "en": "Fabric: Polyester Lycra. \n\n Wash & Care: Machine wash cold, Wash with similar colors, Use mild detergent,Do not bleach, Do not wring, Dry in shade, Tumble dry low ,Iron on low heat",
+        "ru": "Ткань: полиэстер, лайкра. \n\n Уход: машинная стирка в холодной воде с вещами похожих цветов, использовать мягкое моющее средство. Не отбеливать, не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре."
+      },
       "color": {
         "primary": "Black"
       },
@@ -222,13 +196,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "13/2.jpeg",
-        "13/3.jpeg",
-        "13/4.jpeg",
-        "13/5.jpeg",
-        "13/6.jpeg"
-      ],
+      "images": ["13/2.jpeg", "13/3.jpeg", "13/4.jpeg", "13/5.jpeg", "13/6.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -246,41 +214,38 @@
           "price": 750
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 152.5,
-          "bust": "66-78",
-          "waist": "75-86",
-          "hips": "82-96"
+          "skirtLength": 133,
+          "bust": "82",
+          "waist": "62",
+          "hips": "90"
         },
         "M": {
-          "skirtLength": 154.7,
-          "bust": "70-82",
-          "waist": "79-90",
-          "hips": "86-100"
+          "skirtLength": 134,
+          "bust": "86",
+          "waist": "66",
+          "hips": "93"
         },
         "L": {
-          "skirtLength": 156.9,
-          "bust": "74-86",
-          "waist": "83-94",
-          "hips": "90-104"
+          "skirtLength": 135,
+          "bust": "91",
+          "waist": "71",
+          "hips": "99"
         }
       }
     },
     "14": {
       "sku": "IL3467908523",
+      "order": 1,
       "title": {
         "en": "NOIRA"
       },
       "description": {
-  "en": "Fabric: Georgette, Polyester Lining. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: жоржет, полиэстеровая подкладка. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Georgette, Polyester Lining. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: жоржет, полиэстеровая подкладка. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -290,14 +255,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "14/2.jpeg",
-        "14/3.jpeg",
-        "14/4.jpeg",
-        "14/5.jpeg",
-        "14/6.jpeg",
-        "14/7.jpeg"
-      ],
+      "images": ["14/2.jpeg", "14/3.jpeg", "14/4.jpeg", "14/5.jpeg", "14/6.jpeg", "14/7.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -315,41 +273,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 152.5,
-          "bust": "66-78",
-          "waist": "75-86",
-          "hips": "82-96"
+          "skirtLength": 133,
+          "bust": "81-86",
+          "waist": "71-76",
+          "hips": "91-96"
         },
         "M": {
-          "skirtLength": 154.7,
-          "bust": "70-82",
-          "waist": "79-90",
-          "hips": "86-100"
+          "skirtLength": 133,
+          "bust": "86-91",
+          "waist": "76-81",
+          "hips": "96-102"
         },
         "L": {
-          "skirtLength": 156.9,
-          "bust": "74-86",
-          "waist": "83-94",
-          "hips": "90-104"
+          "skirtLength": 134,
+          "bust": "91-97",
+          "waist": "81-86",
+          "hips": "102-107"
         }
       }
     },
     "15": {
       "sku": "IL4578019634",
+      "order": 7,
       "title": {
         "en": "LUXORIA"
       },
       "description": {
-  "en": "Fabric: Polyester based Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: полиэстер на основе лайкры. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Polyester based Lycra. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: полиэстер на основе лайкры. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -359,12 +314,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "15/2.jpeg",
-        "15/3.jpeg",
-        "15/4.jpeg",
-        "15/5.jpeg"
-      ],
+      "images": ["15/2.jpeg", "15/3.jpeg", "15/4.jpeg", "15/5.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -382,41 +332,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 152.5,
-          "bust": "66-78",
-          "waist": "75-86",
-          "hips": "82-96"
+          "skirtLength": 107,
+          "bust": "89-94",
+          "waist": "74-79",
+          "hips": "94-99"
         },
         "M": {
-          "skirtLength": 154.7,
-          "bust": "70-82",
-          "waist": "79-90",
-          "hips": "86-100"
+          "skirtLength": 107,
+          "bust": "94-99",
+          "waist": "79-84",
+          "hips": "99-104"
         },
         "L": {
-          "skirtLength": 156.9,
-          "bust": "74-86",
-          "waist": "83-94",
-          "hips": "90-104"
+          "skirtLength": 109,
+          "bust": "99-104",
+          "waist": "84-89",
+          "hips": "104-109"
         }
       }
     },
     "16": {
       "sku": "IL5689120745",
+      "order": 9,
       "title": {
         "en": "ZARELLE JUMPSUIT"
       },
       "description": {
-  "en": "Fabric: Polyester Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: полиэстер, лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Polyester Lycra. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: полиэстер, лайкра. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "White"
       },
@@ -426,14 +373,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "16/2.jpeg",
-        "16/3.jpeg",
-        "16/4.jpeg",
-        "16/5.jpeg",
-        "16/6.jpeg",
-        "16/7.jpeg"
-      ],
+      "images": ["16/2.jpeg", "16/3.jpeg", "16/4.jpeg", "16/5.jpeg", "16/6.jpeg", "16/7.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -451,41 +391,38 @@
           "price": 850
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 152.5,
-          "bust": "66-78",
-          "waist": "75-86",
-          "hips": "82-96"
+          "skirtLength": 142,
+          "bust": 83,
+          "waist": 63,
+          "hips": 88
         },
         "M": {
-          "skirtLength": 154.7,
-          "bust": "70-82",
-          "waist": "79-90",
-          "hips": "86-100"
+          "skirtLength": 144,
+          "bust": 88,
+          "waist": 68,
+          "hips": 93
         },
         "L": {
-          "skirtLength": 156.9,
-          "bust": "74-86",
-          "waist": "83-94",
-          "hips": "90-104"
+          "skirtLength": 147,
+          "bust": 93,
+          "waist": 73,
+          "hips": 99
         }
       }
     },
     "17": {
       "sku": "IL6790231856",
+      "order": 2,
       "title": {
         "en": "SELORA MERMAID"
       },
       "description": {
-  "en": "Fabric: Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Lycra. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: лайкра. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Yellow"
       },
@@ -495,17 +432,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "17/2.jpeg",
-        "17/3.jpeg",
-        "17/4.jpeg",
-        "17/5.jpeg",
-        "17/6.jpeg",
-        "17/7.jpeg",
-        "17/8.jpeg",
-        "17/9.jpeg",
-        "17/10.jpeg"
-      ],
+      "images": ["17/v.mp4", "17/2.jpeg", "17/3.jpeg", "17/4.jpeg", "17/5.jpeg", "17/6.jpeg", "17/7.jpeg", "17/8.jpeg", "17/9.jpeg", "17/10.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -523,41 +450,38 @@
           "price": 850
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 152.5,
-          "bust": "66-78",
-          "waist": "75-86",
-          "hips": "82-96"
+          "skirtLength": 118,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 154.7,
-          "bust": "70-82",
-          "waist": "79-90",
-          "hips": "86-100"
+          "skirtLength": 119,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 156.9,
-          "bust": "74-86",
-          "waist": "83-94",
-          "hips": "90-104"
+          "skirtLength": 120,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "18": {
       "sku": "IL7801342967",
+      "order": 10,
       "title": {
         "en": "VIRELLE CO-ORD"
       },
       "description": {
-  "en": "Fabric: Top (Cotton), Bottom (Poly Blend). For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: верх — хлопок, низ — смесовый полиэстер. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Top (Cotton), Bottom (Poly Blend). \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: верх — хлопок, низ — смесовый полиэстер. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "White"
       },
@@ -567,13 +491,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "18/2.jpg",
-        "18/3.jpeg",
-        "18/4.jpeg",
-        "18/5.jpeg",
-        "18/6.jpeg"
-      ],
+      "images": ["18/2.jpg", "18/3.jpeg", "18/4.jpeg", "18/5.jpeg", "18/6.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -591,41 +509,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 118,
-          "bust": "70-88",
-          "waist": "62-68",
-          "hips": "78-94"
+          "skirtLength": null,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 119,
-          "bust": "74-92",
-          "waist": "66-72",
-          "hips": "82-98"
+          "skirtLength": null,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 120,
-          "bust": "78-98",
-          "waist": "70-78",
-          "hips": "86-104"
+          "skirtLength": null,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "19": {
       "sku": "IL8912453078",
+      "order": 5,
       "title": {
         "en": "ESMERA CO-ORD"
       },
       "description": {
-  "en": "Fabric: Mesh & Satin Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: сетка и сатин-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Mesh & Satin Lycra. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: сетка и сатин-лайкра. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -635,14 +550,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "19/2.jpeg",
-        "19/3.jpeg",
-        "19/4.jpeg",
-        "19/5.jpeg",
-        "19/6.jpeg",
-        "19/7.jpeg"
-      ],
+      "images": ["19/v.mp4", "19/2.jpeg", "19/3.jpeg", "19/4.jpeg", "19/5.jpeg", "19/6.jpeg", "19/7.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -660,41 +568,38 @@
           "price": 850
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 123,
-          "bust": 95,
-          "waist": 68,
-          "hips": 35
+          "skirtLength": 104,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 125,
-          "bust": 100,
-          "waist": 73,
-          "hips": 35.8
+          "skirtLength": 104,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 127,
-          "bust": 106,
-          "waist": 79,
-          "hips": 36.6
+          "skirtLength": 104,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "20": {
       "sku": "IL9023564189",
+      "order": 15,
       "title": {
         "en": "MONELIA"
       },
       "description": {
-  "en": "Fabric: Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Lycra. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: лайкра. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -704,12 +609,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "20/2.jpg",
-        "20/3.jpg",
-        "20/4.jpg",
-        "20/5.jpeg"
-      ],
+      "images": ["20/2.jpg", "20/3.jpg", "20/4.jpg", "20/5.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -727,41 +627,38 @@
           "price": 850
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 133,
-          "bust": 90,
-          "waist": 64,
-          "hips": 116
+          "skirtLength": 128,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 134,
-          "bust": 94,
-          "waist": 68,
-          "hips": 120
+          "skirtLength": 129,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 135,
-          "bust": 98,
-          "waist": 72,
-          "hips": 124
+          "skirtLength": 130,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "21": {
       "sku": "IL0134675200",
+      "order": 16,
       "title": {
         "en": "SERAPHINA WHITE"
       },
       "description": {
-  "en": "Fabric: Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Lycra. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: лайкра. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "White"
       },
@@ -771,13 +668,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "21/2.jpeg",
-        "21/3.jpeg",
-        "21/4.jpeg",
-        "21/5.jpeg",
-        "21/6.jpeg"
-      ],
+      "images": ["21/2.jpeg", "21/3.jpeg", "21/4.jpeg", "21/5.jpeg", "21/6.jpeg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -795,41 +686,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 84,
-          "bust": 96,
-          "waist": null,
-          "hips": null
+          "skirtLength": 128,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 85,
-          "bust": 100,
-          "waist": null,
-          "hips": null
+          "skirtLength": 129,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 86,
-          "bust": 104,
-          "waist": null,
-          "hips": null
+          "skirtLength": 130,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "22": {
       "sku": "IL1245786302",
+      "order": 34,
       "title": {
         "en": "FLORAL"
       },
       "description": {
-  "en": "Fabric: Cotton. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: хлопок. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Cotton. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: хлопок. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "White"
       },
@@ -839,17 +727,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "22/1.jpg",
-        "22/2.jpg",
-        "22/3.jpg",
-        "22/4.jpg",
-        "22/5.jpg",
-        "22/6.jpg",
-        "22/7.jpg",
-        "22/8.jpg",
-        "22/9.jpg"
-      ],
+      "images": ["22/1.jpg", "22/2.jpg", "22/3.jpg", "22/4.jpg", "22/5.jpg", "22/6.jpg", "22/7.jpg", "22/8.jpg", "22/9.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -867,41 +745,38 @@
           "price": 850
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 129,
-          "bust": "86-90",
-          "waist": 72,
-          "hips": null
+          "skirtLength": 128,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 130,
-          "bust": "90-94",
-          "waist": 76,
-          "hips": null
+          "skirtLength": 129,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 131,
-          "bust": "94-98",
-          "waist": 80,
-          "hips": null
+          "skirtLength": 130,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "23": {
       "sku": "IL2356897413",
+      "order": 19,
       "title": {
-        "en": "ELIORA"
+        "en": "ELORA"
       },
       "description": {
-  "en": "Fabric: Nylon Lycra and Georgette. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: нейлон-лайкра и жоржет. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Nylon Lycra and Georgette.\n\n Beautifully designed for summer, 'Dionne' has a romantic, vacation vibe. Cut from our lustrous duchess satin and lightweight georgette in a smooth espresso hue, the sweetheart neckline has underwired cups to compliment the bust and a corseted bodice to cinch the waist.\n The ruffled sleeves can be worn on or off the shoulders and we love the ruffled hem for pretty movement. It is fully lined for comfort and has a zip to the back for easy on. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: нейлон-лайкра и жоржет. \n\n Романтичное платье ‘Dionne’, созданное для летнего сезона и отдыха, выполнено из роскошного сатина duchess и лёгкого жоржета в благородном оттенке эспрессо. Лиф с чашками на косточках красиво подчёркивает линию декольте, а корсетная основа акцентирует талию, создавая изящный женственный силуэт. \n Воздушные рукава с рюшами можно носить как на плечах, так и спущенными, добавляя образу лёгкость и романтичность. Низ с воланами красиво движется при ходьбе, а мягкая подкладка обеспечивает комфорт в течение всего дня. Для удобства модель дополнена застёжкой-молнией сзади.\n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Brown"
       },
@@ -911,15 +786,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "23/1.avif",
-        "23/2.avif",
-        "23/3.avif",
-        "23/4.avif",
-        "23/5.avif",
-        "23/6.avif",
-        "23/7.jpg"
-      ],
+      "images": ["23/v.mp4", "23/1.avif", "23/2.avif", "23/3.avif", "23/4.avif", "23/5.avif", "23/6.avif", "23/7.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -937,41 +804,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
           "skirtLength": 82,
-          "bust": null,
-          "waist": 31,
-          "hips": "84-104"
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 141,
-          "bust": null,
-          "waist": 33,
-          "hips": "88-108"
+          "skirtLength": 83,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 143,
-          "bust": null,
-          "waist": 36,
-          "hips": "94-114"
+          "skirtLength": 84,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "24": {
       "sku": "IL3467908524",
+      "order": 21,
       "title": {
         "en": "AURELUNE DRAPE"
       },
       "description": {
-  "en": "Fabric: Nylon Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: нейлон-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Nylon Lycra. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: нейлон-лайкра. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -981,14 +845,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "24/1.jpg",
-        "24/2.jpg",
-        "24/3.jpg",
-        "24/4.jpg",
-        "24/5.jpg",
-        "24/6.jpg"
-      ],
+      "images": ["24/1.jpg", "24/2.jpg", "24/3.jpg", "24/4.jpg", "24/5.jpg", "24/6.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1006,41 +863,38 @@
           "price": 950
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 74,
-          "bust": 86,
-          "waist": 68,
-          "hips": 94
+          "skirtLength": 90,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 91,
-          "bust": 73,
-          "waist": 99,
-          "hips": null
+          "skirtLength": 90,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 101,
-          "bust": 83,
-          "waist": 109,
-          "hips": null
+          "skirtLength": 92,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "25": {
       "sku": "IL4578019635",
+      "order": 13,
       "title": {
-        "en": "SESILIA"
+        "en": "CECILIA"
       },
       "description": {
-  "en": "Fabric: Laser Georgette. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: лазерный жоржет. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Laser Georgette. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: лазерный жоржет. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -1050,14 +904,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "25/1.avif",
-        "25/3.avif",
-        "25/4.avif",
-        "25/5.avif",
-        "25/6.avif",
-        "25/7.jpg"
-      ],
+      "images": ["25/1.avif", "25/3.avif", "25/4.avif", "25/5.avif", "25/6.avif", "25/7.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1075,41 +922,38 @@
           "price": 750
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 74,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 88,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 76,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 89,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 78,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 90,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "26": {
       "sku": "IL4578019635",
+      "order": 30,
       "title": {
-        "en": "CELERINE"
+        "en": "MILA"
       },
       "description": {
-  "en": "Fabric: Moss Georgette with Sequence Scattered. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: мосс-жоржет с рассеянными пайетками. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Moss Georgette with Sequence Scattered. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: мосс-жоржет с рассеянными пайетками. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "White"
       },
@@ -1119,13 +963,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "26/1.jpg",
-        "26/2.jpg",
-        "26/3.jpg",
-        "26/4.jpg",
-        "26/5.jpg"
-      ],
+      "images": ["26/1.jpg", "26/2.jpg", "26/3.jpg", "26/4.jpg", "26/5.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1143,41 +981,38 @@
           "price": 950
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 32,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 82,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 32,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 83,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 32,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 84,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "27": {
       "sku": "IL4578019635",
+      "order": 20,
       "title": {
-        "en": "SOLÉVIA"
+        "en": "SOLEVIA"
       },
       "description": {
-  "en": "Fabric: Nylon Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: нейлон-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Nylon Lycra. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: нейлон-лайкра. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Red"
       },
@@ -1187,12 +1022,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "27/1.jpg",
-        "27/2.jpg",
-        "27/3.jpg",
-        "27/4.jpg"
-      ],
+      "images": ["27/1.jpg", "27/2.jpg", "27/3.jpg", "27/4.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1210,41 +1040,38 @@
           "price": 850
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 32,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 98,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 32,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 99,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 32,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 100,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "28": {
       "sku": "IL4578019635",
+      "order": 2,
       "title": {
-        "en": "ZÉLORIA"
+        "en": "ZELORIA"
       },
       "description": {
-  "en": "Fabric: Polyester Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: полиэстер, лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Polyester Lycra. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: полиэстер, лайкра. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -1254,12 +1081,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "28/1.jpg",
-        "28/2.jpg",
-        "28/3.jpg",
-        "28/4.jpg"
-      ],
+      "images": ["28/1.jpg", "28/2.jpg", "28/3.jpg", "28/4.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1277,41 +1099,38 @@
           "price": 850
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 32,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 82,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 32,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 83,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 32,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 84,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "29": {
       "sku": "IL4578019635",
+      "order": 23,
       "title": {
         "en": "VALENZIA"
       },
       "description": {
-  "en": "Fabric: Crepe. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: креп. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Crepe. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: креп. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Pink"
       },
@@ -1321,13 +1140,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "29/1.jpg",
-        "29/2.jpg",
-        "29/3.jpg",
-        "29/4.jpg",
-        "29/5.jpg"
-      ],
+      "images": ["29/1.jpg", "29/2.jpg", "29/3.jpg", "29/4.jpg", "29/5.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1345,41 +1158,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 32,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 128,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 32,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 129,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 32,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 130,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "30": {
       "sku": "IL4578019635",
+      "order": 11,
       "title": {
         "en": "CELESTRA"
       },
       "description": {
-  "en": "Fabric: Polyester Lycra and Mesh Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: полиэстер-лайкра и сетка-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Polyester Lycra and Mesh Lycra.\n\nSleek and effortlessly sexy, 'CELESTRA' is your go to dress this season. It's cut from our signature power mesh for an ultra snatched fit and features a chic shoulder overlay and flattering corset bodice. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: полиэстер-лайкра и сетка-лайкра.\n\nЭлегантное и соблазнительное платье ‘CELESTRA’ станет идеальным выбором этого сезона. Модель выполнена из фирменной эластичной сетки power mesh, обеспечивающей эффектную утягивающую посадку по фигуре. Дизайн дополнен стильной накидкой на плечи и подчёркивающим силуэт корсетным лифом. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -1389,15 +1199,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "30/1.avif",
-        "30/2.avif",
-        "30/3.avif",
-        "30/4.avif",
-        "30/5.avif",
-        "30/6.avif",
-        "30/7.jpg"
-      ],
+      "images": ["30/1.avif", "30/2.avif", "30/3.avif", "30/4.avif", "30/5.avif", "30/6.avif", "30/7.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1415,41 +1217,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 121,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 121,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 121,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "31": {
       "sku": "IL4578019635",
+      "order": 12,
       "title": {
         "en": "CELESTRA"
       },
       "description": {
-  "en": "Fabric: Polyester Lycra and Mesh Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: полиэстер-лайкра и сетка-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Polyester Lycra and Mesh Lycra.\n\nSleek and effortlessly sexy, 'CELESTRA' is your go to dress this season. It's cut from our signature power mesh for an ultra snatched fit and features a chic shoulder overlay and flattering corset bodice. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: полиэстер-лайкра и сетка-лайкра.\n\nЭлегантное и соблазнительное платье ‘CELESTRA’ станет идеальным выбором этого сезона. Модель выполнена из фирменной эластичной сетки power mesh, обеспечивающей эффектную утягивающую посадку по фигуре. Дизайн дополнен стильной накидкой на плечи и подчёркивающим силуэт корсетным лифом. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Red"
       },
@@ -1459,12 +1258,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "31/1.avif",
-        "31/2.avif",
-        "31/3.avif",
-        "31/4.jpg"
-      ],
+      "images": ["31/v.mp4", "31/1.avif", "31/2.avif", "31/3.avif", "31/4.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1482,184 +1276,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 121,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 121,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 121,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "32": {
       "sku": "IL4578019635",
+      "order": 14,
       "title": {
-        "en": "CELÉRINE"
+        "en": "CELERINE"
       },
       "description": {
-  "en": "Fabric: Georgette based Polyester Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: полиэстер-лайкра на основе жоржета. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
-      "color": {
-        "primary": "Black"
+        "en": "Fabric: Georgette based Polyester Lycra. \n\n Our 'CELERINE' dress is beautifully embellished with fluttery ruffles that add pretty dimension to this ultra sexy silhouette. Cut from lightweight georgette, 'Ariela' is elegant and striking in a rich espresso hue.\n It has a draped cowl neckline and effortlessly skims over your curves with a thigh high split to showcase the legs. It's fully lined for comfort and zips to the left side for easy on. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: полиэстер-лайкра на основе жоржета.\n\n Платье CELERINE украшено воздушными рюшами, которые добавляют объём и подчёркивают эффектный женственный силуэт. Модель выполнена из лёгкого жоржета в насыщенном оттенке эспрессо, сочетая элегантность и выразительный стиль.\n Драпированный вырез-хомут мягко подчёркивает линию декольте, а струящийся крой красиво облегает фигуру. Высокий разрез на бедре эффектно открывает ноги, добавляя образу соблазнительности. Платье полностью на подкладке для максимального комфорта и дополнено боковой молнией для удобной посадки. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
       },
-      "minOrder": 15,
-      "sizeMinOrders": {
-        "S": 15,
-        "M": 15,
-        "L": 15
-      },
-      "images": [
-        "32/1.avif",
-        "32/2.avif",
-        "32/3.avif",
-        "32/4.avif",
-        "32/5.avif",
-        "32/6.avif",
-        "32/7.avif",
-        "32/8.jpg"
-      ],
-      "priceTiers": [
-        {
-          "minQty": 15,
-          "maxQty": 15,
-          "price": 1200
-        },
-        {
-          "minQty": 16,
-          "maxQty": 99,
-          "price": 999
-        },
-        {
-          "minQty": 100,
-          "maxQty": null,
-          "price": 900
-        }
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "sizeMeasurements": {
-        "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
-        },
-        "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
-        },
-        "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
-        }
-      }
-    },
-    "33": {
-      "sku": "IL4578019635",
-      "title": {
-        "en": "CELÉRINE"
-      },
-      "description": {
-  "en": "Fabric: Georgette based Polyester Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: полиэстер-лайкра на основе жоржета. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
-      "color": {
-        "primary": "Red"
-      },
-      "minOrder": 15,
-      "sizeMinOrders": {
-        "S": 15,
-        "M": 15,
-        "L": 15
-      },
-      "images": [
-        "33/1.avif",
-        "33/2.avif",
-        "33/3.avif",
-        "33/4.avif",
-        "33/5.avif",
-        "33/6.avif",
-        "33/7.avif",
-        "33/8.avif",
-        "33/9.jpg"
-      ],
-      "priceTiers": [
-        {
-          "minQty": 15,
-          "maxQty": 15,
-          "price": 1200
-        },
-        {
-          "minQty": 16,
-          "maxQty": 99,
-          "price": 999
-        },
-        {
-          "minQty": 100,
-          "maxQty": null,
-          "price": 900
-        }
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "sizeMeasurements": {
-        "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
-        },
-        "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
-        },
-        "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
-        }
-      }
-    },
-    "34": {
-      "sku": "IL4578019635",
-      "title": {
-        "en": "SOLÉVIA"
-      },
-      "description": {
-  "en": "Fabric: Laser Georgette. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: лазерный жоржет. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
       "color": {
         "primary": "Brown"
       },
@@ -1669,21 +1317,12 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "34/1.avif",
-        "34/2.avif",
-        "34/3.avif",
-        "34/4.avif",
-        "34/5.avif",
-        "34/6.avif",
-        "34/7.avif",
-        "34/8.jpg"
-      ],
+      "images": ["32/v.mp4", "32/1.avif", "32/2.avif", "32/3.avif", "32/4.avif", "32/5.avif", "32/6.avif", "32/7.avif", "32/8.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
           "maxQty": 15,
-          "price": 1100
+          "price": 1200
         },
         {
           "minQty": 16,
@@ -1696,41 +1335,38 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 151,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 151,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 151,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
-    "35": {
+    "33": {
       "sku": "IL4578019635",
+      "order": 8,
       "title": {
-        "en": "SERAVINA"
+        "en": "CELERINE"
       },
       "description": {
-  "en": "Fabric: Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Georgette based Polyester Lycra. \n\n Our 'CELERINE' dress is beautifully embellished with fluttery ruffles that add pretty dimension to this ultra sexy silhouette. Cut from lightweight georgette, 'Ariela' is elegant and striking in a rich espresso hue.\n It has a draped cowl neckline and effortlessly skims over your curves with a thigh high split to showcase the legs. It's fully lined for comfort and zips to the left side for easy on. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: полиэстер-лайкра на основе жоржета.\n\n Платье CELERINE украшено воздушными рюшами, которые добавляют объём и подчёркивают эффектный женственный силуэт. Модель выполнена из лёгкого жоржета в насыщенном оттенке эспрессо, сочетая элегантность и выразительный стиль.\n Драпированный вырез-хомут мягко подчёркивает линию декольте, а струящийся крой красиво облегает фигуру. Высокий разрез на бедре эффектно открывает ноги, добавляя образу соблазнительности. Платье полностью на подкладке для максимального комфорта и дополнено боковой молнией для удобной посадки. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Red"
       },
@@ -1740,15 +1376,66 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "35/1.avif",
-        "35/2.avif",
-        "35/3.avif",
-        "35/4.avif",
-        "35/5.avif",
-        "35/6.avif",
-        "35/7.jpg"
+      "images": ["33/v.mp4", "33/1.avif", "33/2.avif", "33/3.avif", "33/4.avif", "33/5.avif", "33/6.avif", "33/7.avif", "33/8.avif", "33/9.jpg"],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1200
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 999
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 900
+        }
       ],
+      "sizes": ["S", "M", "L"],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 151,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
+        },
+        "M": {
+          "skirtLength": 151,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
+        },
+        "L": {
+          "skirtLength": 151,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
+        }
+      }
+    },
+    "34": {
+      "sku": "IL4578019635",
+      "order": 24,
+      "title": {
+        "en": "ESPANIA"
+      },
+      "description": {
+        "en": "Fabric: Laser Georgette.\n\n'ESPANIA' has a deep plunge neckline that drapes openly to the waist with a classic collar and has a slight oversized feel with floaty sleeves that fall to a one button, split flared cuff. The skirt has a a contrast lining for modest coverage and we love how it gathers down to the mini hem, met by an open split for easy movement.\n No need to find something to wear under your dress as we've got it covered. Completing the look is our triangle, bikini style bralette that is cut from our special power mesh to shape and sculpt the bust for the perfect cleavage. It has a zip to the left side for easy on.  \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: лазерный жоржет. \n\nГлубокий вырез с открытой драпировкой до талии дополнен классическим воротником, а свободный силуэт с воздушными рукавами создаёт лёгкий и утончённый образ. Манжеты с разрезами и застёжкой на одну пуговицу добавляют изысканную деталь, а мини-юбка с контрастной подкладкой и открытым разрезом обеспечивает комфорт и свободу движений.\n Для завершения образа в комплект входит треугольный бралетт в стиле бикини, выполненный из фирменной эластичной сетки power mesh, которая красиво моделирует и подчёркивает линию груди. Платье дополнено боковой молнией для удобной посадки.\n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
+      "color": {
+        "primary": "Brown"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": ["34/v.mp4", "34/1.avif", "34/2.avif", "34/3.avif", "34/4.avif", "34/5.avif", "34/6.avif", "34/7.avif", "34/8.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1766,41 +1453,97 @@
           "price": 900
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 90,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 90,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 90,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
+        }
+      }
+    },
+    "35": {
+      "sku": "IL4578019635",
+      "order": 29,
+      "title": {
+        "en": "SERAVINA"
+      },
+      "description": {
+        "en": "Fabric: Stretch Cotton, Lace Ladder Trim, Broderie Lace Trim, Heavy Rayon.\n\nCut from stretch cotton that's perfect for warm summer evenings, this elegant design is detailed with vintage-inspired covered buttons and delicate broderie anglaise trim along the bust. Tiered ruffles at the hem add soft movement and a romantic touch.\n The underwired cups provide flattering support, while adjustable straps and internal boning sculpt the waist for a beautifully feminine silhouette. Fully lined for comfort and finished with a back zip for easy wear.\n\nFor best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: эластичный хлопок, кружевная отделка ladder lace, кружево broderie anglaise, плотный район.\n\nМодель выполнена из эластичного хлопка, идеально подходящего для тёплых летних вечеров. Платье украшено винтажными обтянутыми пуговицами и изящной отделкой broderie anglaise вдоль линии груди. Многоярусные рюши по низу добавляют образу лёгкость и романтичность.\n Чашки на косточках обеспечивают красивую поддержку, а регулируемые бретели и внутренняя корсетная основа подчёркивают талию и формируют женственный силуэт. Модель полностью на подкладке для максимального комфорта и дополнена застёжкой-молнией сзади.\n\nУход: машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка при низкой температуре. Гладить на низкой температуре при необходимости."
+      },
+      "color": {
+        "primary": "Red"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": ["35/v.mp4", "35/1.avif", "35/2.avif", "35/3.avif", "35/4.avif", "35/5.avif", "35/6.avif", "35/7.jpg"],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1100
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 999
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 900
+        }
+      ],
+      "sizes": ["S", "M", "L"],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 83,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
+        },
+        "M": {
+          "skirtLength": 83,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
+        },
+        "L": {
+          "skirtLength": 83,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "36": {
       "sku": "IL4578019635",
+      "order": 22,
       "title": {
         "en": "MIRALIS"
       },
       "description": {
-  "en": "Fabric: Velvet. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: бархат. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Velvet.\n\nThe square neckline with a striking jewel-embellished trim offers a daring touch of extravagance against luxurious black velvet. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: бархат.\n\nКвадратный вырез с эффектной отделкой из декоративных камней добавляет образу смелую нотку роскоши и элегантно контрастирует с благородным чёрным бархатом.\n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -1810,14 +1553,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "36/1.jpg",
-        "36/2.jpg",
-        "36/3.jpg",
-        "36/4.jpg",
-        "36/5.jpg",
-        "36/6.jpg"
-      ],
+      "images": ["36/v.mp4", "36/1.jpg", "36/2.jpg", "36/3.jpg", "36/4.jpg", "36/5.jpg", "36/6.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1835,41 +1571,38 @@
           "price": 1350
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 83,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 83,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 83,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "37": {
       "sku": "IL4578019635",
+      "order": 25,
       "title": {
         "en": "VIRELUX"
       },
       "description": {
-  "en": "Fabric: Suede. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: замша. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Suede. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: замша. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Green"
       },
@@ -1879,15 +1612,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "37/1.jpg",
-        "37/2.jpg",
-        "37/3.jpg",
-        "37/4.jpg",
-        "37/5.jpg",
-        "37/6.jpg",
-        "37/7.jpg"
-      ],
+      "images": ["37/1.jpg", "37/2.jpg", "37/3.jpg", "37/4.jpg", "37/5.jpg", "37/6.jpg", "37/7.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1905,41 +1630,38 @@
           "price": 800
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 90,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 90,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 92,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "39": {
       "sku": "IL4578019635",
+      "order": 28,
       "title": {
         "en": "RUBELLA"
       },
       "description": {
-  "en": "Fabric: Nylon Lycra with the beautiful highlight of satin ruffle. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: нейлон-лайкра с красивой отделкой из сатиновых рюшей. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Nylon Lycra with the beautiful highlight of satin ruffle.\n\nIt’s adorned with a ruffle hem and is cut straight across the bust for an ultra flattering fit. Team yours with pretty heels and let the dress do the talking. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: нейлон-лайкра с красивой отделкой из сатиновых рюшей.\n\nМодель украшена оборкой по низу и имеет прямой вырез по линии груди, создающий особенно выгодную и женственную посадку. Дополните образ изящными туфлями на каблуке — это платье само станет главным акцентом вашего выхода. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -1949,15 +1671,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "39/1.avif",
-        "39/2.avif",
-        "39/3.avif",
-        "39/4.avif",
-        "39/5.avif",
-        "39/6.avif",
-        "39/7.jpg"
-      ],
+      "images": ["39/v.mp4", "39/1.avif", "39/2.avif", "39/3.avif", "39/4.avif", "39/5.avif", "39/6.avif", "39/7.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -1975,41 +1689,38 @@
           "price": 950
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 86,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 86,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 86,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "40": {
       "sku": "IL4578019635",
+      "order": 32,
       "title": {
         "en": "SERALUX"
       },
       "description": {
-  "en": "Fabric: Nylon Lycra with Embroidered Mesh. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: нейлон-лайкра с вышитой сеткой. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Nylon Lycra with Embroidered Mesh.\n\nThe bust has built in underwired cups for the ultimate support and uplift and we love how it sweeps across one shoulder in an asymmetric silhouette.\n The skirt falls to a flattering mini hem and the decorative casing adds a super feminine touch. It has a zip to the back for easy. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: нейлон-лайкра с вышитой сеткой.\n\nЛиф оснащён встроенными чашками на косточках, обеспечивающими идеальную поддержку и красивый подъём груди. Асимметричный силуэт с линией на одно плечо придаёт образу современную элегантность и утончённость.\n Юбка плавно переходит в привлекательную мини-длину, а декоративная отделка добавляет образу женственный акцент. Для удобства модель дополнена застёжкой-молнией сзади. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -2019,15 +1730,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "40/1.avif",
-        "40/2.avif",
-        "40/3.avif",
-        "40/4.avif",
-        "40/5.avif",
-        "40/6.avif",
-        "40/7.jpg"
-      ],
+      "images": ["40/v.mp4", "40/1.avif", "40/2.avif", "40/3.avif", "40/4.avif", "40/5.avif", "40/6.avif", "40/7.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -2045,41 +1748,38 @@
           "price": 950
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 85,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 85,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 85,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "41": {
       "sku": "IL4578019635",
+      "order": 27,
       "title": {
         "en": "VIRESSA"
       },
       "description": {
-  "en": "Fabric: Shimmer Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: шиммер-лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Shimmer Lycra. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: шиммер-лайкра. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "Black"
       },
@@ -2089,12 +1789,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "41/1.jpg",
-        "41/2.jpg",
-        "41/4.jpg",
-        "41/5.jpg"
-      ],
+      "images": ["41/1.jpg", "41/2.jpg", "41/4.jpg", "41/5.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -2112,41 +1807,38 @@
           "price": 950
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 86,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 86,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 86,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     },
     "42": {
       "sku": "IL4578019635",
+      "order": 33,
       "title": {
-        "en": "MIRALIS"
+        "en": "OCEANA"
       },
       "description": {
-  "en": "Fabric: Soft Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: мягкая лайкра. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
+        "en": "Fabric: Soft Lycra. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: мягкая лайкра. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
       "color": {
         "primary": "White"
       },
@@ -2156,12 +1848,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "42/1.jpg",
-        "42/2.jpg",
-        "42/3.jpg",
-        "42/4.jpg"
-      ],
+      "images": ["42/1.jpg", "42/2.jpg", "42/3.jpg", "42/4.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -2179,111 +1866,38 @@
           "price": 950
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 133,
+          "bust": 82,
+          "waist": 62,
+          "hips": 90
         },
         "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 134,
+          "bust": 86,
+          "waist": 66,
+          "hips": 93
         },
         "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 135,
+          "bust": 91,
+          "waist": 71,
+          "hips": 99
         }
       }
     },
     "45": {
       "sku": "IL4578019635",
+      "order": 31,
       "title": {
         "en": "RUBENZA"
       },
       "description": {
-  "en": "Fabric: Mesh Lycra-based with Nylon Lycra. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: сетка на основе лайкры с нейлон-лайкрой. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
-      "color": {
-        "primary": "Red"
+        "en": "Fabric: Mesh Lycra-based with Nylon Lycra.\n\nThe sleeves fit slim through the arms and have pretty flared cuffs. The body is fully lined for comfort and the underskirt layer is lined in our special power mesh to enhance the close fit from within and has a keyhole opening to the back with a zip fastening for easy on. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: сетка на основе лайкры с нейлон-лайкрой.\n\nРукава имеют облегающий крой по линии рук и дополнены красивыми расклешёнными манжетами, придающими образу лёгкость и элегантность. Основная часть модели полностью на подкладке для максимального комфорта, а нижний слой юбки выполнен из фирменной эластичной сетки power mesh, которая подчёркивает фигуру и обеспечивает идеальную посадку. На спине расположен вырез-капля и застёжка-молния для удобства при надевании.\n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
       },
-      "minOrder": 15,
-      "sizeMinOrders": {
-        "S": 15,
-        "M": 15,
-        "L": 15
-      },
-      "images": [
-        "45/1.avif",
-        "45/2.avif",
-        "45/3.avif",
-        "45/4.avif",
-        "45/5.avif",
-        "45/6.avif",
-        "45/7.jpg"
-      ],
-      "priceTiers": [
-        {
-          "minQty": 15,
-          "maxQty": 15,
-          "price": 1400
-        },
-        {
-          "minQty": 16,
-          "maxQty": 99,
-          "price": 1125
-        },
-        {
-          "minQty": 100,
-          "maxQty": null,
-          "price": 950
-        }
-      ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
-      "sizeMeasurements": {
-        "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
-        },
-        "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
-        },
-        "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
-        }
-      }
-    },
-    "46": {
-      "sku": "IL4578019635",
-      "title": {
-        "en": "ELYSORA"
-      },
-      "description": {
-  "en": "Fabric: Georgette. For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
-  "ru": "Ткань: жоржет. Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
-},
       "color": {
         "primary": "Black"
       },
@@ -2293,15 +1907,7 @@
         "M": 15,
         "L": 15
       },
-      "images": [
-        "46/1.jpg",
-        "46/2.jpg",
-        "46/3.jpg",
-        "46/4.jpg",
-        "46/5.jpg",
-        "46/6.jpg",
-        "46/7.jpg"
-      ],
+      "images": ["45/v.mp4", "45/1.avif", "45/2.avif", "45/3.avif", "45/4.avif", "45/5.avif", "45/6.avif", "45/7.jpg"],
       "priceTiers": [
         {
           "minQty": 15,
@@ -2319,29 +1925,84 @@
           "price": 950
         }
       ],
-      "sizes": [
-        "S",
-        "M",
-        "L"
-      ],
+      "sizes": ["S", "M", "L"],
       "sizeMeasurements": {
         "S": {
-          "skirtLength": 48,
-          "bust": "72-86",
-          "waist": "62-66",
-          "hips": "76-90"
+          "skirtLength": 86,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
         },
         "M": {
-          "skirtLength": 48,
-          "bust": "76-90",
-          "waist": "66-70",
-          "hips": "80-94"
+          "skirtLength": 86,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
         },
         "L": {
-          "skirtLength": 48,
-          "bust": "80-94",
-          "waist": "70-74",
-          "hips": "84-98"
+          "skirtLength": 86,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
+        }
+      }
+    },
+    "46": {
+      "sku": "IL4578019635",
+      "order": 26,
+      "title": {
+        "en": "ELYSORA"
+      },
+      "description": {
+        "en": "Fabric: Georgette. \n\n For best care, machine wash cold with similar colors using mild detergent. Do not bleach or wring. Dry in shade, tumble dry on low heat, and iron on low temperature if needed.",
+        "ru": "Ткань: жоржет. \n\n Для сохранения качества рекомендуется машинная стирка в холодной воде с вещами похожих цветов с использованием мягкого моющего средства. Не отбеливать и не выкручивать. Сушить в тени, допускается деликатная машинная сушка и глажка при низкой температуре при необходимости."
+      },
+      "color": {
+        "primary": "Black"
+      },
+      "minOrder": 15,
+      "sizeMinOrders": {
+        "S": 15,
+        "M": 15,
+        "L": 15
+      },
+      "images": ["46/1.jpg", "46/2.jpg", "46/3.jpg", "46/4.jpg", "46/5.jpg", "46/6.jpg", "46/7.jpg"],
+      "priceTiers": [
+        {
+          "minQty": 15,
+          "maxQty": 15,
+          "price": 1400
+        },
+        {
+          "minQty": 16,
+          "maxQty": 99,
+          "price": 1125
+        },
+        {
+          "minQty": 100,
+          "maxQty": null,
+          "price": 950
+        }
+      ],
+      "sizes": ["S", "M", "L"],
+      "sizeMeasurements": {
+        "S": {
+          "skirtLength": 88,
+          "bust": "84-88",
+          "waist": "64-68",
+          "hips": "92-96"
+        },
+        "M": {
+          "skirtLength": 89,
+          "bust": "88-92",
+          "waist": "68-72",
+          "hips": "96-100"
+        },
+        "L": {
+          "skirtLength": 90,
+          "bust": "92-96",
+          "waist": "72-76",
+          "hips": "100-104"
         }
       }
     }

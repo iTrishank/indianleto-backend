@@ -235,7 +235,7 @@ import p16_5 from "@assets/16/5.jpeg";
 import p16_6 from "@assets/16/6.jpeg";
 import p16_7 from "@assets/16/7.jpeg";
 
-//import p17_1 from "@assets/17/1.jpg";
+import p17_v from "@assets/17/v.mp4";
 import p17_2 from "@assets/17/2.jpeg";
 import p17_3 from "@assets/17/3.jpeg";
 import p17_4 from "@assets/17/4.jpeg";
@@ -255,7 +255,7 @@ import p18_6 from "@assets/18/6.jpeg";
 //import p18_7 from "@assets/18/7.jpg";
 //import p18_8 from "@assets/18/8.jpg";
 
-//import p19_1 from "@assets/19/1.jpg";
+import p19_v from "@assets/19/v.mp4";
 import p19_2 from "@assets/19/2.jpeg";
 import p19_3 from "@assets/19/3.jpeg";
 import p19_4 from "@assets/19/4.jpeg";
@@ -296,6 +296,7 @@ import p23_4 from "@assets/23/4.avif";
 import p23_5 from "@assets/23/5.avif";
 import p23_6 from "@assets/23/6.avif";
 import p23_7 from "@assets/23/7.jpg";
+import p23_v from "@assets/23/v.mp4";
 
 import p24_1 from "@assets/24/1.jpg";
 import p24_2 from "@assets/24/2.jpg";
@@ -342,11 +343,13 @@ import p30_5 from "@assets/30/5.avif";
 import p30_6 from "@assets/30/6.avif";
 import p30_7 from "@assets/30/7.jpg";
 
+import p31_v from "@assets/31/v.mp4";
 import p31_1 from "@assets/31/1.avif";
 import p31_2 from "@assets/31/2.avif";
 import p31_3 from "@assets/31/3.avif";
 import p31_4 from "@assets/31/4.jpg";
 
+import p32_v from "@assets/32/v.mp4";
 import p32_1 from "@assets/32/1.avif";
 import p32_2 from "@assets/32/2.avif";
 import p32_3 from "@assets/32/3.avif";
@@ -356,6 +359,7 @@ import p32_6 from "@assets/32/6.avif";
 import p32_7 from "@assets/32/7.avif";
 import p32_8 from "@assets/32/8.jpg";
 
+import p33_v from "@assets/33/v.mp4";
 import p33_1 from "@assets/33/1.avif";
 import p33_2 from "@assets/33/2.avif";
 import p33_3 from "@assets/33/3.avif";
@@ -366,6 +370,7 @@ import p33_7 from "@assets/33/7.avif";
 import p33_8 from "@assets/33/8.avif";
 import p33_9 from "@assets/33/9.jpg";
 
+import p34_v from "@assets/34/v.mp4";
 import p34_1 from "@assets/34/1.avif";
 import p34_2 from "@assets/34/2.avif";
 import p34_3 from "@assets/34/3.avif";
@@ -375,6 +380,7 @@ import p34_6 from "@assets/34/6.avif";
 import p34_7 from "@assets/34/7.avif";
 import p34_8 from "@assets/34/8.jpg";
 
+import p35_v from "@assets/35/v.mp4";
 import p35_1 from "@assets/35/1.avif";
 import p35_2 from "@assets/35/2.avif";
 import p35_3 from "@assets/35/3.avif";
@@ -383,6 +389,7 @@ import p35_5 from "@assets/35/5.avif";
 import p35_6 from "@assets/35/6.avif";
 import p35_7 from "@assets/35/7.jpg";
 
+import p36_v from "@assets/36/v.mp4";
 import p36_1 from "@assets/36/1.jpg";
 import p36_2 from "@assets/36/2.jpg";
 import p36_3 from "@assets/36/3.jpg";
@@ -398,6 +405,7 @@ import p37_5 from "@assets/37/5.jpg";
 import p37_6 from "@assets/37/6.jpg";
 import p37_7 from "@assets/37/7.jpg";
 
+import p39_v from "@assets/39/v.mp4";
 import p39_1 from "@assets/39/1.avif";
 import p39_2 from "@assets/39/2.avif";
 import p39_3 from "@assets/39/3.avif";
@@ -406,6 +414,7 @@ import p39_5 from "@assets/39/5.avif";
 import p39_6 from "@assets/39/6.avif";
 import p39_7 from "@assets/39/7.jpg";
 
+import p40_v from "@assets/40/v.mp4";
 import p40_1 from "@assets/40/1.avif";
 import p40_2 from "@assets/40/2.avif";
 import p40_3 from "@assets/40/3.avif";
@@ -424,6 +433,7 @@ import p42_2 from "@assets/42/2.jpg";
 import p42_3 from "@assets/42/3.jpg";
 import p42_4 from "@assets/42/4.jpg";
 
+import p45_v from "@assets/45/v.mp4";
 import p45_1 from "@assets/45/1.avif";
 import p45_2 from "@assets/45/2.avif";
 import p45_3 from "@assets/45/3.avif";
@@ -615,7 +625,7 @@ const productImages: Record<string, string> = {
   "16/6.jpeg": p16_6,
   "16/7.jpeg": p16_7,
 
-  //"17/1.jpg": p17_1,
+  "17/v.mp4": p17_v,
   "17/2.jpeg": p17_2,
   "17/3.jpeg": p17_3,
   "17/4.jpeg": p17_4,
@@ -635,7 +645,7 @@ const productImages: Record<string, string> = {
   // "18/7.jpg": p18_7,
   // "18/8.jpg": p18_8,
 
-  //"19/1.jpg": p19_1,
+  "19/v.mp4": p19_v,
   "19/2.jpeg": p19_2,
   "19/3.jpeg": p19_3,
   "19/4.jpeg": p19_4,
@@ -676,6 +686,7 @@ const productImages: Record<string, string> = {
   "23/5.avif": p23_5,
   "23/6.avif": p23_6,
   "23/7.jpg": p23_7,
+  "23/v.mp4": p23_v,
 
   "24/1.jpg": p24_1,
   "24/2.jpg": p24_2,
@@ -722,11 +733,13 @@ const productImages: Record<string, string> = {
   "30/6.avif": p30_6,
   "30/7.jpg": p30_7,
 
+  "31/v.mp4": p31_v,
   "31/1.avif": p31_1,
   "31/2.avif": p31_2,
   "31/3.avif": p31_3,
   "31/4.jpg": p31_4,
   
+  "32/v.mp4": p32_v,
   "32/1.avif": p32_1,
   "32/2.avif": p32_2,
   "32/3.avif": p32_3,
@@ -736,6 +749,7 @@ const productImages: Record<string, string> = {
   "32/7.avif": p32_7,
   "32/8.jpg": p32_8,
 
+  "33/v.mp4": p33_v,
   "33/1.avif": p33_1,
   "33/2.avif": p33_2,
   "33/3.avif": p33_3,
@@ -746,6 +760,7 @@ const productImages: Record<string, string> = {
   "33/8.avif": p33_8,
   "33/9.jpg": p33_9,
 
+  "34/v.mp4": p34_v,
   "34/1.avif": p34_1,
   "34/2.avif": p34_2,
   "34/3.avif": p34_3,
@@ -755,6 +770,7 @@ const productImages: Record<string, string> = {
   "34/7.avif": p34_7,
   "34/8.jpg": p34_8,
 
+  "35/v.mp4": p35_v,
   "35/1.avif": p35_1,
   "35/2.avif": p35_2,
   "35/3.avif": p35_3,
@@ -763,6 +779,7 @@ const productImages: Record<string, string> = {
   "35/6.avif": p35_6,
   "35/7.jpg": p35_7,
 
+  "36/v.mp4": p36_v,
   "36/1.jpg": p36_1,
   "36/2.jpg": p36_2,
   "36/3.jpg": p36_3,
@@ -778,6 +795,7 @@ const productImages: Record<string, string> = {
   "37/6.jpg": p37_6,
   "37/7.jpg": p37_7,
 
+  "39/v.mp4": p39_v,
   "39/1.avif": p39_1,
   "39/2.avif": p39_2,
   "39/3.avif": p39_3,
@@ -786,6 +804,7 @@ const productImages: Record<string, string> = {
   "39/6.avif": p39_6,
   "39/7.jpg": p39_7,
 
+  "40/v.mp4": p40_v,
   "40/1.avif": p40_1,
   "40/2.avif": p40_2,
   "40/3.avif": p40_3,
@@ -804,6 +823,7 @@ const productImages: Record<string, string> = {
   "42/3.jpg": p42_3,
   "42/4.jpg": p42_4,
 
+  "45/v.mp4": p45_v,
   "45/1.avif": p45_1,
   "45/2.avif": p45_2,
   "45/3.avif": p45_3,

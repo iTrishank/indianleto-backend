@@ -29,22 +29,18 @@ export function ProductCard({ product }: ProductCardProps) {
 
   const minPrice = Math.min(...product.priceTiers.map((t) => t.price));
   const maxPrice = Math.max(...product.priceTiers.map((t) => t.price));
-  const priceRange = minPrice === maxPrice 
-    ? formatPrice(minPrice) 
-    : `${formatPrice(minPrice)} - ${formatPrice(maxPrice)}`;
+  const priceRange = minPrice === maxPrice ? formatPrice(minPrice) : `${formatPrice(minPrice)} - ${formatPrice(maxPrice)}`;
 
   const firstSize = product.attributes?.sizes?.[0] || "S";
   const minOrderForSmallSize = product.minOrder || 1;
-  
+
   const notificationQuantity = getNotificationQuantity(product.id);
 
   const scrollPrev = useCallback(
     (e: React.MouseEvent) => {
       e.preventDefault();
       e.stopPropagation();
-      setCurrentImageIndex((prev) => 
-        prev === 0 ? product.images.length - 1 : prev - 1
-      );
+      setCurrentImageIndex((prev) => (prev === 0 ? product.images.length - 1 : prev - 1));
     },
     [product.images.length]
   );
@@ -53,9 +49,7 @@ export function ProductCard({ product }: ProductCardProps) {
     (e: React.MouseEvent) => {
       e.preventDefault();
       e.stopPropagation();
-      setCurrentImageIndex((prev) => 
-        prev === product.images.length - 1 ? 0 : prev + 1
-      );
+      setCurrentImageIndex((prev) => (prev === product.images.length - 1 ? 0 : prev + 1));
     },
     [product.images.length]
   );
@@ -70,34 +64,25 @@ export function ProductCard({ product }: ProductCardProps) {
   };
 
   return (
-    <div
-      className="flex flex-col cursor-pointer w-full h-full"
-      data-testid={`card-product-${product.id}`}
-      onClick={handleCardClick}
-    >
+    <div className="flex flex-col cursor-pointer w-full h-full" data-testid={`card-product-${product.id}`} onClick={handleCardClick}>
       <Card className="overflow-visible border hover-elevate transition-all duration-200 h-full flex flex-col">
         <CardContent className="p-0 flex flex-col flex-1">
           <div className="relative overflow-hidden rounded-t-md aspect-[3/5]">
-            <LazyImage
+            {/* <LazyImage
               src={product.images[currentImageIndex]}
               alt={`${product.title} - Image ${currentImageIndex + 1}`}
               className="h-full w-full object-cover"
               skeletonClassName="h-full w-full"
               data-testid={`img-product-${product.id}`}
-            />
+            /> */}
+            {product.images[currentImageIndex].endsWith(".mp4") ? <video src={product.images[currentImageIndex]} className="h-full w-full object-cover" autoPlay muted loop playsInline /> : <LazyImage src={product.images[currentImageIndex]} alt={`${product.title} - ${currentImageIndex + 1}`} className="h-full w-full object-cover" skeletonClassName="h-full w-full" data-testid={`img-product-${product.id}`} />}
 
-            <span 
-              className="absolute top-1.5 right-1.5 px-1.5 py-0.5 bg-background/90 text-foreground text-[10px] font-medium rounded pointer-events-none"
-              data-testid={`tag-min-order-${product.id}`}
-            >
+            <span className="absolute top-1.5 right-1.5 px-1.5 py-0.5 bg-background/90 text-foreground text-[10px] font-medium rounded pointer-events-none" data-testid={`tag-min-order-${product.id}`}>
               MOQ: {minOrderForSmallSize}
             </span>
 
             {notificationQuantity !== null && (
-              <div 
-                className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1 px-2 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full shadow-lg animate-in fade-in slide-in-from-bottom-2 duration-300 pointer-events-none"
-                data-testid={`notification-added-${product.id}`}
-              >
+              <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1 px-2 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full shadow-lg animate-in fade-in slide-in-from-bottom-2 duration-300 pointer-events-none" data-testid={`notification-added-${product.id}`}>
                 <Check className="h-3 w-3" />
                 <span>+{notificationQuantity}</span>
               </div>
@@ -105,20 +90,10 @@ export function ProductCard({ product }: ProductCardProps) {
 
             {hasMultipleImages && (
               <>
-                <button
-                  className="hidden sm:flex absolute left-1.5 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full bg-background/90 hover:bg-background shadow-md items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
-                  onClick={scrollPrev}
-                  aria-label="Previous image"
-                  data-testid={`btn-prev-image-${product.id}`}
-                >
+                <button className="hidden sm:flex absolute left-1.5 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full bg-background/90 hover:bg-background shadow-md items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary" onClick={scrollPrev} aria-label="Previous image" data-testid={`btn-prev-image-${product.id}`}>
                   <ChevronLeft className="h-4 w-4 text-foreground" />
                 </button>
-                <button
-                  className="hidden sm:flex absolute right-1.5 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full bg-background/90 hover:bg-background shadow-md items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary"
-                  onClick={scrollNext}
-                  aria-label="Next image"
-                  data-testid={`btn-next-image-${product.id}`}
-                >
+                <button className="hidden sm:flex absolute right-1.5 top-1/2 -translate-y-1/2 h-7 w-7 rounded-full bg-background/90 hover:bg-background shadow-md items-center justify-center border border-border/50 focus:outline-none focus:ring-2 focus:ring-primary" onClick={scrollNext} aria-label="Next image" data-testid={`btn-next-image-${product.id}`}>
                   <ChevronRight className="h-4 w-4 text-foreground" />
                 </button>
               </>
@@ -126,14 +101,9 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
 
           <div className="px-2 py-1 sm:px1 sm:py-1" data-testid={`link-product-${product.title}`}>
-            
-              {product.title}
-            
-            
-            <div
-              className="px1 py-1 sm:px1 sm:py-1"
-              data-testid={`text-price-${product.id}`}
-            >
+            {product.title}
+
+            <div className="px1 py-1 sm:px1 sm:py-1" data-testid={`text-price-${product.id}`}>
               {priceRange}
             </div>
           </div>

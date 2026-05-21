@@ -4,13 +4,7 @@ import { useApp } from "@/contexts/AppContext";
 import { ProductCard } from "@/components/ProductCard";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ITEMS_PER_PAGE } from "@/lib/constants";
 import { Input } from "@/components/ui/input";
 
@@ -29,45 +23,44 @@ export default function Catalog() {
     return Array.from(colors).sort();
   }, [products]);
 
-const filteredProducts = useMemo(() => {
-  let result = [...products];
+  const filteredProducts = useMemo(() => {
+    let result = [...products];
 
-  // SEARCH
-  if (search.trim() !== "") {
-    result = result.filter((p) =>
-      p.title.toLowerCase().includes(search.toLowerCase())
-    );
-  }
+    // SEARCH
+    if (search.trim() !== "") {
+      result = result.filter((p) => p.title.toLowerCase().includes(search.toLowerCase()));
+    }
 
-  // COLOR FILTER
-  if (colorFilter !== "all") {
-    result = result.filter((p) => p.attributes.color === colorFilter);
-  }
+    // COLOR FILTER
+    if (colorFilter !== "all") {
+      result = result.filter((p) => p.attributes.color === colorFilter);
+    }
 
-  // SORTING
-  if (priceSort === "low-high") {
-    result.sort((a, b) => {
-      const aMin = Math.min(...a.priceTiers.map((tier) => tier.price));
-      const bMin = Math.min(...b.priceTiers.map((tier) => tier.price));
-      return aMin - bMin;
-    });
-  } else if (priceSort === "high-low") {
-    result.sort((a, b) => {
-      const aMax = Math.max(...a.priceTiers.map((tier) => tier.price));
-      const bMax = Math.max(...b.priceTiers.map((tier) => tier.price));
-      return bMax - aMax;
-    });
-  }
-
-  return result;
-}, [products, colorFilter, priceSort, search]);
+    // SORTING
+    if (priceSort === "low-high") {
+      result.sort((a, b) => {
+        const aMin = Math.min(...a.priceTiers.map((tier) => tier.price));
+        const bMin = Math.min(...b.priceTiers.map((tier) => tier.price));
+        return aMin - bMin;
+      });
+    } else if (priceSort === "high-low") {
+      result.sort((a, b) => {
+        const aMax = Math.max(...a.priceTiers.map((tier) => tier.price));
+        const bMax = Math.max(...b.priceTiers.map((tier) => tier.price));
+        return bMax - aMax;
+      });
+    } else {
+      // DEFAULT MANUAL ORDER
+      result.sort((a, b) => {
+        return Number(a.order ?? 9999) - Number(b.order ?? 9999);
+      });
+    }
+    return result;
+  }, [products, colorFilter, priceSort, search]);
 
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const paginatedProducts = filteredProducts.slice(
-    startIndex,
-    startIndex + ITEMS_PER_PAGE
-  );
+  const paginatedProducts = filteredProducts.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   const clearFilters = () => {
     handleFilterChange(() => {
@@ -140,25 +133,13 @@ const filteredProducts = useMemo(() => {
 
     return (
       <div className="flex items-center justify-center gap-1 mt-8" data-testid="pagination">
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-          data-testid="button-prev-page"
-        >
+        <Button variant="outline" size="icon" onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} data-testid="button-prev-page">
           <ChevronLeft className="h-4 w-4" />
         </Button>
 
         {pages.map((page, index) =>
           typeof page === "number" ? (
-            <Button
-              key={index}
-              variant={currentPage === page ? "default" : "outline"}
-              size="sm"
-              onClick={() => handlePageChange(page)}
-              data-testid={`button-page-${page}`}
-            >
+            <Button key={index} variant={currentPage === page ? "default" : "outline"} size="sm" onClick={() => handlePageChange(page)} data-testid={`button-page-${page}`}>
               {page}
             </Button>
           ) : (
@@ -168,13 +149,7 @@ const filteredProducts = useMemo(() => {
           )
         )}
 
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-          data-testid="button-next-page"
-        >
+        <Button variant="outline" size="icon" onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} data-testid="button-next-page">
           <ChevronRight className="h-4 w-4" />
         </Button>
       </div>
@@ -196,12 +171,8 @@ const filteredProducts = useMemo(() => {
         <div className="brush-stroke-bg" aria-hidden="true" />
         <Container className="relative z-10">
           <div className="text-center space-y-1.5">
-            <h1 className="text-2xl md:text-3xl font-semibold tracking-tight leading-tight">
-              {t("catalog.title")}
-            </h1>
-            <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              {t("catalog.subtitle")}
-            </p>
+            <h1 className="text-2xl md:text-3xl font-semibold tracking-tight leading-tight">{t("catalog.title")}</h1>
+            <p className="text-sm text-muted-foreground max-w-2xl mx-auto leading-relaxed">{t("catalog.subtitle")}</p>
           </div>
         </Container>
       </section>
@@ -209,12 +180,7 @@ const filteredProducts = useMemo(() => {
       <Container className="py-4 md:py-6">
         <div className="flex flex-wrap items-center gap-2 mb-4">
           <div className="flex items-center gap-2 flex-1 sm:flex-none">
-            <Input
-  placeholder="Search"
-  value={search}
-  onChange={(e) => setSearch(e.target.value)}
-  className="w-full sm:w-[220px]"
-/>
+            <Input placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)} className="w-full sm:w-[220px]" />
             {/* <Select value={colorFilter} onValueChange={handleColorChange}>
               <SelectTrigger className="w-full sm:w-[140px]" data-testid="select-color-filter">
                 <SelectValue placeholder={t("catalog.color")} />
@@ -240,14 +206,7 @@ const filteredProducts = useMemo(() => {
               </SelectContent>
             </Select>
 
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={clearFilters}
-              disabled={!hasActiveFilters}
-              className="whitespace-nowrap"
-              data-testid="button-clear-filters"
-            >
+            <Button variant="outline" size="sm" onClick={clearFilters} disabled={!hasActiveFilters} className="whitespace-nowrap" data-testid="button-clear-filters">
               {t("catalog.clearFilters")}
             </Button>
           </div>
@@ -260,13 +219,10 @@ const filteredProducts = useMemo(() => {
 
         <div className="relative min-h-[400px]">
           {isFiltering && <LoadingSpinner />}
-          
+
           {paginatedProducts.length > 0 ? (
             <>
-              <div
-                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4"
-                data-testid="product-grid"
-              >
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4" data-testid="product-grid">
                 {paginatedProducts.map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}
@@ -276,12 +232,8 @@ const filteredProducts = useMemo(() => {
           ) : (
             <div className="min-h-[400px] flex items-center justify-center">
               <div className="text-center space-y-4">
-                <h3 className="text-lg font-medium text-muted-foreground">
-                  {t("catalog.noProducts")}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {t("catalog.tryAdjustingFilters")}
-                </p>
+                <h3 className="text-lg font-medium text-muted-foreground">{t("catalog.noProducts")}</h3>
+                <p className="text-sm text-muted-foreground">{t("catalog.tryAdjustingFilters")}</p>
                 <Button variant="outline" onClick={clearFilters}>
                   {t("catalog.clearFilters")}
                 </Button>
